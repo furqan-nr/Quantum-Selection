@@ -1,0 +1,40 @@
+{
+  "schema": "global_phase_forward/v1",
+  "event_id": "fwd-pr16215",
+  "pr": "16215",
+  "trigger": {
+    "family": "qft",
+    "n": 5,
+    "backend": "line",
+    "opt": 1,
+    "basis": "cx,rz,sx,x",
+    "seed": 1234
+  },
+  "qiskit_version": {
+    "baseline": "2.4.2",
+    "candidate": "2.4.2"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline": {
+    "tracked_global_phase": 0.049087385212338575,
+    "gp_strength": "exact",
+    "gp_equivalent": true,
+    "gp_delta_rad": -0.0,
+    "output_oracle_equivalent": true
+  },
+  "candidate": {
+    "tracked_global_phase": 0.049087385212338575,
+    "gp_strength": "exact",
+    "gp_equivalent": true,
+    "gp_delta_rad": -0.0,
+    "output_oracle_equivalent": true
+  },
+  "output_oracle_blind": true,
+  "phase_differs": false,
+  "fault_detected": false,
+  "verdict": "negative_here",
+  "note": "output blind but no phase divergence on this trigger; try the CSV's exact n/opt/backend before concluding"
+}

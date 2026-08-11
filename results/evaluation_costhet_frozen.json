@@ -1,0 +1,1082 @@
+{
+  "split": "all",
+  "cutoff_date": null,
+  "random_seeds": 20,
+  "oracle_false_positive_rate": 0.0059,
+  "grouped_by": "evaluation_cohort",
+  "by_source": {
+    "mutation": {
+      "cheapest_first": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1605,
+        "mean_AUC_detection_vs_budget": 0.8395,
+        "detection_at_fraction": {
+          "5%": 0.4444,
+          "10%": 0.7778,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0002
+      },
+      "diversity_only": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1258,
+        "mean_AUC_detection_vs_budget": 0.8742,
+        "detection_at_fraction": {
+          "5%": 0.7778,
+          "10%": 0.7778,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0001
+      },
+      "history_only": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1605,
+        "mean_AUC_detection_vs_budget": 0.8395,
+        "detection_at_fraction": {
+          "5%": 0.4444,
+          "10%": 0.7778,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0034
+      },
+      "change_stage": {
+        "n_events": 9,
+        "recall@20%": 0.8889,
+        "mean_normalized_TTFR": 0.1605,
+        "mean_AUC_detection_vs_budget": 0.8395,
+        "detection_at_fraction": {
+          "5%": 0.4444,
+          "10%": 0.7778,
+          "20%": 0.8889,
+          "40%": 0.8889
+        },
+        "mean_selection_overhead_s": 0.0002
+      },
+      "proposed": {
+        "n_events": 9,
+        "recall@20%": 0.6667,
+        "mean_normalized_TTFR": 0.2786,
+        "mean_AUC_detection_vs_budget": 0.7214,
+        "detection_at_fraction": {
+          "5%": 0.6667,
+          "10%": 0.6667,
+          "20%": 0.6667,
+          "40%": 0.6667
+        },
+        "mean_selection_overhead_s": 0.1469
+      },
+      "random": {
+        "n_events": 9,
+        "n_seeds": 20,
+        "recall@20%": 0.75,
+        "mean_normalized_TTFR": 0.1789,
+        "mean_AUC_detection_vs_budget": 0.8211,
+        "mean_selection_overhead_s": 0.0001
+      }
+    }
+  },
+  "per_event": {
+    "mutation": {
+      "mut-disable-opt-loop-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0887,
+          "AUC": 0.9113,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0887,
+          "AUC": 0.9113,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0887,
+          "AUC": 0.9113,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0035,
+          "AUC": 0.9965,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0042,
+          "AUC_median": 0.9958
+        }
+      },
+      "mut-drop-vf2postlayout-01": {
+        "cheapest_first": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "diversity_only": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "history_only": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "change_stage": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "proposed": {
+          "detected": false,
+          "normalized_TTFR": 1.0,
+          "AUC": 0.0,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": false,
+          "normalized_TTFR_median": 1.0,
+          "AUC_median": 0.0
+        }
+      },
+      "mut-downgrade-routing-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.064,
+          "AUC": 0.936,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.064,
+          "AUC": 0.936,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.064,
+          "AUC": 0.936,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0029,
+          "AUC": 0.9971,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0003,
+          "AUC_median": 0.9997
+        }
+      },
+      "mut-insert-redundant-cx-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.475,
+          "AUC": 0.525,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0051,
+          "AUC_median": 0.9949
+        }
+      },
+      "mut-drop-optimization-stage-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0921,
+          "AUC": 0.9079,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0921,
+          "AUC": 0.9079,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0921,
+          "AUC": 0.9079,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0039,
+          "AUC": 0.9961,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0046,
+          "AUC_median": 0.9954
+        }
+      },
+      "mut-force-opt-level-1-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.1323,
+          "AUC": 0.8677,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.1323,
+          "AUC": 0.8677,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.1323,
+          "AUC": 0.8677,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.1323,
+          "AUC": 0.8677,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.016,
+          "AUC": 0.984,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0056,
+          "AUC_median": 0.9944
+        }
+      },
+      "mut-force-opt-level-0-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0209,
+          "AUC": 0.9791,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0209,
+          "AUC": 0.9791,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0209,
+          "AUC": 0.9791,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0033,
+          "AUC": 0.9967,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0001,
+          "AUC_median": 0.9999
+        }
+      },
+      "mut-downgrade-layout-trivial-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0226,
+          "AUC": 0.9774,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0226,
+          "AUC": 0.9774,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0226,
+          "AUC": 0.9774,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.0035,
+          "AUC": 0.9965,
+          "recall@20%": 1
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.0001,
+          "AUC_median": 0.9999
+        }
+      },
+      "mut-insert-redundant-x-01": {
+        "cheapest_first": {
+          "detected": true,
+          "normalized_TTFR": 0.0241,
+          "AUC": 0.9759,
+          "recall@20%": 1
+        },
+        "diversity_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0,
+          "AUC": 1.0,
+          "recall@20%": 1
+        },
+        "history_only": {
+          "detected": true,
+          "normalized_TTFR": 0.0241,
+          "AUC": 0.9759,
+          "recall@20%": 1
+        },
+        "change_stage": {
+          "detected": true,
+          "normalized_TTFR": 0.0241,
+          "AUC": 0.9759,
+          "recall@20%": 1
+        },
+        "proposed": {
+          "detected": true,
+          "normalized_TTFR": 0.9997,
+          "AUC": 0.0003,
+          "recall@20%": 0
+        },
+        "random": {
+          "detected": true,
+          "normalized_TTFR_median": 0.2307,
+          "AUC_median": 0.7693
+        }
+      }
+    }
+  },
+  "win_tie_loss": {
+    "mutation": {
+      "cheapest_first": {
+        "win": 6,
+        "tie": 1,
+        "loss": 2
+      },
+      "diversity_only": {
+        "win": 1,
+        "tie": 1,
+        "loss": 7
+      },
+      "history_only": {
+        "win": 6,
+        "tie": 1,
+        "loss": 2
+      },
+      "change_stage": {
+        "win": 6,
+        "tie": 1,
+        "loss": 2
+      },
+      "random": {
+        "win": 2,
+        "tie": 1,
+        "loss": 6
+      }
+    }
+  },
+  "random_multiseed": {
+    "mutation": {
+      "n_seeds": 20,
+      "recall@20%": {
+        "median": 0.7778,
+        "min": 0.3333,
+        "max": 0.8889
+      },
+      "mean_normalized_TTFR": {
+        "median": 0.1911,
+        "min": 0.1112,
+        "max": 0.3173
+      },
+      "mean_AUC_detection_vs_budget": {
+        "median": 0.8089,
+        "min": 0.6827,
+        "max": 0.8888
+      },
+      "detection_at_fraction": {
+        "5%": {
+          "median": 0.7778,
+          "min": 0,
+          "max": 0.8889
+        },
+        "10%": {
+          "median": 0.7778,
+          "min": 0,
+          "max": 0.8889
+        },
+        "20%": {
+          "median": 0.7778,
+          "min": 0.3333,
+          "max": 0.8889
+        },
+        "40%": {
+          "median": 0.8889,
+          "min": 0.6667,
+          "max": 0.8889
+        }
+      }
+    }
+  },
+  "detection_curve": {
+    "grid": [
+      0.0,
+      0.02,
+      0.04,
+      0.06,
+      0.08,
+      0.1,
+      0.12,
+      0.14,
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24,
+      0.26,
+      0.28,
+      0.3,
+      0.32,
+      0.34,
+      0.36,
+      0.38,
+      0.4,
+      0.42,
+      0.44,
+      0.46,
+      0.48,
+      0.5,
+      0.52,
+      0.54,
+      0.56,
+      0.58,
+      0.6,
+      0.62,
+      0.64,
+      0.66,
+      0.68,
+      0.7,
+      0.72,
+      0.74,
+      0.76,
+      0.78,
+      0.8,
+      0.82,
+      0.84,
+      0.86,
+      0.88,
+      0.9,
+      0.92,
+      0.94,
+      0.96,
+      0.98,
+      1.0
+    ],
+    "by_source": {
+      "mutation": {
+        "cheapest_first": [
+          0.0,
+          0.111111,
+          0.444444,
+          0.444444,
+          0.555556,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "diversity_only": [
+          0.0,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "history_only": [
+          0.0,
+          0.111111,
+          0.444444,
+          0.444444,
+          0.555556,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "change_stage": [
+          0.0,
+          0.111111,
+          0.444444,
+          0.444444,
+          0.555556,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "proposed": [
+          0.0,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889
+        ],
+        "random": [
+          0.0,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "random_band_min": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.111111,
+          0.333333,
+          0.333333,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.666667,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.777778,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ],
+        "random_band_max": [
+          0.0,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889,
+          0.888889
+        ]
+      }
+    }
+  },
+  "cost_distribution": {
+    "mutation": {
+      "per_unit_mean_cost_s": {
+        "n": 116,
+        "min": 0.001332,
+        "max": 285.313635,
+        "median": 0.045497,
+        "mean": 11.544214,
+        "total": 1339.128828,
+        "stdev": 50.114653,
+        "cv": 4.3411,
+        "p25": 0.004908,
+        "p75": 0.554408,
+        "iqr": 0.5495
+      },
+      "by_width_backend_mean_s": {
+        "n100-heavy_hex": 4.377572,
+        "n100-line": 4.036137,
+        "n12-heavy_hex": 0.043135,
+        "n12-line": 158.004759,
+        "n127-heavy_hex": 6.634245,
+        "n127-line": 6.648462,
+        "n18-heavy_hex": 0.122622,
+        "n18-line": 0.125866,
+        "n27-heavy_hex": 0.341558,
+        "n27-line": 0.341625,
+        "n40-heavy_hex": 0.76717,
+        "n40-line": 0.856212,
+        "n5-heavy_hex": 0.004045,
+        "n5-line": 0.011165,
+        "n65-heavy_hex": 0.812219,
+        "n65-line": 0.656108,
+        "n8-heavy_hex": 0.013192,
+        "n8-line": 0.234404
+      }
+    }
+  },
+  "effect_sizes": {
+    "mutation": {
+      "metric": "AUC_detection_vs_budget",
+      "n_events": 9,
+      "proposed_vs": {
+        "cheapest_first": {
+          "cliffs_delta": 0.2469,
+          "magnitude": "small",
+          "a12": 0.6235
+        },
+        "diversity_only": {
+          "cliffs_delta": -0.642,
+          "magnitude": "large",
+          "a12": 0.179
+        },
+        "history_only": {
+          "cliffs_delta": 0.2469,
+          "magnitude": "small",
+          "a12": 0.6235
+        },
+        "change_stage": {
+          "cliffs_delta": 0.2469,
+          "magnitude": "small",
+          "a12": 0.6235
+        },
+        "random": {
+          "cliffs_delta": -0.1481,
+          "magnitude": "small",
+          "a12": 0.4259
+        }
+      }
+    }
+  },
+  "bootstrap_ci": {
+    "mutation": {
+      "metric": "AUC_detection_vs_budget",
+      "by_selector": {
+        "cheapest_first": {
+          "mean": 0.8395,
+          "lo": 0.6197,
+          "hi": 0.9647
+        },
+        "diversity_only": {
+          "mean": 0.8742,
+          "lo": 0.652,
+          "hi": 1.0
+        },
+        "history_only": {
+          "mean": 0.8395,
+          "lo": 0.6197,
+          "hi": 0.9647
+        },
+        "change_stage": {
+          "mean": 0.8395,
+          "lo": 0.6197,
+          "hi": 0.9647
+        },
+        "proposed": {
+          "mean": 0.7214,
+          "lo": 0.4389,
+          "hi": 0.9444
+        },
+        "random": {
+          "mean": 0.8211,
+          "lo": 0.7962,
+          "hi": 0.8459
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "ablation": {
+    "schema": "ablation/v1",
+    "split": "all",
+    "variants": {
+      "full": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.7214,
+          "mean_normalized_TTFR": 0.2786,
+          "recall@20%": 0.6667
+        }
+      },
+      "no_novelty": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.6946,
+          "mean_normalized_TTFR": 0.3054,
+          "recall@20%": 0.6667
+        }
+      },
+      "no_change_stage": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.7214,
+          "mean_normalized_TTFR": 0.2786,
+          "recall@20%": 0.6667
+        }
+      },
+      "no_oracle_confidence": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.7213,
+          "mean_normalized_TTFR": 0.2787,
+          "recall@20%": 0.6667
+        }
+      },
+      "no_impact_prior": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.7248,
+          "mean_normalized_TTFR": 0.2752,
+          "recall@20%": 0.5556
+        }
+      },
+      "no_cost": {
+        "mutation": {
+          "n_events": 9,
+          "mean_AUC": 0.6968,
+          "mean_normalized_TTFR": 0.3032,
+          "recall@20%": 0.6667
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "schema": "sensitivity/v1",
+    "split": "all",
+    "grid": [
+      {
+        "reserve_frac": 0.1,
+        "epsilon": 0.01,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.1,
+        "epsilon": 0.05,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.1,
+        "epsilon": 0.1,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.15,
+        "epsilon": 0.01,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.15,
+        "epsilon": 0.05,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.15,
+        "epsilon": 0.1,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.2,
+        "epsilon": 0.01,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.2,
+        "epsilon": 0.05,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      },
+      {
+        "reserve_frac": 0.2,
+        "epsilon": 0.1,
+        "result": {
+          "mutation": {
+            "n_events": 9,
+            "mean_AUC": 0.7214,
+            "mean_normalized_TTFR": 0.2786,
+            "recall@20%": 0.6667
+          }
+        }
+      }
+    ]
+  }
+}

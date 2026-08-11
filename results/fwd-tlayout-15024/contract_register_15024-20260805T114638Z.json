@@ -1,0 +1,291 @@
+{
+  "schema": "contract_register_15024/v1",
+  "event_id": "fwd-tlayout-registers-15024",
+  "pr": "15024",
+  "trigger": {
+    "registers": [
+      [
+        "a",
+        2,
+        "QuantumRegister"
+      ],
+      [
+        "b",
+        1,
+        "AncillaRegister"
+      ]
+    ],
+    "circuit": "QuantumCircuit(b, a); x(0)",
+    "initial_layout": [
+      0,
+      1,
+      2
+    ],
+    "opt_levels": "0,1,2,3",
+    "observable": "initial_layout.get_registers()"
+  },
+  "qiskit_version": {
+    "baseline": "2.4.2",
+    "candidate": "2.4.2"
+  },
+  "worker_status": {
+    "baseline": "ok",
+    "candidate": "ok"
+  },
+  "baseline_signature": {
+    "0": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "1": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "2": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "3": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    }
+  },
+  "candidate_signature": {
+    "0": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "1": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "2": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    },
+    "3": {
+      "get_registers": [
+        [
+          "a",
+          2,
+          "QuantumRegister"
+        ],
+        [
+          "b",
+          1,
+          "AncillaRegister"
+        ]
+      ],
+      "virtual_bit_registers": [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      "output_equivalent": true
+    }
+  },
+  "output_equivalent": {
+    "baseline": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    },
+    "candidate": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true
+    }
+  },
+  "divergent_register_fields": [],
+  "register_diverges": false,
+  "output_oracle_blind": true,
+  "fault_detected": false,
+  "verdict": "negative_here",
+  "note": "output blind but get_registers() identical across builds at every level \u2014 the detector does NOT fire. Per the runbook gate: STOP; do not build the forward pair. If this holds with the upstream trigger faithfully reproduced, record #15024 as not forward-verifiable with the current oracle family (per-event claim-scope)."
+}

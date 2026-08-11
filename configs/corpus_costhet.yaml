@@ -1,0 +1,82 @@
+# Cost-heterogeneous corpus specification (Paper 2 / B1).
+# PRE-DECLARED 2026-08-04, BEFORE any held-out detection outcome (leakage-safety).
+# STATUS: DRAFT — costs are illustrative sandbox measurements; counts + baseline_cost_s
+# MUST be re-calibrated and frozen on the parent machine before held-out evaluation.
+# Rationale + evidence: ../CORPUS_DESIGN_B1.md ; evidence: ../results/costcurve-sandbox/
+
+version: 1            # FROZEN 2026-08-07 after parent cost calibration (costs only, before evaluate)
+frozen: true
+
+# Frozen cost calibration (parent hardware) — the measured numbers this freeze rests on:
+frozen_calibration_2026_08_07:
+  hardware: "Intel Xeon @2.20GHz, 1 logical CPU, Python 3.12.13, qiskit 2.4.2, RAYON_NUM_THREADS=1"
+  n_units: 116
+  profile_records: 1044
+  per_unit_total_cost_s: {min: 0.0008, median: 0.0084, max: 8.292, spread_x: 9945}
+  T_full_s: 69.17
+  budgets_from_T_full_s: {pr: 3.46, nightly: 34.59, release: null}   # pre-declared 5% / 50% / 100%
+  binding: "pr(5%) fits 91/116 excl 25/29 costliest; nightly(50%) fits 110/116 excl 6/29"
+  cost_measurement: "median of 5 clean process_time runs, 1 warmup discarded, outside tracemalloc; 0 unstable units (IQR>25% of median); 0 knife-edge"
+qiskit_anchor: "2.4.2"
+basis_gates: [cx, rz, sx, x]
+seed: 1234
+
+# --- Enumeration grid (extends static_manifest.py DEFAULT_WIDTHS = (5,8,12,18)) ---
+families:
+  cheap_sparse: [ghz, qaoa_linear]        # ~0.004-0.06 s even at n=65
+  expensive_dense: [qft, random_clifford] # steep in width; opt3 multiplies several-fold
+widths:
+  small: [5, 8, 12]
+  mid:   [18, 27]
+  large: [40, 65]
+  xlarge: [100]        # dense families only
+backends: [line, heavy_hex]   # grid optional
+opt_levels: [1, 3]
+
+# --- Oracle tier by width (confirm/align with static_manifest.py) ---
+# exact unitary is now a genuine cost driver up to n=12 (O(4^n)); do NOT cap below 12.
+oracle_tiers:
+  unitary:     {max_qubits: 12}
+  sampled_sv:  {min_qubits: 13, max_qubits: 27}
+  structural:  {min_qubits: 28}
+
+# --- Budget-binding target invariants ---
+# budgets.yaml tier values are PLACEHOLDERS; calibrate them as fractions of measured T_full so
+# the budget binds by construction once the cost spread is present (see CORPUS_DESIGN_B1.md §3).
+targets:
+  per_unit_cost_spread_min: 1000             # max/min per-unit cost (transpile + oracle)
+  budget_as_fraction_of_T_full:              # replaces the placeholder wall-clock seconds
+    pr:      0.05
+    nightly: 0.50
+    release: 1.00
+  binding_check: "under pr budget, cheapest-first must exclude the costly (fault-bearing) tail"
+
+# Sandbox verification 2026-08-04 (transpile-only; final calibration on parent):
+#   116 units; per-unit 0.0041->4.34 s (1061x spread); T_full=34.8 s;
+#   pr=5% fits 88/116 excluding 28/29 costliest -> BINDS. (results/costcurve-sandbox/)
+verified_sandbox_2026_08_04:
+  n_units: 116
+  spread_x: 1061
+  T_full_s_sandbox: 34.8
+  pr_fits: "88/116, excludes 28/29 costliest"
+
+# --- Detection heterogeneity (de-saturate the null; see CORPUS_DESIGN_B1.md §4) ---
+# Faults must be regime-specific so only a subset of units reveals each -> ordering matters.
+detection_placement:
+  performance_h4_14120:   {regime: "wide symmetric, large map, opt3"}   # hides in the EXPENSIVE corner
+  contract_metadata_h1_14603: {regime: "routing permutes; width > native connectivity"}
+  contract_metadata_h2_14919: {regime: "routing composes final_layout"}
+  global_phase_14956_16201:   {regime: "phase-bearing families (qft), not ghz"}
+  determinism_14730_16237:    {regime: "target/seed-specific"}
+mutations: "scope each mutation to fire only in some units (e.g. opt3-only or width-gated passes)"
+
+# --- Calibration procedure (parent machine, quiet/pinned) — IMPLEMENTED in ground-truth (measure_cost) ---
+calibration:
+  baseline_cost_s: "median of >=5 clean CPU process_time runs per unit, 1 warmup discarded, OUTSIDE tracemalloc"
+  dispersion_recorded: "cost_min_s / cost_median_s / cost_max_s / cost_iqr_s per unit in profiles.json (Appendix F)"
+  cli: "python -m cart.cli ground-truth --unit-limit 116 --cost-repeats 5"
+  note: "the old instrumented single-run cpu_time_s was ~5.5x inflated on a cheap unit (tracemalloc + cold run); kept as cpu_time_instrumented_s for reference. perf screen now uses process_time (Appendix F1)."
+  before_freeze: "check no unit sits on a budget knife-edge (overlapping cost_min/cost_max across the boundary)"
+  refine_oracle_cost_est: "measure actual oracle cost per width tier; replace the 0.05 constant"
+  freeze_after: true
+  rerun_leakage_absence_gate: true

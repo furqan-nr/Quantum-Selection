@@ -1,0 +1,76 @@
+{
+  "description": "Post-hoc, exploratory robustness check: mutation-cohort comparison with the two dominant-loss events (insert_redundant_cx_pair, insert_redundant_x_pair) excluded. Not a re-freeze; the primary frozen result (n=9, results/evaluation_costhet_frozen.json) is unchanged and remains the pre-registered headline.",
+  "excluded_events": [
+    "mut-insert-redundant-cx-01",
+    "mut-insert-redundant-x-01"
+  ],
+  "n_events": 7,
+  "kept_events": [
+    "mut-disable-opt-loop-01",
+    "mut-drop-vf2postlayout-01",
+    "mut-downgrade-routing-01",
+    "mut-drop-optimization-stage-01",
+    "mut-force-opt-level-1-01",
+    "mut-force-opt-level-0-01",
+    "mut-downgrade-layout-trivial-01"
+  ],
+  "bootstrap_ci_by_selector": {
+    "cheapest_first": {
+      "mean": 0.7971,
+      "lo": 0.5235,
+      "hi": 0.9523
+    },
+    "diversity_only": {
+      "mean": 0.8382,
+      "lo": 0.5525,
+      "hi": 1.0
+    },
+    "history_only": {
+      "mean": 0.7971,
+      "lo": 0.5235,
+      "hi": 0.9523
+    },
+    "change_stage": {
+      "mean": 0.7971,
+      "lo": 0.5235,
+      "hi": 0.9523
+    },
+    "proposed": {
+      "mean": 0.8524,
+      "lo": 0.5677,
+      "hi": 0.9967
+    },
+    "random": {
+      "mean": 0.855,
+      "lo": 0.5694,
+      "hi": 0.9987
+    }
+  },
+  "effect_sizes_proposed_vs": {
+    "cheapest_first": {
+      "cliffs_delta": 0.7347,
+      "magnitude": "large",
+      "a12": 0.8673
+    },
+    "diversity_only": {
+      "cliffs_delta": -0.4898,
+      "magnitude": "large",
+      "a12": 0.2551
+    },
+    "history_only": {
+      "cliffs_delta": 0.7347,
+      "magnitude": "large",
+      "a12": 0.8673
+    },
+    "change_stage": {
+      "cliffs_delta": 0.7347,
+      "magnitude": "large",
+      "a12": 0.8673
+    },
+    "random": {
+      "cliffs_delta": -0.1224,
+      "magnitude": "negligible",
+      "a12": 0.4388
+    }
+  }
+}
