@@ -1,0 +1,138 @@
+{
+  "description": "Phase C4: decomposed-selector effect sizes, bootstrap CIs, and win/tie/loss vs every baseline and vs proposed, on the frozen n=19 EMSE scale-up mutation cohort (results/evaluation_scaleup_frozen.json). Complements evaluate()'s own proposed_vs_* table (Cliff's delta is anti-symmetric: decomposed_vs_proposed here equals -1 * proposed_vs_decomposed in the evaluate() output, reported independently here for convenience, not a new computation).",
+  "n_events": 19,
+  "events": [
+    "mut2-combo-dense-layout-basic-routing-01",
+    "mut2-combo-no-consolidate-dense-layout-01",
+    "mut2-combo-no-elide-synthesis-translate-01",
+    "mut2-disable-optimization-loop-01",
+    "mut2-downgrade-layout-dense-01",
+    "mut2-downgrade-layout-trivial-01",
+    "mut2-downgrade-routing-01",
+    "mut2-downgrade-translation-synthesis-01",
+    "mut2-drop-optimization-stage-01",
+    "mut2-drop-vf2-post-layout-01",
+    "mut2-force-opt-level-0-01",
+    "mut2-force-opt-level-1-01",
+    "mut2-insert-redundant-cx-pair-01",
+    "mut2-insert-redundant-sx-quad-01",
+    "mut2-insert-redundant-x-pair-01",
+    "mut2-remove-basis-translator-01",
+    "mut2-remove-consolidate-blocks-01",
+    "mut2-remove-elide-permutations-01",
+    "mut2-seed-drift-01"
+  ],
+  "bootstrap_ci_by_selector": {
+    "cheapest_first": {
+      "mean": 0.8496,
+      "lo": 0.6999,
+      "hi": 0.9595
+    },
+    "diversity_only": {
+      "mean": 0.8801,
+      "lo": 0.7284,
+      "hi": 0.9919
+    },
+    "history_only": {
+      "mean": 0.8496,
+      "lo": 0.6999,
+      "hi": 0.9595
+    },
+    "change_stage": {
+      "mean": 0.8496,
+      "lo": 0.6999,
+      "hi": 0.9595
+    },
+    "proposed": {
+      "mean": 0.7678,
+      "lo": 0.5858,
+      "hi": 0.9249
+    },
+    "decomposed": {
+      "mean": 0.8798,
+      "lo": 0.7279,
+      "hi": 0.9922
+    },
+    "random": {
+      "mean": 0.8726,
+      "lo": 0.7225,
+      "hi": 0.9867
+    }
+  },
+  "decomposed_vs": {
+    "cheapest_first": {
+      "cliffs_delta": 0.4017,
+      "magnitude": "medium",
+      "a12": 0.7008,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.8496
+    },
+    "diversity_only": {
+      "cliffs_delta": -0.0803,
+      "magnitude": "negligible",
+      "a12": 0.4598,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.8801
+    },
+    "history_only": {
+      "cliffs_delta": 0.4017,
+      "magnitude": "medium",
+      "a12": 0.7008,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.8496
+    },
+    "change_stage": {
+      "cliffs_delta": 0.4017,
+      "magnitude": "medium",
+      "a12": 0.7008,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.8496
+    },
+    "proposed": {
+      "cliffs_delta": 0.5679,
+      "magnitude": "large",
+      "a12": 0.7839,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.7678
+    },
+    "random": {
+      "cliffs_delta": 0.5235,
+      "magnitude": "large",
+      "a12": 0.7618,
+      "mean_decomposed": 0.8798,
+      "mean_other": 0.8726
+    }
+  },
+  "win_tie_loss_decomposed_vs": {
+    "cheapest_first": {
+      "win": 10,
+      "tie": 6,
+      "loss": 3
+    },
+    "diversity_only": {
+      "win": 1,
+      "tie": 15,
+      "loss": 3
+    },
+    "history_only": {
+      "win": 10,
+      "tie": 6,
+      "loss": 3
+    },
+    "change_stage": {
+      "win": 10,
+      "tie": 6,
+      "loss": 3
+    },
+    "proposed": {
+      "win": 15,
+      "tie": 2,
+      "loss": 2
+    },
+    "random": {
+      "win": 15,
+      "tie": 2,
+      "loss": 2
+    }
+  }
+}

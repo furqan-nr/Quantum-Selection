@@ -31,11 +31,12 @@ def _labeled_context(ctx_full: SelectionContext, cand: list[str]) -> SelectionCo
     return replace(ctx_full, units={t: ctx_full.units[t] for t in cand if t in ctx_full.units})
 
 
-def gate_budget_compliance(ctx_full, by_event, budget=0.15) -> GateResult:
+def gate_budget_compliance(ctx_full, by_event, budget=0.15, selectors=None) -> GateResult:
+    sels = selectors if selectors is not None else SELECTORS
     over = 0
     for eid, recs in by_event.items():
         ctx = _labeled_context(ctx_full, [r["test_id"] for r in recs])
-        for name, sel in SELECTORS.items():
+        for name, sel in sels.items():
             chosen = sel(ctx, eid, budget, seed=0)
             spent = sum(expected_cost(ctx, eid, t) for t in chosen)
             if spent > budget + 1e-9:
@@ -43,18 +44,20 @@ def gate_budget_compliance(ctx_full, by_event, budget=0.15) -> GateResult:
     return GateResult("budget_compliance", over == 0, f"{over} over-budget (event x selector)")
 
 
-def gate_reproducibility(ctx_full, by_event) -> GateResult:
+def gate_reproducibility(ctx_full, by_event, selectors=None) -> GateResult:
+    sels = selectors if selectors is not None else SELECTORS
     bad = 0
     for eid, recs in by_event.items():
         ctx = _labeled_context(ctx_full, [r["test_id"] for r in recs])
-        for name, sel in SELECTORS.items():
+        for name, sel in sels.items():
             if sel(ctx, eid, float("inf"), seed=0) != sel(ctx, eid, float("inf"), seed=0):
                 bad += 1
     return GateResult("reproducibility", bad == 0, f"{bad} non-deterministic rankings")
 
 
-def gate_leakage_absence(ctx_full, by_event, events) -> GateResult:
+def gate_leakage_absence(ctx_full, by_event, events, selectors=None) -> GateResult:
     """Injecting a fake CURRENT-event outcome must not change any ranking (§4.3)."""
+    sels = selectors if selectors is not None else SELECTORS
     bad = 0
     for eid, recs in by_event.items():
         ev = events.get(eid)
@@ -62,14 +65,14 @@ def gate_leakage_absence(ctx_full, by_event, events) -> GateResult:
             continue
         cand = [r["test_id"] for r in recs]
         ctx = _labeled_context(ctx_full, cand)
-        before = {n: s(ctx, eid, float("inf"), seed=0) for n, s in SELECTORS.items()}
+        before = {n: s(ctx, eid, float("inf"), seed=0) for n, s in sels.items()}
         poisoned = list(ctx_full.history) + [
             {"event_id": eid, "test_id": t, "label": "quality_regression", "event_date": ev.event_date}
             for t in cand
         ]
         ctx2 = replace(ctx, history=poisoned)
-        after = {n: s(ctx2, eid, float("inf"), seed=0) for n, s in SELECTORS.items()}
-        for n in SELECTORS:
+        after = {n: s(ctx2, eid, float("inf"), seed=0) for n, s in sels.items()}
+        for n in sels:
             if before[n] != after[n]:
                 bad += 1
     return GateResult("leakage_absence", bad == 0, f"{bad} rankings changed by current-event outcome")
@@ -125,11 +128,19 @@ def gate_oracle_coverage(labels) -> GateResult:
     return GateResult("oracle_coverage", bad == 0, f"{bad} records missing oracle_strength/raw_artifact")
 
 
-def run_all_gates(data_dir: str | Path = _REPO_ROOT / "data") -> dict[str, Any]:
+def run_all_gates(data_dir: str | Path = _REPO_ROOT / "data",
+                  selectors: dict[str, Any] | None = None) -> dict[str, Any]:
+    """`selectors` defaults to this module's own SELECTORS (behavior-preserving for every existing
+    caller). Pass cart.selectors.registry_scaleup.SELECTORS_SCALEUP to also validate `decomposed`
+    on the scale-up data — see PAPER2_EMSE_SCALEUP_PLAN.md Phase C2."""
     data_dir = Path(data_dir)
     labels = json.loads((data_dir / "derived" / "labels.json").read_text()).get("labels", []) \
         if (data_dir / "derived" / "labels.json").exists() else []
-    events = {e.event_id: e for e in load_events()}
+    # Same data_dir-scoping fix as metrics/evaluate.py: derive the events table from data_dir
+    # rather than load_events()'s hardcoded default, so gates can be run against a non-default
+    # data_dir (the EMSE scale-up's data_scaleup/ root) and validate ITS OWN ledger, not the
+    # primary one. Behavior-preserving for the default data_dir=_REPO_ROOT/"data" case.
+    events = {e.event_id: e for e in load_events(data_dir / "events" / "events.json")}
     ctx_full = SelectionContext.load(data_dir)
     by_event: dict[str, list[dict]] = {}
     for r in labels:
@@ -137,9 +148,9 @@ def run_all_gates(data_dir: str | Path = _REPO_ROOT / "data") -> dict[str, Any]:
 
     gates = [
         gate_metric_correctness(),
-        gate_budget_compliance(ctx_full, by_event),
-        gate_reproducibility(ctx_full, by_event),
-        gate_leakage_absence(ctx_full, by_event, events),
+        gate_budget_compliance(ctx_full, by_event, selectors=selectors),
+        gate_reproducibility(ctx_full, by_event, selectors=selectors),
+        gate_leakage_absence(ctx_full, by_event, events, selectors=selectors),
         gate_label_reproducibility(labels, data_dir),
         gate_oracle_coverage(labels),
     ]

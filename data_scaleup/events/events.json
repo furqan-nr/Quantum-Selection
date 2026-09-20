@@ -1,0 +1,500 @@
+{
+  "schema": "event_table/v1",
+  "n_events": 19,
+  "events": [
+    {
+      "event_id": "mut2-combo-dense-layout-basic-routing-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-combo_dense_layout_basic_routing-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+combo_dense_layout_basic_routing",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "combo_dense_layout_basic_routing",
+        "modified_pass_stages": [
+          "layout"
+        ]
+      },
+      "mutation_family": "combo_dense_layout_basic_routing",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Compound: force DenseLayout AND basic routing.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-combo-no-consolidate-dense-layout-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-combo_no_consolidate_dense_layout-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+combo_no_consolidate_dense_layout",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "combo_no_consolidate_dense_layout",
+        "modified_pass_stages": [
+          "layout"
+        ]
+      },
+      "mutation_family": "combo_no_consolidate_dense_layout",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Compound: omit ConsolidateBlocks AND force DenseLayout.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-combo-no-elide-synthesis-translate-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-combo_no_elide_synthesis_translate-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+combo_no_elide_synthesis_translate",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "combo_no_elide_synthesis_translate",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "combo_no_elide_synthesis_translate",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Compound: omit ElidePermutations AND force synthesis-based translation.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-disable-optimization-loop-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-disable_optimization_loop-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+disable_optimization_loop",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "disable_optimization_loop",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "disable_optimization_loop",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Remove the iterative peephole/cancellation optimization loop.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-downgrade-layout-dense-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-downgrade_layout_dense-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+downgrade_layout_dense",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "downgrade_layout_dense",
+        "modified_pass_stages": [
+          "layout"
+        ]
+      },
+      "mutation_family": "downgrade_layout_dense",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Force DenseLayout in place of the optimization-level default layout method.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-downgrade-layout-trivial-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-downgrade_layout_trivial-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+downgrade_layout_trivial",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "downgrade_layout_trivial",
+        "modified_pass_stages": [
+          "layout"
+        ]
+      },
+      "mutation_family": "downgrade_layout_trivial",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Force the trivial layout method (replace the smart layout).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-downgrade-routing-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-downgrade_routing-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+downgrade_routing",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "downgrade_routing",
+        "modified_pass_stages": [
+          "routing"
+        ]
+      },
+      "mutation_family": "downgrade_routing",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Force the weaker 'basic' routing method (corrupt routing heuristic).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-downgrade-translation-synthesis-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-downgrade_translation_synthesis-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+downgrade_translation_synthesis",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "downgrade_translation_synthesis",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "downgrade_translation_synthesis",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Force unitary-synthesis-based translation instead of BasisTranslator.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-drop-optimization-stage-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-drop_optimization_stage-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+drop_optimization_stage",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "drop_optimization_stage",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "drop_optimization_stage",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Disable the entire optimization stage (no circuit optimization).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-drop-vf2-post-layout-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-drop_vf2_post_layout-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+drop_vf2_post_layout",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "drop_vf2_post_layout",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "drop_vf2_post_layout",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Omit VF2PostLayout layout-improvement (optimization_level=3).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-force-opt-level-0-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-force_opt_level_0-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+force_opt_level_0",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "force_opt_level_0",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "force_opt_level_0",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Silently downgrade the optimization level to 0 (no optimization).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-force-opt-level-1-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-force_opt_level_1-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+force_opt_level_1",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "force_opt_level_1",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "force_opt_level_1",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Silently downgrade the optimization level to 1 (lower default effort).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-insert-redundant-cx-pair-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-insert_redundant_cx_pair-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+insert_redundant_cx_pair",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "insert_redundant_cx_pair",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "insert_redundant_cx_pair",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Append a redundant CX-CX identity pair (uncancelled redundancy).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-insert-redundant-sx-quad-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-insert_redundant_sx_quad-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+insert_redundant_sx_quad",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "insert_redundant_sx_quad",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "insert_redundant_sx_quad",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Append four redundant SX gates (SX^4 = I) on the first qubit.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-insert-redundant-x-pair-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-insert_redundant_x_pair-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+insert_redundant_x_pair",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "insert_redundant_x_pair",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "insert_redundant_x_pair",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Append a redundant X-X identity pair on one qubit (+2 1q gates).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-remove-basis-translator-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-remove_basis_translator-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+remove_basis_translator",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "remove_basis_translator",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "remove_basis_translator",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Omit BasisTranslator from the translation stage (stays basis-compliant via UnitarySynthesis/HighLevelSynthesis, worse gate composition).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-remove-consolidate-blocks-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-remove_consolidate_blocks-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+remove_consolidate_blocks",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "remove_consolidate_blocks",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "remove_consolidate_blocks",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Omit ConsolidateBlocks (2Q-unitary-block consolidation before synthesis).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-remove-elide-permutations-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-remove_elide_permutations-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+remove_elide_permutations",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "remove_elide_permutations",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "remove_elide_permutations",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Omit ElidePermutations (SWAP-network elision).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mut2-seed-drift-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mut2-seed_drift-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "smoke-2_4_2",
+      "split_group_id": "5a1cf3159aed+seed_drift",
+      "event_date": "2026-08-13",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "seed_drift",
+        "modified_pass_stages": [
+          "passmanager_global"
+        ]
+      },
+      "mutation_family": "seed_drift",
+      "mutation_params": {},
+      "notes": "EMSE scale-up (PAPER2_EMSE_SCALEUP_PLAN.md Phase A/B2): Silently drifted transpiler seed (9999 instead of the corpus's 1234), deterministic per-event but cross-cutting across layout+routing.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# CI budgets per tier — EMSE SCALE-UP (see configs/budgets.yaml for the primary frozen values, which
+# this file does NOT modify or replace). Budgets are in wall-clock seconds per event.
+# CALIBRATED + FROZEN 2026-09-20 as the PRE-DECLARED fractions (corpus_costhet_scaleup.yaml: pr 5%,
+# nightly 50% — unchanged from the primary freeze, Decision 2) of the measured full-suite cost of
+# this scale-up's own cost calibration: T_full = 63.1632 s over 116 units (same 116-unit manifest as
+# the primary, re-transpiled fresh on this Kaggle session). Costs only — set before evaluate/analyze
+# read any label from data_scaleup/derived/labels.json.
+
+tiers:
+  pr:
+    budget_s: 3.16        # 5% of T_full=63.1632s -> binds: fits 91/116 units, excludes 25/116 costliest
+    exploration_reserve_frac: 0.20
+  nightly:
+    budget_s: 31.58        # 50% of T_full=63.1632s -> binds: fits 110/116, excludes 6/116 costliest
+    exploration_reserve_frac: 0.15
+  release:
+    budget_s: null         # full suite (no cap) = 100% of T_full
+    exploration_reserve_frac: 0.10
+
+# risk_score_epsilon is a fixed global floor (METHODOLOGY §4.1), not recalibrated per corpus — kept
+# identical to the primary's value for both proposed_selector and decomposed_selector.
+risk_score_epsilon: 0.05

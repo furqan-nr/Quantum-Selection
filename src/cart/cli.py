@@ -31,6 +31,10 @@ def build_parser() -> argparse.ArgumentParser:
     ev.add_argument("--require-ready", action="store_true", help="require real SHAs (pre-Phase-2 gate)")
     gt = sub.add_parser("ground-truth", help="Phase 2: per-event baseline profile + oracle labels")
     gt.add_argument("--out-root", default=str(_REPO_ROOT / "data"), help="data root (raw/derived/profile_baseline)")
+    gt.add_argument("--events", default=None,
+                    help="path to events.json (default: data/events/events.json, i.e. the primary "
+                         "ledger). Point this at a parallel ledger (e.g. data_scaleup/events/events.json) "
+                         "to label a different event set without touching the primary one.")
     gt.add_argument("--unit-limit", type=int, default=8, help="number of manifest test units to use")
     gt.add_argument("--max-qubits", type=int, default=None,
                     help="keep only test units with n_qubits <= this (caps compute; e.g. 8 drops the "
@@ -49,10 +53,19 @@ def build_parser() -> argparse.ArgumentParser:
     evl.add_argument("--random-seeds", type=int, default=20,
                      help="number of seeds to aggregate the random baseline over (median/range)")
     evl.add_argument("--out-results", default=None)
+    evl.add_argument("--data-dir", default=None,
+                     help="data root (default: data/, the primary frozen corpus). Point this at a "
+                          "parallel root (e.g. data_scaleup/) to evaluate a different event ledger "
+                          "without touching the primary one — see PAPER2_EMSE_SCALEUP_PLAN.md.")
+    evl.add_argument("--selectors", default="primary", choices=["primary", "scaleup"],
+                     help="'primary' = the five baselines + proposed (unchanged default); "
+                          "'scaleup' = also includes 'decomposed' (cart.selectors.registry_scaleup)")
 
     an = sub.add_parser("analyze", help="Ablation + sensitivity of risk_score over cached labels (no transpilation)")
     an.add_argument("--split", default="all", choices=["all", "train", "test"])
     an.add_argument("--out-results", default=None)
+    an.add_argument("--data-dir", default=None,
+                    help="data root (default: data/). See 'evaluate --data-dir'.")
 
     hr = sub.add_parser("historical-run", help="Run one historical event via per-event from-source venvs")
     hr.add_argument("--event", required=True)
@@ -115,8 +128,9 @@ def _cmd_analyze(args) -> int:
     from cart.metrics.evaluate import run_ablation, run_sensitivity
 
     cutoff = (yaml.safe_load((_REPO_ROOT / "configs" / "cutoff.yaml").read_text()) or {}).get("cutoff_date")
-    abl = run_ablation(cutoff_date=cutoff, split=args.split)
-    sen = run_sensitivity(cutoff_date=cutoff, split=args.split)
+    data_dir = args.data_dir or (_REPO_ROOT / "data")
+    abl = run_ablation(data_dir=data_dir, cutoff_date=cutoff, split=args.split)
+    sen = run_sensitivity(data_dir=data_dir, cutoff_date=cutoff, split=args.split)
 
     print("=== Ablation (proposed risk_score; mean AUC by source) ===")
     for variant, by_src in abl["variants"].items():
@@ -153,9 +167,16 @@ def _cmd_evaluate(args) -> int:
     from cart.metrics.evaluate import evaluate
     from cart.gates.validity import run_all_gates
 
+    data_dir = args.data_dir or (_REPO_ROOT / "data")
+    selectors = None
+    if getattr(args, "selectors", "primary") == "scaleup":
+        from cart.selectors.registry_scaleup import SELECTORS_SCALEUP
+        selectors = SELECTORS_SCALEUP
+
     cutoff = (yaml.safe_load((_REPO_ROOT / "configs" / "cutoff.yaml").read_text()) or {}).get("cutoff_date")
-    gates = run_all_gates()
-    report = evaluate(cutoff_date=cutoff, split=args.split, random_seeds=args.random_seeds)
+    gates = run_all_gates(data_dir=data_dir, selectors=selectors)
+    report = evaluate(data_dir=data_dir, cutoff_date=cutoff, split=args.split,
+                      random_seeds=args.random_seeds, selectors=selectors)
     report["validity_gates"] = gates
 
     print("=== Validity gates ===")
@@ -235,9 +256,10 @@ def _cmd_ground_truth(args) -> int:
     from cart.manifest.static_manifest import units_for
     from cart.labels.ground_truth import run_ground_truth
 
-    events = load_events()
+    events = load_events(args.events) if args.events else load_events()
     if not events:
-        print("no events; seed data/events/events.json first.")
+        src = args.events or "data/events/events.json"
+        print(f"no events; seed {src} first.")
         return 1
     units = units_for(args.out_root)   # use the generated manifest (costhet if built), else pilot default
     if args.max_qubits is not None:

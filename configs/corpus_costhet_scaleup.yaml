@@ -1,0 +1,71 @@
+# Cost-heterogeneous corpus specification — EMSE SCALE-UP (Paper 2 / PAPER2_EMSE_SCALEUP_PLAN.md Phase B).
+# Same enumeration grid, same seed, same widths/backends/opt_levels as configs/corpus_costhet.yaml
+# (Decision 2: reuse the exact same corpus spec, recalibrate costs fresh on a second, independent
+# Kaggle session). What is being tested by this freeze is the 19-event mutation-operator set and the
+# decomposed selector's design, NOT the corpus geometry, which is deliberately unchanged from the primary.
+# This file NEVER overwrites or is read in place of configs/corpus_costhet.yaml — the primary frozen
+# result stays exactly as committed.
+
+version: 1              # FROZEN 2026-09-20 after the scale-up's own Kaggle cost calibration (costs only, before evaluate)
+frozen: true
+
+# Frozen cost calibration (this scale-up's own Kaggle session) — the measured numbers this freeze rests on.
+# Hardware confirmed 2026-09-21 from a fresh Kaggle CPU-only session's Cell-1-equivalent probe
+# (the original calibration run's own console output was not retained in the returned bundle, so this
+# is Kaggle's standard CPU-only notebook tier, not a guarantee of the literal same physical machine --
+# the same caveat the primary corpus's hardware string already carries, and why RAYON_NUM_THREADS=1/
+# OMP_NUM_THREADS=1 single-thread pinning, not core count, is what actually controls comparability).
+frozen_calibration_2026_09_20:
+  hardware: "Intel(R) Xeon(R) CPU @ 2.20GHz, 4 logical CPUs available, single-thread pinned (RAYON_NUM_THREADS=1, OMP_NUM_THREADS=1), Python 3.12, Qiskit 2.4.2 -- matches §6.1's calibration protocol"
+  n_units: 116
+  n_events: 19
+  profile_records: 2204
+  per_unit_total_cost_s: {min: 0.000893, median: 0.007885, max: 7.5987, spread_x: 8512.5}
+  T_full_s: 63.1632
+  budgets_from_T_full_s: {pr: 3.16, nightly: 31.58, release: null}   # pre-declared 5% / 50% / 100% (unchanged fractions, Decision 2)
+  binding: "pr(5%) fits 91/116, excludes 25/116 costliest; nightly(50%) fits 110/116, excludes 6/116 costliest"
+  cost_measurement: "median of 5 clean process_time runs, 1 warmup discarded, outside tracemalloc; 1 unstable unit (IQR>25% of median: ghz-n12-line-opt1, ratio=0.408, median=1.13ms — trivially cheap, far below any budget boundary, no effect on binding); 0 knife-edge units at either pr or nightly boundary"
+qiskit_anchor: "2.4.2"
+basis_gates: [cx, rz, sx, x]
+seed: 1234
+
+# --- Enumeration grid: IDENTICAL to configs/corpus_costhet.yaml (Decision 2) ---
+families:
+  cheap_sparse: [ghz, qaoa_linear]
+  expensive_dense: [qft, random_clifford]
+widths:
+  small: [5, 8, 12]
+  mid:   [18, 27]
+  large: [40, 65]
+  xlarge: [100]
+backends: [line, heavy_hex]
+opt_levels: [1, 3]
+
+oracle_tiers:
+  unitary:     {max_qubits: 12}
+  sampled_sv:  {min_qubits: 13, max_qubits: 27}
+  structural:  {min_qubits: 28}
+
+targets:
+  per_unit_cost_spread_min: 1000
+  budget_as_fraction_of_T_full:
+    pr:      0.05
+    nightly: 0.50
+    release: 1.00
+  binding_check: "under pr budget, cheapest-first must exclude the costly (fault-bearing) tail"
+
+# --- Mutation cohort: 19 events (9 original, re-imported from mutations.py unmodified, + 10 new,
+# pre-registered 2026-08-13, see PREREGISTRATION_PHASE_A.md and src/cart/events/mutations_scaleup.py) ---
+mutation_cohort:
+  n_events: 19
+  original: 9        # from src/cart/events/mutations.py, MUTATION_OPERATORS (untouched)
+  new: 10             # from src/cart/events/mutations_scaleup.py, MUTATION_OPERATORS_SCALEUP
+  event_id_prefix: "mut2-"   # keeps this ledger visually/programmatically distinct from the primary's mut- prefix
+  ledger: "data_scaleup/events/events.json"
+
+calibration:
+  baseline_cost_s: "median of >=5 clean CPU process_time runs per unit, 1 warmup discarded, OUTSIDE tracemalloc"
+  dispersion_recorded: "cost_min_s / cost_median_s / cost_max_s / cost_iqr_s per unit in data_scaleup/profile_baseline/profiles.json"
+  cli: "python -m cart.cli ground-truth --out-root data_scaleup --events data_scaleup/events/events.json --unit-limit 116 --cost-repeats 5"
+  freeze_after: true
+  rerun_leakage_absence_gate: true

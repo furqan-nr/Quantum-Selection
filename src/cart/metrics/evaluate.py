@@ -74,14 +74,28 @@ def group_by_cohort(payloads: list[dict[str, Any]]) -> dict[str, list[dict[str, 
 
 
 def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None = None,
-             split: str = "all", random_seeds: int = DEFAULT_RANDOM_SEEDS) -> dict[str, Any]:
+             split: str = "all", random_seeds: int = DEFAULT_RANDOM_SEEDS,
+             selectors: dict[str, Any] | None = None) -> dict[str, Any]:
     """Held-out evaluation. In addition to the per-source means, this emits the expanded
     breakdown requested by review: per-event results, random over many seeds (median/min/max),
     win/tie/loss of proposed vs each baseline, and the detection-vs-budget curve. Cohorts
-    (fault sources) are never pooled (METHODOLOGY §1.4/§5.4)."""
+    (fault sources) are never pooled (METHODOLOGY §1.4/§5.4).
+
+    `selectors` defaults to the module-level SELECTORS (five baselines + proposed) — behavior-
+    preserving for every existing caller. Pass a different dict (e.g.
+    cart.selectors.registry_scaleup.SELECTORS_SCALEUP, which adds `decomposed`) to score additional
+    selectors without touching this module's own SELECTORS/DETERMINISTIC constants — see
+    PAPER2_EMSE_SCALEUP_PLAN.md Phase A3/C1. Any dict passed here must include a "random" entry."""
+    sels = selectors if selectors is not None else SELECTORS
+    deterministic_names = [n for n in sels if n != "random"]
     data_dir = Path(data_dir)
     labels = _load_labels(data_dir)
-    events = {e.event_id: e for e in load_events()}
+    # Derive the events table path from data_dir (not load_events()'s own hardcoded default) so a
+    # non-default data_dir (e.g. the EMSE scale-up's parallel data_scaleup/ root, see
+    # PAPER2_EMSE_SCALEUP_PLAN.md Phase C) evaluates against its OWN event ledger, not the primary
+    # one. Behavior-preserving for the default data_dir=_REPO_ROOT/"data" case: data_dir /
+    # "events" / "events.json" is exactly load_events.DEFAULT_TABLE's value.
+    events = {e.event_id: e for e in load_events(data_dir / "events" / "events.json")}
     ctx_full = SelectionContext.load(data_dir)
 
     by_event: dict[str, list[dict]] = {}
@@ -141,11 +155,11 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
         ps = groups[source]
 
         # --- deterministic selectors: one run each, per event -------------------------------
-        det_em: dict[str, dict[str, Any]] = {n: {} for n in DETERMINISTIC}
-        det_overhead: dict[str, list[float]] = {n: [] for n in DETERMINISTIC}
+        det_em: dict[str, dict[str, Any]] = {n: {} for n in deterministic_names}
+        det_overhead: dict[str, list[float]] = {n: [] for n in deterministic_names}
         for p in ps:
-            for name in DETERMINISTIC:
-                em, oh = _run_metrics(SELECTORS[name], p["ctx"], p["event_id"], p["cost"], p["detects"])
+            for name in deterministic_names:
+                em, oh = _run_metrics(sels[name], p["ctx"], p["event_id"], p["cost"], p["detects"])
                 det_em[name][p["event_id"]] = em
                 det_overhead[name].append(oh)
 
@@ -161,7 +175,7 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
             detfrac_s: dict[float, list[int]] = {f: [] for f in DEFAULT_FRACTIONS}
             seed_pairs: list[tuple[bool, float]] = []
             for p in ps:
-                em, oh = _run_metrics(SELECTORS["random"], p["ctx"], p["event_id"],
+                em, oh = _run_metrics(sels["random"], p["ctx"], p["event_id"],
                                       p["cost"], p["detects"], seed=seed)
                 rnd_overhead.append(oh)
                 recall_s.append(em.detection_at_fraction[RECALL_FRACTION])
@@ -187,7 +201,7 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
 
         # --- by_source means (back-compatible keys) ----------------------------------------
         bs: dict[str, Any] = {}
-        for name in DETERMINISTIC:
+        for name in deterministic_names:
             ems = [det_em[name][p["event_id"]] for p in ps]
             bs[name] = {
                 "n_events": len(ems),
@@ -239,7 +253,7 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
         for p in ps:
             eid = p["event_id"]
             row: dict[str, Any] = {}
-            for name in DETERMINISTIC:
+            for name in deterministic_names:
                 em = det_em[name][eid]
                 row[name] = {"detected": em.detected, "normalized_TTFR": round(em.normalized_ttfr, 4),
                              "AUC": round(em.auc_detection_vs_budget, 4),
@@ -253,7 +267,7 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
         # --- win/tie/loss: proposed vs each baseline ---------------------------------------
         prop_nttfr = {p["event_id"]: det_em["proposed"][p["event_id"]].normalized_ttfr for p in ps}
         wtl: dict[str, Any] = {}
-        for name in DETERMINISTIC:
+        for name in deterministic_names:
             if name == "proposed":
                 continue
             base_nttfr = {p["event_id"]: det_em[name][p["event_id"]].normalized_ttfr for p in ps}
@@ -264,7 +278,7 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
         # --- effect sizes (Cliff's delta, Vargha–Delaney A12) + bootstrap CIs on AUC -------
         prop_auc = [det_em["proposed"][p["event_id"]].auc_detection_vs_budget for p in ps]
         es: dict[str, Any] = {}
-        for name in DETERMINISTIC:
+        for name in deterministic_names:
             if name == "proposed":
                 continue
             base_auc = [det_em[name][p["event_id"]].auc_detection_vs_budget for p in ps]
@@ -279,13 +293,13 @@ def evaluate(data_dir: str | Path = _REPO_ROOT / "data", cutoff_date: str | None
         report["effect_sizes"][source] = {"metric": "AUC_detection_vs_budget",
                                           "n_events": len(ps), "proposed_vs": es}
         bci = {name: bootstrap_ci([det_em[name][p["event_id"]].auc_detection_vs_budget for p in ps])
-               for name in DETERMINISTIC}
+               for name in deterministic_names}
         bci["random"] = bootstrap_ci(per_seed_mean["auc"])
         report["bootstrap_ci"][source] = {"metric": "AUC_detection_vs_budget", "by_selector": bci}
 
         # --- detection-vs-budget curve -----------------------------------------------------
         curves: dict[str, list[float]] = {}
-        for name in DETERMINISTIC:
+        for name in deterministic_names:
             curves[name] = detection_curve([(det_em[name][p["event_id"]].detected,
                                              det_em[name][p["event_id"]].normalized_ttfr) for p in ps])
         curves["random"] = detection_curve([rnd_med_event[p["event_id"]] for p in ps])
@@ -306,7 +320,9 @@ def _build_payloads(data_dir: Path, cutoff_date: str | None, split: str) -> list
     """Per-event (cost, detects, ctx) payloads — shared by ablation/sensitivity analyses."""
     data_dir = Path(data_dir)
     labels = _load_labels(data_dir)
-    events = {e.event_id: e for e in load_events()}
+    # Same data_dir-scoping fix as evaluate() above, needed for run_ablation/run_sensitivity to
+    # analyze the EMSE scale-up's data_scaleup/ root instead of always the primary events.json.
+    events = {e.event_id: e for e in load_events(data_dir / "events" / "events.json")}
     ctx_full = SelectionContext.load(data_dir)
     by_event: dict[str, list[dict]] = {}
     for r in labels:

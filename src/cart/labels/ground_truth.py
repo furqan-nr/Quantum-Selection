@@ -82,12 +82,25 @@ def _base_config(unit: TestUnit):
                 basis_gates=list(DEFAULT_BASIS), seed_transpiler=1234)
 
 
+def _get_operator_any_registry(family: str):
+    """Look up a mutation operator in the primary registry first (mutations.MUTATION_OPERATORS,
+    unchanged behavior for every existing event), falling back to the EMSE scale-up registry
+    (mutations_scaleup.MUTATION_OPERATORS_SCALEUP) only if the family isn't found there. Lazy import
+    to avoid making mutations_scaleup.py a hard dependency of the primary ground-truth path — a
+    scale-up-registry import failure should never be able to break primary-cohort labeling."""
+    try:
+        return get_operator(family)
+    except KeyError:
+        from cart.events.mutations_scaleup import get_operator_scaleup
+        return get_operator_scaleup(family)
+
+
 def _transpilers(event: Event, cfg) -> tuple[Callable, Callable]:
     """Return (baseline_transpiler, candidate_transpiler) for the event."""
     if event.fault_source == FaultSource.mutation:
         if not event.mutation_family:
             raise EventNotReady(f"{event.event_id}: mutation missing family")
-        return baseline_transpiler(cfg), get_operator(event.mutation_family).transpiler(cfg)
+        return baseline_transpiler(cfg), _get_operator_any_registry(event.mutation_family).transpiler(cfg)
     raise EventNotReady(
         f"{event.event_id}: historical events need per-event from-source builds "
         "(candidate_sha != baseline) — not runnable in-process yet"

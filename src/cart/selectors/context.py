@@ -63,8 +63,16 @@ class SelectionContext:
 
     # ---- loading ---------------------------------------------------------------------------
     @classmethod
-    def load(cls, data_dir: str | Path = _DATA, events_path: str | Path = DEFAULT_TABLE) -> "SelectionContext":
+    def load(cls, data_dir: str | Path = _DATA, events_path: str | Path | None = None) -> "SelectionContext":
+        """`events_path` defaults to None, which derives data_dir/"events"/"events.json" — NOT the
+        module-level DEFAULT_TABLE constant directly, so a non-default data_dir (e.g. the EMSE
+        scale-up's data_scaleup/ root — every caller of SelectionContext.load across evaluate.py and
+        gates/validity.py passes only data_dir, never events_path) loads ITS OWN event ledger, not
+        the primary one. Behavior-preserving for the default data_dir=_DATA case: _DATA /
+        "events" / "events.json" == DEFAULT_TABLE. Pass events_path explicitly to override either way."""
         data_dir = Path(data_dir)
+        if events_path is None:
+            events_path = data_dir / "events" / "events.json"
         units = {u.test_id: u for u in units_for(data_dir)}   # costhet manifest if generated, else pilot
         events = {e.event_id: e for e in load_events(events_path)}
 
