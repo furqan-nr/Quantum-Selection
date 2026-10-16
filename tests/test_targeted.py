@@ -22,7 +22,9 @@ def _event(eid):
 def test_targeted_circuits_build():
     for tid in TARGETED_UNITS:
         qc = build_targeted(tid)
-        assert qc.num_qubits >= 3
+        # the #14956 global-phase trigger is a deliberate 1-qubit circuit (x; rx); all others need >= 3
+        min_q = 1 if TARGETED_UNITS[tid].oracle_type == "global_phase" else 3
+        assert qc.num_qubits >= min_q
 
 
 def test_targeted_mapping_to_faults():

@@ -1,0 +1,14 @@
+{"op": "cp_small_angle_sign_flip", "unit": "qft-n5-line-opt1", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.01, "qiskit": "2.4.2"}
+{"op": "cp_small_angle_sign_flip", "unit": "qft-n5-line-opt3", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.008, "qiskit": "2.4.2"}
+{"op": "drop_routed_swap", "unit": "qft-n5-line-opt1", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.008, "qiskit": "2.4.2"}
+{"op": "drop_routed_swap", "unit": "random_clifford-n5-line-opt3", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.007, "qiskit": "2.4.2"}
+{"op": "drop_first_rzz", "unit": "qaoa_linear-n5-line-opt1", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.006, "qiskit": "2.4.2"}
+{"op": "drop_first_rzz", "unit": "qaoa_linear-n5-line-opt3", "strength": "exact", "equivalent": false, "oracle_cpu_s": 0.004, "qiskit": "2.4.2"}
+{"op": "cp_swap_detour", "unit": "qft-n5-line-opt1", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.008, "qiskit": "2.4.2"}
+{"op": "small_drop_opt_loop", "unit": "random_clifford-n5-line-opt1", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.009, "qiskit": "2.4.2"}
+{"op": "wide_rz_sign_flip", "unit": "ghz-n8-line-opt1", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.035, "qiskit": "2.4.2"}
+{"op": "wide_leaky_basis_h", "unit": "ghz-n8-line-opt1", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.037, "qiskit": "2.4.2"}
+{"op": "wide_drop_opt_loop", "unit": "qft-n8-line-opt1", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.422, "qiskit": "2.4.2"}
+{"op": "heavy_hex_trivial_layout", "unit": "qft-n8-line-opt3", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.36, "qiskit": "2.4.2"}
+{"op": "wide_no_elide_permutations", "unit": "qft-n8-line-opt3", "strength": "exact", "equivalent": true, "oracle_cpu_s": 0.354, "qiskit": "2.4.2"}
+{"op": "wide_rz_sign_flip", "unit": "ghz-n12-line-opt1", "strength": "exact", "equivalent": false, "oracle_cpu_s": 15.157, "qiskit": "2.4.2"}

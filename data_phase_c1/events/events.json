@@ -1,0 +1,348 @@
+{
+  "schema": "event_table/v1",
+  "n_events": 10,
+  "cohort": "C1",
+  "qiskit_required": "2.4.2",
+  "events": [
+    {
+      "event_id": "mutc1-cp-small-angle-sign-flip-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-cp_small_angle_sign_flip-01",
+      "fault_source": "mutation",
+      "fault_type": "semantic",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+cp_small_angle_sign_flip",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "cp_small_angle_sign_flip",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "cp_small_angle_sign_flip",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): CP(theta) with |theta| <= pi/8 emitted as CP(-theta).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-cp-swap-detour-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-cp_swap_detour-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+cp_swap_detour",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "cp_swap_detour",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "cp_swap_detour",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): First CP gate translated as SWAP.CP.SWAP (+6 CX, exact).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-drop-first-rzz-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-drop_first_rzz-01",
+      "fault_source": "mutation",
+      "fault_type": "semantic",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+drop_first_rzz",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "drop_first_rzz",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "drop_first_rzz",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): First RZZ gate dropped during translation.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-drop-routed-swap-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-drop_routed_swap-01",
+      "fault_source": "mutation",
+      "fault_type": "semantic",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+drop_routed_swap",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "drop_routed_swap",
+        "modified_pass_stages": [
+          "routing"
+        ]
+      },
+      "mutation_family": "drop_routed_swap",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): First SWAP of the routed circuit dropped before translation.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-heavy-hex-trivial-layout-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-heavy_hex_trivial_layout-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+heavy_hex_trivial_layout",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "heavy_hex_trivial_layout",
+        "modified_pass_stages": [
+          "layout"
+        ]
+      },
+      "mutation_family": "heavy_hex_trivial_layout",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): Trivial layout used only on heavy-hex coupling maps.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-small-drop-opt-loop-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-small_drop_opt_loop-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+small_drop_opt_loop",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "small_drop_opt_loop",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "small_drop_opt_loop",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): Optimization loop skipped only for inputs with <= 12 qubits.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-wide-drop-opt-loop-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-wide_drop_opt_loop-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+wide_drop_opt_loop",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "wide_drop_opt_loop",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "wide_drop_opt_loop",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): Optimization loop skipped only for inputs with >= 27 qubits.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-wide-leaky-basis-h-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-wide_leaky_basis_h-01",
+      "fault_source": "mutation",
+      "fault_type": "functional",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+wide_leaky_basis_h",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "wide_leaky_basis_h",
+        "modified_pass_stages": [
+          "translation"
+        ]
+      },
+      "mutation_family": "wide_leaky_basis_h",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): 'h' leaks into the target basis for inputs >= 40 qubits (out-of-basis output).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-wide-no-elide-permutations-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-wide_no_elide_permutations-01",
+      "fault_source": "mutation",
+      "fault_type": "quality",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+wide_no_elide_permutations",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "wide_no_elide_permutations",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "wide_no_elide_permutations",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): SWAP-network elision skipped only for inputs with >= 18 qubits (opt level 3).",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    },
+    {
+      "event_id": "mutc1-wide-rz-sign-flip-01",
+      "baseline_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "candidate_sha": "5a1cf3159aedad954767956d6a5c81a06d043d71",
+      "fault_id": "mutc1-wide_rz_sign_flip-01",
+      "fault_source": "mutation",
+      "fault_type": "semantic",
+      "event_environment_id": "phasec-qiskit-2_4_2",
+      "split_group_id": "5a1cf3159aed+wide_rz_sign_flip",
+      "event_date": "2026-10-16",
+      "train_or_test": "test",
+      "change_metadata": {
+        "kind": "mutation",
+        "mutation_family": "wide_rz_sign_flip",
+        "modified_pass_stages": [
+          "optimization"
+        ]
+      },
+      "mutation_family": "wide_rz_sign_flip",
+      "mutation_params": {
+        "qiskit_required": "2.4.2",
+        "wide_opt_loop_min_qubits": 27,
+        "small_opt_loop_max_qubits": 12,
+        "rz_flip_min_qubits": 10,
+        "leaky_basis_min_qubits": 40,
+        "wide_elide_min_qubits": 18,
+        "small_cp_angle": 0.39269908169872414
+      },
+      "notes": "Phase C C1 (Qiskit 2.4.2): First non-trivial RZ angle negated after optimization, inputs >= 10 qubits.",
+      "event_kind": "controlled_mutation",
+      "pair_orientation": "forward",
+      "evaluation_cohort": "mutation",
+      "change_metadata_sha": ""
+    }
+  ]
+}
