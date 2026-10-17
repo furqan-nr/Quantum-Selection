@@ -1,8 +1,11 @@
-# Paper 2 reproduction package
+# Quantum Selection: reproduction package
 
-Reproduces the computational results reported in "A Leakage-Safe, Cost-Aware Regression-Testing
-Methodology for the Quantum Transpiler." Code, data, configs, environment recipes, and scripts
-only — no manuscript, figures, cover letter, or write-up planning material.
+Reproduces the computational results of "Oracle Cost, Not the Scoring Function: An Empirical Study of Budgeted Test
+Prioritization for the Qiskit Transpiler" (Nasir, Shah, Alam; submitted to the Software Quality
+Journal). An earlier version of the study is available as arXiv:2609.35834 ("A Leakage-Safe, Cost-Aware Regression
+Testing Methodology for the Quantum Transpiler"). Code, data, configs, environment recipes and scripts only.
+
+**Start with `REPRODUCE.md`**, which maps every table and figure of the manuscript to its source file and command.
 
 ## Contents
 
@@ -17,7 +20,7 @@ only — no manuscript, figures, cover letter, or write-up planning material.
   - `raw/` — write-once raw oracle evidence per (event, test) pair.
   - `derived/labels.json` — labels regenerated from raw evidence.
 - `data_scaleup/` — a second, independently frozen data root (same layout as `data/`) for the n=19
-  scale-up validation: 9 primary mutation events plus 10 new, pre-registered operators, calibrated
+  scale-up validation: 9 primary mutation events plus 10 new, pre-specified operators, calibrated
   on a separate Kaggle session before any label was read. Never mixed with `data/`; the primary
   frozen result is untouched by it.
 - `environment/` — two-layer environment recipes: the harness lockfile (`requirements.lock`) and
@@ -42,15 +45,23 @@ only — no manuscript, figures, cover letter, or write-up planning material.
   forward-event verification and design-independence process notes.
 - `PREREGISTRATION_PHASE_A.md` — pre-registration evidence (SHA-256 file manifest, timestamped before
   any scale-up label was read) for the `decomposed` selector's design and the 19-event mutation cohort.
+- `PREREGISTRATION_PHASE_C.md` and `PREREGISTRATION_PHASE_C.sha256` — the pre-registered confirmatory study
+  (RQ6 of the manuscript), frozen and pushed in commit `36a5bbb` (2026-10-16) before any Phase C label existed.
+  Its labels are in `data_phase_c1/` (Qiskit 2.4.2) and `data_phase_c2/` (Qiskit 2.2.3), its result in
+  `results/phase_c_confirmatory.json`, its labeling environment and record in `environment/phase_c/`, and an
+  independent re-check in `verification/phase_c_independent_check.md`. The frozen files must not be edited.
 - `pyproject.toml`, `LICENSE`.
 
 ## Install
 
 ```bash
-python -m pip install -e .          # Python 3.11+; or set PYTHONPATH=src
+python -m pip install -r environment/requirements.lock   # Python 3.11 or 3.12 required
+python -m pip install -e .                               # or set PYTHONPATH=src
 ```
 
-Harness dependencies are pinned in `environment/requirements.lock`.
+Harness dependencies are pinned in `environment/requirements.lock` (numpy 2.4.x, which needs Python 3.11 or
+newer). The analysis scripts rewrite their own output files in `results/` (and `scripts/plot_sqj_figures.py`
+writes into `paper/sqj/`), so run them on a fresh clone or check the effect with `git diff`; see `REPRODUCE.md`.
 
 ## 1. Reproduce the RQ2/RQ3 headline (mutation cohort, no Rust needed)
 
@@ -65,14 +76,20 @@ python scripts/robustness_leave2out.py
 ```
 
 Expected: mean detection-vs-budget AUC diversity_only 0.874, cheapest/history/change-stage 0.840,
-random 0.821, proposed (`risk_score`) 0.721 (Cliff's delta vs diversity_only = -0.64, large). Exact
-frozen numbers are in `results/evaluation_costhet_frozen.json` and `results/analyze-costhet-frozen.json`.
+proposed (`risk_score`) 0.721 (Cliff's delta vs diversity_only = -0.64, large). For random ordering,
+the frozen evaluation reports 0.821 on the 9 events: the mean AUC over the 20 seeds (0-19) used by
+`--random-seeds 20` (the median over those seeds, 0.809, is in `random_multiseed`). The manuscript's
+tables instead use the 100-seed mean, 0.832 on the 9 events and 0.850 on the 19 scale-up events,
+produced by `python scripts/revision_stats_extra.py` (`results/revision_stats_extra.json`,
+`A_random_100_seeds`). Exact frozen numbers are in `results/evaluation_costhet_frozen.json` and
+`results/analyze-costhet-frozen.json`. Without `--out-results`, `evaluate` and `analyze` write to new
+timestamped folders under `results/` and never touch the frozen files.
 
-## 2. Reproduce the n=19 scale-up validation (independently pre-registered)
+## 2. Reproduce the n=19 scale-up validation (separately pre-specified)
 
-A second, independently pre-registered evaluation tests a `decomposed` selector (diversity first,
+A second, separately pre-specified evaluation tests a `decomposed` selector (diversity first,
 cost second, severity only as a tie-break) on an expanded 19-event mutation cohort: the original 9
-events plus 10 new, pre-registered operators (`src/cart/events/mutations_scaleup.py`). Its corpus and
+events plus 10 new, pre-specified operators (`src/cart/events/mutations_scaleup.py`). Its corpus and
 budget were calibrated and frozen on a separate Kaggle session, from cost alone, before any label was
 read — see `PREREGISTRATION_PHASE_A.md` for the pre-registration evidence and
 `configs/corpus_costhet_scaleup.yaml` / `configs/budgets_scaleup.yaml` for the frozen design. The
@@ -80,14 +97,15 @@ corpus and labels are already committed (`data_scaleup/raw/`, `data_scaleup/deri
 comparison can be re-run directly against them:
 
 ```bash
-python -m cart.cli evaluate --data-dir data_scaleup --selectors scaleup --split all --random-seeds 20 --out-results results/evaluation_scaleup_frozen.json
+python -m cart.cli evaluate --data-dir data_scaleup --selectors scaleup --split all --random-seeds 20 --out-results results/rerun_evaluation_scaleup.json
 python -m cart.cli analyze --data-dir data_scaleup --split all
-python scripts/scaleup_summary.py
+python scripts/scaleup_summary.py     # reads the frozen evaluation_scaleup_frozen.json, rewrites results/scaleup_summary.json
 ```
 
-Expected: mean detection-vs-budget AUC diversity_only 0.8801, decomposed 0.8798 (Cliff's delta vs
+Compare `results/rerun_evaluation_scaleup.json` with the frozen `results/evaluation_scaleup_frozen.json`
+(do not write over the frozen file). Expected: mean detection-vs-budget AUC diversity_only 0.8801, decomposed 0.8798 (Cliff's delta vs
 diversity_only = -0.08, negligible — parity, not an outright win), cheapest/history/change-stage
-0.8496, random 0.8353, proposed (`risk_score`) 0.7678 (delta vs decomposed = +0.568, large). All six
+0.8496, random 0.8353 (20-seed mean; the manuscript uses the 100-seed mean, 0.850), proposed (`risk_score`) 0.7678 (delta vs decomposed = +0.568, large). All six
 validity gates pass; label reproducibility is 2,204/2,204 (100%). Exact frozen numbers are in
 `results/evaluation_scaleup_frozen.json`, `results/analyze-scaleup-frozen.json`, and
 `results/scaleup_summary.json`.
@@ -148,15 +166,24 @@ in `data/events/events.json`. The remaining scripts (`bisect_regression.py`,
 forward-event provenance trail documented in `FORWARD_EVENTS_B2.md`, `BISECTION_AUDIT.md`, and
 `FWD_15024_RETRACE.md`.
 
+## 5b. Reproduce the pre-registered Phase C analysis (RQ6, no transpilation)
+
+```bash
+sha256sum -c PREREGISTRATION_PHASE_C.sha256
+PYTHONPATH=src python scripts/phase_c_analysis.py --cohort C1=data_phase_c1 --cohort C2=data_phase_c2 --prev data --prev data_scaleup --out /tmp/phase_c.json
+```
+
+Apart from `runtime_s` and the absolute paths it records, `/tmp/phase_c.json` equals
+`results/phase_c_confirmatory.json`. See `REPRODUCE.md` for relabeling and the documented deviation.
+
 ## 6. Run the automated test suite
 
 ```bash
 python -m pytest -q
 ```
 
-Expected: 80 passed, 1 known unrelated failure (`test_targeted`, a pre-existing circuit-width
-assertion, not connected to any reported result). This count includes `test_decomposed_selector.py`
-and `test_scaleup_operators.py` for the scale-up validation.
+Expected: 81 passed. This count includes `test_decomposed_selector.py` and
+`test_scaleup_operators.py` for the scale-up validation.
 
 ## Notes
 
@@ -169,3 +196,14 @@ and `test_scaleup_operators.py` for the scale-up validation.
   after its result was seen, per the pre-registration in `PREREGISTRATION_PHASE_A.md`.
 - This package intentionally excludes the manuscript, figures, cover letter, and write-up planning
   documents. It contains only what is needed to reproduce the computational results.
+
+## Finite-budget and schematic scripts (post-hoc)
+
+- `scripts/revision_budgeted.py` -> `results/revision_budgeted.json`: re-runs every selector with a finite budget (frozen model-cost budgets and measured-cost regimes), with exact sign tests, sensitivity and ablation.
+- `scripts/revision_extra.py` -> `results/revision_extra.json`: alternative score combiners, detectability strata and a leave-one-event-out cost estimator.
+- `scripts/revision_stats_extra.py` -> `results/revision_stats_extra.json`: random ordering over 100 seeds, equivalence (TOST) and Bayesian bootstrap, power simulation, APFDc, and the paired table of the SQJ manuscript.
+- `scripts/budgeted_check.py`: independent check of the finite-budget result.
+- `scripts/make_schematics.py`: redraws the three schematic figures with matplotlib (no generative AI).
+
+## Post-hoc analyses (not pre-specified)
+`PYTHONPATH=src python scripts/revision_reanalysis.py` reads the frozen `data_scaleup/` labels and writes `results/revision_reanalysis.json`: paired Wilcoxon tests with Holm correction, original-9 vs new-10 cohorts, detection fractions, seconds to first detection, and a drop_vf2_post_layout sensitivity check. `scripts/plot_detection_curve_scaleup.py` regenerates the 19-event detection-curve figure.

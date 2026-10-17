@@ -1,0 +1,7 @@
+Model name:                              11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+Python 3.10.12
+C1 qiskit 2.4.2
+C2 qiskit 2.2.3 3.10.12
+labeling: 2026-10-17T07:31:01+05:00 completed; preregistration commit 36a5bbb4d52795c1c23fc9e4b5cb7a2a3162b334 (2026-10-16T22:17:46+05:00)
+deviation note: sandbox restarted during C2 heavy units after 1,126/1,160 pairs; Qiskit 2.2.3 venv rebuilt from requirements-qiskit-2.2.3.lock.txt (same versions), same CPU model; labeling resumed in chunk mode; wrapper run_slice.py called the frozen driver's chunk() one pair at a time with RAYON/OMP=1
+clarification: every pair in both cohorts (C1 and C2, before and after the restart) was labelled through run_slice.py, i.e. the frozen driver's chunk() called one (event, unit) pair at a time, in manifest order (unit-major), RAYON/OMP=1, cost repeats 5.
