@@ -1,0 +1,557 @@
+{
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.26515802899666596,
+"calibration_runs_s": [
+0.25980527899810113,
+0.2541582180019759,
+0.27620296600071015,
+0.2820258300016576,
+0.26515802899666596
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+0.2060546875,
+0.2158203125,
+0.1787109375
+],
+"mode": "run",
+"nproc": 2,
+"pass": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "5514fb0c5d1726251bfdf3eda76994bd9b7b67d0641a63a6e9c22a4eda008558"
+},
+"tests": "2.3.1",
+"utc": "2026-10-17T19:58:25Z",
+"venv_freeze_sha256": "50e699daf00e2369ba4a07bf980e44a1e041a0c26c5c47bef91a97abbf6af9f3",
+"wheel": "2.3.1"
+}
+],
+"files": {
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py": {
+"collected": [
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_a_ok",
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_b_hang",
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_c_ok",
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_d_crash",
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_e_fail"
+],
+"complete": true,
+"launches": 3,
+"marker": {
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"launches_this_call": 3,
+"rc": 1,
+"wall_s_this_call": 62.172316789627075
+}
+},
+"test/python/transpiler/test_1q.py": {
+"collected": [
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_1_circuit_3516_level0_fail_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_2_circuit_3516_level1_fail_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_3_circuit_3516_level2_fail_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_4_circuit_3516_level3_fail_v2",
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_1_circuit_3516_level0_valid",
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_2_circuit_3516_level1_valid",
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_3_circuit_3516_level2_valid",
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_4_circuit_3516_level3_valid",
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_1_emptycircuit_level0_valid_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_2_emptycircuit_level1_valid_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_3_emptycircuit_level2_valid_v2",
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_4_emptycircuit_level3_valid_v2"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"file": "test/python/transpiler/test_1q.py",
+"launches_this_call": 1,
+"rc": 0,
+"wall_s_this_call": 1.203786849975586
+}
+},
+"test/python/transpiler/test_adjacent_barriers.py": {
+"collected": [
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_of_different_sizes",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_long",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_narrow",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_twoQ",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_obstacle_after",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_obstacle_before",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_not_overlapping_barriers",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_numerous_identical_barriers",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_output_deterministic",
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_two_identical_barriers"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"launches_this_call": 1,
+"rc": 0,
+"wall_s_this_call": 1.00319242477417
+}
+},
+"test/python/transpiler/test_apply_layout.py": {
+"collected": [
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_empty_layout",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_empty_post_layout",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial",
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"file": "test/python/transpiler/test_apply_layout.py",
+"launches_this_call": 1,
+"rc": 0,
+"wall_s_this_call": 1.0030152797698975
+}
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py": {
+"collected": [
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_determinism",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_ignore_single_measure",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_single_measure",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_single_measure_mix",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_two_qregs",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_two_qregs_to_a_single_creg",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_barrier_doesnt_reorder_gates",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_handle_redundancy",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_measures_followed_by_barriers_should_be_final",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_output_deterministic",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_preserve_barriers_for_measurement_ordering",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_should_merge_with_larger_duplicate_barrier",
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_should_merge_with_smaller_duplicate_barrier"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"launches_this_call": 1,
+"rc": 0,
+"wall_s_this_call": 1.002866506576538
+}
+},
+"test/python/transpiler/test_check_map.py": {
+"collected": [
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_disjoint_controlflow_bits",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_nested_controlflow_false",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_nested_controlflow_true",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_different_bits",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_false",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_layout_change_false",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_layout_change_true",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_true",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_false",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_false_target",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_true",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_trivial_nop_map",
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_trivial_nop_map_target"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"file": "test/python/transpiler/test_check_map.py",
+"launches_this_call": 1,
+"rc": 0,
+"wall_s_this_call": 1.0033400058746338
+}
+}
+},
+"tests": {
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_a_ok": {
+"duration": 0.1014470159971097,
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_b_hang": {
+"duration": 60.0,
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"outcome": "timeout",
+"synthetic": "timeout"
+},
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_c_ok": {
+"duration": 0.10165879399937694,
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_d_crash": {
+"duration": 0.17019987106323242,
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"outcome": "crash",
+"synthetic": "crash"
+},
+"test/python/phase_d_dryrun/test_synthetic_hang_crash.py::TestSynthetic::test_e_fail": {
+"duration": 0.0010185569990426302,
+"file": "test/python/phase_d_dryrun/test_synthetic_hang_crash.py",
+"outcome": "failed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_1_circuit_3516_level0_fail_v2": {
+"duration": 0.0016590520026511513,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_2_circuit_3516_level1_fail_v2": {
+"duration": 0.00048143100138986483,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_3_circuit_3516_level2_fail_v2": {
+"duration": 0.0004316560043662321,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Failing::test_4_circuit_3516_level3_fail_v2": {
+"duration": 0.00046653900062665343,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_1_emptycircuit_level0_valid_v2": {
+"duration": 0.003814779000094859,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_2_emptycircuit_level1_valid_v2": {
+"duration": 0.005024720001529204,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_3_emptycircuit_level2_valid_v2": {
+"duration": 0.006305794999207137,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::Test1QV2Working::test_device_4_emptycircuit_level3_valid_v2": {
+"duration": 0.005919207997067133,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_1_circuit_3516_level0_valid": {
+"duration": 0.019122404999507125,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_2_circuit_3516_level1_valid": {
+"duration": 0.005553587001486449,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_3_circuit_3516_level2_valid": {
+"duration": 0.008047236002312275,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_4_circuit_3516_level3_valid": {
+"duration": 0.006679731999611249,
+"file": "test/python/transpiler/test_1q.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_of_different_sizes": {
+"duration": 0.001882495005702367,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle": {
+"duration": 0.0005671159997291397,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_long": {
+"duration": 0.0005223520056460984,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_narrow": {
+"duration": 0.0005063650023657829,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_blocking_obstacle_twoQ": {
+"duration": 0.0005221930005063768,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_obstacle_after": {
+"duration": 0.0004967840031895321,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_barriers_with_obstacle_before": {
+"duration": 0.0004778139991685748,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_not_overlapping_barriers": {
+"duration": 0.0005210940034885425,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_numerous_identical_barriers": {
+"duration": 0.0005439870037662331,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_output_deterministic": {
+"duration": 0.0010767799976747483,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_adjacent_barriers.py::TestMergeAdjacentBarriers::test_two_identical_barriers": {
+"duration": 0.0004952320014126599,
+"file": "test/python/transpiler/test_adjacent_barriers.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate": {
+"duration": 0.0031560679963149596,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_empty_layout": {
+"duration": 0.001092911999876378,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_empty_post_layout": {
+"duration": 0.0005955770029686391,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated": {
+"duration": 0.0011719549984263722,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given": {
+"duration": 0.0005125630013935734,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied": {
+"duration": 0.0009909059990604874,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial": {
+"duration": 0.0007328050051000901,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes": {
+"duration": 0.0018240760000480805,
+"file": "test/python/transpiler/test_apply_layout.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_determinism": {
+"duration": 0.003974732997448882,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_ignore_single_measure": {
+"duration": 0.0005892079971090425,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_single_measure": {
+"duration": 0.0005568399974436034,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_single_measure_mix": {
+"duration": 0.0005491730007634033,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_two_qregs": {
+"duration": 0.0005837929966219235,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeFinalMeasurements::test_two_qregs_to_a_single_creg": {
+"duration": 0.0005622479984594975,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_barrier_doesnt_reorder_gates": {
+"duration": 0.0008565519965486601,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_handle_redundancy": {
+"duration": 0.0006051489981473424,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_measures_followed_by_barriers_should_be_final": {
+"duration": 0.00074624899571063,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_output_deterministic": {
+"duration": 0.0013422360025288071,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_preserve_barriers_for_measurement_ordering": {
+"duration": 0.0005956559980404563,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_should_merge_with_larger_duplicate_barrier": {
+"duration": 0.0005511639974429272,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_barrier_before_final_measurements.py::TestBarrierBeforeMeasurementsWhenABarrierIsAlreadyThere::test_should_merge_with_smaller_duplicate_barrier": {
+"duration": 0.0005959540030744392,
+"file": "test/python/transpiler/test_barrier_before_final_measurements.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_disjoint_controlflow_bits": {
+"duration": 0.0022654309941572137,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_nested_controlflow_false": {
+"duration": 0.0011267599984421395,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_nested_controlflow_true": {
+"duration": 0.0008588149976276327,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_different_bits": {
+"duration": 0.0007600050012115389,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_false": {
+"duration": 0.0007182719964475837,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_layout_change_false": {
+"duration": 0.0007212489981611725,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_layout_change_true": {
+"duration": 0.0007938489980006125,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_cf_true": {
+"duration": 0.0007178140003816225,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_false": {
+"duration": 0.0006462549972638953,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_false_target": {
+"duration": 0.0004905009991489351,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_swap_mapped_true": {
+"duration": 0.0007252619980135933,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_trivial_nop_map": {
+"duration": 0.0006280329980654642,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/transpiler/test_check_map.py::TestCheckMapCX::test_trivial_nop_map_target": {
+"duration": 0.00042913300057989545,
+"file": "test/python/transpiler/test_check_map.py",
+"outcome": "passed",
+"synthetic": null
+}
+}
+}

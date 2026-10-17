@@ -1,0 +1,107 @@
+test/python/compiler/test_compiler.py | .933297887 | 11 passed in 0.66s
+test/python/compiler/test_transpiler.py | 13.807228980 | 376 passed, 2 skipped, 32 warnings in 13.36s
+test/python/transpiler/test_1q.py | .650536314 | 12 passed in 0.39s
+test/python/transpiler/test_adjacent_barriers.py | .600978360 | 11 passed in 0.33s
+test/python/transpiler/test_apply_layout.py | .662312420 | 8 passed in 0.35s
+test/python/transpiler/test_barrier_before_final_measurements.py | .707763750 | 13 passed in 0.37s
+test/python/transpiler/test_basic_swap.py | .647499451 | 11 passed in 0.35s
+test/python/transpiler/test_basis_translator.py | 1.102965654 | 40 passed in 0.76s
+test/python/transpiler/test_check_gate_direction.py | .637494819 | 13 passed in 0.36s
+test/python/transpiler/test_check_map.py | .627738257 | 13 passed in 0.36s
+test/python/transpiler/test_clifford_passes.py | 1.759060537 | 27 passed in 1.47s
+test/python/transpiler/test_clifford_synthesis_plugin.py | .622896930 | 4 passed in 0.36s
+test/python/transpiler/test_clifford_t_passmanager.py | 8.092674147 | 71 passed in 7.79s
+test/python/transpiler/test_collect_2q_blocks.py | .642341259 | 5 passed in 0.32s
+test/python/transpiler/test_collect_multiq_blocks.py | .595812354 | 8 passed in 0.32s
+test/python/transpiler/test_commutation_analysis.py | .576701527 | 9 passed in 0.32s
+test/python/transpiler/test_commutative_cancellation.py | .727763085 | 34 passed in 0.45s
+test/python/transpiler/test_commutative_inverse_cancellation.py | .698354635 | 86 passed in 0.42s
+test/python/transpiler/test_consolidate_blocks.py | .691782619 | 41 passed in 0.42s
+test/python/transpiler/test_containsinstruction.py | .598112516 | 3 passed in 0.34s
+test/python/transpiler/test_context_aware_dd.py | 2.158472807 | 21 passed, 2 warnings in 1.85s
+test/python/transpiler/test_contract_idle_wires_in_control_flow.py | .571752121 | 8 passed in 0.32s
+test/python/transpiler/test_count_ops_longest_path_pass.py | .547192494 | 2 passed in 0.30s
+test/python/transpiler/test_count_ops_pass.py | .609718068 | 2 passed in 0.31s
+test/python/transpiler/test_coupling.py | .622868203 | 33 passed, 1 skipped in 0.35s
+test/python/transpiler/test_csp_layout.py | .595368354 | 11 skipped in 0.32s
+test/python/transpiler/test_dag_fixed_point_pass.py | .557612993 | 2 passed in 0.29s
+test/python/transpiler/test_dag_longest_path_pass.py | .566479311 | 2 passed in 0.31s
+test/python/transpiler/test_decompose.py | .738366948 | 22 passed in 0.41s
+test/python/transpiler/test_dense_layout.py | .778384661 | 11 passed in 0.46s
+test/python/transpiler/test_depth_pass.py | .561753863 | 4 passed in 0.31s
+test/python/transpiler/test_dynamical_decoupling.py | .567986874 | 16 passed in 0.33s
+test/python/transpiler/test_elide_permutations.py | .751101695 | 19 passed in 0.48s
+test/python/transpiler/test_enlarge_with_ancilla_pass.py | .566154381 | 2 passed in 0.31s
+test/python/transpiler/test_error.py | .607675335 | 5 passed in 0.32s
+test/python/transpiler/test_filter_op_nodes.py | .674715360 | 4 passed in 0.37s
+test/python/transpiler/test_fixed_point_pass.py | .609298839 | 4 passed in 0.34s
+test/python/transpiler/test_full_ancilla_allocation.py | .573350444 | 7 passed in 0.31s
+test/python/transpiler/test_gate_direction.py | .611282006 | 28 passed in 0.35s
+test/python/transpiler/test_gates_in_basis_pass.py | .587644478 | 17 passed in 0.33s
+test/python/transpiler/test_generic_pass.py | .566765241 | 9 passed in 0.31s
+test/python/transpiler/test_high_level_synthesis.py | 3.447314408 | 165 passed, 8 warnings in 3.09s
+test/python/transpiler/test_hoare_opt.py | .534055125 | 11 skipped in 0.29s
+test/python/transpiler/test_instruction_durations.py | .558709058 | 7 passed in 0.30s
+test/python/transpiler/test_inverse_cancellation.py | .639817983 | 65 passed in 0.37s
+test/python/transpiler/test_kak_over_optimization.py | .591084172 | 2 passed in 0.32s
+test/python/transpiler/test_layout.py | .561893001 | 41 passed in 0.32s
+test/python/transpiler/test_layout_score.py | .580165798 | 6 passed in 0.31s
+test/python/transpiler/test_layout_transformation.py | .595399524 | 4 passed in 0.32s
+test/python/transpiler/test_light_cone.py | .656468895 | 19 passed in 0.39s
+test/python/transpiler/test_linear_functions_passes.py | .713722211 | 41 passed in 0.45s
+test/python/transpiler/test_litinski_transformation.py | 2.102554666 | 14 passed, 24 warnings in 1.81s
+test/python/transpiler/test_lookahead_swap.py | 1.400091842 | 10 passed in 1.11s
+test/python/transpiler/test_mappers.py | .622311956 | 9 passed in 0.33s
+test/python/transpiler/test_minimum_point.py | .607775490 | 4 passed in 0.32s
+test/python/transpiler/test_naming_transpiled_circuits.py | .634611880 | 7 passed in 0.36s
+test/python/transpiler/test_optimize_1q_commutation.py | .579320367 | 6 passed in 0.32s
+test/python/transpiler/test_optimize_1q_decomposition.py | .791245552 | 94 passed in 0.52s
+test/python/transpiler/test_optimize_1q_gates.py | .620005417 | 34 passed in 0.35s
+test/python/transpiler/test_optimize_annotated.py | .916071656 | 13 passed in 0.65s
+test/python/transpiler/test_optimize_clifford_t.py | 13.821372736 | 10 passed in 13.55s
+test/python/transpiler/test_optimize_swap_before_measure.py | .571542953 | 10 passed in 0.31s
+test/python/transpiler/test_parameterizedgate_translator.py | .574564424 | 4 passed in 0.31s
+test/python/transpiler/test_pass_call.py | .571955860 | 5 passed in 0.31s
+test/python/transpiler/test_pass_scheduler.py | .632673999 | 49 passed in 0.38s
+test/python/transpiler/test_passmanager.py | .562759323 | 6 passed in 0.31s
+test/python/transpiler/test_passmanager_config.py | .604558438 | 5 passed in 0.34s
+test/python/transpiler/test_passmanager_run.py | .618383471 | 5 passed in 0.34s
+test/python/transpiler/test_preset_passmanagers.py | 3.130418209 | 250 passed, 4 warnings in 2.74s
+test/python/transpiler/test_property_set.py | .600458929 | 4 passed in 0.33s
+test/python/transpiler/test_remove_barriers.py | .571481415 | 4 passed in 0.30s
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py | .601708811 | 22 passed in 0.32s
+test/python/transpiler/test_remove_final_measurements.py | .611940331 | 9 passed in 0.33s
+test/python/transpiler/test_remove_final_reset.py | .651424176 | 4 passed in 0.34s
+test/python/transpiler/test_remove_identity_equivalent.py | .663148707 | 22 passed in 0.38s
+test/python/transpiler/test_remove_reset_in_zero_state.py | .586401235 | 4 passed in 0.32s
+test/python/transpiler/test_reset_after_measure_simplification.py | .629506324 | 10 passed in 0.34s
+test/python/transpiler/test_resource_estimation_pass.py | .604946290 | 2 passed in 0.33s
+test/python/transpiler/test_sabre_layout.py | .916952027 | 21 passed, 1 skipped in 0.59s
+test/python/transpiler/test_sabre_pre_layout.py | .597475023 | 5 passed in 0.33s
+test/python/transpiler/test_sabre_swap.py | 5.606386252 | 140 passed, 44 warnings in 5.31s
+test/python/transpiler/test_scheduling_padding_pass.py | .592868212 | 14 passed, 3 warnings in 0.34s
+test/python/transpiler/test_setlayout.py | .577050196 | 4 passed in 0.32s
+test/python/transpiler/test_size_pass.py | .594647809 | 4 passed in 0.32s
+test/python/transpiler/test_solovay_kitaev.py | 11.793832235 | 28 passed, 28 warnings in 11.54s
+test/python/transpiler/test_split_2q_unitaries.py | .591350267 | 16 passed in 0.36s
+test/python/transpiler/test_stage_plugin.py | .638690429 | 24 passed in 0.42s
+test/python/transpiler/test_staged_passmanager.py | .503021097 | 13 passed in 0.29s
+test/python/transpiler/test_star_prerouting.py | 1.744594712 | 24 passed, 4 skipped in 1.53s
+test/python/transpiler/test_swap_strategy.py | .520739593 | 21 passed in 0.29s
+test/python/transpiler/test_swap_strategy_router.py | .589832042 | 17 passed in 0.37s
+test/python/transpiler/test_target.py | .617504859 | 76 passed in 0.40s
+test/python/transpiler/test_template_matching.py | .505546115 | 22 skipped in 0.29s
+test/python/transpiler/test_tensor_factor_pass.py | .494803622 | 3 passed in 0.28s
+test/python/transpiler/test_token_swapper.py | .781923056 | 6 passed in 0.57s
+test/python/transpiler/test_transpile_layout.py | .607909694 | 16 passed in 0.39s
+test/python/transpiler/test_trivial_layout.py | .480692066 | 4 passed in 0.28s
+test/python/transpiler/test_unitary_synthesis.py | 1.544898527 | 93 passed in 1.27s
+test/python/transpiler/test_unitary_synthesis_plugin.py | .505626759 | 7 failed in 0.30s
+test/python/transpiler/test_unroll_3q_or_more.py | .885255720 | 13 passed in 0.61s
+test/python/transpiler/test_unroll_custom_definitions.py | .489989232 | 15 passed, 2 warnings in 0.29s
+test/python/transpiler/test_unroll_forloops.py | .526973684 | 6 passed in 0.32s
+test/python/transpiler/test_vf2_layout.py | 1.175661275 | 44 passed in 0.97s
+test/python/transpiler/test_vf2_post_layout.py | .660835116 | 29 passed in 0.44s
+test/python/transpiler/test_width_pass.py | .475242325 | 2 passed in 0.27s
+test/python/transpiler/test_wrap_angles.py | .466984413 | 2 passed in 0.26s
+DONE

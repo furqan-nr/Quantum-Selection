@@ -1,0 +1,371 @@
+{
+ "schema": "phase_d_config/1",
+ "date_of_record": "2026-10-18",
+ "note": "Frozen Phase D configuration (PREREGISTRATION_PHASE_D.md). Changing any value after the record is a deviation.",
+ "python": "3.10",
+ "slice": {
+  "include_globs": [
+   "test/python/transpiler/**/test_*.py",
+   "test/python/compiler/test_*.py"
+  ],
+  "exclude_files": [
+   "test/python/transpiler/test_unitary_synthesis_plugin.py"
+  ],
+  "exclude_reason": "7 environmental failures: its test plugins are registered only by a development install (entry points)",
+  "backport_dir": "test/python/phase_d_backport"
+ },
+ "environment": {
+  "pinned_env": {
+   "RAYON_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1",
+   "QISKIT_PARALLEL": "FALSE",
+   "QISKIT_NUM_PROCS": "1",
+   "PYTHONHASHSEED": "0",
+   "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "pip_extra": [
+   "ddt",
+   "hypothesis",
+   "pytest"
+  ],
+  "constraints_file": "phase_d/config/constraints.txt",
+  "pytest_args": [
+   "-q",
+   "-p",
+   "no:cacheprovider",
+   "--no-header",
+   "-p",
+   "phased_plugin"
+  ]
+ },
+ "runner": {
+  "per_test_timeout_s": 60.0,
+  "chunk_launch_limit_s": 115.0,
+  "chunk_hard_limit_s": 145.0,
+  "poll_s": 0.2,
+  "timing_passes_B": 2,
+  "timing_passes_P": 1
+ },
+ "estimator": {
+  "source": "P pass 1, P's own slice files only (backport records never used)",
+  "match": "normalized node id (every '0x' + >=6 hex digits replaced by '0x?', duplicates suffixed '#k' in collection order)",
+  "duration": "setup + call + teardown seconds as reported by pytest (perf_counter); timeouts = per_test_timeout_s",
+  "unseen_rule": [
+   "file_median: median P duration of the seen tests of the same logical file, if that file has >= 3 seen tests",
+   "global_median: otherwise, median P duration over all P tests"
+  ],
+  "unseen_file_min_seen": 3,
+  "speed_band": [
+   0.8,
+   1.25
+  ],
+  "speed_rule": "k = calibration time recorded by B's collect-only call / median calibration time over P's run calls (never a B test duration, never a B timing-pass call); if k outside the band, all estimates and both budgets are multiplied by k"
+ },
+ "real_cost": {
+  "definition": "mean over the B timing passes in which the test has a record of setup+call+teardown seconds; timeout/crash records count as recorded (timeout = per_test_timeout_s)",
+  "missing": "a suite test without any B record is charged its estimate and counted in n_imputed (reported)"
+ },
+ "budgets": {
+  "fractions_primary": [
+   0.05,
+   0.25
+  ],
+  "fractions_exploratory": [
+   0.5
+  ],
+  "basis": "estimated full-suite cost of the event suite (B collect-only list + backported tests) under the P estimator after the speed rule"
+ },
+ "policies": {
+  "cost_blind": [
+   "default",
+   "random",
+   "file_rr"
+  ],
+  "cost_aware": [
+   "cheapest_first",
+   "coast_d"
+  ],
+  "reference_exploratory": [
+   "cheapest_oracle"
+  ],
+  "random_seeds": 100
+ },
+ "rounding": {
+  "apfdc_decimals": 6,
+  "ratio_decimals": 6
+ },
+ "confirmatory": {
+  "P1": {
+   "policies": [
+    "cheapest_first",
+    "coast_d"
+   ],
+   "fractions": [
+    0.05,
+    0.25
+   ],
+   "mean_spend_ratio_max": 1.25,
+   "single_event_spend_ratio_max": 2.0,
+   "spend": "real cost of the plan's PRE-EXISTING tests (the event's backported tests excluded: their B cost is an effect of the fault, e.g. D7's 60-s hang); spend including them reported exploratorily"
+  },
+  "P2": {
+   "abs_rel_error_max": 0.25,
+   "scope": "pre-existing tests of S_e (the event's backported tests excluded from both sums); value including them reported exploratorily"
+  }
+ },
+ "forecast_checks": {
+  "note": "registered forecast checks, computed exactly as specified and reported whatever the outcome; NO confirmatory claim (near-certain by construction per the pre-record prior-predictive check, phase_d/review_2026-10-18/)",
+  "H": {
+   "tests": {
+    "H1": [
+     "coast_d",
+     "default"
+    ],
+    "H2": [
+     "coast_d",
+     "random"
+    ]
+   },
+   "alpha_familywise": 0.05,
+   "correction": "holm",
+   "test": "exact one-sided Wilcoxon signed-rank on per-event APFDc differences rounded to 6 decimals (zeros dropped, mid-ranks); supported iff Holm rejects and the mean difference is > 0"
+  },
+  "D1": {
+   "policy": "coast_d",
+   "comparators": [
+    "default",
+    "file_rr",
+    "random"
+   ],
+   "fractions": [
+    0.05,
+    0.25
+   ]
+  }
+ },
+ "versions": {
+  "2.0.1": {
+   "upload_time_utc": "2025-05-16T17:14:59",
+   "wheel": {
+    "filename": "qiskit-2.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "2ebdd0f7b7b83cf75b44a42946c07b289007a2eef7ffaf1f672603a74d0bd5aa"
+   },
+   "sdist": {
+    "filename": "qiskit-2.0.1.tar.gz",
+    "sha256": "c48b44501eeec09885c1df8bdb2471b6f2732b836f59cd20085544aef2a2dcf8",
+    "url": "https://files.pythonhosted.org/packages/80/10/375513a710b11b3dd7ccacf85c3d093eca6220592e40d2e444860e947db5/qiskit-2.0.1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.0.2": {
+   "upload_time_utc": "2025-05-27T20:41:14",
+   "wheel": {
+    "filename": "qiskit-2.0.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "6e7a52120623788768234fdc47f9c48cb0523f0cb66bb5408c1bc39048007f15"
+   },
+   "sdist": {
+    "filename": "qiskit-2.0.2.tar.gz",
+    "sha256": "4901496df2d891c8b1b3d79f5b255da6343153cc7dcee1e2caae95be58b8b354",
+    "url": "https://files.pythonhosted.org/packages/d5/e7/db26a543ce3fe57e1f239e8d5015ec04db53c5801362f1bd2e893a69c99f/qiskit-2.0.2.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.0.3": {
+   "upload_time_utc": "2025-06-17T14:03:49",
+   "wheel": {
+    "filename": "qiskit-2.0.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "bba21f4cae1554ba72b09f7d9a35639c1776f1c43339c6750af93e7395069168"
+   },
+   "sdist": {
+    "filename": "qiskit-2.0.3.tar.gz",
+    "sha256": "fa016bc34619f9f58af06be79a6f2634eacc095f0a3e2e29cef9f00b451ca267",
+    "url": "https://files.pythonhosted.org/packages/46/58/d19b159719c701f63487c93349aab41a8e4e30234322ccbc407d376bf88b/qiskit-2.0.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.1.0": {
+   "upload_time_utc": "2025-06-19T09:55:58",
+   "wheel": {
+    "filename": "qiskit-2.1.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "3169a93a8edf0bb791315dcf0dc9d74519f49ec62bcb5d0ac4e5f63717e3982a"
+   },
+   "sdist": {
+    "filename": "qiskit-2.1.0.tar.gz",
+    "sha256": "b25233d547779cbb4ee384548e0c5525599212140ceb371879b735b20df5fc9e",
+    "url": "https://files.pythonhosted.org/packages/b9/c9/f8f9ff6332ede3864763d51d4004363e7b7edc48ed99d6e7c2fa7ba295e1/qiskit-2.1.0.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.1.1": {
+   "upload_time_utc": "2025-07-10T21:30:02",
+   "wheel": {
+    "filename": "qiskit-2.1.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "8b41c66958c2e0550bc1047524cd754dce2277bea0a1db1085c052cc5bb07ec6"
+   },
+   "sdist": {
+    "filename": "qiskit-2.1.1.tar.gz",
+    "sha256": "148f62d314cd138a1f4da305c6293b19c73115323e77123b13a048cdcbc1fcdd",
+    "url": "https://files.pythonhosted.org/packages/39/97/903041c27db9105f5036a579b2b7ee2a0caa21c6061fa29e0ccbd35aa19a/qiskit-2.1.1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.1.2": {
+   "upload_time_utc": "2025-08-19T13:23:52",
+   "wheel": {
+    "filename": "qiskit-2.1.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "ce66d6a3db73f4d1dd546fa13062c2e7fd8120720247426d6c637f6dcf73fa87"
+   },
+   "sdist": {
+    "filename": "qiskit-2.1.2.tar.gz",
+    "sha256": "fd3fe5b212053e18aea66b3903face62e25d7ba0aebd0aa68ea1fb4f14b220e3",
+    "url": "https://files.pythonhosted.org/packages/99/02/1bad2e34a2d2b4a03abed72e110f1d89f80757dd9e95b30f44a5bc2700f3/qiskit-2.1.2.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.2.0rc1": {
+   "upload_time_utc": "2025-09-04T21:02:13",
+   "wheel": {
+    "filename": "qiskit-2.2.0rc1-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "597554a62a5e3f364c95a617bf05f3f5982ec07fe2de866ad915b9012fbca443"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.0rc1.tar.gz",
+    "sha256": "1334679e51f232332ef3f60e0f51565f3979ccdcc6519619e24843dac395e273",
+    "url": "https://files.pythonhosted.org/packages/c7/a0/09cbbd33cc2292981dd282265d36995394e6c022c23b8ad4ebb3ebf0db61/qiskit-2.2.0rc1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.2.1": {
+   "upload_time_utc": "2025-09-26T09:05:39",
+   "wheel": {
+    "filename": "qiskit-2.2.1-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "5c99461dfd7b17dbf840363b586c7f040fa35098dbd38361af626586cd0e888e"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.1.tar.gz",
+    "sha256": "d116e55bea21c2ecd7392dee8f3ec532f5e63c8a01c54c5a7440b38320c24774",
+    "url": "https://files.pythonhosted.org/packages/46/e1/82dbef6f58f382101ee7f29bb903349e66d6386ec8a30bea629ab10668ca/qiskit-2.2.1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.2.2": {
+   "upload_time_utc": "2025-10-22T13:10:57",
+   "wheel": {
+    "filename": "qiskit-2.2.2-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "77dc843d161321c5a5ab6916d3bca41e729f3a02d13a6fbd85e9266acb6b4511"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.2.tar.gz",
+    "sha256": "5e2e2693e568451eaff0a13d48054f0c928e7d852c9157ec0c5c424a7bd66c01",
+    "url": "https://files.pythonhosted.org/packages/41/83/f195bc32dcb065b60f1550a1d730bf5e94fe93882d55671b0176e1e364c6/qiskit-2.2.2.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.2.3": {
+   "upload_time_utc": "2025-10-30T15:28:45",
+   "wheel": {
+    "filename": "qiskit-2.2.3-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "75acf702866a68be36870400d845d0775e7baa5397bf880bc56864ee105cbe93"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.3.tar.gz",
+    "sha256": "ec597bf021fe5fa5e44600b142e6de00fc873207dfbd750d4e1cf19a1a905592",
+    "url": "https://files.pythonhosted.org/packages/eb/40/3e54963067210d45895cbce879d63a9523e0d696f2f8dfade0337cf3afd5/qiskit-2.2.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.4.2": {
+   "upload_time_utc": "2026-06-12T18:59:45",
+   "wheel": {
+    "filename": "qiskit-2.4.2-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "11a569903b300a8c3478a3abbda3644e7cec133210f3e106aa48dfc5b5340136"
+   },
+   "sdist": {
+    "filename": "qiskit-2.4.2.tar.gz",
+    "sha256": "b9844e28336fdbed0d53f8cf82a681d0365574dd68d04ef877d1619971462ad6",
+    "url": "https://files.pythonhosted.org/packages/86/32/36d51b8f79b86e82fa41d402b4175a204140bbc1c75bdadca980fdaf70e9/qiskit-2.4.2.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  },
+  "2.5.0": {
+   "upload_time_utc": "2026-07-02T20:05:33",
+   "wheel": {
+    "filename": "qiskit-2.5.0-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "6efe02541f49c97aac2073befd9458a37cfae58a3ee1616db12ee3ee8791eef7"
+   },
+   "sdist": {
+    "filename": "qiskit-2.5.0.tar.gz",
+    "sha256": "c65c46ee30b15e38b1359ef8a1d0bf98383416d59780572e46e8fddf8a4b3efe",
+    "url": "https://files.pythonhosted.org/packages/c3/88/0faeb20fa5644b179a8a06781790e086a5000274e25ac73da03666293b89/qiskit-2.5.0.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  },
+  "2.5.1": {
+   "upload_time_utc": "2026-07-23T18:39:12",
+   "wheel": {
+    "filename": "qiskit-2.5.1-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "c1a0cee82eb8e008fad6c79d568fbb52f05db4952f6d61c0542dc50f9c06c53c"
+   },
+   "sdist": {
+    "filename": "qiskit-2.5.1.tar.gz",
+    "sha256": "923e11f02c6720da4f9435cbfc78b6d2c4a106198175a16d32ae730eaa007fa6",
+    "url": "https://files.pythonhosted.org/packages/fd/b8/9900e3c8e2c1f7d97e15e9a7b5fcf7274211887ace8947cd0e0075583da5/qiskit-2.5.1.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  },
+  "2.5.2": {
+   "upload_time_utc": "2026-08-13T19:08:04",
+   "wheel": {
+    "filename": "qiskit-2.5.2-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "28fcb983e565b8f027a13ef43cda7aaeb1f1a6caf9df07408708abcf7bc0b59d"
+   },
+   "sdist": {
+    "filename": "qiskit-2.5.2.tar.gz",
+    "sha256": "cf05388c717392cff5d01be4ea9b45652c2709a5c697c174428d8863089b6247",
+    "url": "https://files.pythonhosted.org/packages/c3/b3/9e080540cf1dedc6ce36d9c346f0d1e17772fb646c09049b609271acf5a0/qiskit-2.5.2.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  }
+ },
+ "dryrun_versions_outside_study": {
+  "2.3.0": {
+   "upload_time_utc": "2026-01-08T19:36:26",
+   "wheel": {
+    "filename": "qiskit-2.3.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "24fd70ee3ac47fe029096e39b1c39abf3e7f145c723df90f9600468099c12aa4"
+   },
+   "sdist": {
+    "filename": "qiskit-2.3.0.tar.gz",
+    "sha256": "e0a00c6681b8d04171c5cdb928837d992676f8aa4a07c390d446e54babaf6c1e",
+    "url": "https://files.pythonhosted.org/packages/13/8e/d5279454717d780f32eec4dfa6a7ef256ea7382b2f8fef2c715fc6f1180e/qiskit-2.3.0.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  },
+  "2.3.1": {
+   "upload_time_utc": "2026-03-13T00:42:54",
+   "wheel": {
+    "filename": "qiskit-2.3.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "350027279bb171e9746fee5756c674872df97f4608b079129d4edb25b5bb1fdd"
+   },
+   "sdist": {
+    "filename": "qiskit-2.3.1.tar.gz",
+    "sha256": "7b3b7e1c8a50f7f423204143a1bd9f21bf27659c57459d582eaff4035d8d7f75",
+    "url": "https://files.pythonhosted.org/packages/f9/9a/a366dd56b6a4520e5b2856e47d573c6813b4c3f62f28969a37205fd845ab/qiskit-2.3.1.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  }
+ },
+ "default_order": {
+  "files": "sorted path order (= pytest test/python/compiler test/python/transpiler)",
+  "tests": "B's collection order",
+  "backport_position": "where pytest would collect the method had it been added to B's class of the same name in its logical file: after the last B test of that class whose method name sorts before it (Python string order), else before the class's first test; a class absent from B's file: end of the logical file",
+  "exploratory_variants": [
+   "backport_at_file_end",
+   "backport_at_file_start",
+   "transpiler_dir_first"
+  ]
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "n_sims_per_setting": 40,
+ "note": "Pre-registration-time prior-predictive check of Phase D (adversarial review, 2026-10-18). NOT study data.",
+ "summary": {
+  "sigma_within=1.0,backport_position=class_alphabetical": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.25,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 2.98,
+     "default": 0.38,
+     "file_rr": 0.23,
+     "random": 0.86
+    },
+    "0.25": {
+     "coast_d": 6,
+     "default": 1.52,
+     "file_rr": 0.88,
+     "random": 3.21
+    }
+   },
+   "median_H1_wins_of_8": 6.0,
+   "median_H2_wins_of_8": 7.0
+  },
+  "sigma_within=1.0,backport_position=end_of_file": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.275,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 3,
+     "default": 0,
+     "file_rr": 0,
+     "random": 0.81
+    },
+    "0.25": {
+     "coast_d": 6,
+     "default": 1.1,
+     "file_rr": 0,
+     "random": 3.12
+    }
+   },
+   "median_H1_wins_of_8": 7.0,
+   "median_H2_wins_of_8": 7.0
+  },
+  "sigma_within=1.5,backport_position=class_alphabetical": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.25,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 4.62,
+     "default": 0.38,
+     "file_rr": 0.25,
+     "random": 0.9
+    },
+    "0.25": {
+     "coast_d": 6.8,
+     "default": 1.48,
+     "file_rr": 0.88,
+     "random": 3.22
+    }
+   },
+   "median_H1_wins_of_8": 8.0,
+   "median_H2_wins_of_8": 8.0
+  },
+  "sigma_within=1.5,backport_position=end_of_file": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.225,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 4.5,
+     "default": 0,
+     "file_rr": 0,
+     "random": 0.85
+    },
+    "0.25": {
+     "coast_d": 6.95,
+     "default": 1.15,
+     "file_rr": 0,
+     "random": 3.14
+    }
+   },
+   "median_H1_wins_of_8": 8.0,
+   "median_H2_wins_of_8": 8.0
+  },
+  "sigma_within=2.0,backport_position=class_alphabetical": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.225,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 6,
+     "default": 0.38,
+     "file_rr": 0.3,
+     "random": 0.94
+    },
+    "0.25": {
+     "coast_d": 7,
+     "default": 1.52,
+     "file_rr": 0.88,
+     "random": 3.26
+    }
+   },
+   "median_H1_wins_of_8": 8.0,
+   "median_H2_wins_of_8": 8.0
+  },
+  "sigma_within=2.0,backport_position=end_of_file": {
+   "D1": 1.0,
+   "H1_alone_supported": 1.0,
+   "H1_holm": 1.0,
+   "H2_holm": 1.0,
+   "P1_spend_cheap_pre": 1.0,
+   "P1_spend_coast_all": 0.0,
+   "P1_spend_coast_pre": 1.0,
+   "P2": 0.25,
+   "coast_le_cheapest_all_events": 1.0,
+   "mean_D1_counts": {
+    "0.05": {
+     "coast_d": 6.05,
+     "default": 0,
+     "file_rr": 0,
+     "random": 0.91
+    },
+    "0.25": {
+     "coast_d": 7,
+     "default": 1.2,
+     "file_rr": 0,
+     "random": 3.14
+    }
+   },
+   "median_H1_wins_of_8": 8.0,
+   "median_H2_wins_of_8": 8.0
+  }
+ }
+}

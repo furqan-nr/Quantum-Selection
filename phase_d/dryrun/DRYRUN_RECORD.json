@@ -1,0 +1,83 @@
+{
+  "schema": "phase_d_dryrun/1",
+  "date": "2026-10-18 (sandbox clock 2026-10-17T19:4x-20:2xZ)",
+  "OUTSIDE_THE_STUDY": "All runs below used Qiskit 2.3.0 and 2.3.1, which are not P, B or F of any Phase D event, plus synthetic test files. No study version was timed, collected or run by the runner. Data root /tmp/phase_d_dry (not phase_d/data).",
+  "machine": {
+    "cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+    "nproc": 2,
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35"
+  },
+  "prepare": {
+    "2.3.1_s": 43,
+    "2.3.0_s": 22,
+    "note": "wheel download + sha256 check, venv + pinned install, sdist download + sha256 check, test/ extraction"
+  },
+  "collect_only_full_slice_2.3.1": {
+    "tests": 3831,
+    "files": 108,
+    "seconds": 2.8,
+    "duplicate_normalized_ids": 0,
+    "ids_with_hex_address": 16
+  },
+  "small_modules": {
+    "files": [
+      "test_1q.py",
+      "test_adjacent_barriers.py",
+      "test_apply_layout.py",
+      "test_barrier_before_final_measurements.py",
+      "test_check_map.py"
+    ],
+    "tests": 57,
+    "sum_test_durations_s": {
+      "2.3.0_pass1": 0.093,
+      "2.3.1_pass1": 0.101,
+      "2.3.1_pass2": 0.105
+    },
+    "wall_per_file_s": "1.00-1.20 (process start, qiskit import, collection, 0.2 s poll granularity)",
+    "calibration_median_s": {
+      "2.3.0": 0.25,
+      "2.3.1_pass1": 0.249,
+      "2.3.1_pass2": 0.265
+    }
+  },
+  "robustness_checks": {
+    "per_test_timeout": "synthetic test sleeping 1000 s killed after 60 s, recorded outcome 'timeout' duration 60.0, file relaunched with completed+timed-out tests deselected (3 launches incl. crash)",
+    "crash": "synthetic os.abort() recorded outcome 'crash' (rc -6), file relaunched, remaining test recorded",
+    "external_kill_resume": "tool call killed at 120 s during a 6 x 20 s file (2 tests recorded, test 3 in progress lost); next call resumed with the 2 completed tests deselected and finished the remaining 4 (82.8 s)",
+    "hard_limit_kill": "not separately triggered (same kill path as the timeout; the external kill exercised the worse case)",
+    "multi_path_unit": "after the runner change that runs a backported file in the same process as its logical file: a two-file unit (test_1q.py + test_apply_layout.py) on 2.3.1 recorded 20 tests in one process (2.9 s)",
+    "backport_mechanics_on_2.3.1": {
+      "note": "all 8 frozen backport modules run against 2.3.1's own test tree (2.3.1 contains every fix except D4's and D5's features); checks importability and the inherited-test hiding only",
+      "D1": "4 passed",
+      "D2": "4 passed",
+      "D3": "8 passed",
+      "D4": "3 failed (exact-circuit assertion needs a 2.5 feature, as on 2.4.2)",
+      "D5": "collection ImportError (generate_preset_clifford_t_pass_manager absent in 2.3.1)",
+      "D6": "2 passed (0.23 s, 1.62 s)",
+      "D7": "1 passed (0.004 s)",
+      "D8": "1 passed",
+      "inherited_tests_run": 0
+    }
+  },
+  "fixes_made_because_of_the_dry_run": [
+    "node-id normalization: ddt names embed '..._object_at_0x772b46dca620_...' (underscores), so the address pattern was changed from ' at 0x...' to any '0x' + >= 6 hex digits",
+    "calibration workload enlarged 5x (0.05 s -> 0.25 s per repetition) to reduce noise",
+    "backported test files now run in the same pytest process right after their logical file (warm process, as if appended), instead of as a separate cold process"
+  ],
+  "analysis_pipeline": "phase_d_analysis.py ran end to end on the dry-run data with phase_d/dryrun/dryrun_ledger.json (event DRY: P 2.3.0, B 2.3.1, no F-check, no backport) -> dryrun_analysis_output.json; suite 62 tests, est/real suite cost 60.49/60.48 s (dominated by the synthetic 60-s timeout), k measured 1.002",
+  "runtime_model_for_collection": {
+    "per_pass_seconds": "about 1.0 s per file of runner overhead (106-115 files) + test time; test time from the 2026-10-18 slice runs of 2.2.2/2.2.3 (pytest-reported 97-101 s for the whole slice, file-level only) -> about 200 s per pass for 2.0-2.2; 2.4.2/2.5.x collect about 2.9x more tests (7686 for 2.5.2) -> about 300-400 s per pass (not timed)",
+    "calls_of_at_most_150_s": {
+      "prepare_and_collect": 5,
+      "P_passes": 12,
+      "budget_locks": 1,
+      "B_passes": 32,
+      "F_checks": 4,
+      "assemble_analysis_verify": 2,
+      "total": 56,
+      "range": "45-70"
+    }
+  },
+  "synthetic_test_files": "phase_d/dryrun/synthetic_tests/dryrun_synthetic_*.py (renamed from test_synthetic_*.py, the names in the dry-run data, so that pytest never collects them by accident)"
+}
