@@ -1,0 +1,66 @@
+{
+ "B": "1.1.2",
+ "P": "1.1.1",
+ "analysis_sha256": "c61725eae78cd34be24b35ed31a536ed219adbba5769e542bd1a9fb3cfe43edc",
+ "b_collect_sha256": "e51c306746a5311b4e4dd4027105d63e2d8953a44a3c188585e575ab79f465f4",
+ "config_sha256": "3be149d30036743a7c8b4d264b5e178279fa256cdc5ec6266cbe2a5f55c631ce",
+ "environment_check": {
+  "b_files_without_tests": [],
+  "b_share": 0.0,
+  "b_slice_files": 109,
+  "excluded": false,
+  "p_files_without_tests": [],
+  "p_share": 0.0,
+  "p_slice_files": 109
+ },
+ "estimators": {
+  "phase_d_registered": {
+   "budgets_s": {
+    "0.05": 5.00075,
+    "0.25": 25.003751,
+    "0.5": 50.007503
+   },
+   "source_counts": {
+    "in_file": 4,
+    "new_file": 0,
+    "seen": 2609
+   },
+   "total_est_s": 100.015005
+  },
+  "primary": {
+   "budgets_s": {
+    "0.05": 5.042792,
+    "0.25": 25.213962,
+    "0.5": 50.427923
+   },
+   "source_counts": {
+    "in_file": 4,
+    "new_file": 0,
+    "seen": 2609
+   },
+   "total_est_s": 100.855847
+  },
+  "secondary": {
+   "budgets_s": {
+    "0.05": 5.004903,
+    "0.25": 25.024517,
+    "0.5": 50.049034
+   },
+   "source_counts": {
+    "in_file": 4,
+    "new_file": 0,
+    "seen": 2609
+   },
+   "total_est_s": 100.098068
+  }
+ },
+ "event_id": "E3",
+ "locked_utc": "2026-10-18T22:49:56Z",
+ "p_run_complete": true,
+ "p_run_sha256": "c4c94f6586b7ceaca9276dceda939c8fb1bd7f0adff9c07822d26cda6027aab6",
+ "speed": {
+  "k_applied": 1.0,
+  "k_measured": 1.0607170551603193
+ },
+ "suite_size": 2613
+}
