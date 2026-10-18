@@ -1,0 +1,34 @@
+........................................................................ [ 29%]
+........................................................................ [ 59%]
+..................................................................................................F                                  [100%]
+=================================== FAILURES ===================================
+_ TestNoVF2WithInitialLayout.test_no_vf2_layout_passes_when_initial_layout_set_4_3 _
+
+self = <test.python.phase_d_backport.test_backport_d2.TestNoVF2WithInitialLayout testMethod=test_no_vf2_layout_passes_when_initial_layout_set_4_3>
+level = 3
+
+    @data(0, 1, 2, 3)
+    def test_no_vf2_layout_passes_when_initial_layout_set(self, level):
+        target = Target()
+        target.add_instruction(lib.CXGate(), {(0, 1): InstructionProperties(error=1e-2),
+                                              (1, 2): InstructionProperties(error=1e-5)})
+        qc = QuantumCircuit(2); qc.cx(0, 1)
+        seen = []
+        transpile(qc, target=target, optimization_level=level, initial_layout=[0, 1],
+                  callback=lambda pass_, **_: seen.append(pass_.name()))
+>       self.assertFalse([p for p in seen if p.startswith("VF2")], seen)
+E       AssertionError: ['VF2PostLayout'] is not false : ['ContainsInstruction', 'UnitarySynthesis', 'HighLevelSynthesis', 'BasisTranslator', 'ElidePermutations', 'RemoveDiagonalGatesBeforeMeasure', 'RemoveIdentityEquivalent', 'InverseCancellation', 'ContractIdleWiresInControlFlow', 'CommutativeCancellation', 'ConsolidateBlocks', 'Split2QUnitaries', 'SetLayout', 'FullAncillaAllocation', 'EnlargeWithAncilla', 'ApplyLayout', 'CheckMap', 'FilterOpNodes', 'UnitarySynthesis', 'HighLevelSynthesis', 'BasisTranslator', 'CheckGateDirection', 'Depth', 'Size', 'MinimumPoint', 'ConsolidateBlocks', 'UnitarySynthesis', 'RemoveIdentityEquivalent', 'Optimize1qGatesDecomposition', 'CommutativeCancellation', 'ContractIdleWiresInControlFlow', 'GatesInBasis', 'Depth', 'Size', 'MinimumPoint', 'ConsolidateBlocks', 'UnitarySynthesis', 'RemoveIdentityEquivalent', 'Optimize1qGatesDecomposition', 'CommutativeCancellation', 'ContractIdleWiresInControlFlow', 'GatesInBasis', 'Depth', 'Size', 'MinimumPoint', 'VF2PostLayout', 'ContainsInstruction']
+
+test/python/phase_d_backport/test_backport_d2.py:22: AssertionError
+=============================== warnings summary ===============================
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_4_3
+  /tmp/phase_d/tests/2.1.0/test/python/transpiler/test_preset_passmanagers.py:1721: UserWarning: Providing `coupling_map` and/or `basis_gates` along with `backend` is not recommended, as this will invalidate the backend's gate durations and error rates.
+    _ = generate_preset_pass_manager(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_4_3
+1 failed, 242 passed, 4 warnings, 12 subtests passed in 3.58s

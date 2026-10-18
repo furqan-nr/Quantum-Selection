@@ -1,0 +1,65 @@
+................................................ [ 71%]
+................FF.                                                      [100%]
+=================================== FAILURES ===================================
+__________ TestCommutativeCancellation.test_negative_x_rotations_1_2 ___________
+
+self = <test.python.phase_d_backport.test_backport_d4.TestCommutativeCancellation testMethod=test_negative_x_rotations_1_2>
+num_sxdg = 2
+
+    @ddt.data(2, 3, 4)
+    def test_negative_x_rotations(self, num_sxdg):
+        qc = QuantumCircuit(1)
+        for _ in range(num_sxdg):
+            qc.sxdg(0)
+    
+        expected = qc.copy_empty_like()
+        for _ in range(4 - num_sxdg):
+            expected.sx(0)
+    
+        pass_ = CommutativeCancellation(["sx", "rz"])
+>       self.assertEqual(pass_(qc), expected)
+E       AssertionError: The two circuits are not equal.
+E       Left circuit:
+E          
+E       q: 
+E          
+E       
+E       Right circuit:
+E          ┌────┐┌────┐
+E       q: ┤ √X ├┤ √X ├
+E          └────┘└────┘
+
+test/python/phase_d_backport/test_backport_d4.py:33: AssertionError
+__________ TestCommutativeCancellation.test_negative_x_rotations_2_3 ___________
+
+self = <test.python.phase_d_backport.test_backport_d4.TestCommutativeCancellation testMethod=test_negative_x_rotations_2_3>
+num_sxdg = 3
+
+    @ddt.data(2, 3, 4)
+    def test_negative_x_rotations(self, num_sxdg):
+        qc = QuantumCircuit(1)
+        for _ in range(num_sxdg):
+            qc.sxdg(0)
+    
+        expected = qc.copy_empty_like()
+        for _ in range(4 - num_sxdg):
+            expected.sx(0)
+    
+        pass_ = CommutativeCancellation(["sx", "rz"])
+>       self.assertEqual(pass_(qc), expected)
+E       AssertionError: The two circuits are not equal.
+E       Left circuit:
+E          
+E       q: 
+E          
+E       
+E       Right circuit:
+E          ┌────┐
+E       q: ┤ √X ├
+E          └────┘
+
+test/python/phase_d_backport/test_backport_d4.py:33: AssertionError
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d4.py::TestCommutativeCancellation::test_negative_x_rotations_1_2
+FAILED test/python/phase_d_backport/test_backport_d4.py::TestCommutativeCancellation::test_negative_x_rotations_2_3
+2 failed, 65 passed, 24 subtests passed in 1.01s

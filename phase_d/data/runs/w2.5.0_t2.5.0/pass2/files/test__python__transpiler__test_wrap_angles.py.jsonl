@@ -1,0 +1,10 @@
+{"ev": "launch", "n": 0, "t": 1792289056.7008493, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_combine_custom_gates", "idx": 0, "raw": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_combine_custom_gates"}
+{"ev": "collected", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_empty_dag", "idx": 1, "raw": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_legacy_default_registy", "idx": 2, "raw": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_legacy_default_registy"}
+{"ev": "start", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_combine_custom_gates", "t": 1792289057.0408974}
+{"call": 0.0009602210047887638, "duration": 0.0020290790052968077, "ev": "done", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_combine_custom_gates", "outcome": "passed", "setup": 0.0009506839996902272, "teardown": 0.0001181740008178167}
+{"ev": "start", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_empty_dag", "t": 1792289057.0450468}
+{"call": 0.0006619230043725111, "duration": 0.0009283810068154708, "ev": "done", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_empty_dag", "outcome": "passed", "setup": 0.00016847300139488652, "teardown": 9.798500104807317e-05}
+{"ev": "start", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_legacy_default_registy", "t": 1792289057.0482235}
+{"call": 0.00011814900062745437, "duration": 0.00040726499719312415, "ev": "done", "id": "test/python/transpiler/test_wrap_angles.py::TestWrapAngles::test_legacy_default_registy", "outcome": "passed", "setup": 0.00015808399621164426, "teardown": 0.0001310320003540255}

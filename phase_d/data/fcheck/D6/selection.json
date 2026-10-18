@@ -1,0 +1,13 @@
+{
+ "B": "2.1.0",
+ "F": "2.1.1",
+ "pre_existing_non_pass": [
+  "test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_abstract_synthesis",
+  "test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_full_connected_coupling_map"
+ ],
+ "files": [
+  "test/python/phase_d_backport/test_backport_d6.py",
+  "test/python/transpiler/test_high_level_synthesis.py",
+  "test/python/transpiler/test_layout_transformation.py"
+ ]
+}

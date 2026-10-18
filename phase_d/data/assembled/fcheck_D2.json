@@ -1,0 +1,353 @@
+{
+"backport": {
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.23172260700084735,
+"calibration_runs_s": [
+0.2305187730016769,
+0.23172260700084735,
+0.23502067800291115,
+0.2293663650052622,
+0.23314617999858456
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+1.02294921875,
+0.97900390625,
+0.92041015625
+],
+"mode": "fcheck",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "be4461fd106c3637064faf57b772301726f64dc01657cc2c5fb163a08bd62242"
+},
+"tests": "2.1.0",
+"utc": "2026-10-18T02:11:15Z",
+"venv_freeze_sha256": "92385997419505cf9e1f31937e090a9ec5254e728707b40d74727a5681233b16",
+"wheel": "2.1.2"
+}
+],
+"files": {
+"test/python/phase_d_backport/test_backport_d2.py": {
+"collected": [
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_1_0",
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_2_1",
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_3_2",
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_4_3"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 0,
+"unit": [
+"test/python/phase_d_backport/test_backport_d2.py"
+],
+"wall_s_this_call": 0.8222658634185791
+}
+}
+},
+"tests": {
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_1_0": {
+"duration": 0.01414614199893549,
+"file": "test/python/phase_d_backport/test_backport_d2.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_2_1": {
+"duration": 0.005034954992879648,
+"file": "test/python/phase_d_backport/test_backport_d2.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_3_2": {
+"duration": 0.006274374994973186,
+"file": "test/python/phase_d_backport/test_backport_d2.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d2.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_4_3": {
+"duration": 0.005618274997686967,
+"file": "test/python/phase_d_backport/test_backport_d2.py",
+"outcome": "passed",
+"synthetic": null
+}
+}
+},
+"pre_existing": {
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.23440914900129428,
+"calibration_runs_s": [
+0.23993132099712966,
+0.23440914900129428,
+0.24002768700302113,
+0.2311432619972038,
+0.23367412699735723
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+1.025390625,
+0.978515625,
+0.919921875
+],
+"mode": "fcheck",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "be4461fd106c3637064faf57b772301726f64dc01657cc2c5fb163a08bd62242"
+},
+"tests": "2.1.0",
+"utc": "2026-10-18T02:11:11Z",
+"venv_freeze_sha256": "92385997419505cf9e1f31937e090a9ec5254e728707b40d74727a5681233b16",
+"wheel": "2.1.2"
+}
+],
+"files": {
+"test/python/transpiler/test_high_level_synthesis.py": {
+"collected": [
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_ancilla_arguments",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_ancilla_noop",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_ancilla_reset_1_True",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_ancilla_reset_2_False",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_ancilla_state_maintained",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_both_basis_gates_and_plugin_specified",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_control_flow",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_coupling_map_gets_passed_to_plugins",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_default_config",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_multiple_methods",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_multiple_methods_short_form",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_no_config",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_non_default_config",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_qubits_get_passed_to_plugins",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_skip_synthesis_with_empty_methods_list",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_synth_fails_definition_exists",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_synthesis_returns_none",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_synthesis_using_alternate_form",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_synthesis_using_alternate_short_form",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_target_gets_passed_to_plugins",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_track_global_phase",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_use_default_on_unspecified_is_false",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisInterface::test_use_default_on_unspecified_is_true",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_cx",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_cz",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_qft",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_qft_adder",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_x",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_controlled_z",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_recursively_controlled_cx",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisQuality::test_recursively_controlled_cz",
+"test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_invert_and_transpose",
+"test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_plugin_selection_all",
+"test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_plugin_selection_all_with_metrix",
+"test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_section_size",
+"test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_unfortunate_name",
+"test/python/transpiler/test_high_level_synthesis.py::TestKMSSynthesisLinearFunctionPlugin::test_invert_and_transpose",
+"test/python/transpiler/test_high_level_synthesis.py::TestKMSSynthesisLinearFunctionPlugin::test_unfortunate_name",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_abstract_synthesis",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_abstract_synthesis_all_permutations",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_concrete_synthesis",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_concrete_synthesis_all_permutations",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_concrete_synthesis_is_not_possible",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_concrete_synthesis_over_disconnected_qubits",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_token_swapper_in_known_plugin_names",
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_unfortunate_name",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_circuit",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_circuit_with_phase",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_gate",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_rec",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_rec_with_control_states",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_with_empty_modifiers",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_mcx",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_mcx_def",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_mcx_def_rec",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_recursive_def",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_recursive_def2",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_recursive_def3",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_control_basic_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_control_clifford",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_control_custom_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_control_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_definition_with_annotations",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_definition_with_high_level_objects",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_inverse_basic_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_inverse_clifford",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_inverse_custom_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_inverse_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_multiple_controls",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_multiple_powers",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_controls",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_controls_permutation",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_inverses",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_inverses_permutation",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_powers",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_powers_permutation",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_custom_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_float_basic_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_float_clifford",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_negint_basic_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_posint_basic_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_power_posint_clifford",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_reordered_modifiers",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_simple_circuit",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_simple_circuit2",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_three_inverses",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_transpile_control_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_transpile_inverse_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_transpile_power_high_level_object",
+"test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_two_inverses",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_basic_unroll",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_basic_unroll_min_qubits",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_definition_unroll_parameterized",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_simple_unroll_parameterized_with_expressions",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_simple_unroll_parameterized_without_expressions",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_all_instructions",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_no_basis",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_toffoli",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_toffoli_min_qubits",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_with_clbit",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unroll_with_clbit_mapping",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollerCompatability::test_unrolling_parameterized_composite_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_dont_unroll_a_gate_in_basis_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_dont_unroll_a_gate_in_basis_gates_with_target",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_dont_unroll_a_gate_in_eq_lib",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_if_else",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_leave_store_alone_basis",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_leave_store_alone_with_target",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_nested_control_flow",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_raise_for_opaque_not_in_eq_lib",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_raise_for_opaque_not_in_eq_lib_target_with_target",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_empty_definition",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_empty_definition_with_phase",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_gate_until_reach_basis_gates",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_gate_until_reach_basis_gates_with_target",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_twice_until_we_get_to_eqlib",
+"test/python/transpiler/test_high_level_synthesis.py::TestUnrollCustomDefinitionsCompatibility::test_unroll_twice_until_we_get_to_eqlib_with_target",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_qft_line_plugin_annotated_qft_1_line",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_qft_line_plugin_annotated_qft_2_full",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_qft_plugins_qft_1_line",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_qft_plugins_qft_2_full",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_skip_non_qft_1_line",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_skip_non_qft_2_full",
+"test/python/transpiler/test_high_level_synthesis.py::TestQFTSynthesisPlugins::test_supported_names",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_annotated_mcx",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_applicability",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_01_n_clean_m15",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_02_n_dirty_i15",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_03_2_clean_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_04_2_dirty_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_05_1_clean_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_06_1_dirty_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_07_1_clean_b95",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_08_noaux_v24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_09_gray_code",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_arbitrary_10_default",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_01_n_clean_m15",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_02_n_dirty_i15",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_03_2_clean_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_04_2_dirty_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_05_1_clean_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_06_1_dirty_kg24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_07_1_clean_b95",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_08_noaux_v24",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_09_gray_code",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_mcx_plugins_correctness_from_zero_10_default",
+"test/python/transpiler/test_high_level_synthesis.py::TestMCXSynthesisPlugins::test_supported_names",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_correctness_1_default",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_correctness_2_rustiq",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_default_preserve_order",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_on_list_with_sparse_observable",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_on_sparse_observable",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_rustiq_preserve_order",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_rustiq_raises_on_invalid_input",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_rustiq_upto_options",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_rustiq_upto_phase",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_rustiq_with_parameterized_angles",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_supported_names",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_1_default",
+"test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_2_rustiq",
+"test/python/transpiler/test_high_level_synthesis.py::TestAnnotatedSynthesisPlugins::test_conjugate_reduction_applies_1",
+"test/python/transpiler/test_high_level_synthesis.py::TestAnnotatedSynthesisPlugins::test_conjugate_reduction_applies_2",
+"test/python/transpiler/test_high_level_synthesis.py::TestAnnotatedSynthesisPlugins::test_conjugate_reduction_not_applies_1",
+"test/python/transpiler/test_high_level_synthesis.py::TestAnnotatedSynthesisPlugins::test_conjugate_reduction_not_applies_2"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 1,
+"unit": [
+"test/python/transpiler/test_high_level_synthesis.py"
+],
+"wall_s_this_call": 1.2417750358581543
+}
+},
+"test/python/transpiler/test_layout_transformation.py": {
+"collected": [
+"test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_four_qubit",
+"test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_four_qubit_with_target",
+"test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_full_connected_coupling_map",
+"test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_three_qubit"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 1,
+"unit": [
+"test/python/transpiler/test_layout_transformation.py"
+],
+"wall_s_this_call": 1.024873971939087
+}
+}
+},
+"tests": {
+"test/python/transpiler/test_high_level_synthesis.py::TestTokenSwapperPermutationPlugin::test_abstract_synthesis": {
+"duration": 0.02335340999707114,
+"file": "test/python/transpiler/test_high_level_synthesis.py",
+"outcome": "failed",
+"synthetic": null
+},
+"test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_full_connected_coupling_map": {
+"duration": 0.003302971992525272,
+"file": "test/python/transpiler/test_layout_transformation.py",
+"outcome": "failed",
+"synthetic": null
+}
+}
+}
+}

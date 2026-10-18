@@ -1,0 +1,289 @@
+........................................................................ [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+........................................................................ [ 76%]
+............................................ss.......................... [ 95%]
+................FF                                                       [100%]
+=================================== FAILURES ===================================
+______________ TestTranspile.test_reuse_on_differing_circuits_3_2 ______________
+
+self = <test.python.phase_d_backport.test_backport_d1.TestTranspile testMethod=test_reuse_on_differing_circuits_3_2>
+optimization_level = 2
+
+    @data(0, 1, 2, 3)
+    def test_reuse_on_differing_circuits(self, optimization_level):
+        """Test that re-using the same `PassManager` instance on two different circuits is the same
+        as using new instances of the `PassManager`."""
+    
+        def make_pm():
+            num_qubits = 12
+            target = Target()
+            target.add_instruction(
+                SXGate(),
+                {(i,): InstructionProperties(error=1e-5 * (i + 1)) for i in range(num_qubits)},
+            )
+            target.add_instruction(
+                RZGate(Parameter("a")), {(i,): InstructionProperties() for i in range(num_qubits)}
+            )
+            target.add_instruction(
+                Measure(),
+                {
+                    (i,): InstructionProperties(error=1e-3 * (num_qubits - i))
+                    for i in range(num_qubits)
+                },
+            )
+            target.add_instruction(
+                CZGate(),
+                {
+                    pair: InstructionProperties(error=1e-3 * sum(pair))
+                    for pair in CouplingMap.from_line(num_qubits)
+                },
+            )
+            return generate_preset_pass_manager(
+                optimization_level=optimization_level, target=target, seed_transpiler=2025_10_27
+            )
+    
+        def ghz(num_qubits):
+            qc = QuantumCircuit(num_qubits, num_qubits)
+            qc.h(0)
+            for i in range(1, num_qubits):
+                qc.cx(0, i)
+            qc.measure(qc.qubits, qc.clbits)
+            return qc
+    
+        circuits = [ghz(5), ghz(8), ghz(10)]
+        shared_pm = make_pm()
+>       shared_circuits = [shared_pm.run(circuit) for circuit in circuits]
+
+test/python/phase_d_backport/test_backport_d1.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/python/phase_d_backport/test_backport_d1.py:74: in <listcomp>
+    shared_circuits = [shared_pm.run(circuit) for circuit in circuits]
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:415: in run
+    return super().run(circuits, output_name, callback, num_processes=num_processes)
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:438: in wrapper
+    return meth(*meth_args, **meth_kwargs)
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:197: in run
+    return super().run(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:237: in run
+    out = [
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:238: in <listcomp>
+    _run_workflow(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:311: in _run_workflow
+    passmanager_ir, final_state = flow_controller.execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/base_tasks.py:218: in execute
+    passmanager_ir, state = next_task.execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:167: in execute
+    new_dag, state = super().execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/base_tasks.py:98: in execute
+    ret = self.run(passmanager_ir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <qiskit.transpiler.passes.optimization.consolidate_blocks.ConsolidateBlocks object at 0x7b8430006aa0>
+dag = <qiskit._accelerate.circuit.DAGCircuit object at 0x5f696d0059f0>
+
+    def run(self, dag):
+        """Run the ConsolidateBlocks pass on `dag`.
+    
+        Iterate over each block and replace it with an equivalent Unitary
+        on the same wires.
+        """
+        if self.decomposer is None:
+            return dag
+    
+        blocks = self.property_set["block_list"]
+        if blocks is not None:
+            blocks = [[node._node_id for node in block] for block in blocks]
+        runs = self.property_set["run_list"]
+        if runs is not None:
+            runs = [[node._node_id for node in run] for run in runs]
+    
+        if self._qubit_map is None:
+            self._qubit_map = list(range(dag.num_qubits()))
+    
+>       consolidate_blocks(
+            dag,
+            self.decomposer._inner_decomposer,
+            self.basis_gate_name,
+            self.force_consolidate,
+            target=self.target,
+            basis_gates=self.basis_gates,
+            blocks=blocks,
+            runs=runs,
+            qubit_map=self._qubit_map,
+        )
+E       pyo3_runtime.PanicException: index out of bounds: the len is 5 but the index is 5
+
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passes/optimization/consolidate_blocks.py:145: PanicException
+----------------------------- Captured stderr call -----------------------------
+
+thread '<unnamed>' panicked at crates/transpiler/src/passes/consolidate_blocks.rs:173:69:
+index out of bounds: the len is 5 but the index is 5
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+______________ TestTranspile.test_reuse_on_differing_circuits_4_3 ______________
+
+self = <test.python.phase_d_backport.test_backport_d1.TestTranspile testMethod=test_reuse_on_differing_circuits_4_3>
+optimization_level = 3
+
+    @data(0, 1, 2, 3)
+    def test_reuse_on_differing_circuits(self, optimization_level):
+        """Test that re-using the same `PassManager` instance on two different circuits is the same
+        as using new instances of the `PassManager`."""
+    
+        def make_pm():
+            num_qubits = 12
+            target = Target()
+            target.add_instruction(
+                SXGate(),
+                {(i,): InstructionProperties(error=1e-5 * (i + 1)) for i in range(num_qubits)},
+            )
+            target.add_instruction(
+                RZGate(Parameter("a")), {(i,): InstructionProperties() for i in range(num_qubits)}
+            )
+            target.add_instruction(
+                Measure(),
+                {
+                    (i,): InstructionProperties(error=1e-3 * (num_qubits - i))
+                    for i in range(num_qubits)
+                },
+            )
+            target.add_instruction(
+                CZGate(),
+                {
+                    pair: InstructionProperties(error=1e-3 * sum(pair))
+                    for pair in CouplingMap.from_line(num_qubits)
+                },
+            )
+            return generate_preset_pass_manager(
+                optimization_level=optimization_level, target=target, seed_transpiler=2025_10_27
+            )
+    
+        def ghz(num_qubits):
+            qc = QuantumCircuit(num_qubits, num_qubits)
+            qc.h(0)
+            for i in range(1, num_qubits):
+                qc.cx(0, i)
+            qc.measure(qc.qubits, qc.clbits)
+            return qc
+    
+        circuits = [ghz(5), ghz(8), ghz(10)]
+        shared_pm = make_pm()
+>       shared_circuits = [shared_pm.run(circuit) for circuit in circuits]
+
+test/python/phase_d_backport/test_backport_d1.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test/python/phase_d_backport/test_backport_d1.py:74: in <listcomp>
+    shared_circuits = [shared_pm.run(circuit) for circuit in circuits]
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:415: in run
+    return super().run(circuits, output_name, callback, num_processes=num_processes)
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:438: in wrapper
+    return meth(*meth_args, **meth_kwargs)
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:197: in run
+    return super().run(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:237: in run
+    out = [
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:238: in <listcomp>
+    _run_workflow(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:311: in _run_workflow
+    passmanager_ir, final_state = flow_controller.execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/base_tasks.py:218: in execute
+    passmanager_ir, state = next_task.execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:167: in execute
+    new_dag, state = super().execute(
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/passmanager/base_tasks.py:98: in execute
+    ret = self.run(passmanager_ir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <qiskit.transpiler.passes.optimization.consolidate_blocks.ConsolidateBlocks object at 0x7b842fba5c00>
+dag = <qiskit._accelerate.circuit.DAGCircuit object at 0x5f696d0f2b20>
+
+    def run(self, dag):
+        """Run the ConsolidateBlocks pass on `dag`.
+    
+        Iterate over each block and replace it with an equivalent Unitary
+        on the same wires.
+        """
+        if self.decomposer is None:
+            return dag
+    
+        blocks = self.property_set["block_list"]
+        if blocks is not None:
+            blocks = [[node._node_id for node in block] for block in blocks]
+        runs = self.property_set["run_list"]
+        if runs is not None:
+            runs = [[node._node_id for node in run] for run in runs]
+    
+        if self._qubit_map is None:
+            self._qubit_map = list(range(dag.num_qubits()))
+    
+>       consolidate_blocks(
+            dag,
+            self.decomposer._inner_decomposer,
+            self.basis_gate_name,
+            self.force_consolidate,
+            target=self.target,
+            basis_gates=self.basis_gates,
+            blocks=blocks,
+            runs=runs,
+            qubit_map=self._qubit_map,
+        )
+E       pyo3_runtime.PanicException: index out of bounds: the len is 5 but the index is 5
+
+../../venvs/2.2.2/lib/python3.10/site-packages/qiskit/transpiler/passes/optimization/consolidate_blocks.py:145: PanicException
+----------------------------- Captured stderr call -----------------------------
+
+thread '<unnamed>' panicked at crates/transpiler/src/passes/consolidate_blocks.rs:173:69:
+index out of bounds: the len is 5 but the index is 5
+=============================== warnings summary ===============================
+test/python/compiler/test_transpiler.py::TestTranspile::test_delay_converts_expr_to_dt
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 2000 [dt] = 2.000000e+03 [s] from 2.000000e+03 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py: 13 warnings
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:269: UserWarning: Providing `coupling_map` and/or `basis_gates` along with `backend` is not recommended, as this will invalidate the backend's gate durations and error rates.
+    pm = generate_preset_pass_manager(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 229 [dt] = 5.088889e-08 [s] from 5.083800e-08 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 4224 [dt] = 9.386667e-07 [s] from 9.386160e-07 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 458 [dt] = 5.088889e-08 [s] from 5.083800e-08 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 8448 [dt] = 9.386667e-07 [s] from 9.386160e-07 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints_backend
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 4505 [dt] = 1.000110e-06 [s] from 1.000000e-06 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_1_0
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_2_1
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_3_2
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_4_3
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_expr_1_0
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_expr_2_1
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_expr_3_2
+test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_expr_4_3
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 6 [dt] = 6.000000e+00 [s] from 5.558559e+00 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_1_0
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_2_1
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_3_2
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_4_3
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/providers/fake_provider/generic_backend_v2.py:348: RuntimeWarning: Aer not found using BasicSimulator and no noise
+    warnings.warn("Aer not found using BasicSimulator and no noise", RuntimeWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_3_2
+FAILED test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_4_3
+2 failed, 374 passed, 2 skipped, 32 warnings in 14.46s

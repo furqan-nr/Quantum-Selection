@@ -1,0 +1,14 @@
+........................................................................ [ 29%]
+........................................................................ [ 59%]
+........................................................................ [ 89%]
+.........................                                    [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_4_3
+  /tmp/phase_d/tests/2.0.2/test/python/transpiler/test_preset_passmanagers.py:1721: UserWarning: Providing `coupling_map` and/or `basis_gates` along with `backend` is not recommended, as this will invalidate the backend's gate durations and error rates.
+    _ = generate_preset_pass_manager(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+241 passed, 4 warnings, 12 subtests passed in 3.88s

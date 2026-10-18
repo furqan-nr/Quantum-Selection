@@ -1,0 +1,228 @@
+........................................................................ [ 28%]
+........................................................................ [ 57%]
+........................................................................ [ 86%]
+..........................FFFFFFFF                           [100%]
+=================================== FAILURES ===================================
+__________ TestPresetPassManager.test_layout_registers_preserved_1_0 ___________
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_1_0>
+optimization_level = 0
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved(self, optimization_level):
+        """Test that registers in circuit are preserved in TranspileLayout
+    
+        Reproduce from `#15014 <https://github.com/Qiskit/qiskit/issues/15014>`__
+        """
+        a = QuantumRegister(2, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+    
+        initial_layout = [0, 1, 2]
+        qc_transpiled = transpile(
+            qc, initial_layout=initial_layout, optimization_level=optimization_level
+        )
+    
+>       self.assertEqual(qc_transpiled.layout.initial_layout.get_registers(), {a, b})
+E       AssertionError: Items in the second set but not the first:
+E       QuantumRegister(2, 'a')
+E       QuantumRegister(1, 'b')
+
+test/python/phase_d_backport/test_backport_d3.py:43: AssertionError
+__________ TestPresetPassManager.test_layout_registers_preserved_2_1 ___________
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_2_1>
+optimization_level = 1
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved(self, optimization_level):
+        """Test that registers in circuit are preserved in TranspileLayout
+    
+        Reproduce from `#15014 <https://github.com/Qiskit/qiskit/issues/15014>`__
+        """
+        a = QuantumRegister(2, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+    
+        initial_layout = [0, 1, 2]
+        qc_transpiled = transpile(
+            qc, initial_layout=initial_layout, optimization_level=optimization_level
+        )
+    
+>       self.assertEqual(qc_transpiled.layout.initial_layout.get_registers(), {a, b})
+E       AssertionError: Items in the second set but not the first:
+E       QuantumRegister(2, 'a')
+E       QuantumRegister(1, 'b')
+
+test/python/phase_d_backport/test_backport_d3.py:43: AssertionError
+__________ TestPresetPassManager.test_layout_registers_preserved_3_2 ___________
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_3_2>
+optimization_level = 2
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved(self, optimization_level):
+        """Test that registers in circuit are preserved in TranspileLayout
+    
+        Reproduce from `#15014 <https://github.com/Qiskit/qiskit/issues/15014>`__
+        """
+        a = QuantumRegister(2, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+    
+        initial_layout = [0, 1, 2]
+        qc_transpiled = transpile(
+            qc, initial_layout=initial_layout, optimization_level=optimization_level
+        )
+    
+>       self.assertEqual(qc_transpiled.layout.initial_layout.get_registers(), {a, b})
+E       AssertionError: Items in the second set but not the first:
+E       QuantumRegister(2, 'a')
+E       QuantumRegister(1, 'b')
+
+test/python/phase_d_backport/test_backport_d3.py:43: AssertionError
+__________ TestPresetPassManager.test_layout_registers_preserved_4_3 ___________
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_4_3>
+optimization_level = 3
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved(self, optimization_level):
+        """Test that registers in circuit are preserved in TranspileLayout
+    
+        Reproduce from `#15014 <https://github.com/Qiskit/qiskit/issues/15014>`__
+        """
+        a = QuantumRegister(2, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+    
+        initial_layout = [0, 1, 2]
+        qc_transpiled = transpile(
+            qc, initial_layout=initial_layout, optimization_level=optimization_level
+        )
+    
+>       self.assertEqual(qc_transpiled.layout.initial_layout.get_registers(), {a, b})
+E       AssertionError: Items in the second set but not the first:
+E       QuantumRegister(2, 'a')
+E       QuantumRegister(1, 'b')
+
+test/python/phase_d_backport/test_backport_d3.py:43: AssertionError
+_ TestPresetPassManager.test_layout_registers_preserved_with_allocated_ancilla_1_0 _
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_with_allocated_ancilla_1_0>
+optimization_level = 0
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved_with_allocated_ancilla(self, optimization_level):
+        """Test that allocated ancilla register is preserved in output layout."""
+        a = QuantumRegister(3, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+        qc.h(3)
+        qc.cx(3, 0)
+        qc.cx(3, 1)
+        qc.cx(3, 2)
+    
+        target = Target.from_configuration(["u", "cx"], coupling_map=CouplingMap.from_line(10))
+        tqc = transpile(qc, optimization_level=optimization_level, target=target)
+        out_registers = tqc.layout.initial_layout.get_registers()
+>       self.assertEqual(len(out_registers), 3)
+E       AssertionError: 0 != 3
+
+test/python/phase_d_backport/test_backport_d3.py:60: AssertionError
+_ TestPresetPassManager.test_layout_registers_preserved_with_allocated_ancilla_2_1 _
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_with_allocated_ancilla_2_1>
+optimization_level = 1
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved_with_allocated_ancilla(self, optimization_level):
+        """Test that allocated ancilla register is preserved in output layout."""
+        a = QuantumRegister(3, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+        qc.h(3)
+        qc.cx(3, 0)
+        qc.cx(3, 1)
+        qc.cx(3, 2)
+    
+        target = Target.from_configuration(["u", "cx"], coupling_map=CouplingMap.from_line(10))
+        tqc = transpile(qc, optimization_level=optimization_level, target=target)
+        out_registers = tqc.layout.initial_layout.get_registers()
+>       self.assertEqual(len(out_registers), 3)
+E       AssertionError: 0 != 3
+
+test/python/phase_d_backport/test_backport_d3.py:60: AssertionError
+_ TestPresetPassManager.test_layout_registers_preserved_with_allocated_ancilla_3_2 _
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_with_allocated_ancilla_3_2>
+optimization_level = 2
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved_with_allocated_ancilla(self, optimization_level):
+        """Test that allocated ancilla register is preserved in output layout."""
+        a = QuantumRegister(3, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+        qc.h(3)
+        qc.cx(3, 0)
+        qc.cx(3, 1)
+        qc.cx(3, 2)
+    
+        target = Target.from_configuration(["u", "cx"], coupling_map=CouplingMap.from_line(10))
+        tqc = transpile(qc, optimization_level=optimization_level, target=target)
+        out_registers = tqc.layout.initial_layout.get_registers()
+>       self.assertEqual(len(out_registers), 3)
+E       AssertionError: 0 != 3
+
+test/python/phase_d_backport/test_backport_d3.py:60: AssertionError
+_ TestPresetPassManager.test_layout_registers_preserved_with_allocated_ancilla_4_3 _
+
+self = <test.python.phase_d_backport.test_backport_d3.TestPresetPassManager testMethod=test_layout_registers_preserved_with_allocated_ancilla_4_3>
+optimization_level = 3
+
+    @data(0, 1, 2, 3)
+    def test_layout_registers_preserved_with_allocated_ancilla(self, optimization_level):
+        """Test that allocated ancilla register is preserved in output layout."""
+        a = QuantumRegister(3, "a")
+        b = AncillaRegister(1, "b")
+        qc = QuantumCircuit(b, a)
+        qc.x(0)
+        qc.h(3)
+        qc.cx(3, 0)
+        qc.cx(3, 1)
+        qc.cx(3, 2)
+    
+        target = Target.from_configuration(["u", "cx"], coupling_map=CouplingMap.from_line(10))
+        tqc = transpile(qc, optimization_level=optimization_level, target=target)
+        out_registers = tqc.layout.initial_layout.get_registers()
+>       self.assertEqual(len(out_registers), 3)
+E       AssertionError: 0 != 3
+
+test/python/phase_d_backport/test_backport_d3.py:60: AssertionError
+=============================== warnings summary ===============================
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_custom_basis_gates_raise_4_3
+  /tmp/phase_d/tests/2.2.0rc1/test/python/transpiler/test_preset_passmanagers.py:1794: UserWarning: Providing `coupling_map` and/or `basis_gates` along with `backend` is not recommended, as this will invalidate the backend's gate durations and error rates.
+    _ = generate_preset_pass_manager(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_1_0
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_2_1
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_3_2
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_4_3
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_1_0
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_2_1
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_3_2
+FAILED test/python/phase_d_backport/test_backport_d3.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_4_3
+8 failed, 242 passed, 4 warnings, 12 subtests passed in 3.32s

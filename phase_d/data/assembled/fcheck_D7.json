@@ -1,0 +1,74 @@
+{
+"backport": {
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.22775319599895738,
+"calibration_runs_s": [
+0.23095648900198285,
+0.224161489000835,
+0.2332833779946668,
+0.22604934500122909,
+0.22775319599895738
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+0.87890625,
+0.9580078125,
+0.9033203125
+],
+"mode": "fcheck",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "be4461fd106c3637064faf57b772301726f64dc01657cc2c5fb163a08bd62242"
+},
+"tests": "2.5.0",
+"utc": "2026-10-18T02:09:15Z",
+"venv_freeze_sha256": "d8003dfc365cd9fc6899b816ad77a300591c2c235aaf8e4406d20f7e5220b3ce",
+"wheel": "2.5.1"
+}
+],
+"files": {
+"test/python/phase_d_backport/test_backport_d7.py": {
+"collected": [
+"test/python/phase_d_backport/test_backport_d7.py::TestOptimize1qGatesDecomposition::test_custom_gate_in_target"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 0,
+"unit": [
+"test/python/phase_d_backport/test_backport_d7.py"
+],
+"wall_s_this_call": 1.0270564556121826
+}
+}
+},
+"tests": {
+"test/python/phase_d_backport/test_backport_d7.py::TestOptimize1qGatesDecomposition::test_custom_gate_in_target": {
+"duration": 0.002835289000358898,
+"file": "test/python/phase_d_backport/test_backport_d7.py",
+"outcome": "passed",
+"synthetic": null
+}
+}
+},
+"pre_existing": null
+}

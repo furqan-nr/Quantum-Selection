@@ -1,0 +1,27 @@
+.................................................. [ 29%]
+...................................................................... [ 69%]
+......................................... [ 93%]
+...........                                                           [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_high_level_synthesis.py:2354
+  /tmp/phase_d/tests/2.5.0/test/python/transpiler/test_high_level_synthesis.py:2354: PytestCollectionWarning: cannot collect test class 'TestGate' because it has a __init__ constructor (from: test/python/transpiler/test_high_level_synthesis.py)
+    class TestGate(Gate):
+
+test/python/transpiler/test_high_level_synthesis.py:2361
+  /tmp/phase_d/tests/2.5.0/test/python/transpiler/test_high_level_synthesis.py:2361: PytestCollectionWarning: cannot collect test class 'TestCompositeGate' because it has a __init__ constructor (from: test/python/transpiler/test_high_level_synthesis.py)
+    class TestCompositeGate(Gate):
+
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_on_sparse_observable
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_1_default
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_2_rustiq
+  /tmp/phase_d/venvs/2.5.0/lib/python3.10/site-packages/scipy/sparse/linalg/_dsolve/linsolve.py:597: SparseEfficiencyWarning: splu converted its input to CSC format
+    return splu(A).solve
+
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_on_sparse_observable
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_1_default
+test/python/transpiler/test_high_level_synthesis.py::TestPauliEvolutionSynthesisPlugins::test_trivial_rotations_2_rustiq
+  /tmp/phase_d/venvs/2.5.0/lib/python3.10/site-packages/scipy/sparse/linalg/_matfuncs.py:707: SparseEfficiencyWarning: spsolve is more efficient when sparse b is in the CSC matrix format
+    return spsolve(Q, P)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+172 passed, 8 warnings, 58 subtests passed in 3.73s

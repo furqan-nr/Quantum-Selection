@@ -1,0 +1,114 @@
+...................................FF                                    [100%]
+=================================== FAILURES ===================================
+_ TestVF2LayoutLattice.test_hexagonal_lattice_graph_9_in_25_no_trial_limit_1_True _
+
+self = <test.python.phase_d_backport.test_backport_d6.TestVF2LayoutLattice testMethod=test_hexagonal_lattice_graph_9_in_25_no_trial_limit_1_True>
+strict_direction = True
+
+    @ddt.data(True, False)
+    def test_hexagonal_lattice_graph_9_in_25_no_trial_limit(self, strict_direction):
+        """A 9x9 interaction map in 25x25 coupling map"""
+        graph_9_9 = rustworkx.generators.hexagonal_lattice_graph(9, 9)
+        circuit = self.graph_state_from_pygraph(graph_9_9)
+    
+        dag = circuit_to_dag(circuit)
+        pass_ = VF2Layout(self.cmap25, seed=-1, max_trials=-1, strict_direction=strict_direction)
+>       pass_.run(dag)
+
+test/python/phase_d_backport/test_backport_d6.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <qiskit.transpiler.passes.layout.vf2_layout.VF2Layout object at 0x7d6d5f4d77c0>
+dag = <qiskit._accelerate.circuit.DAGCircuit object at 0x59642b20fba0>
+
+    def run(self, dag):
+        """run the layout method"""
+        if self.target is None and self.coupling_map is None:
+            raise TranspilerError("coupling_map or target must be specified.")
+        if self.coupling_map is None:
+            target, coupling_map = self.target, self.target.build_coupling_map()
+        elif self.target is None:
+            coupling_map = self.coupling_map
+            target = vf2_utils.build_dummy_target(coupling_map)
+        else:
+            # We have both, but may need to override the target if it has no connectivity.
+            coupling_map = self.target.build_coupling_map()
+            if coupling_map is None:
+                target = vf2_utils.build_dummy_target(self.coupling_map)
+                coupling_map = self.coupling_map
+            else:
+                target = self.target
+        self.avg_error_map = self.property_set["vf2_avg_error_map"]
+        # Run rust fast path if we have no randomization
+        if self.seed == -1:
+            try:
+>               layout = vf2_layout_pass(
+                    dag,
+                    target,
+                    self.strict_direction,
+                    self.call_limit,
+                    self.time_limit,
+                    self.max_trials,
+                    self.avg_error_map,
+                )
+E               OverflowError: can't convert negative int to unsigned
+
+../../venvs/2.1.0/lib/python3.10/site-packages/qiskit/transpiler/passes/layout/vf2_layout.py:143: OverflowError
+_ TestVF2LayoutLattice.test_hexagonal_lattice_graph_9_in_25_no_trial_limit_2_False _
+
+self = <test.python.phase_d_backport.test_backport_d6.TestVF2LayoutLattice testMethod=test_hexagonal_lattice_graph_9_in_25_no_trial_limit_2_False>
+strict_direction = False
+
+    @ddt.data(True, False)
+    def test_hexagonal_lattice_graph_9_in_25_no_trial_limit(self, strict_direction):
+        """A 9x9 interaction map in 25x25 coupling map"""
+        graph_9_9 = rustworkx.generators.hexagonal_lattice_graph(9, 9)
+        circuit = self.graph_state_from_pygraph(graph_9_9)
+    
+        dag = circuit_to_dag(circuit)
+        pass_ = VF2Layout(self.cmap25, seed=-1, max_trials=-1, strict_direction=strict_direction)
+>       pass_.run(dag)
+
+test/python/phase_d_backport/test_backport_d6.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <qiskit.transpiler.passes.layout.vf2_layout.VF2Layout object at 0x7d6d5f387d30>
+dag = <qiskit._accelerate.circuit.DAGCircuit object at 0x59642b2b4a00>
+
+    def run(self, dag):
+        """run the layout method"""
+        if self.target is None and self.coupling_map is None:
+            raise TranspilerError("coupling_map or target must be specified.")
+        if self.coupling_map is None:
+            target, coupling_map = self.target, self.target.build_coupling_map()
+        elif self.target is None:
+            coupling_map = self.coupling_map
+            target = vf2_utils.build_dummy_target(coupling_map)
+        else:
+            # We have both, but may need to override the target if it has no connectivity.
+            coupling_map = self.target.build_coupling_map()
+            if coupling_map is None:
+                target = vf2_utils.build_dummy_target(self.coupling_map)
+                coupling_map = self.coupling_map
+            else:
+                target = self.target
+        self.avg_error_map = self.property_set["vf2_avg_error_map"]
+        # Run rust fast path if we have no randomization
+        if self.seed == -1:
+            try:
+>               layout = vf2_layout_pass(
+                    dag,
+                    target,
+                    self.strict_direction,
+                    self.call_limit,
+                    self.time_limit,
+                    self.max_trials,
+                    self.avg_error_map,
+                )
+E               OverflowError: can't convert negative int to unsigned
+
+../../venvs/2.1.0/lib/python3.10/site-packages/qiskit/transpiler/passes/layout/vf2_layout.py:143: OverflowError
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d6.py::TestVF2LayoutLattice::test_hexagonal_lattice_graph_9_in_25_no_trial_limit_1_True
+FAILED test/python/phase_d_backport/test_backport_d6.py::TestVF2LayoutLattice::test_hexagonal_lattice_graph_9_in_25_no_trial_limit_2_False
+2 failed, 35 passed in 1.29s

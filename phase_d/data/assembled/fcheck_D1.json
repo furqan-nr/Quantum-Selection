@@ -1,0 +1,95 @@
+{
+"backport": {
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.23125390600034734,
+"calibration_runs_s": [
+0.2290889670039178,
+0.2220269899989944,
+0.23125390600034734,
+0.2386614790011663,
+0.24003396199987037
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+0.8359375,
+0.9384765625,
+0.90966796875
+],
+"mode": "fcheck",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "be4461fd106c3637064faf57b772301726f64dc01657cc2c5fb163a08bd62242"
+},
+"tests": "2.2.2",
+"utc": "2026-10-18T02:12:24Z",
+"venv_freeze_sha256": "530074e8ed2f56b929ff536c565020848a18ad1088c243d2bab531d4bb24516f",
+"wheel": "2.2.3"
+}
+],
+"files": {
+"test/python/phase_d_backport/test_backport_d1.py": {
+"collected": [
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_1_0",
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_2_1",
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_3_2",
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_4_3"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 0,
+"unit": [
+"test/python/phase_d_backport/test_backport_d1.py"
+],
+"wall_s_this_call": 1.2456130981445312
+}
+}
+},
+"tests": {
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_1_0": {
+"duration": 0.03292837100889301,
+"file": "test/python/phase_d_backport/test_backport_d1.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_2_1": {
+"duration": 0.04059832399798324,
+"file": "test/python/phase_d_backport/test_backport_d1.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_3_2": {
+"duration": 0.06210557199665345,
+"file": "test/python/phase_d_backport/test_backport_d1.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d1.py::TestTranspile::test_reuse_on_differing_circuits_4_3": {
+"duration": 0.07518156700098189,
+"file": "test/python/phase_d_backport/test_backport_d1.py",
+"outcome": "passed",
+"synthetic": null
+}
+}
+},
+"pre_existing": null
+}

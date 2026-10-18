@@ -1,0 +1,48 @@
+..................F                                             [100%]
+=================================== FAILURES ===================================
+_ TestElidePermutationsInTranspileFlow.test_unitary_equivalence_permutation_gates _
+
+self = <test.python.phase_d_backport.test_backport_d8.TestElidePermutationsInTranspileFlow testMethod=test_unitary_equivalence_permutation_gates>
+
+    def test_unitary_equivalence_permutation_gates(self):
+        """Test unitary equivalence of the original and transpiled circuits."""
+    
+        for perm in itertools.permutations([0, 1, 2]):
+            qc = QuantumCircuit(5)
+            qc.h(1)
+            qc.swap(1, 2)
+            qc.swap(4, 3)
+            qc.append(PermutationGate(perm), [1, 2, 3])
+    
+            pm = PassManager([ElidePermutations()])
+>           res = pm.run(qc)
+
+test/python/phase_d_backport/test_backport_d8.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:474: in wrapper
+    return meth(*meth_args, **meth_kwargs)
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:233: in run
+    return super().run(
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:237: in run
+    out = [
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:238: in <listcomp>
+    _run_workflow(
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/passmanager/passmanager.py:325: in _run_workflow
+    out_program = pass_manager._passmanager_backend(
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:72: in _passmanager_backend
+    self._finalize_layouts(passmanager_ir)
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:136: in _finalize_layouts
+    new_final_layout = new_final_layout.compose(virtual_permutation_layout_inv, original_qubits)
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/layout.py:389: in compose
+    return Layout({virt: other_v2p[qubits[phys]] for virt, phys in self._v2p.items()})
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+.0 = <dict_itemiterator object at 0x7e81327cb6a0>
+
+>   return Layout({virt: other_v2p[qubits[phys]] for virt, phys in self._v2p.items()})
+E   KeyError: <Qubit register=(5, "q"), index=3>
+
+../../venvs/2.0.2/lib/python3.10/site-packages/qiskit/transpiler/layout.py:389: KeyError
+=========================== short test summary info ============================
+FAILED test/python/phase_d_backport/test_backport_d8.py::TestElidePermutationsInTranspileFlow::test_unitary_equivalence_permutation_gates
+1 failed, 18 passed, 9 subtests passed in 0.88s

@@ -1,0 +1,12 @@
+.....................                          [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_context_aware_dd.py::TestContextAwareDD::test_127q
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 0 [dt] = 0.000000e+00 [s] from 5.000000e-11 [s]
+    warnings.warn(
+
+test/python/transpiler/test_context_aware_dd.py::TestContextAwareDD::test_127q
+  /tmp/phase_d/venvs/2.2.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 0 [dt] = 0.000000e+00 [s] from 1.000000e-10 [s]
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+21 passed, 2 warnings, 26 subtests passed in 2.05s
