@@ -1,0 +1,16 @@
+{"ev": "launch", "n": 0, "t": 1792302740.569489, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_config_from_backend_v2", "idx": 0, "raw": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_config_from_backend_v2"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_from_backend_and_user", "idx": 1, "raw": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_from_backend_and_user"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_backend", "idx": 2, "raw": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_backend"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_user_option", "idx": 3, "raw": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_user_option"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_str", "idx": 4, "raw": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_str"}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_config_from_backend_v2", "t": 1792302740.944014}
+{"call": 0.002358685997023713, "duration": 0.003650519000075292, "ev": "done", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_config_from_backend_v2", "outcome": "passed", "setup": 0.0011606900006881915, "teardown": 0.0001311430023633875}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_from_backend_and_user", "t": 1792302740.950101}
+{"call": 0.0014915620049578138, "duration": 0.0017785430027288385, "ev": "done", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_from_backend_and_user", "outcome": "passed", "setup": 0.0001866469974629581, "teardown": 0.0001003340003080666}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_backend", "t": 1792302740.954349}
+{"call": 0.00018357200315222144, "duration": 0.0005120900023030117, "ev": "done", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_backend", "outcome": "passed", "setup": 0.00021640100021613762, "teardown": 0.00011211699893465266}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_user_option", "t": 1792302740.9569373}
+{"call": 0.001448013004846871, "duration": 0.0017332909992546774, "ev": "done", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_invalid_user_option", "outcome": "passed", "setup": 0.00018581900076242164, "teardown": 9.945899364538491e-05}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_str", "t": 1792302740.9609766}
+{"call": 0.0007106089979060926, "duration": 0.001143217996286694, "ev": "done", "id": "test/python/transpiler/test_passmanager_config.py::TestPassManagerConfig::test_str", "outcome": "passed", "setup": 0.0002826429990818724, "teardown": 0.000149965999298729}

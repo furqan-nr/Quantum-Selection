@@ -1,0 +1,3893 @@
+{
+ "STATUS": "EXPLORATORY / POST HOC. Written after the confirmatory run; no result here is confirmatory. Corrections were chosen after seeing the data and must be pre-registered and tested on new events.",
+ "b_post_hoc_variants_summary": {
+  "file_level_registered_est": {
+   "spend@0.05": {
+    "max": 4.6956,
+    "mean": 2.4825,
+    "would_meet_P1_thresholds": false
+   },
+   "spend@0.25": {
+    "max": 1.9589,
+    "mean": 1.2052,
+    "would_meet_P1_thresholds": true
+   }
+  },
+  "file_level_unseen_at_mean": {
+   "spend@0.05": {
+    "max": 2.3455,
+    "mean": 1.3263,
+    "would_meet_P1_thresholds": false
+   },
+   "spend@0.25": {
+    "max": 1.158,
+    "mean": 1.0049,
+    "would_meet_P1_thresholds": true
+   }
+  },
+  "floor_at_P_median (all tests)": {
+   "cheapest_first@0.05": {
+    "max": 3.7872,
+    "mean": 1.5482,
+    "would_meet_P1_thresholds": false
+   },
+   "cheapest_first@0.25": {
+    "max": 2.0179,
+    "mean": 1.4058,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 3.7872,
+    "mean": 1.5655,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.25": {
+    "max": 2.0179,
+    "mean": 1.4058,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 3.7622,
+    "mean": 1.5442,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 2.0053,
+    "mean": 1.397,
+    "would_meet_P1_thresholds": false
+   }
+  },
+  "registered": {
+   "cheapest_first@0.05": {
+    "max": 4.7466,
+    "mean": 2.7372,
+    "would_meet_P1_thresholds": false
+   },
+   "cheapest_first@0.25": {
+    "max": 2.0728,
+    "mean": 1.4509,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 4.7472,
+    "mean": 2.7374,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.25": {
+    "max": 2.0728,
+    "mean": 1.4509,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 4.7466,
+    "mean": 2.7372,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 2.0728,
+    "mean": 1.4509,
+    "would_meet_P1_thresholds": false
+   }
+  },
+  "shrink_half_to_file_median (seen)": {
+   "cheapest_first@0.05": {
+    "max": 4.0202,
+    "mean": 1.8091,
+    "would_meet_P1_thresholds": false
+   },
+   "cheapest_first@0.25": {
+    "max": 2.1801,
+    "mean": 1.6182,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 4.007,
+    "mean": 1.7539,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.25": {
+    "max": 2.1801,
+    "mean": 1.601,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 6.2798,
+    "mean": 2.3595,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 2.7043,
+    "mean": 1.8288,
+    "would_meet_P1_thresholds": false
+   }
+  },
+  "unseen_at_global_p90": {
+   "cheapest_first@0.05": {
+    "max": 1.126,
+    "mean": 1.025,
+    "would_meet_P1_thresholds": true
+   },
+   "cheapest_first@0.25": {
+    "max": 1.96,
+    "mean": 1.3961,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 1.1661,
+    "mean": 1.0852,
+    "would_meet_P1_thresholds": true
+   },
+   "coast_d@0.25": {
+    "max": 1.96,
+    "mean": 1.3961,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 1.1257,
+    "mean": 1.0237,
+    "would_meet_P1_thresholds": true
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 1.923,
+    "mean": 1.3805,
+    "would_meet_P1_thresholds": false
+   }
+  },
+  "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+   "cheapest_first@0.05": {
+    "max": 1.1256,
+    "mean": 1.0257,
+    "would_meet_P1_thresholds": true
+   },
+   "cheapest_first@0.25": {
+    "max": 1.8781,
+    "mean": 1.2632,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 1.1441,
+    "mean": 1.0797,
+    "would_meet_P1_thresholds": true
+   },
+   "coast_d@0.25": {
+    "max": 1.8781,
+    "mean": 1.2632,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 1.1255,
+    "mean": 1.025,
+    "would_meet_P1_thresholds": true
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 1.7368,
+    "mean": 1.2454,
+    "would_meet_P1_thresholds": true
+   }
+  },
+  "unseen_at_mean + shrink": {
+   "cheapest_first@0.05": {
+    "max": 1.2087,
+    "mean": 1.0504,
+    "would_meet_P1_thresholds": true
+   },
+   "cheapest_first@0.25": {
+    "max": 1.9041,
+    "mean": 1.4909,
+    "would_meet_P1_thresholds": false
+   },
+   "coast_d@0.05": {
+    "max": 1.2115,
+    "mean": 1.0004,
+    "would_meet_P1_thresholds": true
+   },
+   "coast_d@0.25": {
+    "max": 1.9041,
+    "mean": 1.4759,
+    "would_meet_P1_thresholds": false
+   },
+   "rebudget_cheapest_first@0.05": {
+    "max": 1.0637,
+    "mean": 0.98,
+    "would_meet_P1_thresholds": true
+   },
+   "rebudget_cheapest_first@0.25": {
+    "max": 1.688,
+    "mean": 1.3728,
+    "would_meet_P1_thresholds": false
+   }
+  },
+  "unseen_in_separate_always_run_lane": {
+   "cheapest_first@0.05": {
+    "max": 1.126,
+    "mean": 1.025,
+    "would_meet_P1_thresholds": true
+   },
+   "cheapest_first@0.25": {
+    "max": 1.0649,
+    "mean": 0.9948,
+    "would_meet_P1_thresholds": true
+   },
+   "coast_d@0.05": {
+    "max": 1.1251,
+    "mean": 1.0252,
+    "would_meet_P1_thresholds": true
+   },
+   "coast_d@0.25": {
+    "max": 1.0649,
+    "mean": 0.9948,
+    "would_meet_P1_thresholds": true
+   }
+  }
+ },
+ "c_phase_d_tails_median_over_events": {
+  "gini": 0.8993,
+  "top10pct_share": 0.8863,
+  "top1pct_share": 0.5918,
+  "top5pct_share": 0.8256
+ },
+ "c_synthetic_corpus_tails (data_scaleup labels total_cost_s, per event)": {
+  "median_over_events": {
+   "gini": 0.9444,
+   "top10pct_share": 0.9655,
+   "top1pct_share": 0.4413,
+   "top5pct_share": 0.9015
+  },
+  "median_suite_size": 116,
+  "median_suite_total_s": 1223.962,
+  "n_events": 19,
+  "pooled": {
+   "gini": 0.9477,
+   "max_over_median": 9082.0549,
+   "median_s": 0.0479,
+   "n": 2204,
+   "top10pct_share": 0.9652,
+   "top1pct_share": 0.3217,
+   "top5pct_share": 0.9023,
+   "total_s": 24370.6447
+  }
+ },
+ "consistency": {
+  "D1": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D2": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D3": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D4": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D5": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D6": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D7": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  },
+  "D8": {
+   "P1_cf05_matches": true,
+   "P2_rel_error_matches": true
+  }
+ },
+ "events": {
+  "D1": {
+   "B": "2.2.2",
+   "P": "2.2.1",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 7,
+    "B_unseen_est_s": 0.0073,
+    "B_unseen_real_s": 0.0087,
+    "P_cost_of_removed_s": 0.0,
+    "P_tests_removed_in_B": 0,
+    "pre_est_s": 65.5846,
+    "pre_real_s": 64.5246,
+    "rel_error": 0.0164,
+    "rel_error_excluding_top2_files": -0.0081,
+    "seen_tests_est_s": 65.5773,
+    "seen_tests_real_s": 64.5159,
+    "top_files": [
+     {
+      "est_minus_real_s": 0.9054,
+      "est_s": 12.966,
+      "est_sources": {
+       "seen": 374
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 374,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 372,
+        "skipped": 2
+       },
+       "P": {
+        "passed": 372,
+        "skipped": 2
+       }
+      },
+      "real_s": 12.0607,
+      "share_of_net_gap": 0.8542
+     },
+     {
+      "est_minus_real_s": 0.5323,
+      "est_s": 6.468,
+      "est_sources": {
+       "seen": 140
+      },
+      "file": "test/python/transpiler/test_sabre_swap.py",
+      "n": 140,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 140
+       },
+       "P": {
+        "passed": 140
+       }
+      },
+      "real_s": 5.9358,
+      "share_of_net_gap": 0.5022
+     },
+     {
+      "est_minus_real_s": 0.5046,
+      "est_s": 13.1708,
+      "est_sources": {
+       "seen": 10
+      },
+      "file": "test/python/transpiler/test_optimize_clifford_t.py",
+      "n": 10,
+      "real_s": 12.6662,
+      "share_of_net_gap": 0.4761
+     },
+     {
+      "est_minus_real_s": -0.1825,
+      "est_s": 6.904,
+      "est_sources": {
+       "seen": 71
+      },
+      "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+      "n": 71,
+      "real_s": 7.0866,
+      "share_of_net_gap": -0.1722
+     },
+     {
+      "est_minus_real_s": -0.14,
+      "est_s": 0.4555,
+      "est_sources": {
+       "seen": 6
+      },
+      "file": "test/python/transpiler/test_token_swapper.py",
+      "n": 6,
+      "real_s": 0.5955,
+      "share_of_net_gap": -0.1321
+     },
+     {
+      "est_minus_real_s": -0.1012,
+      "est_s": 1.1047,
+      "est_sources": {
+       "seen": 28
+      },
+      "file": "test/python/transpiler/test_star_prerouting.py",
+      "n": 28,
+      "real_s": 1.206,
+      "share_of_net_gap": -0.0955
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0022,
+       "n": 7,
+       "real_over_budget": 0.0027,
+       "real_over_est": 1.198
+      },
+      "seen": {
+       "est_over_budget": 0.9968,
+       "n": 1842,
+       "real_over_budget": 1.0907,
+       "real_over_est": 1.0942
+      }
+     },
+     "spend_ratio": 1.0933,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0013,
+       "file": "test/python/transpiler/test_basis_translator.py",
+       "n": 1,
+       "real_s": 0.0027
+      },
+      {
+       "est_s": 0.002,
+       "file": "test/python/transpiler/test_consolidate_blocks.py",
+       "n": 2,
+       "real_s": 0.0027
+      },
+      {
+       "est_s": 0.0018,
+       "file": "test/python/transpiler/test_scheduling_padding_pass.py",
+       "n": 2,
+       "real_s": 0.0015
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0004,
+       "n": 7,
+       "real_over_budget": 0.0005,
+       "real_over_est": 1.198
+      },
+      "seen": {
+       "est_over_budget": 0.9959,
+       "n": 2561,
+       "real_over_budget": 1.0064,
+       "real_over_est": 1.0105
+      }
+     },
+     "spend_ratio": 1.0069,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0013,
+       "file": "test/python/transpiler/test_basis_translator.py",
+       "n": 1,
+       "real_s": 0.0027
+      },
+      {
+       "est_s": 0.002,
+       "file": "test/python/transpiler/test_consolidate_blocks.py",
+       "n": 2,
+       "real_s": 0.0027
+      },
+      {
+       "est_s": 0.0018,
+       "file": "test/python/transpiler/test_scheduling_padding_pass.py",
+       "n": 2,
+       "real_s": 0.0015
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 65.1115,
+    "B_pass1_wall_over_sum_durations": 2.7493,
+    "B_pass1_wall_s": 179.0088,
+    "cheapest_decile_seen_median_est_s": 0.0005,
+    "cheapest_decile_seen_median_real_minus_est_s": 0.0001,
+    "cheapest_decile_seen_median_real_s": 0.0005,
+    "plan5_setup_teardown_share_Bpass1": 0.1894
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 88,
+      "n_tests": 1335,
+      "spend": 1.0546
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2044,
+      "spend": 1.0191
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 88,
+      "n_tests": 1335,
+      "spend": 1.0546
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2044,
+      "spend": 1.0191
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.5692,
+      "coast_d": 0.5696,
+      "n_selected_cf": 1488,
+      "rebudget_cheapest_first": 0.5821
+     },
+     "0.25": {
+      "cheapest_first": 0.9159,
+      "coast_d": 0.9159,
+      "n_selected_cf": 2550,
+      "rebudget_cheapest_first": 0.9163
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 1.0933,
+      "coast_d": 1.0938,
+      "n_selected_cf": 1849,
+      "rebudget_cheapest_first": 1.0933
+     },
+     "0.25": {
+      "cheapest_first": 1.0069,
+      "coast_d": 1.0069,
+      "n_selected_cf": 2572,
+      "rebudget_cheapest_first": 1.0069
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 1.0383,
+      "coast_d": 0.7857,
+      "n_selected_cf": 1771,
+      "rebudget_cheapest_first": 1.0659
+     },
+     "0.25": {
+      "cheapest_first": 1.2099,
+      "coast_d": 1.1323,
+      "n_selected_cf": 2602,
+      "rebudget_cheapest_first": 1.1345
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.0925,
+      "coast_d": 1.093,
+      "n_selected_cf": 1843,
+      "rebudget_cheapest_first": 1.093
+     },
+     "0.25": {
+      "cheapest_first": 0.9921,
+      "coast_d": 0.9921,
+      "n_selected_cf": 2569,
+      "rebudget_cheapest_first": 0.994
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.0925,
+      "coast_d": 1.093,
+      "n_selected_cf": 1848,
+      "rebudget_cheapest_first": 1.0924
+     },
+     "0.25": {
+      "cheapest_first": 0.9972,
+      "coast_d": 0.9972,
+      "n_selected_cf": 2570,
+      "rebudget_cheapest_first": 0.9996
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 1.0356,
+      "coast_d": 0.7849,
+      "n_selected_cf": 1769,
+      "rebudget_cheapest_first": 1.0637
+     },
+     "0.25": {
+      "cheapest_first": 1.195,
+      "coast_d": 1.1265,
+      "n_selected_cf": 2600,
+      "rebudget_cheapest_first": 1.1255
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 0.0027,
+      "always_run_lane_real_s": 0.0087,
+      "cheapest_first": 1.0925,
+      "coast_d": 1.093
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.0005,
+      "always_run_lane_real_s": 0.0087,
+      "cheapest_first": 1.0064,
+      "coast_d": 1.0064
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.978,
+    "seen_only_P_to_B_spend_0.05": 1.0931,
+    "seen_only_P_to_B_spend_0.25": 1.007,
+    "seen_selected_real_over_est_5pct": 1.0942,
+    "self_selection_pass1_to_pass2_spend_0.05": 0.9524,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9583,
+    "spearman_Bpass1_vs_Bpass2": 0.983,
+    "spearman_P_vs_Bmean_seen": 0.9905
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.8869,
+    "max_over_median": 2181.6122,
+    "median_s": 0.0024,
+    "n": 2667,
+    "top10pct_share": 0.861,
+    "top1pct_share": 0.5173,
+    "top5pct_share": 0.7806,
+    "total_s": 64.5246
+   },
+   "c_tail_P_durations": {
+    "gini": 0.8928,
+    "max_over_median": 2374.7568,
+    "median_s": 0.0022,
+    "n": 2660,
+    "top10pct_share": 0.8687,
+    "top1pct_share": 0.5175,
+    "top5pct_share": 0.7867,
+    "total_s": 65.5773
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 1,
+      "random": 0.12
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 1,
+      "random": 0.52
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0073,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 2064,
+       "coast_d": 2064,
+       "default": 154
+      },
+      "real_s": 0.0108,
+      "suite_size": 2671,
+      "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_reuse_on_differing_circuits_3_2"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0073,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 2065,
+       "coast_d": 2065,
+       "default": 155
+      },
+      "real_s": 0.0121,
+      "suite_size": 2671,
+      "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_reuse_on_differing_circuits_4_3"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 5.093141746430774,
+      "rank": 2064
+     },
+     "cheapest_oracle": {
+      "cost_s": 6.615279466339416,
+      "rank": 2251
+     },
+     "coast_d": {
+      "cost_s": 5.093141746430774,
+      "rank": 2064
+     },
+     "default": {
+      "cost_s": 1.2960188440192724,
+      "rank": 154
+     },
+     "file_rr": {
+      "cost_s": 52.34844145328316,
+      "rank": 2305
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.9072
+  },
+  "D2": {
+   "B": "2.1.0",
+   "P": "2.0.3",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 140,
+    "B_unseen_est_s": 0.3729,
+    "B_unseen_real_s": 21.8242,
+    "P_cost_of_removed_s": 11.8887,
+    "P_tests_removed_in_B": 60,
+    "pre_est_s": 146.1805,
+    "pre_real_s": 67.2839,
+    "rel_error": 1.1726,
+    "rel_error_excluding_top2_files": 0.0446,
+    "seen_tests_est_s": 145.8076,
+    "seen_tests_real_s": 45.4597,
+    "top_files": [
+     {
+      "est_minus_real_s": 89.174,
+      "est_s": 99.13,
+      "est_sources": {
+       "file_median": 11,
+       "seen": 17
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 28,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 28
+       },
+       "P": {
+        "passed": 42
+       }
+      },
+      "real_s": 9.956,
+      "share_of_net_gap": 1.1303
+     },
+     {
+      "est_minus_real_s": -12.2832,
+      "est_s": 0.0208,
+      "est_sources": {
+       "global_median": 10
+      },
+      "file": "test/python/transpiler/test_optimize_clifford_t.py",
+      "n": 10,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 10
+       },
+       "P": {}
+      },
+      "real_s": 12.304,
+      "share_of_net_gap": -0.1557
+     },
+     {
+      "est_minus_real_s": 11.0763,
+      "est_s": 11.0826,
+      "est_sources": {
+       "seen": 23
+      },
+      "file": "test/python/transpiler/test_template_matching.py",
+      "n": 23,
+      "real_s": 0.0063,
+      "share_of_net_gap": 0.1404
+     },
+     {
+      "est_minus_real_s": -6.4071,
+      "est_s": 13.3879,
+      "est_sources": {
+       "file_median": 4,
+       "seen": 359
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 363,
+      "real_s": 19.795,
+      "share_of_net_gap": -0.0812
+     },
+     {
+      "est_minus_real_s": -3.3153,
+      "est_s": 0.0956,
+      "est_sources": {
+       "global_median": 46
+      },
+      "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+      "n": 46,
+      "real_s": 3.4109,
+      "share_of_net_gap": -0.042
+     },
+     {
+      "est_minus_real_s": -1.2477,
+      "est_s": 0.0437,
+      "est_sources": {
+       "global_median": 21
+      },
+      "file": "test/python/transpiler/test_context_aware_dd.py",
+      "n": 21,
+      "real_s": 1.2913,
+      "share_of_net_gap": -0.0158
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0221,
+       "n": 58,
+       "real_over_budget": 0.6536,
+       "real_over_est": 29.6329
+      },
+      "global_median": {
+       "est_over_budget": 0.023,
+       "n": 81,
+       "real_over_budget": 2.3316,
+       "real_over_est": 101.224
+      },
+      "seen": {
+       "est_over_budget": 0.9499,
+       "n": 2135,
+       "real_over_budget": 0.9617,
+       "real_over_est": 1.0124
+      }
+     },
+     "spend_ratio": 3.9469,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0208,
+       "file": "test/python/transpiler/test_optimize_clifford_t.py",
+       "n": 10,
+       "real_s": 12.304
+      },
+      {
+       "est_s": 0.0118,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 11,
+       "real_s": 3.859
+      },
+      {
+       "est_s": 0.0956,
+       "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+       "n": 46,
+       "real_s": 3.4109
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0056,
+       "n": 59,
+       "real_over_budget": 0.1308,
+       "real_over_est": 23.3661
+      },
+      "global_median": {
+       "est_over_budget": 0.0046,
+       "n": 81,
+       "real_over_budget": 0.4663,
+       "real_over_est": 101.224
+      },
+      "seen": {
+       "est_over_budget": 0.9767,
+       "n": 2382,
+       "real_over_budget": 1.0505,
+       "real_over_est": 1.0755
+      }
+     },
+     "spend_ratio": 1.6475,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0208,
+       "file": "test/python/transpiler/test_optimize_clifford_t.py",
+       "n": 10,
+       "real_s": 12.304
+      },
+      {
+       "est_s": 0.0118,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 11,
+       "real_s": 3.859
+      },
+      {
+       "est_s": 0.0956,
+       "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+       "n": 46,
+       "real_s": 3.4109
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 67.3635,
+    "B_pass1_wall_over_sum_durations": 2.4661,
+    "B_pass1_wall_s": 166.1241,
+    "cheapest_decile_seen_median_est_s": 0.0005,
+    "cheapest_decile_seen_median_real_minus_est_s": -0.0,
+    "cheapest_decile_seen_median_real_s": 0.0005,
+    "plan5_setup_teardown_share_Bpass1": 0.0255
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 94,
+      "n_tests": 1429,
+      "spend": 3.0878
+     },
+     "0.25": {
+      "n_files": 101,
+      "n_tests": 2146,
+      "spend": 1.0269
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1352,
+      "spend": 2.3452
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2123,
+      "spend": 1.0267
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 3.7852,
+      "coast_d": 3.7852,
+      "n_selected_cf": 2184,
+      "rebudget_cheapest_first": 3.7588
+     },
+     "0.25": {
+      "cheapest_first": 1.6407,
+      "coast_d": 1.6407,
+      "n_selected_cf": 2525,
+      "rebudget_cheapest_first": 1.6257
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 3.9469,
+      "coast_d": 3.9469,
+      "n_selected_cf": 2278,
+      "rebudget_cheapest_first": 3.9469
+     },
+     "0.25": {
+      "cheapest_first": 1.6475,
+      "coast_d": 1.6475,
+      "n_selected_cf": 2526,
+      "rebudget_cheapest_first": 1.6475
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 4.0135,
+      "coast_d": 4.0001,
+      "n_selected_cf": 2256,
+      "rebudget_cheapest_first": 6.2732
+     },
+     "0.25": {
+      "cheapest_first": 1.6986,
+      "coast_d": 1.6986,
+      "n_selected_cf": 2529,
+      "rebudget_cheapest_first": 2.1854
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.002,
+      "coast_d": 1.1661,
+      "n_selected_cf": 2153,
+      "rebudget_cheapest_first": 0.9977
+     },
+     "0.25": {
+      "cheapest_first": 1.6093,
+      "coast_d": 1.6093,
+      "n_selected_cf": 2523,
+      "rebudget_cheapest_first": 1.5865
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.0028,
+      "coast_d": 1.1439,
+      "n_selected_cf": 2161,
+      "rebudget_cheapest_first": 0.9978
+     },
+     "0.25": {
+      "cheapest_first": 1.2076,
+      "coast_d": 1.2076,
+      "n_selected_cf": 2508,
+      "rebudget_cheapest_first": 1.2897
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 1.2085,
+      "coast_d": 1.2057,
+      "n_selected_cf": 2141,
+      "rebudget_cheapest_first": 1.0292
+     },
+     "0.25": {
+      "cheapest_first": 1.5928,
+      "coast_d": 1.5928,
+      "n_selected_cf": 2517,
+      "rebudget_cheapest_first": 1.5588
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 2.9854,
+      "always_run_lane_real_s": 21.8242,
+      "cheapest_first": 1.002,
+      "coast_d": 1.002
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.5971,
+      "always_run_lane_real_s": 21.8242,
+      "cheapest_first": 1.0505,
+      "coast_d": 1.0505
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.2767,
+    "seen_only_P_to_B_spend_0.05": 1.0014,
+    "seen_only_P_to_B_spend_0.25": 1.0533,
+    "seen_selected_real_over_est_5pct": 1.0124,
+    "self_selection_pass1_to_pass2_spend_0.05": 1.0052,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9956,
+    "spearman_Bpass1_vs_Bpass2": 0.997,
+    "spearman_P_vs_Bmean_seen": 0.9347
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.9053,
+    "max_over_median": 4791.96,
+    "median_s": 0.002,
+    "n": 2533,
+    "top10pct_share": 0.8857,
+    "top1pct_share": 0.5851,
+    "top5pct_share": 0.8139,
+    "total_s": 67.2839
+   },
+   "c_tail_P_durations": {
+    "gini": 0.9563,
+    "max_over_median": 9443.2351,
+    "median_s": 0.0021,
+    "n": 2453,
+    "top10pct_share": 0.9504,
+    "top1pct_share": 0.8161,
+    "top5pct_share": 0.9178,
+    "total_s": 157.6963
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.15
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 0,
+      "random": 0.54
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0059,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": true,
+        "coast_d": true
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1844,
+       "coast_d": 1845,
+       "default": 1821
+      },
+      "real_s": 0.0059,
+      "suite_size": 2537,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestNoVF2WithInitialLayout::test_no_vf2_layout_passes_when_initial_layout_set_4_3"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 24.830428930221387,
+      "rank": 1844
+     },
+     "cheapest_oracle": {
+      "cost_s": 3.3050136402162025,
+      "rank": 1815
+     },
+     "coast_d": {
+      "cost_s": 24.83718825721735,
+      "rank": 1845
+     },
+     "default": {
+      "cost_s": 45.38192490588699,
+      "rank": 1821
+     },
+     "file_rr": {
+      "cost_s": 50.06852881883242,
+      "rank": 2417
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.9409
+  },
+  "D3": {
+   "B": "2.2.0rc1",
+   "P": "2.1.2",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 120,
+    "B_unseen_est_s": 0.3649,
+    "B_unseen_real_s": 4.609,
+    "P_cost_of_removed_s": 0.0203,
+    "P_tests_removed_in_B": 21,
+    "pre_est_s": 62.9728,
+    "pre_real_s": 70.4975,
+    "rel_error": -0.1067,
+    "rel_error_excluding_top2_files": 0.0692,
+    "seen_tests_est_s": 62.6079,
+    "seen_tests_real_s": 65.8885,
+    "top_files": [
+     {
+      "est_minus_real_s": -7.9264,
+      "est_s": 12.688,
+      "est_sources": {
+       "file_median": 4,
+       "seen": 370
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 374,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 372,
+        "skipped": 2
+       },
+       "P": {
+        "passed": 368,
+        "skipped": 2
+       }
+      },
+      "real_s": 20.6144,
+      "share_of_net_gap": 1.0534
+     },
+     {
+      "est_minus_real_s": -2.5993,
+      "est_s": 3.9475,
+      "est_sources": {
+       "file_median": 25,
+       "seen": 46
+      },
+      "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+      "n": 71,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 71
+       },
+       "P": {
+        "passed": 46
+       }
+      },
+      "real_s": 6.5468,
+      "share_of_net_gap": 0.3454
+     },
+     {
+      "est_minus_real_s": 2.0089,
+      "est_s": 7.7357,
+      "est_sources": {
+       "seen": 138
+      },
+      "file": "test/python/transpiler/test_sabre_swap.py",
+      "n": 138,
+      "real_s": 5.7268,
+      "share_of_net_gap": -0.267
+     },
+     {
+      "est_minus_real_s": -1.2745,
+      "est_s": 0.0298,
+      "est_sources": {
+       "global_median": 14
+      },
+      "file": "test/python/transpiler/test_litinski_transformation.py",
+      "n": 14,
+      "real_s": 1.3043,
+      "share_of_net_gap": 0.1694
+     },
+     {
+      "est_minus_real_s": 0.7534,
+      "est_s": 10.5648,
+      "est_sources": {
+       "seen": 28
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 28,
+      "real_s": 9.8114,
+      "share_of_net_gap": -0.1001
+     },
+     {
+      "est_minus_real_s": 0.7219,
+      "est_s": 13.035,
+      "est_sources": {
+       "seen": 10
+      },
+      "file": "test/python/transpiler/test_optimize_clifford_t.py",
+      "n": 10,
+      "real_s": 12.3131,
+      "share_of_net_gap": -0.0959
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0218,
+       "n": 72,
+       "real_over_budget": 0.0255,
+       "real_over_est": 1.1739
+      },
+      "global_median": {
+       "est_over_budget": 0.0108,
+       "n": 16,
+       "real_over_budget": 0.4153,
+       "real_over_est": 38.4286
+      },
+      "seen": {
+       "est_over_budget": 0.9665,
+       "n": 1726,
+       "real_over_budget": 0.9148,
+       "real_over_est": 0.9464
+      }
+     },
+     "spend_ratio": 1.3556,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0298,
+       "file": "test/python/transpiler/test_litinski_transformation.py",
+       "n": 14,
+       "real_s": 1.3043
+      },
+      {
+       "est_s": 0.0309,
+       "file": "test/python/transpiler/test_inverse_cancellation.py",
+       "n": 46,
+       "real_s": 0.0387
+      },
+      {
+       "est_s": 0.0066,
+       "file": "test/python/transpiler/test_commutative_cancellation.py",
+       "n": 4,
+       "real_s": 0.0218
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.021,
+       "n": 104,
+       "real_over_budget": 0.2095,
+       "real_over_est": 9.976
+      },
+      "global_median": {
+       "est_over_budget": 0.0022,
+       "n": 16,
+       "real_over_budget": 0.0831,
+       "real_over_est": 38.4286
+      },
+      "seen": {
+       "est_over_budget": 0.9704,
+       "n": 2423,
+       "real_over_budget": 0.8587,
+       "real_over_est": 0.8848
+      }
+     },
+     "spend_ratio": 1.1512,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.2133,
+       "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+       "n": 25,
+       "real_s": 3.1707
+      },
+      {
+       "est_s": 0.0298,
+       "file": "test/python/transpiler/test_litinski_transformation.py",
+       "n": 14,
+       "real_s": 1.3043
+      },
+      {
+       "est_s": 0.0309,
+       "file": "test/python/transpiler/test_inverse_cancellation.py",
+       "n": 46,
+       "real_s": 0.0387
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 70.475,
+    "B_pass1_wall_over_sum_durations": 2.3875,
+    "B_pass1_wall_s": 168.2623,
+    "cheapest_decile_seen_median_est_s": 0.0005,
+    "cheapest_decile_seen_median_real_minus_est_s": -0.0,
+    "cheapest_decile_seen_median_real_s": 0.0005,
+    "plan5_setup_teardown_share_Bpass1": 0.1353
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 88,
+      "n_tests": 1327,
+      "spend": 1.3011
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2034,
+      "spend": 0.9828
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 87,
+      "n_tests": 1313,
+      "spend": 0.8872
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2034,
+      "spend": 0.9828
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.9038,
+      "coast_d": 0.9037,
+      "n_selected_cf": 1459,
+      "rebudget_cheapest_first": 0.9048
+     },
+     "0.25": {
+      "cheapest_first": 1.0751,
+      "coast_d": 1.0751,
+      "n_selected_cf": 2531,
+      "rebudget_cheapest_first": 1.0697
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 1.3556,
+      "coast_d": 1.3562,
+      "n_selected_cf": 1814,
+      "rebudget_cheapest_first": 1.3556
+     },
+     "0.25": {
+      "cheapest_first": 1.1512,
+      "coast_d": 1.1512,
+      "n_selected_cf": 2551,
+      "rebudget_cheapest_first": 1.1512
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 1.2902,
+      "coast_d": 1.0772,
+      "n_selected_cf": 1734,
+      "rebudget_cheapest_first": 1.4575
+     },
+     "0.25": {
+      "cheapest_first": 1.2892,
+      "coast_d": 1.229,
+      "n_selected_cf": 2577,
+      "rebudget_cheapest_first": 1.351
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 0.9436,
+      "coast_d": 0.9579,
+      "n_selected_cf": 1743,
+      "rebudget_cheapest_first": 0.9437
+     },
+     "0.25": {
+      "cheapest_first": 1.0321,
+      "coast_d": 1.0321,
+      "n_selected_cf": 2518,
+      "rebudget_cheapest_first": 1.0247
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 0.95,
+      "coast_d": 0.962,
+      "n_selected_cf": 1794,
+      "rebudget_cheapest_first": 0.9487
+     },
+     "0.25": {
+      "cheapest_first": 0.9304,
+      "coast_d": 0.9304,
+      "n_selected_cf": 2521,
+      "rebudget_cheapest_first": 0.9024
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 0.8832,
+      "coast_d": 0.6837,
+      "n_selected_cf": 1714,
+      "rebudget_cheapest_first": 0.9054
+     },
+     "0.25": {
+      "cheapest_first": 1.0567,
+      "coast_d": 1.0049,
+      "n_selected_cf": 2547,
+      "rebudget_cheapest_first": 1.0453
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 1.4627,
+      "always_run_lane_real_s": 4.609,
+      "cheapest_first": 0.9436,
+      "coast_d": 0.9439
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.2925,
+      "always_run_lane_real_s": 4.609,
+      "cheapest_first": 0.877,
+      "coast_d": 0.877
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 1.0578,
+    "seen_only_P_to_B_spend_0.05": 0.9444,
+    "seen_only_P_to_B_spend_0.25": 0.879,
+    "seen_selected_real_over_est_5pct": 0.9464,
+    "self_selection_pass1_to_pass2_spend_0.05": 1.0002,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.998,
+    "spearman_Bpass1_vs_Bpass2": 0.9981,
+    "spearman_P_vs_Bmean_seen": 0.9923
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.9067,
+    "max_over_median": 4654.4845,
+    "median_s": 0.0021,
+    "n": 2647,
+    "top10pct_share": 0.8869,
+    "top1pct_share": 0.5813,
+    "top5pct_share": 0.817,
+    "total_s": 70.4975
+   },
+   "c_tail_P_durations": {
+    "gini": 0.8911,
+    "max_over_median": 2512.5953,
+    "median_s": 0.0021,
+    "n": 2548,
+    "top10pct_share": 0.8671,
+    "top1pct_share": 0.5199,
+    "top5pct_share": 0.7838,
+    "total_s": 62.6282
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.32
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 0,
+      "random": 0.84
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1838,
+       "coast_d": 1840,
+       "default": 1674
+      },
+      "real_s": 0.0032,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_1_0"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1839,
+       "coast_d": 1841,
+       "default": 1675
+      },
+      "real_s": 0.0048,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_2_1"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1840,
+       "coast_d": 1842,
+       "default": 1676
+      },
+      "real_s": 0.0058,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_3_2"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1841,
+       "coast_d": 1843,
+       "default": 1677
+      },
+      "real_s": 0.0056,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_4_3"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1842,
+       "coast_d": 1844,
+       "default": 1678
+      },
+      "real_s": 0.0036,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_1_0"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1844,
+       "coast_d": 1846,
+       "default": 1680
+      },
+      "real_s": 0.0068,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_3_2"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0061,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 1845,
+       "coast_d": 1847,
+       "default": 1681
+      },
+      "real_s": 0.0071,
+      "suite_size": 2655,
+      "test": "test/python/transpiler/test_preset_passmanagers.py::TestPresetPassManager::test_layout_registers_preserved_with_allocated_ancilla_4_3"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 4.398912764019769,
+      "rank": 1838
+     },
+     "cheapest_oracle": {
+      "cost_s": 1.7880673499930708,
+      "rank": 1539
+     },
+     "coast_d": {
+      "cost_s": 4.411302184016677,
+      "rank": 1840
+     },
+     "default": {
+      "cost_s": 48.55489066813243,
+      "rank": 1674
+     },
+     "file_rr": {
+      "cost_s": 24.254231610597344,
+      "rank": 790
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.9686
+  },
+  "D4": {
+   "B": "2.5.0",
+   "P": "2.4.2",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 516,
+    "B_unseen_est_s": 0.8971,
+    "B_unseen_real_s": 20.0139,
+    "P_cost_of_removed_s": 0.1135,
+    "P_tests_removed_in_B": 27,
+    "pre_est_s": 70.5656,
+    "pre_real_s": 87.2173,
+    "rel_error": -0.1909,
+    "rel_error_excluding_top2_files": 0.0177,
+    "seen_tests_est_s": 69.6685,
+    "seen_tests_real_s": 67.2034,
+    "top_files": [
+     {
+      "est_minus_real_s": -12.8165,
+      "est_s": 0.2666,
+      "est_sources": {
+       "global_median": 250
+      },
+      "file": "test/python/transpiler/test_two_qubit_peephole.py",
+      "n": 250,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 250
+       },
+       "P": {}
+      },
+      "real_s": 13.0831,
+      "share_of_net_gap": 0.7697
+     },
+     {
+      "est_minus_real_s": -5.0438,
+      "est_s": 0.9563,
+      "est_sources": {
+       "file_median": 9,
+       "seen": 95
+      },
+      "file": "test/python/transpiler/test_unitary_synthesis.py",
+      "n": 104,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 104
+       },
+       "P": {
+        "passed": 95
+       }
+      },
+      "real_s": 6.0,
+      "share_of_net_gap": 0.3029
+     },
+     {
+      "est_minus_real_s": 2.1934,
+      "est_s": 5.6208,
+      "est_sources": {
+       "seen": 140
+      },
+      "file": "test/python/transpiler/test_sabre_swap.py",
+      "n": 140,
+      "real_s": 3.4274,
+      "share_of_net_gap": -0.1317
+     },
+     {
+      "est_minus_real_s": -0.9298,
+      "est_s": 10.7508,
+      "est_sources": {
+       "file_median": 1,
+       "seen": 29
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 30,
+      "real_s": 11.6806,
+      "share_of_net_gap": 0.0558
+     },
+     {
+      "est_minus_real_s": 0.4338,
+      "est_s": 3.9697,
+      "est_sources": {
+       "seen": 30
+      },
+      "file": "test/python/transpiler/test_ross_selinger.py",
+      "n": 30,
+      "real_s": 3.536,
+      "share_of_net_gap": -0.026
+     },
+     {
+      "est_minus_real_s": 0.3397,
+      "est_s": 1.3862,
+      "est_sources": {
+       "file_median": 84,
+       "seen": 35
+      },
+      "file": "test/python/transpiler/test_litinski_transformation.py",
+      "n": 119,
+      "real_s": 1.0464,
+      "share_of_net_gap": -0.0204
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0286,
+       "n": 112,
+       "real_over_budget": 0.0435,
+       "real_over_est": 1.5195
+      },
+      "global_median": {
+       "est_over_budget": 0.0955,
+       "n": 316,
+       "real_over_budget": 3.778,
+       "real_over_est": 39.5625
+      },
+      "seen": {
+       "est_over_budget": 0.8756,
+       "n": 3815,
+       "real_over_budget": 0.9248,
+       "real_over_est": 1.0562
+      }
+     },
+     "spend_ratio": 4.7463,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.2666,
+       "file": "test/python/transpiler/test_two_qubit_peephole.py",
+       "n": 250,
+       "real_s": 13.0831
+      },
+      {
+       "est_s": 0.0704,
+       "file": "test/python/transpiler/test_pbc_pass_manager.py",
+       "n": 66,
+       "real_s": 0.2477
+      },
+      {
+       "est_s": 0.0763,
+       "file": "test/python/transpiler/test_litinski_transformation.py",
+       "n": 84,
+       "real_s": 0.1221
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0317,
+       "n": 200,
+       "real_over_budget": 0.3788,
+       "real_over_est": 11.9311
+      },
+      "global_median": {
+       "est_over_budget": 0.0191,
+       "n": 316,
+       "real_over_budget": 0.7556,
+       "real_over_est": 39.5625
+      },
+      "seen": {
+       "est_over_budget": 0.9488,
+       "n": 6996,
+       "real_over_budget": 0.9383,
+       "real_over_est": 0.989
+      }
+     },
+     "spend_ratio": 2.0727,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.2666,
+       "file": "test/python/transpiler/test_two_qubit_peephole.py",
+       "n": 250,
+       "real_s": 13.0831
+      },
+      {
+       "est_s": 0.049,
+       "file": "test/python/transpiler/test_unitary_synthesis.py",
+       "n": 9,
+       "real_s": 5.1476
+      },
+      {
+       "est_s": 0.0107,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 1,
+       "real_s": 0.8302
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 148.5824,
+    "B_pass1_wall_over_sum_durations": 1.9441,
+    "B_pass1_wall_s": 288.8559,
+    "cheapest_decile_seen_median_est_s": 0.0006,
+    "cheapest_decile_seen_median_real_minus_est_s": 0.0,
+    "cheapest_decile_seen_median_real_s": 0.0006,
+    "plan5_setup_teardown_share_Bpass1": 0.0713
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 92,
+      "n_tests": 1798,
+      "spend": 4.6954
+     },
+     "0.25": {
+      "n_files": 106,
+      "n_tests": 2572,
+      "spend": 1.9588
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1524,
+      "spend": 1.0204
+     },
+     "0.25": {
+      "n_files": 104,
+      "n_tests": 2203,
+      "spend": 1.158
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.8545,
+      "coast_d": 0.9236,
+      "n_selected_cf": 3309,
+      "rebudget_cheapest_first": 0.8545
+     },
+     "0.25": {
+      "cheapest_first": 2.0178,
+      "coast_d": 2.0178,
+      "n_selected_cf": 7493,
+      "rebudget_cheapest_first": 2.0052
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 4.7463,
+      "coast_d": 4.7469,
+      "n_selected_cf": 4243,
+      "rebudget_cheapest_first": 4.7463
+     },
+     "0.25": {
+      "cheapest_first": 2.0727,
+      "coast_d": 2.0727,
+      "n_selected_cf": 7515,
+      "rebudget_cheapest_first": 2.0727
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 0.9985,
+      "coast_d": 1.0411,
+      "n_selected_cf": 3973,
+      "rebudget_cheapest_first": 0.9533
+     },
+     "0.25": {
+      "cheapest_first": 2.18,
+      "coast_d": 2.18,
+      "n_selected_cf": 7551,
+      "rebudget_cheapest_first": 2.7041
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.0496,
+      "coast_d": 1.1205,
+      "n_selected_cf": 4208,
+      "rebudget_cheapest_first": 1.048
+     },
+     "0.25": {
+      "cheapest_first": 1.9575,
+      "coast_d": 1.9575,
+      "n_selected_cf": 7463,
+      "rebudget_cheapest_first": 1.9227
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.0504,
+      "coast_d": 1.1191,
+      "n_selected_cf": 4212,
+      "rebudget_cheapest_first": 1.0532
+     },
+     "0.25": {
+      "cheapest_first": 1.8762,
+      "coast_d": 1.8762,
+      "n_selected_cf": 7359,
+      "rebudget_cheapest_first": 1.7367
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 0.9801,
+      "coast_d": 1.0226,
+      "n_selected_cf": 3959,
+      "rebudget_cheapest_first": 0.9601
+     },
+     "0.25": {
+      "cheapest_first": 1.9016,
+      "coast_d": 1.9016,
+      "n_selected_cf": 7367,
+      "rebudget_cheapest_first": 1.6716
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 5.6721,
+      "always_run_lane_real_s": 20.0139,
+      "cheapest_first": 1.0496,
+      "coast_d": 1.0502
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 1.1344,
+      "always_run_lane_real_s": 20.0139,
+      "cheapest_first": 0.9827,
+      "coast_d": 0.9827
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.9604,
+    "seen_only_P_to_B_spend_0.05": 1.0505,
+    "seen_only_P_to_B_spend_0.25": 0.9854,
+    "seen_selected_real_over_est_5pct": 1.0562,
+    "self_selection_pass1_to_pass2_spend_0.05": 0.9821,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9402,
+    "spearman_Bpass1_vs_Bpass2": 0.961,
+    "spearman_P_vs_Bmean_seen": 0.9501
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.8933,
+    "max_over_median": 4774.8984,
+    "median_s": 0.0011,
+    "n": 7666,
+    "top10pct_share": 0.8898,
+    "top1pct_share": 0.6087,
+    "top5pct_share": 0.8449,
+    "total_s": 87.2173
+   },
+   "c_tail_P_durations": {
+    "gini": 0.8872,
+    "max_over_median": 4768.7,
+    "median_s": 0.0011,
+    "n": 7177,
+    "top10pct_share": 0.8806,
+    "top1pct_share": 0.6737,
+    "top5pct_share": 0.838,
+    "total_s": 69.782
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.03
+     },
+     "0.25": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 1,
+      "random": 0.37
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0016,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 6019,
+       "coast_d": 6026,
+       "default": 695
+      },
+      "real_s": 0.0021,
+      "suite_size": 7669,
+      "test": "test/python/transpiler/test_commutative_cancellation.py::TestCommutativeCancellation::test_negative_x_rotations_1_2"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0016,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 6020,
+       "coast_d": 6027,
+       "default": 696
+      },
+      "real_s": 0.002,
+      "suite_size": 7669,
+      "test": "test/python/transpiler/test_commutative_cancellation.py::TestCommutativeCancellation::test_negative_x_rotations_2_3"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 18.959988488524687,
+      "rank": 6019
+     },
+     "cheapest_oracle": {
+      "cost_s": 6.026432736525749,
+      "rank": 6027
+     },
+     "coast_d": {
+      "cost_s": 18.988001774534496,
+      "rank": 6026
+     },
+     "default": {
+      "cost_s": 12.98829067049519,
+      "rank": 695
+     },
+     "file_rr": {
+      "cost_s": 50.31168180970053,
+      "rank": 1609
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.984
+  },
+  "D5": {
+   "B": "2.5.1",
+   "P": "2.5.0",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 6,
+    "B_unseen_est_s": 0.009,
+    "B_unseen_real_s": 0.0067,
+    "P_cost_of_removed_s": 0.0,
+    "P_tests_removed_in_B": 0,
+    "pre_est_s": 88.5856,
+    "pre_real_s": 91.681,
+    "rel_error": -0.0338,
+    "rel_error_excluding_top2_files": -0.0218,
+    "seen_tests_est_s": 88.5766,
+    "seen_tests_real_s": 91.6743,
+    "top_files": [
+     {
+      "est_minus_real_s": -1.013,
+      "est_s": 10.3997,
+      "est_sources": {
+       "seen": 379
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 379,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 377,
+        "skipped": 2
+       },
+       "P": {
+        "passed": 377,
+        "skipped": 2
+       }
+      },
+      "real_s": 11.4127,
+      "share_of_net_gap": 0.3273
+     },
+     {
+      "est_minus_real_s": -0.6327,
+      "est_s": 13.0569,
+      "est_sources": {
+       "seen": 250
+      },
+      "file": "test/python/transpiler/test_two_qubit_peephole.py",
+      "n": 250,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 250
+       },
+       "P": {
+        "passed": 250
+       }
+      },
+      "real_s": 13.6896,
+      "share_of_net_gap": 0.2044
+     },
+     {
+      "est_minus_real_s": -0.5702,
+      "est_s": 4.3591,
+      "est_sources": {
+       "seen": 4283
+      },
+      "file": "test/python/transpiler/test_substitute_pi4_rotations.py",
+      "n": 4283,
+      "real_s": 4.9294,
+      "share_of_net_gap": 0.1842
+     },
+     {
+      "est_minus_real_s": -0.1781,
+      "est_s": 6.0644,
+      "est_sources": {
+       "seen": 104
+      },
+      "file": "test/python/transpiler/test_unitary_synthesis.py",
+      "n": 104,
+      "real_s": 6.2425,
+      "share_of_net_gap": 0.0575
+     },
+     {
+      "est_minus_real_s": -0.1732,
+      "est_s": 1.8254,
+      "est_sources": {
+       "seen": 251
+      },
+      "file": "test/python/transpiler/test_preset_passmanagers.py",
+      "n": 251,
+      "real_s": 1.9986,
+      "share_of_net_gap": 0.056
+     },
+     {
+      "est_minus_real_s": -0.1646,
+      "est_s": 11.8814,
+      "est_sources": {
+       "seen": 18
+      },
+      "file": "test/python/transpiler/test_optimize_clifford_t.py",
+      "n": 18,
+      "real_s": 12.046,
+      "share_of_net_gap": 0.0532
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0004,
+       "n": 2,
+       "real_over_budget": 0.0003,
+       "real_over_est": 0.7768
+      },
+      "seen": {
+       "est_over_budget": 0.9994,
+       "n": 4889,
+       "real_over_budget": 1.1253,
+       "real_over_est": 1.126
+      }
+     },
+     "spend_ratio": 1.1256,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0017,
+       "file": "test/python/transpiler/test_basic_swap.py",
+       "n": 2,
+       "real_s": 0.0013
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0004,
+       "n": 6,
+       "real_over_budget": 0.0003,
+       "real_over_est": 0.7423
+      },
+      "seen": {
+       "est_over_budget": 0.9967,
+       "n": 7490,
+       "real_over_budget": 1.0649,
+       "real_over_est": 1.0684
+      }
+     },
+     "spend_ratio": 1.0652,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0061,
+       "file": "test/python/transpiler/test_commutative_cancellation.py",
+       "n": 3,
+       "real_s": 0.0039
+      },
+      {
+       "est_s": 0.0013,
+       "file": "test/python/transpiler/test_optimize_1q_decomposition.py",
+       "n": 1,
+       "real_s": 0.0015
+      },
+      {
+       "est_s": 0.0017,
+       "file": "test/python/transpiler/test_basic_swap.py",
+       "n": 2,
+       "real_s": 0.0013
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 92.7348,
+    "B_pass1_wall_over_sum_durations": 2.5874,
+    "B_pass1_wall_s": 239.9425,
+    "cheapest_decile_seen_median_est_s": 0.0006,
+    "cheapest_decile_seen_median_real_minus_est_s": 0.0001,
+    "cheapest_decile_seen_median_real_s": 0.0006,
+    "plan5_setup_teardown_share_Bpass1": 0.2946
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 93,
+      "n_tests": 1607,
+      "spend": 0.997
+     },
+     "0.25": {
+      "n_files": 105,
+      "n_tests": 2397,
+      "spend": 0.8537
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 93,
+      "n_tests": 1607,
+      "spend": 0.997
+     },
+     "0.25": {
+      "n_files": 105,
+      "n_tests": 2397,
+      "spend": 0.8537
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.8656,
+      "coast_d": 0.8648,
+      "n_selected_cf": 4028,
+      "rebudget_cheapest_first": 0.8691
+     },
+     "0.25": {
+      "cheapest_first": 1.0218,
+      "coast_d": 1.0218,
+      "n_selected_cf": 7487,
+      "rebudget_cheapest_first": 1.0196
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 1.1256,
+      "coast_d": 1.1248,
+      "n_selected_cf": 4891,
+      "rebudget_cheapest_first": 1.1256
+     },
+     "0.25": {
+      "cheapest_first": 1.0652,
+      "coast_d": 1.0652,
+      "n_selected_cf": 7500,
+      "rebudget_cheapest_first": 1.0652
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 1.0833,
+      "coast_d": 1.0584,
+      "n_selected_cf": 4707,
+      "rebudget_cheapest_first": 1.0177
+     },
+     "0.25": {
+      "cheapest_first": 1.3291,
+      "coast_d": 1.3291,
+      "n_selected_cf": 7554,
+      "rebudget_cheapest_first": 1.086
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.126,
+      "coast_d": 1.1251,
+      "n_selected_cf": 4891,
+      "rebudget_cheapest_first": 1.1257
+     },
+     "0.25": {
+      "cheapest_first": 1.0652,
+      "coast_d": 1.0652,
+      "n_selected_cf": 7500,
+      "rebudget_cheapest_first": 1.0647
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.1256,
+      "coast_d": 1.1248,
+      "n_selected_cf": 4891,
+      "rebudget_cheapest_first": 1.1255
+     },
+     "0.25": {
+      "cheapest_first": 1.0652,
+      "coast_d": 1.0652,
+      "n_selected_cf": 7500,
+      "rebudget_cheapest_first": 1.0648
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 1.0833,
+      "coast_d": 1.058,
+      "n_selected_cf": 4707,
+      "rebudget_cheapest_first": 1.0175
+     },
+     "0.25": {
+      "cheapest_first": 1.3239,
+      "coast_d": 1.3239,
+      "n_selected_cf": 7553,
+      "rebudget_cheapest_first": 1.0879
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 0.0015,
+      "always_run_lane_real_s": 0.0067,
+      "cheapest_first": 1.126,
+      "coast_d": 1.1251
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.0003,
+      "always_run_lane_real_s": 0.0067,
+      "cheapest_first": 1.0649,
+      "coast_d": 1.0649
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 1.0302,
+    "seen_only_P_to_B_spend_0.05": 1.1259,
+    "seen_only_P_to_B_spend_0.25": 1.0652,
+    "seen_selected_real_over_est_5pct": 1.126,
+    "self_selection_pass1_to_pass2_spend_0.05": 1.0209,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9736,
+    "spearman_Bpass1_vs_Bpass2": 0.9353,
+    "spearman_P_vs_Bmean_seen": 0.9527
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.8872,
+    "max_over_median": 4229.7186,
+    "median_s": 0.0012,
+    "n": 7672,
+    "top10pct_share": 0.8821,
+    "top1pct_share": 0.5986,
+    "top5pct_share": 0.8342,
+    "total_s": 91.681
+   },
+   "c_tail_P_durations": {
+    "gini": 0.8928,
+    "max_over_median": 4734.7671,
+    "median_s": 0.0011,
+    "n": 7666,
+    "top10pct_share": 0.8888,
+    "top1pct_share": 0.6072,
+    "top5pct_share": 0.8428,
+    "total_s": 88.5766
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.16
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 1,
+      "random": 0.54
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0043,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 6493,
+       "coast_d": 6496,
+       "default": 559
+      },
+      "real_s": 0.0285,
+      "suite_size": 7676,
+      "test": "test/python/transpiler/test_clifford_t_passmanager.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_2_1"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0043,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 6494,
+       "coast_d": 6497,
+       "default": 560
+      },
+      "real_s": 0.0281,
+      "suite_size": 7676,
+      "test": "test/python/transpiler/test_clifford_t_passmanager.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_3_2"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0043,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 6495,
+       "coast_d": 6498,
+       "default": 561
+      },
+      "real_s": 0.028,
+      "suite_size": 7676,
+      "test": "test/python/transpiler/test_clifford_t_passmanager.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_4_3"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 8.290905408175604,
+      "rank": 6493
+     },
+     "cheapest_oracle": {
+      "cost_s": 16.650214748584403,
+      "rank": 7350
+     },
+     "coast_d": {
+      "cost_s": 8.309747849685664,
+      "rank": 6496
+     },
+     "default": {
+      "cost_s": 13.669842128554592,
+      "rank": 559
+     },
+     "file_rr": {
+      "cost_s": 21.99772325023514,
+      "rank": 1031
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.937
+  },
+  "D6": {
+   "B": "2.1.0",
+   "P": "2.0.3",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 140,
+    "B_unseen_est_s": 0.3729,
+    "B_unseen_real_s": 21.8242,
+    "P_cost_of_removed_s": 11.8887,
+    "P_tests_removed_in_B": 60,
+    "pre_est_s": 146.1805,
+    "pre_real_s": 67.2839,
+    "rel_error": 1.1726,
+    "rel_error_excluding_top2_files": 0.0446,
+    "seen_tests_est_s": 145.8076,
+    "seen_tests_real_s": 45.4597,
+    "top_files": [
+     {
+      "est_minus_real_s": 89.174,
+      "est_s": 99.13,
+      "est_sources": {
+       "file_median": 11,
+       "seen": 17
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 28,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 28
+       },
+       "P": {
+        "passed": 42
+       }
+      },
+      "real_s": 9.956,
+      "share_of_net_gap": 1.1303
+     },
+     {
+      "est_minus_real_s": -12.2832,
+      "est_s": 0.0208,
+      "est_sources": {
+       "global_median": 10
+      },
+      "file": "test/python/transpiler/test_optimize_clifford_t.py",
+      "n": 10,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 10
+       },
+       "P": {}
+      },
+      "real_s": 12.304,
+      "share_of_net_gap": -0.1557
+     },
+     {
+      "est_minus_real_s": 11.0763,
+      "est_s": 11.0826,
+      "est_sources": {
+       "seen": 23
+      },
+      "file": "test/python/transpiler/test_template_matching.py",
+      "n": 23,
+      "real_s": 0.0063,
+      "share_of_net_gap": 0.1404
+     },
+     {
+      "est_minus_real_s": -6.4071,
+      "est_s": 13.3879,
+      "est_sources": {
+       "file_median": 4,
+       "seen": 359
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 363,
+      "real_s": 19.795,
+      "share_of_net_gap": -0.0812
+     },
+     {
+      "est_minus_real_s": -3.3153,
+      "est_s": 0.0956,
+      "est_sources": {
+       "global_median": 46
+      },
+      "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+      "n": 46,
+      "real_s": 3.4109,
+      "share_of_net_gap": -0.042
+     },
+     {
+      "est_minus_real_s": -1.2477,
+      "est_s": 0.0437,
+      "est_sources": {
+       "global_median": 21
+      },
+      "file": "test/python/transpiler/test_context_aware_dd.py",
+      "n": 21,
+      "real_s": 1.2913,
+      "share_of_net_gap": -0.0158
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0221,
+       "n": 58,
+       "real_over_budget": 0.6537,
+       "real_over_est": 29.6329
+      },
+      "global_median": {
+       "est_over_budget": 0.023,
+       "n": 81,
+       "real_over_budget": 2.332,
+       "real_over_est": 101.224
+      },
+      "seen": {
+       "est_over_budget": 0.9526,
+       "n": 2136,
+       "real_over_budget": 0.9644,
+       "real_over_est": 1.0124
+      }
+     },
+     "spend_ratio": 3.9501,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0208,
+       "file": "test/python/transpiler/test_optimize_clifford_t.py",
+       "n": 10,
+       "real_s": 12.304
+      },
+      {
+       "est_s": 0.0118,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 11,
+       "real_s": 3.859
+      },
+      {
+       "est_s": 0.0956,
+       "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+       "n": 46,
+       "real_s": 3.4109
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0056,
+       "n": 59,
+       "real_over_budget": 0.1308,
+       "real_over_est": 23.3661
+      },
+      "global_median": {
+       "est_over_budget": 0.0046,
+       "n": 81,
+       "real_over_budget": 0.4664,
+       "real_over_est": 101.224
+      },
+      "seen": {
+       "est_over_budget": 0.9768,
+       "n": 2382,
+       "real_over_budget": 1.0506,
+       "real_over_est": 1.0755
+      }
+     },
+     "spend_ratio": 1.6478,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0208,
+       "file": "test/python/transpiler/test_optimize_clifford_t.py",
+       "n": 10,
+       "real_s": 12.304
+      },
+      {
+       "est_s": 0.0118,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 11,
+       "real_s": 3.859
+      },
+      {
+       "est_s": 0.0956,
+       "file": "test/python/transpiler/test_clifford_t_passmanager.py",
+       "n": 46,
+       "real_s": 3.4109
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 67.3635,
+    "B_pass1_wall_over_sum_durations": 2.4661,
+    "B_pass1_wall_s": 166.1241,
+    "cheapest_decile_seen_median_est_s": 0.0005,
+    "cheapest_decile_seen_median_real_minus_est_s": -0.0,
+    "cheapest_decile_seen_median_real_s": 0.0005,
+    "plan5_setup_teardown_share_Bpass1": 0.0255
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 94,
+      "n_tests": 1431,
+      "spend": 3.0883
+     },
+     "0.25": {
+      "n_files": 101,
+      "n_tests": 2144,
+      "spend": 1.027
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1354,
+      "spend": 2.3455
+     },
+     "0.25": {
+      "n_files": 100,
+      "n_tests": 2121,
+      "spend": 1.0268
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 3.7872,
+      "coast_d": 3.7872,
+      "n_selected_cf": 2184,
+      "rebudget_cheapest_first": 3.7622
+     },
+     "0.25": {
+      "cheapest_first": 1.6409,
+      "coast_d": 1.6409,
+      "n_selected_cf": 2523,
+      "rebudget_cheapest_first": 1.6259
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 3.9501,
+      "coast_d": 3.9501,
+      "n_selected_cf": 2277,
+      "rebudget_cheapest_first": 3.9501
+     },
+     "0.25": {
+      "cheapest_first": 1.6478,
+      "coast_d": 1.6478,
+      "n_selected_cf": 2524,
+      "rebudget_cheapest_first": 1.6478
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 4.0202,
+      "coast_d": 4.007,
+      "n_selected_cf": 2256,
+      "rebudget_cheapest_first": 6.2798
+     },
+     "0.25": {
+      "cheapest_first": 1.6988,
+      "coast_d": 1.6988,
+      "n_selected_cf": 2527,
+      "rebudget_cheapest_first": 2.2014
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.0022,
+      "coast_d": 1.1637,
+      "n_selected_cf": 2153,
+      "rebudget_cheapest_first": 0.998
+     },
+     "0.25": {
+      "cheapest_first": 1.6095,
+      "coast_d": 1.6095,
+      "n_selected_cf": 2521,
+      "rebudget_cheapest_first": 1.587
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.0029,
+      "coast_d": 1.1441,
+      "n_selected_cf": 2159,
+      "rebudget_cheapest_first": 0.9978
+     },
+     "0.25": {
+      "cheapest_first": 1.2078,
+      "coast_d": 1.2078,
+      "n_selected_cf": 2506,
+      "rebudget_cheapest_first": 1.2897
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 1.2087,
+      "coast_d": 1.2115,
+      "n_selected_cf": 2139,
+      "rebudget_cheapest_first": 1.0352
+     },
+     "0.25": {
+      "cheapest_first": 1.5931,
+      "coast_d": 1.5931,
+      "n_selected_cf": 2515,
+      "rebudget_cheapest_first": 1.5588
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 2.9859,
+      "always_run_lane_real_s": 21.8242,
+      "cheapest_first": 1.0022,
+      "coast_d": 1.0022
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.5972,
+      "always_run_lane_real_s": 21.8242,
+      "cheapest_first": 1.0506,
+      "coast_d": 1.0506
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.2766,
+    "seen_only_P_to_B_spend_0.05": 1.0014,
+    "seen_only_P_to_B_spend_0.25": 1.0533,
+    "seen_selected_real_over_est_5pct": 1.0124,
+    "self_selection_pass1_to_pass2_spend_0.05": 1.0052,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9956,
+    "spearman_Bpass1_vs_Bpass2": 0.997,
+    "spearman_P_vs_Bmean_seen": 0.9347
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.9053,
+    "max_over_median": 4791.96,
+    "median_s": 0.002,
+    "n": 2533,
+    "top10pct_share": 0.8857,
+    "top1pct_share": 0.5851,
+    "top5pct_share": 0.8139,
+    "total_s": 67.2839
+   },
+   "c_tail_P_durations": {
+    "gini": 0.9563,
+    "max_over_median": 9443.2351,
+    "median_s": 0.0021,
+    "n": 2453,
+    "top10pct_share": 0.9504,
+    "top1pct_share": 0.8161,
+    "top5pct_share": 0.9178,
+    "total_s": 157.6963
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 0,
+      "random": 0.24
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 0,
+      "random": 0.76
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0009,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": true,
+        "coast_d": true
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 586,
+       "coast_d": 610,
+       "default": 2490
+      },
+      "real_s": 0.0064,
+      "suite_size": 2535,
+      "test": "test/python/transpiler/test_vf2_layout.py::TestVF2LayoutLattice::test_hexagonal_lattice_graph_9_in_25_no_trial_limit_1_True"
+     },
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.0009,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": true,
+        "coast_d": true
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 587,
+       "coast_d": 611,
+       "default": 2491
+      },
+      "real_s": 0.0066,
+      "suite_size": 2535,
+      "test": "test/python/transpiler/test_vf2_layout.py::TestVF2LayoutLattice::test_hexagonal_lattice_graph_9_in_25_no_trial_limit_2_False"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 0.3669026661045791,
+      "rank": 586
+     },
+     "cheapest_oracle": {
+      "cost_s": 3.7951528777266503,
+      "rank": 1893
+     },
+     "coast_d": {
+      "cost_s": 1.6739700076104782,
+      "rank": 610
+     },
+     "default": {
+      "cost_s": 67.09586177183519,
+      "rank": 2490
+     },
+     "file_rr": {
+      "cost_s": 25.66325580429475,
+      "rank": 1097
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.9409
+  },
+  "D7": {
+   "B": "2.5.0",
+   "P": "2.4.2",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 516,
+    "B_unseen_est_s": 0.8971,
+    "B_unseen_real_s": 20.0139,
+    "P_cost_of_removed_s": 0.1135,
+    "P_tests_removed_in_B": 27,
+    "pre_est_s": 70.5656,
+    "pre_real_s": 87.2173,
+    "rel_error": -0.1909,
+    "rel_error_excluding_top2_files": 0.0177,
+    "seen_tests_est_s": 69.6685,
+    "seen_tests_real_s": 67.2034,
+    "top_files": [
+     {
+      "est_minus_real_s": -12.8165,
+      "est_s": 0.2666,
+      "est_sources": {
+       "global_median": 250
+      },
+      "file": "test/python/transpiler/test_two_qubit_peephole.py",
+      "n": 250,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 250
+       },
+       "P": {}
+      },
+      "real_s": 13.0831,
+      "share_of_net_gap": 0.7697
+     },
+     {
+      "est_minus_real_s": -5.0438,
+      "est_s": 0.9563,
+      "est_sources": {
+       "file_median": 9,
+       "seen": 95
+      },
+      "file": "test/python/transpiler/test_unitary_synthesis.py",
+      "n": 104,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 104
+       },
+       "P": {
+        "passed": 95
+       }
+      },
+      "real_s": 6.0,
+      "share_of_net_gap": 0.3029
+     },
+     {
+      "est_minus_real_s": 2.1934,
+      "est_s": 5.6208,
+      "est_sources": {
+       "seen": 140
+      },
+      "file": "test/python/transpiler/test_sabre_swap.py",
+      "n": 140,
+      "real_s": 3.4274,
+      "share_of_net_gap": -0.1317
+     },
+     {
+      "est_minus_real_s": -0.9298,
+      "est_s": 10.7508,
+      "est_sources": {
+       "file_median": 1,
+       "seen": 29
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 30,
+      "real_s": 11.6806,
+      "share_of_net_gap": 0.0558
+     },
+     {
+      "est_minus_real_s": 0.4338,
+      "est_s": 3.9697,
+      "est_sources": {
+       "seen": 30
+      },
+      "file": "test/python/transpiler/test_ross_selinger.py",
+      "n": 30,
+      "real_s": 3.536,
+      "share_of_net_gap": -0.026
+     },
+     {
+      "est_minus_real_s": 0.3397,
+      "est_s": 1.3862,
+      "est_sources": {
+       "file_median": 84,
+       "seen": 35
+      },
+      "file": "test/python/transpiler/test_litinski_transformation.py",
+      "n": 119,
+      "real_s": 1.0464,
+      "share_of_net_gap": -0.0204
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0286,
+       "n": 112,
+       "real_over_budget": 0.0435,
+       "real_over_est": 1.5195
+      },
+      "global_median": {
+       "est_over_budget": 0.0955,
+       "n": 316,
+       "real_over_budget": 3.7782,
+       "real_over_est": 39.5625
+      },
+      "seen": {
+       "est_over_budget": 0.8757,
+       "n": 3815,
+       "real_over_budget": 0.9248,
+       "real_over_est": 1.0562
+      }
+     },
+     "spend_ratio": 4.7466,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.2666,
+       "file": "test/python/transpiler/test_two_qubit_peephole.py",
+       "n": 250,
+       "real_s": 13.0831
+      },
+      {
+       "est_s": 0.0704,
+       "file": "test/python/transpiler/test_pbc_pass_manager.py",
+       "n": 66,
+       "real_s": 0.2477
+      },
+      {
+       "est_s": 0.0763,
+       "file": "test/python/transpiler/test_litinski_transformation.py",
+       "n": 84,
+       "real_s": 0.1221
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0318,
+       "n": 200,
+       "real_over_budget": 0.3788,
+       "real_over_est": 11.9311
+      },
+      "global_median": {
+       "est_over_budget": 0.0191,
+       "n": 316,
+       "real_over_budget": 0.7556,
+       "real_over_est": 39.5625
+      },
+      "seen": {
+       "est_over_budget": 0.9488,
+       "n": 6996,
+       "real_over_budget": 0.9383,
+       "real_over_est": 0.989
+      }
+     },
+     "spend_ratio": 2.0728,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.2666,
+       "file": "test/python/transpiler/test_two_qubit_peephole.py",
+       "n": 250,
+       "real_s": 13.0831
+      },
+      {
+       "est_s": 0.049,
+       "file": "test/python/transpiler/test_unitary_synthesis.py",
+       "n": 9,
+       "real_s": 5.1476
+      },
+      {
+       "est_s": 0.0107,
+       "file": "test/python/transpiler/test_solovay_kitaev.py",
+       "n": 1,
+       "real_s": 0.8302
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 148.5824,
+    "B_pass1_wall_over_sum_durations": 1.9441,
+    "B_pass1_wall_s": 288.8559,
+    "cheapest_decile_seen_median_est_s": 0.0006,
+    "cheapest_decile_seen_median_real_minus_est_s": 0.0,
+    "cheapest_decile_seen_median_real_s": 0.0006,
+    "plan5_setup_teardown_share_Bpass1": 0.0713
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 92,
+      "n_tests": 1796,
+      "spend": 4.6956
+     },
+     "0.25": {
+      "n_files": 106,
+      "n_tests": 2570,
+      "spend": 1.9589
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1522,
+      "spend": 1.0205
+     },
+     "0.25": {
+      "n_files": 104,
+      "n_tests": 2201,
+      "spend": 1.158
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.8542,
+      "coast_d": 0.9234,
+      "n_selected_cf": 3308,
+      "rebudget_cheapest_first": 0.8546
+     },
+     "0.25": {
+      "cheapest_first": 2.0179,
+      "coast_d": 2.0179,
+      "n_selected_cf": 7491,
+      "rebudget_cheapest_first": 2.0053
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 4.7466,
+      "coast_d": 4.7472,
+      "n_selected_cf": 4243,
+      "rebudget_cheapest_first": 4.7466
+     },
+     "0.25": {
+      "cheapest_first": 2.0728,
+      "coast_d": 2.0728,
+      "n_selected_cf": 7513,
+      "rebudget_cheapest_first": 2.0728
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 0.9985,
+      "coast_d": 1.0408,
+      "n_selected_cf": 3973,
+      "rebudget_cheapest_first": 0.9534
+     },
+     "0.25": {
+      "cheapest_first": 2.1801,
+      "coast_d": 2.1801,
+      "n_selected_cf": 7549,
+      "rebudget_cheapest_first": 2.7043
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 1.0496,
+      "coast_d": 1.1205,
+      "n_selected_cf": 4208,
+      "rebudget_cheapest_first": 1.0478
+     },
+     "0.25": {
+      "cheapest_first": 1.96,
+      "coast_d": 1.96,
+      "n_selected_cf": 7462,
+      "rebudget_cheapest_first": 1.923
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 1.0504,
+      "coast_d": 1.1192,
+      "n_selected_cf": 4212,
+      "rebudget_cheapest_first": 1.0533
+     },
+     "0.25": {
+      "cheapest_first": 1.8781,
+      "coast_d": 1.8781,
+      "n_selected_cf": 7358,
+      "rebudget_cheapest_first": 1.7368
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 0.9801,
+      "coast_d": 1.0227,
+      "n_selected_cf": 3959,
+      "rebudget_cheapest_first": 0.9599
+     },
+     "0.25": {
+      "cheapest_first": 1.9041,
+      "coast_d": 1.9041,
+      "n_selected_cf": 7366,
+      "rebudget_cheapest_first": 1.688
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 5.6723,
+      "always_run_lane_real_s": 20.0139,
+      "cheapest_first": 1.0496,
+      "coast_d": 1.0503
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 1.1345,
+      "always_run_lane_real_s": 20.0139,
+      "cheapest_first": 0.9828,
+      "coast_d": 0.9828
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.9604,
+    "seen_only_P_to_B_spend_0.05": 1.0505,
+    "seen_only_P_to_B_spend_0.25": 0.9854,
+    "seen_selected_real_over_est_5pct": 1.0562,
+    "self_selection_pass1_to_pass2_spend_0.05": 0.9821,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9402,
+    "spearman_Bpass1_vs_Bpass2": 0.961,
+    "spearman_P_vs_Bmean_seen": 0.9501
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.8933,
+    "max_over_median": 4774.8984,
+    "median_s": 0.0011,
+    "n": 7666,
+    "top10pct_share": 0.8898,
+    "top1pct_share": 0.6087,
+    "top5pct_share": 0.8449,
+    "total_s": 87.2173
+   },
+   "c_tail_P_durations": {
+    "gini": 0.8872,
+    "max_over_median": 4768.7,
+    "median_s": 0.0011,
+    "n": 7177,
+    "top10pct_share": 0.8806,
+    "top1pct_share": 0.6737,
+    "top5pct_share": 0.838,
+    "total_s": 69.782
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.0
+     },
+     "0.25": {
+      "cheapest_first": 0,
+      "coast_d": 0,
+      "default": 0,
+      "random": 0.0
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "timeout",
+       "timeout"
+      ],
+      "est_s": 0.0012,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": false,
+        "coast_d": false
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 4800,
+       "coast_d": 4808,
+       "default": 1734
+      },
+      "real_s": 60.0,
+      "suite_size": 7667,
+      "test": "test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_custom_gate_in_target"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 77.37529609268677,
+      "rank": 4800
+     },
+     "cheapest_oracle": {
+      "cost_s": 147.21732986262577,
+      "rank": 7667
+     },
+     "coast_d": {
+      "cost_s": 77.40477777820342,
+      "rank": 4808
+     },
+     "default": {
+      "cost_s": 80.52841130313755,
+      "rank": 1734
+     },
+     "file_rr": {
+      "cost_s": 67.85858139004631,
+      "rank": 175
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.984
+  },
+  "D8": {
+   "B": "2.0.2",
+   "P": "2.0.1",
+   "a_P2_decomposition": {
+    "B_tests_unseen_in_P": 12,
+    "B_unseen_est_s": 0.0155,
+    "B_unseen_real_s": 0.0112,
+    "P_cost_of_removed_s": 0.0033,
+    "P_tests_removed_in_B": 3,
+    "pre_est_s": 166.3036,
+    "pre_real_s": 163.9473,
+    "rel_error": 0.0144,
+    "rel_error_excluding_top2_files": 0.0364,
+    "seen_tests_est_s": 166.2881,
+    "seen_tests_real_s": 163.9361,
+    "top_files": [
+     {
+      "est_minus_real_s": 0.6443,
+      "est_s": 22.7535,
+      "est_sources": {
+       "seen": 376
+      },
+      "file": "test/python/compiler/test_transpiler.py",
+      "n": 376,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 374,
+        "skipped": 2
+       },
+       "P": {
+        "passed": 374,
+        "skipped": 2
+       }
+      },
+      "real_s": 22.1092,
+      "share_of_net_gap": 0.2734
+     },
+     {
+      "est_minus_real_s": 0.4793,
+      "est_s": 108.4644,
+      "est_sources": {
+       "seen": 42
+      },
+      "file": "test/python/transpiler/test_solovay_kitaev.py",
+      "n": 42,
+      "outcomes": {
+       "B_pass1": {
+        "passed": 42
+       },
+       "P": {
+        "passed": 42
+       }
+      },
+      "real_s": 107.9851,
+      "share_of_net_gap": 0.2034
+     },
+     {
+      "est_minus_real_s": 0.4085,
+      "est_s": 2.5204,
+      "est_sources": {
+       "seen": 241
+      },
+      "file": "test/python/transpiler/test_preset_passmanagers.py",
+      "n": 241,
+      "real_s": 2.1119,
+      "share_of_net_gap": 0.1734
+     },
+     {
+      "est_minus_real_s": -0.3597,
+      "est_s": 10.8458,
+      "est_sources": {
+       "seen": 23
+      },
+      "file": "test/python/transpiler/test_template_matching.py",
+      "n": 23,
+      "real_s": 11.2055,
+      "share_of_net_gap": -0.1527
+     },
+     {
+      "est_minus_real_s": 0.3543,
+      "est_s": 2.9749,
+      "est_sources": {
+       "seen": 138
+      },
+      "file": "test/python/transpiler/test_high_level_synthesis.py",
+      "n": 138,
+      "real_s": 2.6206,
+      "share_of_net_gap": 0.1504
+     },
+     {
+      "est_minus_real_s": 0.1757,
+      "est_s": 1.1512,
+      "est_sources": {
+       "seen": 27
+      },
+      "file": "test/python/transpiler/test_clifford_passes.py",
+      "n": 27,
+      "real_s": 0.9755,
+      "share_of_net_gap": 0.0746
+     }
+    ]
+   },
+   "b_P1_decomposition": {
+    "0.05": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0019,
+       "n": 12,
+       "real_over_budget": 0.0013,
+       "real_over_est": 0.7214
+      },
+      "seen": {
+       "est_over_budget": 0.9966,
+       "n": 2165,
+       "real_over_budget": 0.9322,
+       "real_over_est": 0.9354
+      }
+     },
+     "spend_ratio": 0.9335,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0155,
+       "file": "test/python/transpiler/test_consolidate_blocks.py",
+       "n": 12,
+       "real_s": 0.0112
+      }
+     ]
+    },
+    "0.25": {
+     "by_estimate_source": {
+      "file_median": {
+       "est_over_budget": 0.0004,
+       "n": 12,
+       "real_over_budget": 0.0003,
+       "real_over_est": 0.7214
+      },
+      "seen": {
+       "est_over_budget": 0.9892,
+       "n": 2422,
+       "real_over_budget": 0.9431,
+       "real_over_est": 0.9534
+      }
+     },
+     "spend_ratio": 0.9434,
+     "top_unseen_files_in_plan": [
+      {
+       "est_s": 0.0155,
+       "file": "test/python/transpiler/test_consolidate_blocks.py",
+       "n": 12,
+       "real_s": 0.0112
+      }
+     ]
+    }
+   },
+   "b_fixed_overhead": {
+    "B_pass1_sum_durations_s": 167.1068,
+    "B_pass1_wall_over_sum_durations": 1.6479,
+    "B_pass1_wall_s": 275.3725,
+    "cheapest_decile_seen_median_est_s": 0.0005,
+    "cheapest_decile_seen_median_real_minus_est_s": 0.0,
+    "cheapest_decile_seen_median_real_s": 0.0005,
+    "plan5_setup_teardown_share_Bpass1": 0.1008
+   },
+   "b_post_hoc_variants": {
+    "file_level_registered_est": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1435,
+      "spend": 0.9399
+     },
+     "0.25": {
+      "n_files": 97,
+      "n_tests": 2030,
+      "spend": 0.8142
+     }
+    },
+    "file_level_unseen_at_mean": {
+     "0.05": {
+      "n_files": 91,
+      "n_tests": 1435,
+      "spend": 0.9399
+     },
+     "0.25": {
+      "n_files": 97,
+      "n_tests": 2030,
+      "spend": 0.8142
+     }
+    },
+    "floor_at_P_median (all tests)": {
+     "0.05": {
+      "cheapest_first": 0.7663,
+      "coast_d": 0.7663,
+      "n_selected_cf": 2092,
+      "rebudget_cheapest_first": 0.7676
+     },
+     "0.25": {
+      "cheapest_first": 0.9164,
+      "coast_d": 0.9164,
+      "n_selected_cf": 2434,
+      "rebudget_cheapest_first": 0.9083
+     }
+    },
+    "registered": {
+     "0.05": {
+      "cheapest_first": 0.9335,
+      "coast_d": 0.9335,
+      "n_selected_cf": 2178,
+      "rebudget_cheapest_first": 0.9335
+     },
+     "0.25": {
+      "cheapest_first": 0.9434,
+      "coast_d": 0.9434,
+      "n_selected_cf": 2435,
+      "rebudget_cheapest_first": 0.9434
+     }
+    },
+    "shrink_half_to_file_median (seen)": {
+     "0.05": {
+      "cheapest_first": 1.0301,
+      "coast_d": 1.0205,
+      "n_selected_cf": 2158,
+      "rebudget_cheapest_first": 0.8751
+     },
+     "0.25": {
+      "cheapest_first": 1.36,
+      "coast_d": 1.36,
+      "n_selected_cf": 2438,
+      "rebudget_cheapest_first": 1.2634
+     }
+    },
+    "unseen_at_global_p90": {
+     "0.05": {
+      "cheapest_first": 0.9348,
+      "coast_d": 0.9348,
+      "n_selected_cf": 2166,
+      "rebudget_cheapest_first": 0.9356
+     },
+     "0.25": {
+      "cheapest_first": 0.9434,
+      "coast_d": 0.9434,
+      "n_selected_cf": 2435,
+      "rebudget_cheapest_first": 0.9415
+     }
+    },
+    "unseen_at_mean (file mean if >=3 seen, else global mean)": {
+     "0.05": {
+      "cheapest_first": 0.9313,
+      "coast_d": 0.9313,
+      "n_selected_cf": 2177,
+      "rebudget_cheapest_first": 0.9311
+     },
+     "0.25": {
+      "cheapest_first": 0.9434,
+      "coast_d": 0.9434,
+      "n_selected_cf": 2435,
+      "rebudget_cheapest_first": 0.9432
+     }
+    },
+    "unseen_at_mean + shrink": {
+     "0.05": {
+      "cheapest_first": 1.0238,
+      "coast_d": 1.0139,
+      "n_selected_cf": 2156,
+      "rebudget_cheapest_first": 0.8693
+     },
+     "0.25": {
+      "cheapest_first": 1.36,
+      "coast_d": 1.36,
+      "n_selected_cf": 2438,
+      "rebudget_cheapest_first": 1.2467
+     }
+    },
+    "unseen_in_separate_always_run_lane": {
+     "0.05": {
+      "always_run_lane_over_budget": 0.0013,
+      "always_run_lane_real_s": 0.0112,
+      "cheapest_first": 0.9348,
+      "coast_d": 0.9348
+     },
+     "0.25": {
+      "always_run_lane_over_budget": 0.0003,
+      "always_run_lane_real_s": 0.0112,
+      "cheapest_first": 0.9431,
+      "coast_d": 0.9431
+     }
+    }
+   },
+   "b_winners_curse_and_noise": {
+    "seen_not_selected_real_over_est_5pct": 0.9885,
+    "seen_only_P_to_B_spend_0.05": 0.9349,
+    "seen_only_P_to_B_spend_0.25": 0.9432,
+    "seen_selected_real_over_est_5pct": 0.9354,
+    "self_selection_pass1_to_pass2_spend_0.05": 0.9371,
+    "self_selection_pass1_to_pass2_spend_0.25": 0.9134,
+    "spearman_Bpass1_vs_Bpass2": 0.9886,
+    "spearman_P_vs_Bmean_seen": 0.9913
+   },
+   "c_tail_B_real_pre_existing": {
+    "gini": 0.9559,
+    "max_over_median": 9198.1175,
+    "median_s": 0.0022,
+    "n": 2447,
+    "top10pct_share": 0.9497,
+    "top1pct_share": 0.8148,
+    "top5pct_share": 0.9175,
+    "total_s": 163.9473
+   },
+   "c_tail_P_durations": {
+    "gini": 0.954,
+    "max_over_median": 8746.7759,
+    "median_s": 0.0022,
+    "n": 2438,
+    "top10pct_share": 0.9464,
+    "top1pct_share": 0.8094,
+    "top5pct_share": 0.9137,
+    "total_s": 166.2914
+   },
+   "d_detecting": {
+    "detected_within_time_box_frozen": {
+     "0.05": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 0,
+      "random": 0.05
+     },
+     "0.25": {
+      "cheapest_first": 1,
+      "coast_d": 1,
+      "default": 1,
+      "random": 0.24
+     }
+    },
+    "detecting_tests": [
+     {
+      "B_outcomes": [
+       "failed",
+       "failed"
+      ],
+      "est_s": 0.001,
+      "est_source": "file_median",
+      "in_plan": {
+       "0.05": {
+        "cheapest_first": true,
+        "coast_d": true
+       },
+       "0.25": {
+        "cheapest_first": true,
+        "coast_d": true
+       }
+      },
+      "rank": {
+       "cheapest_first": 696,
+       "coast_d": 709,
+       "default": 837
+      },
+      "real_s": 0.0011,
+      "suite_size": 2448,
+      "test": "test/python/transpiler/test_elide_permutations.py::TestElidePermutationsInTranspileFlow::test_unitary_equivalence_permutation_gates"
+     }
+    ],
+    "first_detection_frozen": {
+     "cheapest_first": {
+      "cost_s": 0.4857233938164427,
+      "rank": 696
+     },
+     "cheapest_oracle": {
+      "cost_s": 0.6202084997748898,
+      "rank": 836
+     },
+     "coast_d": {
+      "cost_s": 0.5070589693095826,
+      "rank": 709
+     },
+     "default": {
+      "cost_s": 24.948369116063986,
+      "rank": 837
+     },
+     "file_rr": {
+      "cost_s": 116.28083908840199,
+      "rank": 1023
+     }
+    }
+   },
+   "k_applied": 1.0,
+   "speed_factor_k_measured": 0.9432
+  }
+ },
+ "schema": "phase_d_exploratory_diagnostics/1"
+}

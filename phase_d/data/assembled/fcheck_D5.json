@@ -1,0 +1,95 @@
+{
+"backport": {
+"complete": true,
+"env": [
+{
+"calibration_median_s": 0.23388623299979372,
+"calibration_runs_s": [
+0.23388623299979372,
+0.22472758399817394,
+0.2345955220007454,
+0.23289445400587283,
+0.23721764999936568
+],
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"host": "claude",
+"loadavg": [
+0.90966796875,
+0.98779296875,
+0.923828125
+],
+"mode": "fcheck",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "9257349d556bec5e791903ab220bafd1e9db0d2c866e7def528715725cba0abc",
+"phased_plugin.py": "3fe316d7f81295d6c02b6f6622e90f7e44551b4e062088e89b6ac0876595706a",
+"run_phase_d.py": "be4461fd106c3637064faf57b772301726f64dc01657cc2c5fb163a08bd62242"
+},
+"tests": "2.5.1",
+"utc": "2026-10-18T05:54:58Z",
+"venv_freeze_sha256": "645d0194fdbbf246bb647c090b4a461e79abc197f00bed6003fa57806b51bfc9",
+"wheel": "2.5.2"
+}
+],
+"files": {
+"test/python/phase_d_backport/test_backport_d5.py": {
+"collected": [
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_1_0",
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_2_1",
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_3_2",
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_4_3"
+],
+"complete": true,
+"launches": 1,
+"marker": {
+"launches_this_call": 1,
+"rc": 0,
+"unit": [
+"test/python/phase_d_backport/test_backport_d5.py"
+],
+"wall_s_this_call": 1.0373284816741943
+}
+}
+},
+"tests": {
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_1_0": {
+"duration": 0.03391723999811802,
+"file": "test/python/phase_d_backport/test_backport_d5.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_2_1": {
+"duration": 0.026274690993886907,
+"file": "test/python/phase_d_backport/test_backport_d5.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_3_2": {
+"duration": 0.027211295993765816,
+"file": "test/python/phase_d_backport/test_backport_d5.py",
+"outcome": "passed",
+"synthetic": null
+},
+"test/python/phase_d_backport/test_backport_d5.py::TestCliffordTPassManager::test_clifford_t_transpile_is_unitarily_equivalent_4_3": {
+"duration": 0.026193567995505873,
+"file": "test/python/phase_d_backport/test_backport_d5.py",
+"outcome": "passed",
+"synthetic": null
+}
+}
+},
+"pre_existing": null
+}
