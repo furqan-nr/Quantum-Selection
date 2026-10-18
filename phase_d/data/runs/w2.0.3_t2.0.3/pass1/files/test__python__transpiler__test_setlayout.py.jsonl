@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792269730.327777, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_if_int_list_layout_contains_duplicates", "idx": 0, "raw": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_if_int_list_layout_contains_duplicates"}
+{"ev": "collected", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_when_layout_len_does_not_match", "idx": 1, "raw": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_when_layout_len_does_not_match"}
+{"ev": "collected", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_Layout", "idx": 2, "raw": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_Layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_list", "idx": 3, "raw": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_list"}
+{"ev": "start", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_if_int_list_layout_contains_duplicates", "t": 1792269730.6660957}
+{"call": 0.001721060001727892, "duration": 0.0027966859997832216, "ev": "done", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_if_int_list_layout_contains_duplicates", "outcome": "passed", "setup": 0.00096610099717509, "teardown": 0.00010952500088023953}
+{"ev": "start", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_when_layout_len_does_not_match", "t": 1792269730.6712399}
+{"call": 0.0005547959990508389, "duration": 0.0009132150007644668, "ev": "done", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_raise_when_layout_len_does_not_match", "outcome": "passed", "setup": 0.00025319800261058845, "teardown": 0.0001052209991030395}
+{"ev": "start", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_Layout", "t": 1792269730.6743157}
+{"call": 0.0012033080020046327, "duration": 0.001480959002947202, "ev": "done", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_Layout", "outcome": "passed", "setup": 0.0001686020004854072, "teardown": 0.00010904900045716204}
+{"ev": "start", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_list", "t": 1792269730.6778228}
+{"call": 0.00094962599905557, "duration": 0.0012287959980312735, "ev": "done", "id": "test/python/transpiler/test_setlayout.py::TestSetLayout::test_setlayout_as_list", "outcome": "passed", "setup": 0.00015566900037811138, "teardown": 0.00012350099859759212}

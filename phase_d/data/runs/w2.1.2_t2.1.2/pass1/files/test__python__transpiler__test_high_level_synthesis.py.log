@@ -1,0 +1,15 @@
+.................................................. [ 30%]
+...................................................................... [ 72%]
+........................................ [ 96%]
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_high_level_synthesis.py:2277
+  /tmp/phase_d/tests/2.1.2/test/python/transpiler/test_high_level_synthesis.py:2277: PytestCollectionWarning: cannot collect test class 'TestGate' because it has a __init__ constructor (from: test/python/transpiler/test_high_level_synthesis.py)
+    class TestGate(Gate):
+
+test/python/transpiler/test_high_level_synthesis.py:2284
+  /tmp/phase_d/tests/2.1.2/test/python/transpiler/test_high_level_synthesis.py:2284: PytestCollectionWarning: cannot collect test class 'TestCompositeGate' because it has a __init__ constructor (from: test/python/transpiler/test_high_level_synthesis.py)
+    class TestCompositeGate(Gate):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+165 passed, 2 warnings, 56 subtests passed in 3.67s

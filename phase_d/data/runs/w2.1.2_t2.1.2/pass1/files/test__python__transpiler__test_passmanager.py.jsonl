@@ -1,0 +1,19 @@
+{"ev": "launch", "n": 0, "t": 1792270014.078375, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "idx": 0, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits", "idx": 1, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits_lambda", "idx": 2, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits_lambda"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "idx": 3, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_override_initial_property_set", "idx": 4, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_override_initial_property_set"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "idx": 5, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller"}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "t": 1792270014.4367154}
+{"call": 0.0028686469995591324, "duration": 0.004092282000783598, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "outcome": "passed", "setup": 0.0011020070014637895, "teardown": 0.00012162799976067618}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits", "t": 1792270014.4430265}
+{"call": 0.000913668998691719, "duration": 0.0011906139989150688, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits", "outcome": "passed", "setup": 0.00017279500025324523, "teardown": 0.00010414999997010455}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits_lambda", "t": 1792270014.4463058}
+{"call": 0.0008259189999080263, "duration": 0.001100278997910209, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_multi_circuits_lambda", "outcome": "passed", "setup": 0.00016146099733305164, "teardown": 0.00011289900066913106}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "t": 1792270014.449527}
+{"call": 0.0018331259998376481, "duration": 0.0021062009982415475, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "outcome": "passed", "setup": 0.00016667999807395972, "teardown": 0.00010639500032993965}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_override_initial_property_set", "t": 1792270014.4536226}
+{"call": 0.0005531339993467554, "duration": 0.000830617002065992, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_override_initial_property_set", "outcome": "passed", "setup": 0.0001710579999780748, "teardown": 0.00010642500274116173}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "t": 1792270014.4565148}
+{"call": 0.0009676779991423246, "duration": 0.0013846949987055268, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "outcome": "passed", "setup": 0.0002530390011088457, "teardown": 0.00016397799845435657}
