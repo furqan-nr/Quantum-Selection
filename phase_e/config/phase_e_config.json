@@ -1,0 +1,467 @@
+{
+ "schema": "phase_e_config/1",
+ "date_of_record": "2026-10-19",
+ "note": "Frozen Phase E configuration (PREREGISTRATION_PHASE_E.md). Changing any value after the record is a deviation.",
+ "python": "3.10",
+ "slice": {
+  "include_globs": [
+   "test/python/transpiler/**/test_*.py",
+   "test/python/compiler/test_*.py"
+  ],
+  "exclude_files": [
+   "test/python/transpiler/test_unitary_synthesis_plugin.py"
+  ],
+  "exclude_reason": "7 environmental failures: its test plugins are registered only by a development install (entry points)"
+ },
+ "environment": {
+  "pinned_env": {
+   "RAYON_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1",
+   "QISKIT_PARALLEL": "FALSE",
+   "QISKIT_NUM_PROCS": "1",
+   "PYTHONHASHSEED": "0",
+   "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "pip_extra": [
+   "ddt",
+   "hypothesis",
+   "pytest"
+  ],
+  "constraints_file": "phase_e/config/constraints.txt",
+  "pytest_args": [
+   "-q",
+   "-p",
+   "no:cacheprovider",
+   "--no-header",
+   "-p",
+   "phasee_plugin"
+  ]
+ },
+ "runner": {
+  "per_test_timeout_s": 60.0,
+  "chunk_launch_limit_s": 115.0,
+  "chunk_hard_limit_s": 145.0,
+  "poll_s": 0.2,
+  "timing_passes_B": 2,
+  "timing_passes_P": 1
+ },
+ "estimator_common": {
+  "source": "P pass 1 (P's own slice files)",
+  "match": "normalized node id (identical to Phase D)",
+  "duration": "setup + call + teardown seconds as reported by pytest; timeouts = per_test_timeout_s",
+  "speed_band": [
+   0.8,
+   1.25
+  ],
+  "speed_rule": "k = calibration time recorded by B's collect-only call / median calibration time over P's run calls; if k outside the band, all estimates and budgets are multiplied by k (identical to Phase D)"
+ },
+ "estimators": {
+  "primary": {
+   "name": "F3_mean_newfile_quantile (q=0.99)",
+   "description": "seen test: its P duration; unseen test in a file with >= 3 seen tests: the mean P duration of that file's seen tests; unseen test in a file with < 3 seen tests (a whole new file): the 99th percentile (type 7) of all P durations",
+   "spec": {
+    "in_file": {
+     "stat": "mean"
+    },
+    "min_seen": 3,
+    "new_file": {
+     "over": "tests",
+     "q": 0.99,
+     "stat": "quantile"
+    }
+   },
+   "chosen_by": "phase_e/dev/select_estimator.py (LOPO on Phase D data, pre-stated criterion)"
+  },
+  "secondary": {
+   "name": "F10_quantile_newfile_p99 (q_in=0.9)",
+   "description": "as primary, but an unseen test in a known file is priced at the 90th percentile of that file's seen P durations",
+   "spec": {
+    "in_file": {
+     "q": 0.9,
+     "stat": "quantile"
+    },
+    "min_seen": 3,
+    "new_file": {
+     "over": "tests",
+     "q": 0.99,
+     "stat": "quantile"
+    }
+   },
+   "role": "registered secondary: same rules, reported, no confirmatory claim"
+  },
+  "comparator_phase_d_registered": {
+   "name": "Phase D registered rule (file median, global median)",
+   "spec": {
+    "min_seen": 3,
+    "in_file": {
+     "stat": "median"
+    },
+    "new_file": {
+     "stat": "median",
+     "over": "tests"
+    }
+   },
+   "role": "exploratory comparator"
+  }
+ },
+ "real_cost": {
+  "definition": "mean over the B timing passes with a record of setup+call+teardown seconds; timeout = per_test_timeout_s",
+  "missing": "a suite test without any B record is charged its estimate and counted (n_imputed_real, a deviation)"
+ },
+ "budgets": {
+  "fractions_primary": [
+   0.05,
+   0.25
+  ],
+  "fractions_exploratory": [
+   0.5
+  ],
+  "basis": "estimated full-suite cost of the pair suite (B collect-only list) under the estimator, after the speed rule; one budget per estimator"
+ },
+ "policies": {
+  "cost_aware": [
+   "cheapest_first",
+   "coast_d"
+  ],
+  "charging": "every planned test is charged its real cost; nothing is excluded"
+ },
+ "confirmatory": {
+  "P1prime": {
+   "estimator": "primary",
+   "policies": [
+    "cheapest_first",
+    "coast_d"
+   ],
+   "fractions": [
+    0.05,
+    0.25
+   ],
+   "mean_spend_ratio_max": 1.25,
+   "single_pair_spend_ratio_max": 1.25,
+   "note": "every pair's real spend / budget <= 1.25 (implies mean <= 1.25); stricter than Phase D's single-event maximum of 2.0"
+  },
+  "P2prime": {
+   "estimator": "primary",
+   "median_abs_rel_error_max": 0.15,
+   "abs_rel_error_band": 0.25,
+   "min_share_within_band": 0.8,
+   "note": "median over pairs of |sum est / sum real - 1| <= 0.15 AND at least 80% of analysable pairs within +-25%"
+  },
+  "continuity_checks": {
+   "P1_phase_d_thresholds": {
+    "mean_spend_ratio_max": 1.25,
+    "single_pair_spend_ratio_max": 2.0
+   },
+   "P2_phase_d_strict": "every pair within +-25%",
+   "role": "reported, no claim"
+  },
+  "min_analysable_pairs": 8,
+  "environment_exclusion": {
+   "max_share_files_without_tests": 0.1,
+   "rule": "a pair is excluded (reported) if more than 10% of the slice files have no test in B's collect list or no test record in P's run; decided at lock time from P's run and B's collect list only"
+  },
+  "registered_descriptive": {
+   "N1_new_test_coverage": "per pair and tier: unseen tests selected by the primary plan (in_file and new_file separately) and the real cost of the unseen tests that were not selected, against the Phase D comparator",
+   "lane_cost_ratio": "real cost of all unseen tests / budget (what an always-run lane would add)"
+  }
+ },
+ "versions": {
+  "1.0.0": {
+   "upload_time_utc": "2024-02-15T20:58:17",
+   "wheel": {
+    "filename": "qiskit-1.0.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "3924cd000c2f548f99efa32006ad02b88f7c86b83fa046e76a1449820104ce64"
+   },
+   "sdist": {
+    "filename": "qiskit-1.0.0.tar.gz",
+    "sha256": "21d92f8a8d88f7cfb364b58132f2beb7d5b49d585b1fde32c67c6658ae9da072",
+    "url": "https://files.pythonhosted.org/packages/0e/15/ba4be0acb89013420fe9afc3d3a0f122d7b5c15229edfbe43bd072c6bca0/qiskit-1.0.0.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.0.1": {
+   "upload_time_utc": "2024-02-22T22:50:49",
+   "wheel": {
+    "filename": "qiskit-1.0.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "490e8e46e37a452a6a3ffca942191676d78329a44c9cf8a18308e16c51c5d7ad"
+   },
+   "sdist": {
+    "filename": "qiskit-1.0.1.tar.gz",
+    "sha256": "c549383fc057c11eb1dcf89949fe751800797d149ef0115c40e406d9718d9d31",
+    "url": "https://files.pythonhosted.org/packages/77/a1/cfe717ef58ed668bbb75075514ef34625cb580cf7459c72549d6159ad442/qiskit-1.0.1.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.0.2": {
+   "upload_time_utc": "2024-03-07T22:57:30",
+   "wheel": {
+    "filename": "qiskit-1.0.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "99f2a8d7ccdc3b7c31ed59e8d83d2da2ca6d2b204d158dd758ad19c9d9c27858"
+   },
+   "sdist": {
+    "filename": "qiskit-1.0.2.tar.gz",
+    "sha256": "f0480adb1379a5799dde6571d4f717f58909c24100125b6f6addaf123613aee2",
+    "url": "https://files.pythonhosted.org/packages/63/ec/f2c939f5ab27117558d7aacfd3f84e43ce67385002b88a10142b9f51b6b7/qiskit-1.0.2.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.1.0": {
+   "upload_time_utc": "2024-05-16T20:31:52",
+   "wheel": {
+    "filename": "qiskit-1.1.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "01da5ebdcf907435d1ab47ea024bb791b4dea8245c148b89bc68e606c45eb478"
+   },
+   "sdist": {
+    "filename": "qiskit-1.1.0.tar.gz",
+    "sha256": "d4d0310029659711dca6b9c0cc593e1b33daf059e52ba221267f85bb47f1bf4e",
+    "url": "https://files.pythonhosted.org/packages/b6/cb/021a09b5e8d752ed3cd3bffad37e1f2d047108f72f6a34bba36723bb60bc/qiskit-1.1.0.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.1.1": {
+   "upload_time_utc": "2024-06-20T16:33:41",
+   "wheel": {
+    "filename": "qiskit-1.1.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "aac52542651867f301a6cd1c6c55a02de494f915b4c9f5885dc7549058b6bc35"
+   },
+   "sdist": {
+    "filename": "qiskit-1.1.1.tar.gz",
+    "sha256": "5f1af6a1d94b92aa8c15007b626b76aeb5873a59ff53cb40d1f3662abd50c2cc",
+    "url": "https://files.pythonhosted.org/packages/10/da/bef0bfd828e8562443cdc6c6b254b4a7ca3a3f1a1af5c2454ed9d590f46b/qiskit-1.1.1.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.1.2": {
+   "upload_time_utc": "2024-08-09T15:14:20",
+   "wheel": {
+    "filename": "qiskit-1.1.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "1eef93e671cd751e46f9b9f093215e929c4390faf648b37f802b3ecd48b4ed71"
+   },
+   "sdist": {
+    "filename": "qiskit-1.1.2.tar.gz",
+    "sha256": "6e1d46756e064d9160432405f96f6116ba3ad2639f707328ab33edb286197fdf",
+    "url": "https://files.pythonhosted.org/packages/4b/ee/2aa8fdbe7716ac3e3da6fa5620a2c3f96a98afa80d3c44be6eb35de88707/qiskit-1.1.2.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.2.0": {
+   "upload_time_utc": "2024-08-15T21:09:29",
+   "wheel": {
+    "filename": "qiskit-1.2.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "1ad1658bbaf147a44e555ba87f7e139ae3b2ded1284e5073ec2a32dc08b32d41"
+   },
+   "sdist": {
+    "filename": "qiskit-1.2.0.tar.gz",
+    "sha256": "7d95413c833033425a392377f562a7f3b5b6cd8284e978dddd9b23db1093ded0",
+    "url": "https://files.pythonhosted.org/packages/6b/04/c596b742d39f2840775b2e0f0a45e692565a7665344120013b79f7943b8c/qiskit-1.2.0.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.2.1": {
+   "upload_time_utc": "2024-09-12T11:51:29",
+   "wheel": {
+    "filename": "qiskit-1.2.1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "c011a5db14d305fbd23a24fbdb71107d07a570a01d14e1314e66d9c0c617703d"
+   },
+   "sdist": {
+    "filename": "qiskit-1.2.1.tar.gz",
+    "sha256": "da69c84ab052416af35a43f0695845797de6d3207760354b7c8c8b93cbb19f47",
+    "url": "https://files.pythonhosted.org/packages/0b/88/16c7bfd71d087e47d13a4a224837e95b3443b496d0f418e3235d3a0dc83c/qiskit-1.2.1.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.2.4": {
+   "upload_time_utc": "2024-10-03T19:28:07",
+   "wheel": {
+    "filename": "qiskit-1.2.4-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "a66303ab4f939080ca0b8c4102040a89417a99f2621978c7bca8b1d5f6c6e103"
+   },
+   "sdist": {
+    "filename": "qiskit-1.2.4.tar.gz",
+    "sha256": "3f30b1fc6c66dec240428991da75cc6c35cc75152baff8daf3f8ca71b60684e8",
+    "url": "https://files.pythonhosted.org/packages/99/2a/c3f63a216b88fd01417b9fcd47512553463c7247575ce06f40b9269b6fba/qiskit-1.2.4.tar.gz"
+   },
+   "requires_python": ">=3.8"
+  },
+  "1.3.0": {
+   "upload_time_utc": "2024-11-28T22:36:58",
+   "wheel": {
+    "filename": "qiskit-1.3.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "1d1f0e3cb5e5f08e9a2354b2f6b3553cfaef1b39451e7aa2ad3c6d4f284ede48"
+   },
+   "sdist": {
+    "filename": "qiskit-1.3.0.tar.gz",
+    "sha256": "876aea2a215a990fa6e529fba5523c510a662332d86be96fd93c9ee2ee164578",
+    "url": "https://files.pythonhosted.org/packages/03/f6/02132670bdc688afe720d85fb5c8d98641e585f80e139db572f9712cadd7/qiskit-1.3.0.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.3.1": {
+   "upload_time_utc": "2024-12-12T21:32:31",
+   "wheel": {
+    "filename": "qiskit-1.3.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "644edc9b47c2f99d2654cca12e1a41bf51ce3dabfaddb0c1895b1ca32d790b35"
+   },
+   "sdist": {
+    "filename": "qiskit-1.3.1.tar.gz",
+    "sha256": "7c9b34d700175db6615c9ab150b86f6f06ff7b74540e50bdf2ec7dc904639385",
+    "url": "https://files.pythonhosted.org/packages/00/d7/77a2c4a67eae1ec3f60b74e0f41e3bb562f20163f334c0f7f1f07f33b067/qiskit-1.3.1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.3.2": {
+   "upload_time_utc": "2025-01-20T12:51:17",
+   "wheel": {
+    "filename": "qiskit-1.3.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "309f6db004ea8044df9ac9359c31dcce0cc12afb6ece6eb035ca86b9bf87a21c"
+   },
+   "sdist": {
+    "filename": "qiskit-1.3.2.tar.gz",
+    "sha256": "6e63c619bcc3e29cd59f831af5b161b35951498c272d00da01a3fef7db3743c9",
+    "url": "https://files.pythonhosted.org/packages/8f/35/88f68a1746ecdbfa1b1a13b28d21010732e3aa734876a276a36efaeed0b5/qiskit-1.3.2.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.3.3": {
+   "upload_time_utc": "2025-02-20T11:56:41",
+   "wheel": {
+    "filename": "qiskit-1.3.3-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "0910176326b7b394e9891a90c97d2aa00ede842d9b0c538ffa05cf552b8890ef"
+   },
+   "sdist": {
+    "filename": "qiskit-1.3.3.tar.gz",
+    "sha256": "5a440d82007c32d4d6d3dbe75c279f78ba8f5052369af988f85020820dffa68a",
+    "url": "https://files.pythonhosted.org/packages/a1/59/65b442a11edf8ae552745dee7d573b0115bfd63c74fd1626d5ebf99b3c9b/qiskit-1.3.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.4.0": {
+   "upload_time_utc": "2025-02-21T10:21:10",
+   "wheel": {
+    "filename": "qiskit-1.4.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "a4efe9ee228c8601b6f0c6b9613d981ae9b0cce8161efc4deb8432800b143d40"
+   },
+   "sdist": {
+    "filename": "qiskit-1.4.0.tar.gz",
+    "sha256": "c5dcdf171bbec743c90c9b9e9f94a422ec90fcbf908c904d54b6b91f562fad83",
+    "url": "https://files.pythonhosted.org/packages/aa/67/ad3654ecabb3785a2b2a2747bc37bce8074153761b8f0415ee208cf67e7f/qiskit-1.4.0.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.4.1": {
+   "upload_time_utc": "2025-03-06T17:44:03",
+   "wheel": {
+    "filename": "qiskit-1.4.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "2ec79ed9557a7b5c2a6d38dda24bfc219326703fba50729ca3b71dc4936fee50"
+   },
+   "sdist": {
+    "filename": "qiskit-1.4.1.tar.gz",
+    "sha256": "7e78dab09b40986ee0d5afca06c725173fabe8f3d4e7464d46b2bac5234f2e25",
+    "url": "https://files.pythonhosted.org/packages/b3/d5/1bc6ba8179b30799b7d93bb1295ed16affe030182ad3bc003512153846ab/qiskit-1.4.1.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.4.2": {
+   "upload_time_utc": "2025-03-14T15:56:24",
+   "wheel": {
+    "filename": "qiskit-1.4.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "8ca3a5b7b7b8079d91daafa60f5f1283cc0dfddc86a78e8fbcd47efbebbfd5ad"
+   },
+   "sdist": {
+    "filename": "qiskit-1.4.2.tar.gz",
+    "sha256": "3cc75cd39d524dfff695d72c7589dfaf945d112ab9e4d4e6a4c06d6ffd439d2f",
+    "url": "https://files.pythonhosted.org/packages/4e/c7/8b294500d2be079789c66e152d3113dd091ee3422752a8ea27c4708a076a/qiskit-1.4.2.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.4.4": {
+   "upload_time_utc": "2025-08-15T18:02:32",
+   "wheel": {
+    "filename": "qiskit-1.4.4-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "496c7f6a324b9ee60e2f59503ad25559fec7ec771a74b5e233b6512f01b019f8"
+   },
+   "sdist": {
+    "filename": "qiskit-1.4.4.tar.gz",
+    "sha256": "96251c94b14175455809016c08c013dfb615020289e2920a9878fddf35bdda86",
+    "url": "https://files.pythonhosted.org/packages/25/26/f1651c9b8f8432720af7e53cc6454c31a202286741ca989ba9160e87f30f/qiskit-1.4.4.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "1.4.5": {
+   "upload_time_utc": "2025-10-13T13:12:42",
+   "wheel": {
+    "filename": "qiskit-1.4.5-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "58fbe190e21c3e2e8a92895766b07b795ad261de0fd0e50fd367f442dbd94475"
+   },
+   "sdist": {
+    "filename": "qiskit-1.4.5.tar.gz",
+    "sha256": "b7e8734e4d5abae59e500e92bde73cc7e5f69c1de47a12cd367e59fcfa29402f",
+    "url": "https://files.pythonhosted.org/packages/db/95/8f651dcaeb4aabbb8122ac728939ef0741a3c807631f75ea472530cb9c02/qiskit-1.4.5.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  },
+  "2.4.0": {
+   "upload_time_utc": "2026-04-16T17:21:02",
+   "wheel": {
+    "filename": "qiskit-2.4.0-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "cf9020bf79934c7bf490973d99b80464957efc1fa13456d680c42bce23262687"
+   },
+   "sdist": {
+    "filename": "qiskit-2.4.0.tar.gz",
+    "sha256": "57a43f869608fd8319444c2c1fbf6674fa36c6346646e41f4b128233693970d6",
+    "url": "https://files.pythonhosted.org/packages/ff/cb/a348ec6595a8a2163fad714692c5b2d82ffb6a7f82e7a64f5a58e0dbc37e/qiskit-2.4.0.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  },
+  "2.4.1": {
+   "upload_time_utc": "2026-04-24T20:34:03",
+   "wheel": {
+    "filename": "qiskit-2.4.1-cp310-abi3-manylinux_2_28_x86_64.whl",
+    "sha256": "bb85390b4d6878ecc28fb54b78b128a24642a42eb3a5a58c4b144ee0730fece7"
+   },
+   "sdist": {
+    "filename": "qiskit-2.4.1.tar.gz",
+    "sha256": "90203e0241184642fc4a55cf88e20633d412b00d0aa89e3af780648744e508cf",
+    "url": "https://files.pythonhosted.org/packages/39/82/7a90609d283f8707d46e1a6771e16462922789223817b6e7033490dffcaa/qiskit-2.4.1.tar.gz"
+   },
+   "requires_python": ">=3.10"
+  }
+ },
+ "dryrun_versions_outside_study": {
+  "2.2.3": {
+   "upload_time_utc": "2025-10-30T15:28:45",
+   "wheel": {
+    "filename": "qiskit-2.2.3-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "75acf702866a68be36870400d845d0775e7baa5397bf880bc56864ee105cbe93"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.3.tar.gz",
+    "sha256": "ec597bf021fe5fa5e44600b142e6de00fc873207dfbd750d4e1cf19a1a905592",
+    "url": "https://files.pythonhosted.org/packages/eb/40/3e54963067210d45895cbce879d63a9523e0d696f2f8dfade0337cf3afd5/qiskit-2.2.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  }
+ },
+ "releases_used_in_phase_d_any_role": [
+  "2.0.1",
+  "2.0.2",
+  "2.0.3",
+  "2.1.0",
+  "2.1.1",
+  "2.1.2",
+  "2.2.0rc1",
+  "2.2.1",
+  "2.2.2",
+  "2.2.3",
+  "2.3.0",
+  "2.3.1",
+  "2.4.2",
+  "2.5.0",
+  "2.5.1",
+  "2.5.2"
+ ],
+ "pair_rule": "P = the latest final, non-yanked release of the same major version uploaded to PyPI before B; pairs disjoint (no release in two pairs); no release used in Phase D in any role (study or dry run)"
+}

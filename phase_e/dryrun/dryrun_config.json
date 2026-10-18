@@ -1,0 +1,203 @@
+{
+ "schema": "phase_e_config/1",
+ "date_of_record": "2026-10-19",
+ "note": "DRY-RUN copy of phase_e_config.json with 2.2.3 (a Phase D release, outside Phase E) as the only version; used only to exercise the analysis on real runner output",
+ "python": "3.10",
+ "slice": {
+  "include_globs": [
+   "test/python/transpiler/**/test_*.py",
+   "test/python/compiler/test_*.py"
+  ],
+  "exclude_files": [
+   "test/python/transpiler/test_unitary_synthesis_plugin.py"
+  ],
+  "exclude_reason": "7 environmental failures: its test plugins are registered only by a development install (entry points)"
+ },
+ "environment": {
+  "pinned_env": {
+   "RAYON_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1",
+   "QISKIT_PARALLEL": "FALSE",
+   "QISKIT_NUM_PROCS": "1",
+   "PYTHONHASHSEED": "0",
+   "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "pip_extra": [
+   "ddt",
+   "hypothesis",
+   "pytest"
+  ],
+  "constraints_file": "phase_e/config/constraints.txt",
+  "pytest_args": [
+   "-q",
+   "-p",
+   "no:cacheprovider",
+   "--no-header",
+   "-p",
+   "phasee_plugin"
+  ]
+ },
+ "runner": {
+  "per_test_timeout_s": 60.0,
+  "chunk_launch_limit_s": 115.0,
+  "chunk_hard_limit_s": 145.0,
+  "poll_s": 0.2,
+  "timing_passes_B": 2,
+  "timing_passes_P": 1
+ },
+ "estimator_common": {
+  "source": "P pass 1 (P's own slice files)",
+  "match": "normalized node id (identical to Phase D)",
+  "duration": "setup + call + teardown seconds as reported by pytest; timeouts = per_test_timeout_s",
+  "speed_band": [
+   0.8,
+   1.25
+  ],
+  "speed_rule": "k = calibration time recorded by B's collect-only call / median calibration time over P's run calls; if k outside the band, all estimates and budgets are multiplied by k (identical to Phase D)"
+ },
+ "estimators": {
+  "primary": {
+   "name": "F3_mean_newfile_quantile (q=0.99)",
+   "description": "seen test: its P duration; unseen test in a file with >= 3 seen tests: the mean P duration of that file's seen tests; unseen test in a file with < 3 seen tests (a whole new file): the 99th percentile (type 7) of all P durations",
+   "spec": {
+    "in_file": {
+     "stat": "mean"
+    },
+    "min_seen": 3,
+    "new_file": {
+     "over": "tests",
+     "q": 0.99,
+     "stat": "quantile"
+    }
+   },
+   "chosen_by": "phase_e/dev/select_estimator.py (LOPO on Phase D data, pre-stated criterion)"
+  },
+  "secondary": {
+   "name": "F10_quantile_newfile_p99 (q_in=0.9)",
+   "description": "as primary, but an unseen test in a known file is priced at the 90th percentile of that file's seen P durations",
+   "spec": {
+    "in_file": {
+     "q": 0.9,
+     "stat": "quantile"
+    },
+    "min_seen": 3,
+    "new_file": {
+     "over": "tests",
+     "q": 0.99,
+     "stat": "quantile"
+    }
+   },
+   "role": "registered secondary: same rules, reported, no confirmatory claim"
+  },
+  "comparator_phase_d_registered": {
+   "name": "Phase D registered rule (file median, global median)",
+   "spec": {
+    "min_seen": 3,
+    "in_file": {
+     "stat": "median"
+    },
+    "new_file": {
+     "stat": "median",
+     "over": "tests"
+    }
+   },
+   "role": "exploratory comparator"
+  }
+ },
+ "real_cost": {
+  "definition": "mean over the B timing passes with a record of setup+call+teardown seconds; timeout = per_test_timeout_s",
+  "missing": "a suite test without any B record is charged its estimate and counted (n_imputed_real, a deviation)"
+ },
+ "budgets": {
+  "fractions_primary": [
+   0.05,
+   0.25
+  ],
+  "fractions_exploratory": [
+   0.5
+  ],
+  "basis": "estimated full-suite cost of the pair suite (B collect-only list) under the estimator, after the speed rule; one budget per estimator"
+ },
+ "policies": {
+  "cost_aware": [
+   "cheapest_first",
+   "coast_d"
+  ],
+  "charging": "every planned test is charged its real cost; nothing is excluded"
+ },
+ "confirmatory": {
+  "P1prime": {
+   "estimator": "primary",
+   "policies": [
+    "cheapest_first",
+    "coast_d"
+   ],
+   "fractions": [
+    0.05,
+    0.25
+   ],
+   "mean_spend_ratio_max": 1.25,
+   "single_pair_spend_ratio_max": 1.25,
+   "note": "every pair's real spend / budget <= 1.25 (implies mean <= 1.25); stricter than Phase D's single-event maximum of 2.0"
+  },
+  "P2prime": {
+   "estimator": "primary",
+   "median_abs_rel_error_max": 0.15,
+   "abs_rel_error_band": 0.25,
+   "min_share_within_band": 0.8,
+   "note": "median over pairs of |sum est / sum real - 1| <= 0.15 AND at least 80% of analysable pairs within +-25%"
+  },
+  "continuity_checks": {
+   "P1_phase_d_thresholds": {
+    "mean_spend_ratio_max": 1.25,
+    "single_pair_spend_ratio_max": 2.0
+   },
+   "P2_phase_d_strict": "every pair within +-25%",
+   "role": "reported, no claim"
+  },
+  "min_analysable_pairs": 8,
+  "environment_exclusion": {
+   "max_share_files_without_tests": 0.1,
+   "rule": "a pair is excluded (reported) if more than 10% of the slice files have no test in B's collect list or no test record in P's run; decided at lock time from P's run and B's collect list only"
+  },
+  "registered_descriptive": {
+   "N1_new_test_coverage": "per pair and tier: unseen tests selected by the primary plan (in_file and new_file separately) and the real cost of the unseen tests that were not selected, against the Phase D comparator",
+   "lane_cost_ratio": "real cost of all unseen tests / budget (what an always-run lane would add)"
+  }
+ },
+ "versions": {
+  "2.2.3": {
+   "upload_time_utc": "2025-10-30T15:28:45",
+   "wheel": {
+    "filename": "qiskit-2.2.3-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "75acf702866a68be36870400d845d0775e7baa5397bf880bc56864ee105cbe93"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.3.tar.gz",
+    "sha256": "ec597bf021fe5fa5e44600b142e6de00fc873207dfbd750d4e1cf19a1a905592",
+    "url": "https://files.pythonhosted.org/packages/eb/40/3e54963067210d45895cbce879d63a9523e0d696f2f8dfade0337cf3afd5/qiskit-2.2.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  }
+ },
+ "dryrun_versions_outside_study": {
+  "2.2.3": {
+   "upload_time_utc": "2025-10-30T15:28:45",
+   "wheel": {
+    "filename": "qiskit-2.2.3-cp39-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+    "sha256": "75acf702866a68be36870400d845d0775e7baa5397bf880bc56864ee105cbe93"
+   },
+   "sdist": {
+    "filename": "qiskit-2.2.3.tar.gz",
+    "sha256": "ec597bf021fe5fa5e44600b142e6de00fc873207dfbd750d4e1cf19a1a905592",
+    "url": "https://files.pythonhosted.org/packages/eb/40/3e54963067210d45895cbce879d63a9523e0d696f2f8dfade0337cf3afd5/qiskit-2.2.3.tar.gz"
+   },
+   "requires_python": ">=3.9"
+  }
+ },
+ "releases_used_in_phase_d_any_role": [],
+ "pair_rule": "P = the latest final, non-yanked release of the same major version uploaded to PyPI before B; pairs disjoint (no release in two pairs); no release used in Phase D in any role (study or dry run)"
+}

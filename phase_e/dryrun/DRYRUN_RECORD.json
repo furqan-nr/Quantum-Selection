@@ -1,0 +1,27 @@
+{
+ "date_utc": "2026-10-19",
+ "release": "2.2.3 (Phase D F release; not a Phase E release)",
+ "purpose": "confirm the adapted Phase E runner works end to end before the record",
+ "steps": [
+  "prepare --version 2.2.3 (wheel/sdist SHA-256 verified, venv with phase_e/config/constraints.txt incl. numpy 1.26.4)",
+  "attempt 1: collect/run with a relative --data path: the plugin (cwd = test tree) could not open its output file (0 tests recorded); fixed by resolving --data to an absolute path; attempt-1 data archived in phase_e/dryrun/archive_attempt1_relative_data_path/",
+  "attempt 2: --data phase_e/dryrun/data collect --files test_remove_barriers.py test_barrier_before_final_measurements.py (17 tests collected)",
+  "run --pass 1 --files (same two files): 17 tests recorded, 2 of 2 files complete; a second invocation resumed and ran nothing (completed files skipped)",
+  "assemble (run and collect): collected ids == recorded ids",
+  "refusals checked: run of 2.2.3 without --data (not a study release); run of B releases 1.0.1 and 2.4.1 (missing locks and LOCK_PUSHED.json); --data with a study release (1.0.1); no study release was prepared, collected or timed",
+  "analysis on the dry-run data with a dry-run ledger (P = B = 2.2.3): --lock refused because B timing data exist (as designed); final run wrote phase_e/dryrun/dryrun_analysis_output.json (not decided: 1 pair < 8)"
+ ],
+ "n_tests_timed": 17,
+ "outcomes": [
+  "passed"
+ ],
+ "calibration_median_s": 0.22786904700114974,
+ "cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+ "nproc": 2,
+ "runner_sha256_at_dry_run": {
+  "calibrate.py": "95fbe2a64e04745bacadba509f498725fc8419e0fcf896821ca7fa0a14fe5894",
+  "phasee_plugin.py": "65835b93816b51e51b1e5f2673cda0fff8c46472b82d031ebd6f4d232997c0b0",
+  "run_phase_e.py": "272379873c9302bda0302d59af4af2dd5fed86a8f1c385b2dd4f44a333a5fc5a"
+ },
+ "note": "Durations of these 17 tests of 2.2.3 are not Phase E data and are never used by the Phase E analysis or the estimator selection."
+}

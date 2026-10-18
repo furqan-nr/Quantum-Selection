@@ -1,0 +1,49 @@
+{
+"collected": [],
+"meta": {
+"calibration_median_s": 0.22782691799875465,
+"calibration_runs_s": [
+0.23151506100111874,
+0.2241368559989496,
+0.22602517899940722,
+0.23012775800089003,
+0.22782691799875465
+],
+"collect_s": 0.4045217037200928,
+"cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+"files": [
+"test/python/transpiler/test_remove_barriers.py"
+],
+"host": "claude",
+"loadavg": [
+0.21142578125,
+0.15771484375,
+0.103515625
+],
+"mode": "collect",
+"nproc": 2,
+"pinned_env": {
+"MKL_NUM_THREADS": "1",
+"NUMEXPR_NUM_THREADS": "1",
+"OMP_NUM_THREADS": "1",
+"OPENBLAS_NUM_THREADS": "1",
+"PYTHONDONTWRITEBYTECODE": "1",
+"PYTHONHASHSEED": "0",
+"QISKIT_NUM_PROCS": "1",
+"QISKIT_PARALLEL": "FALSE",
+"RAYON_NUM_THREADS": "1"
+},
+"platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+"rc": 3,
+"runner_python": "3.10.12",
+"runner_sha256": {
+"calibrate.py": "95fbe2a64e04745bacadba509f498725fc8419e0fcf896821ca7fa0a14fe5894",
+"phasee_plugin.py": "65835b93816b51e51b1e5f2673cda0fff8c46472b82d031ebd6f4d232997c0b0",
+"run_phase_e.py": "edf9fada863fd932166f97d2aa4a8cde4963ade4c010ea5e1656b902a27d7ab8"
+},
+"tests": "2.2.3",
+"utc": "2026-10-18T21:45:47Z",
+"venv_freeze_sha256": "1aba1b8c2b578b70a46bd52faadd24c8e641efaa3314cf9dd2e7b58729ef3a9c",
+"wheel": "2.2.3"
+}
+}
