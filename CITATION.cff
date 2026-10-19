@@ -8,8 +8,12 @@ abstract: >-
   baselines (random, cheapest-first, diversity, history and change-stage orderings).
 license: MIT
 type: software
-version: "v1.0.0"  # placeholder: set to the tag of the archived release
-# DOI: to be added (Zenodo). Once minted, add it under "identifiers" (type: doi) and as "doi".
+version: "v1.0.0"
+doi: "10.5281/zenodo.23475857"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23475857"
+    description: "Zenodo archive of release v1.0.0"
 repository-code: "https://github.com/furqan-nr/Quantum-Selection"
 keywords:
   - regression test selection
