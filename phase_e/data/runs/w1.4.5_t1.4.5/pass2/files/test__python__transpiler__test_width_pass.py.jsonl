@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792369025.6951509, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_empty_dag", "idx": 0, "raw": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_just_qubits", "idx": 1, "raw": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_just_qubits"}
+{"ev": "start", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_empty_dag", "t": 1792369026.065837}
+{"call": 0.0030233600009523798, "duration": 0.004953942003339762, "ev": "done", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_empty_dag", "outcome": "passed", "setup": 0.0017964329999813344, "teardown": 0.00013414900240604766}
+{"ev": "start", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_just_qubits", "t": 1792369026.0762398}
+{"call": 0.0015191179991234094, "duration": 0.001876289999927394, "ev": "done", "id": "test/python/transpiler/test_width_pass.py::TestWidthPass::test_just_qubits", "outcome": "passed", "setup": 0.00020532499911496416, "teardown": 0.00015184700168902054}

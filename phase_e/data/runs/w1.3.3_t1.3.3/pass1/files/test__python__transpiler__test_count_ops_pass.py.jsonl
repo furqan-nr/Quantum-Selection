@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792362454.2511933, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_empty_dag", "idx": 0, "raw": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_just_qubits", "idx": 1, "raw": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_just_qubits"}
+{"ev": "start", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_empty_dag", "t": 1792362454.637166}
+{"call": 0.003829986999335233, "duration": 0.005954693999228766, "ev": "done", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_empty_dag", "outcome": "passed", "setup": 0.001947067998116836, "teardown": 0.00017763900177669711}
+{"ev": "start", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_just_qubits", "t": 1792362454.6491086}
+{"call": 0.0019300669991935138, "duration": 0.002433367000776343, "ev": "done", "id": "test/python/transpiler/test_count_ops_pass.py::TestCountOpsPass::test_just_qubits", "outcome": "passed", "setup": 0.0003026570011570584, "teardown": 0.00020064300042577088}

@@ -1,0 +1,37 @@
+{"ev": "launch", "n": 0, "t": 1792362224.130905, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_a_cx_to_map", "idx": 0, "raw": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_a_cx_to_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_handle_measurement", "idx": 1, "raw": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_handle_measurement"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_initial_layout", "idx": 2, "raw": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_initial_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_a_cx_to_map", "idx": 3, "raw": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_a_cx_to_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_handle_measurement", "idx": 4, "raw": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_handle_measurement"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_initial_layout", "idx": 5, "raw": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_initial_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_a_cx_to_map", "idx": 6, "raw": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_a_cx_to_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_handle_measurement", "idx": 7, "raw": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_handle_measurement"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_initial_layout", "idx": 8, "raw": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_initial_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_a_cx_to_map", "idx": 9, "raw": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_a_cx_to_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_handle_measurement", "idx": 10, "raw": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_handle_measurement"}
+{"ev": "collected", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_initial_layout", "idx": 11, "raw": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_initial_layout"}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_a_cx_to_map", "t": 1792362224.5152314}
+{"call": 0.004342683001596015, "duration": 0.006439000000682427, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_a_cx_to_map", "outcome": "passed", "setup": 0.0019491269995342009, "teardown": 0.0001471899995522108}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_handle_measurement", "t": 1792362224.5240853}
+{"call": 0.0025912149976647925, "duration": 0.002952015998744173, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_handle_measurement", "outcome": "passed", "setup": 0.0002390849986113608, "teardown": 0.00012171600246801972}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_initial_layout", "t": 1792362224.529408}
+{"call": 0.0022724129994458053, "duration": 0.0025918989958881866, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsBasicSwap::test_initial_layout", "outcome": "passed", "setup": 0.00018374999854131602, "teardown": 0.00013573599790106528}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_a_cx_to_map", "t": 1792362224.5342507}
+{"call": 0.0020692819998657797, "duration": 0.002475737001077505, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_a_cx_to_map", "outcome": "passed", "setup": 0.0003005520011356566, "teardown": 0.00010590300007606857}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_handle_measurement", "t": 1792362224.5387704}
+{"call": 0.004510075999860419, "duration": 0.0048462000049767084, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_handle_measurement", "outcome": "passed", "setup": 0.00020802600192837417, "teardown": 0.0001280980031879153}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_initial_layout", "t": 1792362224.5462737}
+{"call": 0.002778792000754038, "duration": 0.00320080000165035, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsLookaheadSwap::test_initial_layout", "outcome": "passed", "setup": 0.00018559000091045164, "teardown": 0.00023641799998586066}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_a_cx_to_map", "t": 1792362224.5587952}
+{"call": 0.0034012069991149474, "duration": 0.0038909899994905572, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_a_cx_to_map", "outcome": "passed", "setup": 0.0003534440002113115, "teardown": 0.00013633900016429834}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_handle_measurement", "t": 1792362224.5649636}
+{"call": 0.003194741999323014, "duration": 0.0035387690004426986, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_handle_measurement", "outcome": "passed", "setup": 0.00022289900152827613, "teardown": 0.0001211279995914083}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_initial_layout", "t": 1792362224.5709813}
+{"call": 0.002355515996896429, "duration": 0.0026829829985217657, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsStochasticSwap::test_initial_layout", "outcome": "passed", "setup": 0.00017859000217868015, "teardown": 0.00014887699944665655}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_a_cx_to_map", "t": 1792362224.5758817}
+{"call": 0.002231235001090681, "duration": 0.0026323559977754485, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_a_cx_to_map", "outcome": "passed", "setup": 0.00028389999715727754, "teardown": 0.00011722099952748977}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_handle_measurement", "t": 1792362224.580926}
+{"call": 0.0021703729980799835, "duration": 0.0024916849979490507, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_handle_measurement", "outcome": "passed", "setup": 0.00017730800027493387, "teardown": 0.00014400399959413335}
+{"ev": "start", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_initial_layout", "t": 1792362224.5857024}
+{"call": 0.0023924029992485885, "duration": 0.0027117739955428988, "ev": "done", "id": "test/python/transpiler/test_mappers.py::TestsSabreSwap::test_initial_layout", "outcome": "passed", "setup": 0.00018551699758972973, "teardown": 0.0001338539987045806}

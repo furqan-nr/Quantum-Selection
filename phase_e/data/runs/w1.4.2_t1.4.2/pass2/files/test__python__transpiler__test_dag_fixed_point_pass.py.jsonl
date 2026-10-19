@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792368260.5044887, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_empty_dag_true", "idx": 0, "raw": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_empty_dag_true"}
+{"ev": "collected", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_nonempty_dag_false", "idx": 1, "raw": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_nonempty_dag_false"}
+{"ev": "start", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_empty_dag_true", "t": 1792368260.8576179}
+{"call": 0.002938714998890646, "duration": 0.0053793469960510265, "ev": "done", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_empty_dag_true", "outcome": "passed", "setup": 0.002118681997671956, "teardown": 0.0003219499994884245}
+{"ev": "start", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_nonempty_dag_false", "t": 1792368260.8694375}
+{"call": 0.0016713270015316084, "duration": 0.0021844810034963302, "ev": "done", "id": "test/python/transpiler/test_dag_fixed_point_pass.py::TestFixedPointPass::test_nonempty_dag_false", "outcome": "passed", "setup": 0.0003739480016520247, "teardown": 0.00013920600031269714}

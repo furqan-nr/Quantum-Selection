@@ -1,0 +1,130 @@
+{"ev": "launch", "n": 0, "t": 1792362770.3798814, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose", "idx": 0, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_compose"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_different_qubit_lists", "idx": 1, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_different_qubit_lists"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_original", "idx": 2, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_original"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_second", "idx": 3, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_second"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_copy", "idx": 4, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_copy"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_default_layout", "idx": 5, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_default_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse", "idx": 6, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse_different_qubit_lists", "idx": 7, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse_different_qubit_lists"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add", "idx": 8, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add_register", "idx": 9, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add_register"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_physical", "idx": 10, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_physical"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_virtual", "idx": 11, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_virtual"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine", "idx": 12, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_bigger", "idx": 13, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_bigger"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_smaller", "idx": 14, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_smaller"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_contains", "idx": 15, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_contains"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_del", "idx": 16, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_del"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_str_key", "idx": 17, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_str_key"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_when_same_type", "idx": 18, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_when_same_type"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict", "idx": 19, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict_hole", "idx": 20, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict_hole"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist", "idx": 21, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_duplicated", "idx": 22, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_duplicated"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_long", "idx": 23, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_long"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_numpy", "idx": 24, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_numpy"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_short", "idx": 25, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_short"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_tuplelist", "idx": 26, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_tuplelist"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_bits", "idx": 27, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_bits"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_physical_bits", "idx": 28, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_physical_bits"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len", "idx": 29, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len_with_idle", "idx": 30, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len_with_idle"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr", "idx": 31, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr_with_holes", "idx": 32, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr_with_holes"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_set", "idx": 33, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_set"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap", "idx": 34, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap_error", "idx": 35, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap_error"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_physical_keyerror", "idx": 36, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_physical_keyerror"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_set_virtual_without_physical", "idx": 37, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_set_virtual_without_physical"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_to_permutation", "idx": 38, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_to_permutation"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_virtual_keyerror", "idx": 39, "raw": "test/python/transpiler/test_layout.py::LayoutTest::test_virtual_keyerror"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_copy", "idx": 40, "raw": "test/python/transpiler/test_layout.py::TestNLayout::test_copy"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_deepcopy", "idx": 41, "raw": "test/python/transpiler/test_layout.py::TestNLayout::test_deepcopy"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_pickle", "idx": 42, "raw": "test/python/transpiler/test_layout.py::TestNLayout::test_pickle"}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose", "t": 1792362770.784642}
+{"call": 0.003319693998491857, "duration": 0.0058322539953223895, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose", "outcome": "passed", "setup": 0.0023709329980192706, "teardown": 0.00014162699881126173}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_different_qubit_lists", "t": 1792362770.7930443}
+{"call": 0.0014891820028424263, "duration": 0.0018140910033253022, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_different_qubit_lists", "outcome": "passed", "setup": 0.0002108469998347573, "teardown": 0.00011406200064811856}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_original", "t": 1792362770.7970886}
+{"call": 0.0010962480009766296, "duration": 0.0014026080025359988, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_original", "outcome": "passed", "setup": 0.00017687000217847526, "teardown": 0.000129489999380894}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_second", "t": 1792362770.8087332}
+{"call": 0.0016208519991778303, "duration": 0.0021048269991297275, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_compose_no_permutation_second", "outcome": "passed", "setup": 0.0003335090004839003, "teardown": 0.00015046599946799688}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_copy", "t": 1792362770.8137634}
+{"call": 0.0013597910001408309, "duration": 0.0016767790002631955, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_copy", "outcome": "passed", "setup": 0.00018327699945075437, "teardown": 0.00013371100067161024}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_default_layout", "t": 1792362770.817865}
+{"call": 0.0010011300000769552, "duration": 0.001322918997175293, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_default_layout", "outcome": "passed", "setup": 0.00021784199998364784, "teardown": 0.00010394699711469002}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse", "t": 1792362770.8215773}
+{"call": 0.0009538539998175111, "duration": 0.0012345040013315156, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse", "outcome": "passed", "setup": 0.00017934200150193647, "teardown": 0.00010130800001206808}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse_different_qubit_lists", "t": 1792362770.8252866}
+{"call": 0.0009602409991202876, "duration": 0.0012253619970579166, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_inverse_different_qubit_lists", "outcome": "passed", "setup": 0.0001650749982218258, "teardown": 0.00010004599971580319}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add", "t": 1792362770.8285162}
+{"call": 0.0008823950010992121, "duration": 0.0011486719995446038, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add", "outcome": "passed", "setup": 0.00016354399849660695, "teardown": 0.00010273299994878471}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add_register", "t": 1792362770.8316967}
+{"call": 0.0009203629997500684, "duration": 0.0011958509967371356, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_add_register", "outcome": "passed", "setup": 0.00016628799858153798, "teardown": 0.00010919999840552919}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_physical", "t": 1792362770.8352711}
+{"call": 0.0010974239994538948, "duration": 0.0014329499972518533, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_physical", "outcome": "passed", "setup": 0.00022079499831306748, "teardown": 0.00011473099948489107}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_virtual", "t": 1792362770.8390682}
+{"call": 0.001012387998343911, "duration": 0.001336149998678593, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_avoid_dangling_virtual", "outcome": "passed", "setup": 0.00021506000121007673, "teardown": 0.00010870199912460521}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine", "t": 1792362770.842495}
+{"call": 0.0009377329988637939, "duration": 0.0012123999986215495, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine", "outcome": "passed", "setup": 0.00017054400086635724, "teardown": 0.00010412299889139831}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_bigger", "t": 1792362770.845872}
+{"call": 0.0009028819986269809, "duration": 0.001171616997453384, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_bigger", "outcome": "passed", "setup": 0.00016659999891999178, "teardown": 0.0001021349999064114}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_smaller", "t": 1792362770.8491943}
+{"call": 0.0009316060022683814, "duration": 0.0012336500039964449, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_combine_smaller", "outcome": "passed", "setup": 0.00018592299966257997, "teardown": 0.00011612100206548348}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_contains", "t": 1792362770.852558}
+{"call": 0.0009291000023949891, "duration": 0.0012875899992650375, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_contains", "outcome": "passed", "setup": 0.0001874189983936958, "teardown": 0.00017107099847635254}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_del", "t": 1792362770.8561084}
+{"call": 0.0011320679986965843, "duration": 0.0014719139981025364, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_del", "outcome": "passed", "setup": 0.00021691299843951128, "teardown": 0.00012293300096644089}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_str_key", "t": 1792362770.8599195}
+{"call": 0.0011538880025909748, "duration": 0.0014412189993890934, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_str_key", "outcome": "passed", "setup": 0.00018298699797014706, "teardown": 0.00010434399882797152}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_when_same_type", "t": 1792362770.863461}
+{"call": 0.0009465139992244076, "duration": 0.0012157590026617981, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_error_when_same_type", "outcome": "passed", "setup": 0.00016807200154289603, "teardown": 0.00010117300189449452}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict", "t": 1792362770.8667545}
+{"call": 0.0008921149965317454, "duration": 0.0011502479937917087, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict", "outcome": "passed", "setup": 0.00015598099707858637, "teardown": 0.00010215200018137693}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict_hole", "t": 1792362770.8701115}
+{"call": 0.0009588559987605549, "duration": 0.0012458860001061112, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_dict_hole", "outcome": "passed", "setup": 0.00016866599980858155, "teardown": 0.00011836400153697468}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist", "t": 1792362770.8739176}
+{"call": 0.0009679370014055166, "duration": 0.0012871930011897348, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist", "outcome": "passed", "setup": 0.00018978899970534258, "teardown": 0.00012946700007887557}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_duplicated", "t": 1792362770.877646}
+{"call": 0.0011142870025651064, "duration": 0.001433214005373884, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_duplicated", "outcome": "passed", "setup": 0.0002003150002565235, "teardown": 0.00011861200255225413}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_long", "t": 1792362770.881191}
+{"call": 0.0010010260011767969, "duration": 0.0012945279995619785, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_long", "outcome": "passed", "setup": 0.000182071999006439, "teardown": 0.00011142999937874265}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_numpy", "t": 1792362770.884575}
+{"call": 0.0010416539989819285, "duration": 0.0013177520013414323, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_numpy", "outcome": "passed", "setup": 0.00017129600018961355, "teardown": 0.00010480200216989033}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_short", "t": 1792362770.8879018}
+{"call": 0.0009132939994742628, "duration": 0.001177337999251904, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_intlist_short", "outcome": "passed", "setup": 0.00015692300075897947, "teardown": 0.00010712099901866168}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_tuplelist", "t": 1792362770.8911452}
+{"call": 0.0009136160006164573, "duration": 0.0012327530021138955, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_from_tuplelist", "outcome": "passed", "setup": 0.00019773500025621615, "teardown": 0.00012140200124122202}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_bits", "t": 1792362770.8944237}
+{"call": 0.0009228570015693549, "duration": 0.0011863620020449162, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_bits", "outcome": "passed", "setup": 0.0001642520001041703, "teardown": 9.925300037139095e-05}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_physical_bits", "t": 1792362770.897608}
+{"call": 0.0010484119993634522, "duration": 0.0013550879993999843, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_get_physical_bits", "outcome": "passed", "setup": 0.0001761579987942241, "teardown": 0.00013051800124230795}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len", "t": 1792362770.9013116}
+{"call": 0.0010292260012647603, "duration": 0.0013283539992698934, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len", "outcome": "passed", "setup": 0.00018979599917656742, "teardown": 0.0001093319988285657}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len_with_idle", "t": 1792362770.9049227}
+{"call": 0.0009574810028425418, "duration": 0.0012303170005907305, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_len_with_idle", "outcome": "passed", "setup": 0.00016738599879317917, "teardown": 0.0001054499989550095}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr", "t": 1792362770.908624}
+{"call": 0.0011142529983771965, "duration": 0.00138557399623096, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr", "outcome": "passed", "setup": 0.00016549099746043794, "teardown": 0.00010583000039332546}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr_with_holes", "t": 1792362770.9121087}
+{"call": 0.0010649020005075727, "duration": 0.0013555990044551436, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_repr_with_holes", "outcome": "passed", "setup": 0.00018476500190445222, "teardown": 0.0001059320020431187}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_set", "t": 1792362770.9155152}
+{"call": 0.0009549009992042556, "duration": 0.0012693949975073338, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_set", "outcome": "passed", "setup": 0.0001754199984134175, "teardown": 0.00013907399988966063}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap", "t": 1792362770.9191518}
+{"call": 0.0011087129969382659, "duration": 0.0014291469960880931, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap", "outcome": "passed", "setup": 0.00020152599972789176, "teardown": 0.00011890799942193553}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap_error", "t": 1792362770.92298}
+{"call": 0.00107327899968368, "duration": 0.0013664329962921329, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_layout_swap_error", "outcome": "passed", "setup": 0.00017814099919633009, "teardown": 0.00011501299741212279}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_physical_keyerror", "t": 1792362770.9265618}
+{"call": 0.001032557000144152, "duration": 0.0013413799970294349, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_physical_keyerror", "outcome": "passed", "setup": 0.00018788399756886065, "teardown": 0.00012093899931642227}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_set_virtual_without_physical", "t": 1792362770.9301472}
+{"call": 0.0009313099981227424, "duration": 0.001247575997695094, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_set_virtual_without_physical", "outcome": "passed", "setup": 0.00019863799752783962, "teardown": 0.00011762800204451196}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_to_permutation", "t": 1792362770.9336224}
+{"call": 0.0009882630001811776, "duration": 0.0012761200014210772, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_to_permutation", "outcome": "passed", "setup": 0.00016983900059130974, "teardown": 0.0001180180006485898}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_virtual_keyerror", "t": 1792362770.9370012}
+{"call": 0.0009394350017828401, "duration": 0.0012495680020947475, "ev": "done", "id": "test/python/transpiler/test_layout.py::LayoutTest::test_virtual_keyerror", "outcome": "passed", "setup": 0.0001785749991540797, "teardown": 0.00013155800115782768}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_copy", "t": 1792362770.9405386}
+{"call": 0.0012088789990229998, "duration": 0.0016734519995225128, "ev": "done", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_copy", "outcome": "passed", "setup": 0.0003457370003161486, "teardown": 0.00011883600018336438}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_deepcopy", "t": 1792362770.9444964}
+{"call": 0.001072818999091396, "duration": 0.0013710439998249058, "ev": "done", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_deepcopy", "outcome": "passed", "setup": 0.00018008799816016108, "teardown": 0.00011813700257334858}
+{"ev": "start", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_pickle", "t": 1792362770.9488876}
+{"call": 0.0009789340001589153, "duration": 0.0012935300001117866, "ev": "done", "id": "test/python/transpiler/test_layout.py::TestNLayout::test_pickle", "outcome": "passed", "setup": 0.00018371000260231085, "teardown": 0.0001308859973505605}

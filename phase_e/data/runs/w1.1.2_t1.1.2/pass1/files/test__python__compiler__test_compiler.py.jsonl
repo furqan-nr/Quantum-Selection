@@ -1,0 +1,37 @@
+{"ev": "launch", "n": 0, "t": 1792365412.2289584, "skip": 0}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_coupling_map", "idx": 0, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_coupling_map"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_pass_manager", "idx": 1, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_pass_manager"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_single_qubit", "idx": 2, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_single_qubit"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_multiple_compile", "idx": 3, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_example_multiple_compile"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits", "idx": 4, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_grovers_circuit", "idx": 5, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_grovers_circuit"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_mapper_overoptimization", "idx": 6, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_mapper_overoptimization"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_math_domain_error", "idx": 7, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_math_domain_error"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_no_conflict_backend_passmanager", "idx": 8, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_no_conflict_backend_passmanager"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_parallel_compile", "idx": 9, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_parallel_compile"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_random_parameter_circuit", "idx": 10, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_random_parameter_circuit"}
+{"ev": "collected", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_yzy_zyz_cases", "idx": 11, "raw": "test/python/compiler/test_compiler.py::TestCompiler::test_yzy_zyz_cases"}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_coupling_map", "t": 1792365412.607727}
+{"call": 0.02123715999914566, "duration": 0.02330240099763614, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_coupling_map", "outcome": "passed", "setup": 0.0018863029981730506, "teardown": 0.00017893800031743012}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_pass_manager", "t": 1792365412.6339083}
+{"call": 0.007566460000816733, "duration": 0.007909619998827111, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_pass_manager", "outcome": "passed", "setup": 0.00020944399875588715, "teardown": 0.00013371599925449118}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_single_qubit", "t": 1792365412.6452208}
+{"call": 0.005733291000069585, "duration": 0.006072644999221666, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_compile_single_qubit", "outcome": "passed", "setup": 0.00019808499928331003, "teardown": 0.00014126899986877106}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_multiple_compile", "t": 1792365412.6573882}
+{"call": 0.016082435999123845, "duration": 0.016493597999215126, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_multiple_compile", "outcome": "passed", "setup": 0.0002904620014305692, "teardown": 0.00012069999866071157}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits", "t": 1792365412.6768641}
+{"call": 0.02210943399768439, "duration": 0.022757961996831, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits", "outcome": "passed", "setup": 0.0004710590001195669, "teardown": 0.00017746899902704172}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_grovers_circuit", "t": 1792365412.7043397}
+{"call": 0.007039189000352053, "duration": 0.007350326002779184, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_grovers_circuit", "outcome": "passed", "setup": 0.00020173300072201528, "teardown": 0.00010940400170511566}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_mapper_overoptimization", "t": 1792365412.7144804}
+{"call": 0.014229980999516556, "duration": 0.014541828000801615, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_mapper_overoptimization", "outcome": "passed", "setup": 0.0001794499985408038, "teardown": 0.0001323970027442556}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_math_domain_error", "t": 1792365412.7319853}
+{"call": 0.008334428999660304, "duration": 0.008675226999912411, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_math_domain_error", "outcome": "passed", "setup": 0.00018831099805538543, "teardown": 0.00015248700219672173}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_no_conflict_backend_passmanager", "t": 1792365412.744299}
+{"call": 0.003645863998826826, "duration": 0.003971381000155816, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_no_conflict_backend_passmanager", "outcome": "passed", "setup": 0.00020748699898831546, "teardown": 0.0001180300023406744}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_parallel_compile", "t": 1792365412.7508552}
+{"call": 0.08803784199699294, "duration": 0.08839122499193763, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_parallel_compile", "outcome": "passed", "setup": 0.00018903099771705456, "teardown": 0.00016435199722764082}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_random_parameter_circuit", "t": 1792365412.8429337}
+{"call": 0.018547575000411598, "duration": 0.01903403300093487, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_random_parameter_circuit", "outcome": "passed", "setup": 0.0003204770000593271, "teardown": 0.00016598100046394393}
+{"ev": "start", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_yzy_zyz_cases", "t": 1792365412.866124}
+{"call": 0.014996652000263566, "duration": 0.015364345999842044, "ev": "done", "id": "test/python/compiler/test_compiler.py::TestCompiler::test_yzy_zyz_cases", "outcome": "passed", "setup": 0.00021852300051250495, "teardown": 0.00014917099906597286}

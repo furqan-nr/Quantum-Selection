@@ -1,0 +1,28 @@
+{"ev": "launch", "n": 0, "t": 1792366994.2801108, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_identity_params_same_hash", "idx": 0, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_identity_params_same_hash"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_is_TP_or_AP", "idx": 1, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_is_TP_or_AP"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_args_kwargs", "idx": 2, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_args_kwargs"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_TP_AP", "idx": 3, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_TP_AP"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_args", "idx": 4, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_args"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_parent_child", "idx": 5, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_parent_child"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_and_args", "idx": 6, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_and_args"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_out_of_order", "idx": 7, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_out_of_order"}
+{"ev": "collected", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_set_identity", "idx": 8, "raw": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_set_identity"}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_identity_params_same_hash", "t": 1792366994.6562893}
+{"call": 0.0029000610011280514, "duration": 0.004990884001017548, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_identity_params_same_hash", "outcome": "passed", "setup": 0.0019467530000838451, "teardown": 0.0001440699998056516}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_is_TP_or_AP", "t": 1792366994.6636984}
+{"call": 0.001760264000040479, "duration": 0.002046728001005249, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_is_TP_or_AP", "outcome": "passed", "setup": 0.00017708000086713582, "teardown": 0.00010938400009763427}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_args_kwargs", "t": 1792366994.668386}
+{"call": 0.0010540920011408161, "duration": 0.0013302549996296875, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_args_kwargs", "outcome": "passed", "setup": 0.00016154900004039519, "teardown": 0.0001146139984484762}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_TP_AP", "t": 1792366994.6718395}
+{"call": 0.0010380349995102733, "duration": 0.001330392999079777, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_TP_AP", "outcome": "passed", "setup": 0.0001827829983085394, "teardown": 0.0001095750012609642}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_args", "t": 1792366994.6754003}
+{"call": 0.001009752999379998, "duration": 0.0012871420003648382, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_args", "outcome": "passed", "setup": 0.0001728509996610228, "teardown": 0.0001045380013238173}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_parent_child", "t": 1792366994.6791823}
+{"call": 0.0010573500003374647, "duration": 0.001372560000163503, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_diff_parent_child", "outcome": "passed", "setup": 0.00019817599968519062, "teardown": 0.00011703400014084764}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_and_args", "t": 1792366994.6836126}
+{"call": 0.0010675119992811233, "duration": 0.0013488580007106066, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_and_args", "outcome": "passed", "setup": 0.00017426900012651458, "teardown": 0.00010707700130296871}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_out_of_order", "t": 1792366994.6870918}
+{"call": 0.0009703010000521317, "duration": 0.001258319000044139, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_pass_kwargs_out_of_order", "outcome": "passed", "setup": 0.00018625699885888025, "teardown": 0.00010176100113312714}
+{"ev": "start", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_set_identity", "t": 1792366994.6906216}
+{"call": 0.0009903979989758227, "duration": 0.0013106629994581454, "ev": "done", "id": "test/python/transpiler/test_generic_pass.py::TestGenericPass::test_set_identity", "outcome": "passed", "setup": 0.0001781149985617958, "teardown": 0.00014215000192052685}

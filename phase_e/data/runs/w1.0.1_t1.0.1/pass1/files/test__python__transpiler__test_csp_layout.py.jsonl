@@ -1,0 +1,34 @@
+{"ev": "launch", "n": 0, "t": 1792364501.9620855, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling", "idx": 0, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling_sd", "idx": 1, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling_sd"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling", "idx": 2, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_sd", "idx": 3, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_sd"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_with_target", "idx": 4, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_with_target"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_5q_circuit_16q_coupling_no_solution", "idx": 5, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_5q_circuit_16q_coupling_no_solution"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling", "idx": 6, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling_sd", "idx": 7, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling_sd"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_call_limit", "idx": 8, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_call_limit"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_seed", "idx": 9, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_seed"}
+{"ev": "collected", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_time_limit", "idx": 10, "raw": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_time_limit"}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling", "t": 1792364502.3420978}
+{"call": 0.0, "duration": 0.0009282249957323074, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling", "outcome": "skipped", "setup": 0.0007542729981651064, "teardown": 0.00017395199756720103}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling_sd", "t": 1792364502.3457727}
+{"call": 0.0, "duration": 0.0003287350009486545, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_2q_circuit_2q_coupling_sd", "outcome": "skipped", "setup": 0.00020629900245694444, "teardown": 0.00012243599849171005}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling", "t": 1792364502.3483999}
+{"call": 0.0, "duration": 0.00031762500293552876, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling", "outcome": "skipped", "setup": 0.00019443900237092748, "teardown": 0.00012318600056460127}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_sd", "t": 1792364502.3509808}
+{"call": 0.0, "duration": 0.0003229870017094072, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_sd", "outcome": "skipped", "setup": 0.0001934770007210318, "teardown": 0.0001295100009883754}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_with_target", "t": 1792364502.3536386}
+{"call": 0.0, "duration": 0.00029048699798295274, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_3q_circuit_5q_coupling_with_target", "outcome": "skipped", "setup": 0.00017214699983014725, "teardown": 0.00011833999815280549}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_5q_circuit_16q_coupling_no_solution", "t": 1792364502.356481}
+{"call": 0.0, "duration": 0.0003058299989788793, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_5q_circuit_16q_coupling_no_solution", "outcome": "skipped", "setup": 0.0001754709992383141, "teardown": 0.0001303589997405652}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling", "t": 1792364502.3590655}
+{"call": 0.0, "duration": 0.0003334680004627444, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling", "outcome": "skipped", "setup": 0.0002114080016326625, "teardown": 0.0001220599988300819}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling_sd", "t": 1792364502.361802}
+{"call": 0.0, "duration": 0.0002886869988287799, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_9q_circuit_16q_coupling_sd", "outcome": "skipped", "setup": 0.00017040099919540808, "teardown": 0.00011828599963337183}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_call_limit", "t": 1792364502.3642964}
+{"call": 0.0, "duration": 0.0002894350000133272, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_call_limit", "outcome": "skipped", "setup": 0.00016193699775612913, "teardown": 0.0001274980022571981}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_seed", "t": 1792364502.3667877}
+{"call": 0.0, "duration": 0.00029741200341959484, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_seed", "outcome": "skipped", "setup": 0.00018199000260210596, "teardown": 0.00011542200081748888}
+{"ev": "start", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_time_limit", "t": 1792364502.3692825}
+{"call": 0.0, "duration": 0.00029984999855514616, "ev": "done", "id": "test/python/transpiler/test_csp_layout.py::TestCSPLayout::test_time_limit", "outcome": "skipped", "setup": 0.00016060999769251794, "teardown": 0.00013924000086262822}

@@ -1,0 +1,10 @@
+{"ev": "launch", "n": 0, "t": 1792365536.436566, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "idx": 0, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "idx": 1, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires"}
+{"ev": "collected", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "idx": 2, "raw": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller"}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "t": 1792365536.8049266}
+{"call": 0.005534586001886055, "duration": 0.007455790000676643, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback", "outcome": "passed", "setup": 0.0017961539997486398, "teardown": 0.00012504999904194847}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "t": 1792365536.8151982}
+{"call": 0.002787173001706833, "duration": 0.0030929940003261436, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_callback_with_pass_requires", "outcome": "passed", "setup": 0.00018358399756834842, "teardown": 0.00012223700105096214}
+{"ev": "start", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "t": 1792365536.8209114}
+{"call": 0.0027389150018279906, "duration": 0.003081087997998111, "ev": "done", "id": "test/python/transpiler/test_passmanager.py::TestPassManager::test_to_flow_controller", "outcome": "passed", "setup": 0.00018986799841513857, "teardown": 0.00015230499775498174}

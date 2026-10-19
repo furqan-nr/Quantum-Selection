@@ -1,0 +1,10 @@
+{"ev": "launch", "n": 0, "t": 1792367731.568557, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_control_flow_dag", "idx": 0, "raw": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_control_flow_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_empty_dag", "idx": 1, "raw": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_simple_dag", "idx": 2, "raw": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_simple_dag"}
+{"ev": "start", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_control_flow_dag", "t": 1792367731.949993}
+{"call": 0.005917743001191411, "duration": 0.008298519998788834, "ev": "done", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_control_flow_dag", "outcome": "passed", "setup": 0.002245996998681221, "teardown": 0.0001347799989162013}
+{"ev": "start", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_empty_dag", "t": 1792367731.9610374}
+{"call": 0.0013125879995641299, "duration": 0.001647585002501728, "ev": "done", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_empty_dag", "outcome": "passed", "setup": 0.00022005100254318677, "teardown": 0.00011494600039441139}
+{"ev": "start", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_simple_dag", "t": 1792367731.9654589}
+{"call": 0.001500065001891926, "duration": 0.0018480520011507906, "ev": "done", "id": "test/python/transpiler/test_containsinstruction.py::TestContainsInstructionPass::test_simple_dag", "outcome": "passed", "setup": 0.00020633199892472476, "teardown": 0.0001416550003341399}

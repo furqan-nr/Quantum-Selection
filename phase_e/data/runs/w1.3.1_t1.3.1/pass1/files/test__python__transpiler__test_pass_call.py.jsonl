@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792362239.4344757, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_dict", "idx": 0, "raw": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_dict"}
+{"ev": "collected", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_property_set", "idx": 1, "raw": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_property_set"}
+{"ev": "collected", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_remove_property", "idx": 2, "raw": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_remove_property"}
+{"ev": "collected", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_transformation_pass", "idx": 3, "raw": "test/python/transpiler/test_pass_call.py::TestPassCall::test_transformation_pass"}
+{"ev": "start", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_dict", "t": 1792362239.814629}
+{"call": 0.004298682000808185, "duration": 0.0064927660023386125, "ev": "done", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_dict", "outcome": "passed", "setup": 0.001990066000871593, "teardown": 0.00020401800065883435}
+{"ev": "start", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_property_set", "t": 1792362239.8240469}
+{"call": 0.0019519540001056157, "duration": 0.0023717799958831165, "ev": "done", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_property_set", "outcome": "passed", "setup": 0.0002983599988510832, "teardown": 0.00012146599692641757}
+{"ev": "start", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_remove_property", "t": 1792362239.8289526}
+{"call": 0.0017515459985588677, "duration": 0.002050005001365207, "ev": "done", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_analysis_pass_remove_property", "outcome": "passed", "setup": 0.00018714000179897994, "teardown": 0.00011131900100735947}
+{"ev": "start", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_transformation_pass", "t": 1792362239.8332145}
+{"call": 0.0013897249991714489, "duration": 0.001712380995741114, "ev": "done", "id": "test/python/transpiler/test_pass_call.py::TestPassCall::test_transformation_pass", "outcome": "passed", "setup": 0.00018835199807654135, "teardown": 0.0001343039984931238}

@@ -1,0 +1,12 @@
+..                                                                       [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization
+  /tmp/phase_e/venvs/1.4.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization
+  /tmp/phase_e/venvs/1.4.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2 passed, 2 warnings in 0.76s

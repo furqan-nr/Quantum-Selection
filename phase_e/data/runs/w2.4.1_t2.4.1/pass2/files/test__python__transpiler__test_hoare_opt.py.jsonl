@@ -1,0 +1,34 @@
+{"ev": "launch", "n": 0, "t": 1792369324.0780828, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_control_removal", "idx": 0, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_control_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_cswap_removal", "idx": 1, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_cswap_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_is_identity", "idx": 2, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_is_identity"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnn_cnot_removal", "idx": 3, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnn_cnot_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnncnot_advanced_removal", "idx": 4, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnncnot_advanced_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_multiple_pass", "idx": 5, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_multiple_pass"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_phasegate_removal", "idx": 6, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_phasegate_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_remove_control_then_identity", "idx": 7, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_remove_control_then_identity"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_successive_identity_removal", "idx": 8, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_successive_identity_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_advanced_removal", "idx": 9, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_advanced_removal"}
+{"ev": "collected", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_removal", "idx": 10, "raw": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_removal"}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_control_removal", "t": 1792369324.4001796}
+{"call": 0.0, "duration": 0.0008083030006673653, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_control_removal", "outcome": "skipped", "setup": 0.0006877739979245234, "teardown": 0.00012052900274284184}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_cswap_removal", "t": 1792369324.403317}
+{"call": 0.0, "duration": 0.0002764979981293436, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_cswap_removal", "outcome": "skipped", "setup": 0.00016215799769270234, "teardown": 0.00011434000043664128}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_is_identity", "t": 1792369324.405723}
+{"call": 0.0, "duration": 0.0002640759994392283, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_is_identity", "outcome": "skipped", "setup": 0.00015916600023047067, "teardown": 0.00010490999920875765}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnn_cnot_removal", "t": 1792369324.4080749}
+{"call": 0.0, "duration": 0.0002662559963937383, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnn_cnot_removal", "outcome": "skipped", "setup": 0.0001628579993848689, "teardown": 0.00010339799700886942}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnncnot_advanced_removal", "t": 1792369324.4103634}
+{"call": 0.0, "duration": 0.0002822499991452787, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_lnncnot_advanced_removal", "outcome": "skipped", "setup": 0.00016275999951176345, "teardown": 0.00011948999963351525}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_multiple_pass", "t": 1792369324.4135797}
+{"call": 0.0, "duration": 0.00033834199712146074, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_multiple_pass", "outcome": "skipped", "setup": 0.00019117099873255938, "teardown": 0.00014717099838890135}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_phasegate_removal", "t": 1792369324.4166057}
+{"call": 0.0, "duration": 0.00038370700349332765, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_phasegate_removal", "outcome": "skipped", "setup": 0.0002700490003917366, "teardown": 0.00011365800310159102}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_remove_control_then_identity", "t": 1792369324.4192798}
+{"call": 0.0, "duration": 0.0003062699979636818, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_remove_control_then_identity", "outcome": "skipped", "setup": 0.00017083399870898575, "teardown": 0.00013543599925469607}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_successive_identity_removal", "t": 1792369324.4217622}
+{"call": 0.0, "duration": 0.0002601409978524316, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_successive_identity_removal", "outcome": "skipped", "setup": 0.0001543869984743651, "teardown": 0.00010575399937806651}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_advanced_removal", "t": 1792369324.4242122}
+{"call": 0.0, "duration": 0.00030758100183447823, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_advanced_removal", "outcome": "skipped", "setup": 0.0001853200010373257, "teardown": 0.00012226100079715252}
+{"ev": "start", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_removal", "t": 1792369324.426649}
+{"call": 0.0, "duration": 0.0002932419993157964, "ev": "done", "id": "test/python/transpiler/test_hoare_opt.py::TestHoareOptimizer::test_targetsuccessive_identity_removal", "outcome": "skipped", "setup": 0.0001587429978826549, "teardown": 0.00013449900143314153}

@@ -1,0 +1,19 @@
+{"ev": "launch", "n": 0, "t": 1792363228.5227702, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_bug1", "idx": 0, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_bug1"}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_large_partial_random", "idx": 1, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_large_partial_random"}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_simple", "idx": 2, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_simple"}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_small", "idx": 3, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_small"}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_simple", "idx": 4, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_simple"}
+{"ev": "collected", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_small", "idx": 5, "raw": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_small"}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_bug1", "t": 1792363228.9192271}
+{"call": 0.0035642910006572492, "duration": 0.005908651997742709, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_bug1", "outcome": "passed", "setup": 0.0021853229991393164, "teardown": 0.00015903799794614315}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_large_partial_random", "t": 1792363228.9279995}
+{"call": 0.6406047970012878, "duration": 0.6410984409994853, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_large_partial_random", "outcome": "passed", "setup": 0.00031435699929716066, "teardown": 0.00017928699890035205}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_simple", "t": 1792363229.572787}
+{"call": 0.0017874969998956658, "duration": 0.002188234000641387, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_simple", "outcome": "passed", "setup": 0.0002805340009217616, "teardown": 0.00012020299982395954}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_small", "t": 1792363229.5783448}
+{"call": 0.0016472230017825495, "duration": 0.002001396998821292, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_partial_small", "outcome": "passed", "setup": 0.00022698799875797704, "teardown": 0.0001271859982807655}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_simple", "t": 1792363229.583029}
+{"call": 0.001352618000964867, "duration": 0.0016772290000517387, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_simple", "outcome": "passed", "setup": 0.00021396200099843554, "teardown": 0.0001106489980884362}
+{"ev": "start", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_small", "t": 1792363229.586938}
+{"call": 0.001549403001263272, "duration": 0.001876438003819203, "ev": "done", "id": "test/python/transpiler/test_token_swapper.py::TestGeneral::test_small", "outcome": "passed", "setup": 0.00018836200251826085, "teardown": 0.00013867300003767014}

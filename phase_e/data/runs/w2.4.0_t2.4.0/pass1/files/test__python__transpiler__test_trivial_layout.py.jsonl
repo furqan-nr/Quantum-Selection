@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792363453.8659718, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling", "idx": 0, "raw": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling"}
+{"ev": "collected", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling_with_target", "idx": 1, "raw": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling_with_target"}
+{"ev": "collected", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_9q_circuit_16q_coupling", "idx": 2, "raw": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_9q_circuit_16q_coupling"}
+{"ev": "collected", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_raises_wider_circuit", "idx": 3, "raw": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_raises_wider_circuit"}
+{"ev": "start", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling", "t": 1792363454.2143822}
+{"call": 0.0006359930011967663, "duration": 0.0020800870006496552, "ev": "done", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling", "outcome": "passed", "setup": 0.001228621000336716, "teardown": 0.00021547299911617301}
+{"ev": "start", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling_with_target", "t": 1792363454.2193143}
+{"call": 0.00045892100024502724, "duration": 0.0007810759998392314, "ev": "done", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_3q_circuit_5q_coupling_with_target", "outcome": "passed", "setup": 0.00021653099975083023, "teardown": 0.0001056239998433739}
+{"ev": "start", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_9q_circuit_16q_coupling", "t": 1792363454.2223132}
+{"call": 0.0004439410004124511, "duration": 0.000726594003936043, "ev": "done", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_9q_circuit_16q_coupling", "outcome": "passed", "setup": 0.00017043900152202696, "teardown": 0.00011221400200156495}
+{"ev": "start", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_raises_wider_circuit", "t": 1792363454.2252328}
+{"call": 0.00036033399737789296, "duration": 0.0006803859978390392, "ev": "done", "id": "test/python/transpiler/test_trivial_layout.py::TestTrivialLayout::test_raises_wider_circuit", "outcome": "passed", "setup": 0.00018484199972590432, "teardown": 0.00013521000073524192}

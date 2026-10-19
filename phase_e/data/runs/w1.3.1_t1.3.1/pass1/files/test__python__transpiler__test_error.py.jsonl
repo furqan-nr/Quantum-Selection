@@ -1,0 +1,16 @@
+{"ev": "launch", "n": 0, "t": 1792362195.9717379, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_default", "idx": 0, "raw": "test/python/transpiler/test_error.py::TestErrorPass::test_default"}
+{"ev": "collected", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_logger", "idx": 1, "raw": "test/python/transpiler/test_error.py::TestErrorPass::test_logger"}
+{"ev": "collected", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_message_callable", "idx": 2, "raw": "test/python/transpiler/test_error.py::TestErrorPass::test_message_callable"}
+{"ev": "collected", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_raise", "idx": 3, "raw": "test/python/transpiler/test_error.py::TestErrorPass::test_raise"}
+{"ev": "collected", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_warning", "idx": 4, "raw": "test/python/transpiler/test_error.py::TestErrorPass::test_warning"}
+{"ev": "start", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_default", "t": 1792362196.3515542}
+{"call": 0.0030875410011503845, "duration": 0.005211193001741776, "ev": "done", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_default", "outcome": "passed", "setup": 0.0020010300031572115, "teardown": 0.00012262199743418023}
+{"ev": "start", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_logger", "t": 1792362196.35922}
+{"call": 0.0018812429989338852, "duration": 0.0022065989978727885, "ev": "done", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_logger", "outcome": "passed", "setup": 0.00020690100063802674, "teardown": 0.00011845499830087647}
+{"ev": "start", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_message_callable", "t": 1792362196.3637886}
+{"call": 0.0013707639991480391, "duration": 0.0016767109991633333, "ev": "done", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_message_callable", "outcome": "passed", "setup": 0.00018171999909100123, "teardown": 0.00012422700092429295}
+{"ev": "start", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_raise", "t": 1792362196.3679135}
+{"call": 0.001198762001877185, "duration": 0.001528131000668509, "ev": "done", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_raise", "outcome": "passed", "setup": 0.00019012499978998676, "teardown": 0.00013924399900133722}
+{"ev": "start", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_warning", "t": 1792362196.3717496}
+{"call": 0.0017864069995994214, "duration": 0.002102600996295223, "ev": "done", "id": "test/python/transpiler/test_error.py::TestErrorPass::test_warning", "outcome": "passed", "setup": 0.00017640399892115965, "teardown": 0.00013978999777464196}

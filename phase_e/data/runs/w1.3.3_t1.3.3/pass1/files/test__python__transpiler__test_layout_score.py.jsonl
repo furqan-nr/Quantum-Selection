@@ -1,0 +1,19 @@
+{"ev": "launch", "n": 0, "t": 1792362493.0438473, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestLayoutScoreError::test_no_layout", "idx": 0, "raw": "test/python/transpiler/test_layout_score.py::TestLayoutScoreError::test_no_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_no_cx", "idx": 1, "raw": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_no_cx"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false", "idx": 2, "raw": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false_target", "idx": 3, "raw": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false_target"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true", "idx": 4, "raw": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true"}
+{"ev": "collected", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true_target", "idx": 5, "raw": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true_target"}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestLayoutScoreError::test_no_layout", "t": 1792362493.430757}
+{"call": 0.004103386996575864, "duration": 0.006426225998438895, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestLayoutScoreError::test_no_layout", "outcome": "passed", "setup": 0.002068742000119528, "teardown": 0.0002540970017435029}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_no_cx", "t": 1792362493.440532}
+{"call": 0.0017647069980739616, "duration": 0.002259268996567698, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_no_cx", "outcome": "passed", "setup": 0.0003740440006367862, "teardown": 0.00012051799785695039}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false", "t": 1792362493.4453168}
+{"call": 0.0016255009977612644, "duration": 0.0019520799942256417, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false", "outcome": "passed", "setup": 0.0002025239991780836, "teardown": 0.00012405499728629366}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false_target", "t": 1792362493.4496868}
+{"call": 0.0013858720012649428, "duration": 0.0017089860011765268, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_false_target", "outcome": "passed", "setup": 0.0001793449991964735, "teardown": 0.00014376900071511045}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true", "t": 1792362493.4537868}
+{"call": 0.0015958149997459259, "duration": 0.0019365949992788956, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true", "outcome": "passed", "setup": 0.00021634499717038125, "teardown": 0.00012443500236258842}
+{"ev": "start", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true_target", "t": 1792362493.4580808}
+{"call": 0.001555349001137074, "duration": 0.001904354001453612, "ev": "done", "id": "test/python/transpiler/test_layout_score.py::TestTrivialLayoutScore::test_swap_mapped_true_target", "outcome": "passed", "setup": 0.00019763100135605782, "teardown": 0.0001513739989604801}

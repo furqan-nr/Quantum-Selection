@@ -1,0 +1,10 @@
+........................................................................ [ 80%]
+.................                                                        [100%]
+=============================== warnings summary ===============================
+../../venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+89 passed, 2 warnings in 1.73s

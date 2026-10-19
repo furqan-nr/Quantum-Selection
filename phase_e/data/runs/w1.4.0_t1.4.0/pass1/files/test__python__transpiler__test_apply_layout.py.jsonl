@@ -1,0 +1,19 @@
+{"ev": "launch", "n": 0, "t": 1792367466.7609763, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate", "idx": 0, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate"}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated", "idx": 1, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated"}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given", "idx": 2, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given"}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied", "idx": 3, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied"}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial", "idx": 4, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial"}
+{"ev": "collected", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes", "idx": 5, "raw": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes"}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate", "t": 1792367467.1459208}
+{"call": 0.0045709100013482384, "duration": 0.0068869940005242825, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_circuit_with_swap_gate", "outcome": "passed", "setup": 0.002194750999478856, "teardown": 0.00012133299969718792}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated", "t": 1792367467.155273}
+{"call": 0.0025438430020585656, "duration": 0.0028350870015856344, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_final_layout_is_updated", "outcome": "passed", "setup": 0.00017466099961893633, "teardown": 0.00011658299990813248}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given", "t": 1792367467.1605837}
+{"call": 0.001168335998954717, "duration": 0.001462200001697056, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_full_layout_is_given", "outcome": "passed", "setup": 0.00018770800306810997, "teardown": 0.00010615599967422895}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied", "t": 1792367467.1642811}
+{"call": 0.001170776999060763, "duration": 0.001465479999751551, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_raise_when_no_layout_is_supplied", "outcome": "passed", "setup": 0.00017802200090955012, "teardown": 0.00011668099978123792}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial", "t": 1792367467.1679587}
+{"call": 0.0012315870008023921, "duration": 0.0015158620044530835, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_trivial", "outcome": "passed", "setup": 0.00018103700131177902, "teardown": 0.00010323800233891234}
+{"ev": "start", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes", "t": 1792367467.1714878}
+{"call": 0.002179158000217285, "duration": 0.0025016860017785802, "ev": "done", "id": "test/python/transpiler/test_apply_layout.py::TestApplyLayout::test_works_with_var_nodes", "outcome": "passed", "setup": 0.0001747090027492959, "teardown": 0.00014781899881199934}

@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792366286.4942572, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_depth_one", "idx": 0, "raw": "test/python/transpiler/test_size_pass.py::TestSizePass::test_depth_one"}
+{"ev": "collected", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_empty_dag", "idx": 1, "raw": "test/python/transpiler/test_size_pass.py::TestSizePass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_just_qubits", "idx": 2, "raw": "test/python/transpiler/test_size_pass.py::TestSizePass::test_just_qubits"}
+{"ev": "collected", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_size_control_flow", "idx": 3, "raw": "test/python/transpiler/test_size_pass.py::TestSizePass::test_size_control_flow"}
+{"ev": "start", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_depth_one", "t": 1792366286.868402}
+{"call": 0.003050421000807546, "duration": 0.004674411000451073, "ev": "done", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_depth_one", "outcome": "passed", "setup": 0.0015043649982544594, "teardown": 0.00011962500138906762}
+{"ev": "start", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_empty_dag", "t": 1792366286.8757079}
+{"call": 0.0014920659996278118, "duration": 0.0017964360013138503, "ev": "done", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_empty_dag", "outcome": "passed", "setup": 0.00019735800015041605, "teardown": 0.0001070120015356224}
+{"ev": "start", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_just_qubits", "t": 1792366286.8797834}
+{"call": 0.0014352009966387413, "duration": 0.0017305049987044185, "ev": "done", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_just_qubits", "outcome": "passed", "setup": 0.00017894600023282692, "teardown": 0.00011635800183285028}
+{"ev": "start", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_size_control_flow", "t": 1792366286.8836856}
+{"call": 0.0034502689995861147, "duration": 0.0037752279968117364, "ev": "done", "id": "test/python/transpiler/test_size_pass.py::TestSizePass::test_size_control_flow", "outcome": "passed", "setup": 0.00017335399752482772, "teardown": 0.000151604999700794}

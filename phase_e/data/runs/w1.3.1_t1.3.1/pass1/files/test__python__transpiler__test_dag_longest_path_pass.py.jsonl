@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792362185.560437, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_empty_dag_true", "idx": 0, "raw": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_empty_dag_true"}
+{"ev": "collected", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_nonempty_dag_false", "idx": 1, "raw": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_nonempty_dag_false"}
+{"ev": "start", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_empty_dag_true", "t": 1792362185.9280436}
+{"call": 0.003096902000834234, "duration": 0.00518740500046988, "ev": "done", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_empty_dag_true", "outcome": "passed", "setup": 0.001971273999515688, "teardown": 0.00011922900011995807}
+{"ev": "start", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_nonempty_dag_false", "t": 1792362185.9365892}
+{"call": 0.0014815600006841123, "duration": 0.00185692599916365, "ev": "done", "id": "test/python/transpiler/test_dag_longest_path_pass.py::TestDAGLongestPathPass::test_nonempty_dag_false", "outcome": "passed", "setup": 0.000185467997653177, "teardown": 0.00018989800082636066}

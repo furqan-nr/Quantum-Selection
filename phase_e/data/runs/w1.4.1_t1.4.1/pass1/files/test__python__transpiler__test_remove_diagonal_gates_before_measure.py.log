@@ -1,0 +1,22 @@
+.......................                                                  [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+  /tmp/phase_e/venvs/1.4.1/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+  /tmp/phase_e/venvs/1.4.1/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+  /tmp/phase_e/venvs/1.4.1/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_remove_diagonal_gates_before_measure.py::TesRemoveDiagonalGatesBeforeMeasure::test_simple_if_else
+  /tmp/phase_e/venvs/1.4.1/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+23 passed, 6 warnings in 0.82s

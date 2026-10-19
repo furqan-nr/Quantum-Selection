@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792364741.0452425, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_control_flow", "idx": 0, "raw": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_control_flow"}
+{"ev": "collected", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_one", "idx": 1, "raw": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_one"}
+{"ev": "collected", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_empty_dag", "idx": 2, "raw": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_just_qubits", "idx": 3, "raw": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_just_qubits"}
+{"ev": "start", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_control_flow", "t": 1792364741.4300604}
+{"call": 0.0029331269979593344, "duration": 0.004909726998448605, "ev": "done", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_control_flow", "outcome": "passed", "setup": 0.001833587000874104, "teardown": 0.00014301299961516634}
+{"ev": "start", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_one", "t": 1792364741.438074}
+{"call": 0.0005369940008677077, "duration": 0.0009704669973871205, "ev": "done", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_depth_one", "outcome": "passed", "setup": 0.000255358998401789, "teardown": 0.00017811399811762385}
+{"ev": "start", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_empty_dag", "t": 1792364741.4418905}
+{"call": 0.001576394002768211, "duration": 0.0019739060044230428, "ev": "done", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_empty_dag", "outcome": "passed", "setup": 0.00027374300043447874, "teardown": 0.00012376900122035295}
+{"ev": "start", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_just_qubits", "t": 1792364741.4463046}
+{"call": 0.0005479460014612414, "duration": 0.0008922540000639856, "ev": "done", "id": "test/python/transpiler/test_depth_pass.py::TestDepthPass::test_just_qubits", "outcome": "passed", "setup": 0.00020519299869192764, "teardown": 0.00013911499991081655}

@@ -1,0 +1,10 @@
+{"ev": "launch", "n": 0, "t": 1792363450.022613, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_depth_one", "idx": 0, "raw": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_depth_one"}
+{"ev": "collected", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_empty_dag", "idx": 1, "raw": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_just_qubits", "idx": 2, "raw": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_just_qubits"}
+{"ev": "start", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_depth_one", "t": 1792363450.380081}
+{"call": 0.0005025420032325201, "duration": 0.0018664990020624828, "ev": "done", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_depth_one", "outcome": "passed", "setup": 0.0012363370005914476, "teardown": 0.0001276199982385151}
+{"ev": "start", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_empty_dag", "t": 1792363450.3846557}
+{"call": 0.0003199780003342312, "duration": 0.0006686709966743365, "ev": "done", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_empty_dag", "outcome": "passed", "setup": 0.00022921099662198685, "teardown": 0.00011948199971811846}
+{"ev": "start", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_just_qubits", "t": 1792363450.388021}
+{"call": 0.0003445740003371611, "duration": 0.0007159360029618256, "ev": "done", "id": "test/python/transpiler/test_tensor_factor_pass.py::TestNumTensorsFactorPass::test_just_qubits", "outcome": "passed", "setup": 0.000195716002053814, "teardown": 0.00017564600057085045}

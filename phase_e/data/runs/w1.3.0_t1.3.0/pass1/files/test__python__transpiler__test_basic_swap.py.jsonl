@@ -1,0 +1,34 @@
+{"ev": "launch", "n": 0, "t": 1792366430.7076735, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap", "idx": 0, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_bigger_cm", "idx": 1, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_bigger_cm"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_with_target", "idx": 2, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_with_target"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_fake_run", "idx": 3, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_fake_run"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap", "idx": 4, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_back", "idx": 5, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_back"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_front", "idx": 6, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_front"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_middle", "idx": 7, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_middle"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_keep_layout", "idx": 8, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_keep_layout"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_case", "idx": 9, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_case"}
+{"ev": "collected", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_in_same_layer", "idx": 10, "raw": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_in_same_layer"}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap", "t": 1792366431.0842998}
+{"call": 0.003540124002029188, "duration": 0.006180964002851397, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap", "outcome": "passed", "setup": 0.002501890998246381, "teardown": 0.00013894900257582776}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_bigger_cm", "t": 1792366431.093304}
+{"call": 0.0017200590009451844, "duration": 0.0020066830002178904, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_bigger_cm", "outcome": "passed", "setup": 0.0001810690009733662, "teardown": 0.00010555499829933979}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_with_target", "t": 1792366431.0976424}
+{"call": 0.0015452670013473835, "duration": 0.0018350470018049236, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_a_single_swap_with_target", "outcome": "passed", "setup": 0.00016276799942716025, "teardown": 0.0001270120010303799}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_fake_run", "t": 1792366431.1016345}
+{"call": 0.0020523179991869256, "duration": 0.0023185089994512964, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_fake_run", "outcome": "passed", "setup": 0.00016008300008252263, "teardown": 0.00010610800018184818}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap", "t": 1792366431.106381}
+{"call": 0.00137050199919031, "duration": 0.001666993000981165, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap", "outcome": "passed", "setup": 0.0001860429983935319, "teardown": 0.00011044800339732319}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_back", "t": 1792366431.111022}
+{"call": 0.0013150440026947763, "duration": 0.0016301470022881404, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_back", "outcome": "passed", "setup": 0.00020373000006657094, "teardown": 0.00011137299952679314}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_front", "t": 1792366431.1150222}
+{"call": 0.001386936000926653, "duration": 0.0017621140032133553, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_front", "outcome": "passed", "setup": 0.00026312000045436434, "teardown": 0.00011205800183233805}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_middle", "t": 1792366431.1190543}
+{"call": 0.0014154630007396918, "duration": 0.00171088200295344, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_far_swap_with_gate_the_middle", "outcome": "passed", "setup": 0.00018629800251801498, "teardown": 0.00010912099969573319}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_keep_layout", "t": 1792366431.122874}
+{"call": 0.001353302999632433, "duration": 0.001625019998755306, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_keep_layout", "outcome": "passed", "setup": 0.00016900199989322573, "teardown": 0.00010271499922964722}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_case", "t": 1792366431.1265876}
+{"call": 0.0011636750023171771, "duration": 0.001486099004978314, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_case", "outcome": "passed", "setup": 0.00016586600031587295, "teardown": 0.00015655800234526396}
+{"ev": "start", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_in_same_layer", "t": 1792366431.1366043}
+{"call": 0.001606489000550937, "duration": 0.001976157000171952, "ev": "done", "id": "test/python/transpiler/test_basic_swap.py::TestBasicSwap::test_trivial_in_same_layer", "outcome": "passed", "setup": 0.00022839899975224398, "teardown": 0.00014126899986877106}

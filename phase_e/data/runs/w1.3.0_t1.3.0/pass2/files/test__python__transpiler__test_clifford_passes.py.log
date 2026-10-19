@@ -1,0 +1,52 @@
+..........................                                               [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_clifford_passes.py: 62 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3291: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py: 62 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3291: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py: 50 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py: 50 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_circuit_to_dag_conversion_and_back
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_clifford_passes.py:220: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    circ1 = dag_to_circuit(dag0)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_circuit_to_dag_conversion_and_back
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_clifford_passes.py:220: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    circ1 = dag_to_circuit(dag0)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_if_else
+test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+26 passed, 238 warnings in 1.92s

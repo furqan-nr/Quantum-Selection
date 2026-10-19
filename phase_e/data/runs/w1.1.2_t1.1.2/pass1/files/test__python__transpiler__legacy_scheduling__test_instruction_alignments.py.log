@@ -1,0 +1,9 @@
+...........                                                              [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+  /tmp/phase_e/venvs/1.1.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:285: UserWarning: Qiskit scheduler assumes mid-circuit measurement works as a standard instruction. Actual backend may apply custom scheduling. Your backend may provide a plugin scheduler pass.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+11 passed, 2 warnings in 1.04s

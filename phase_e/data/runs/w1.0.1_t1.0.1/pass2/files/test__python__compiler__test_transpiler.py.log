@@ -1,0 +1,35 @@
+........................................................................ [ 21%]
+........................................................................ [ 43%]
+........................................................................ [ 65%]
+........................................................................ [ 87%]
+.......s...................................                              [100%]
+=============================== warnings summary ===============================
+test/python/compiler/test_transpiler.py::TestTranspile::test_inst_durations_from_calibrations
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:302: UserWarning: When scheduling circuits without backend, 'instruction_durations' should be usually provided.
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 3772 [dt] = 8.373840e-07 [s] from 8.373480e-07 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 5090 [dt] = 1.129980e-06 [s] from 1.129983e-06 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 4543 [dt] = 1.008546e-06 [s] from 1.008479e-06 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 241 [dt] = 5.350200e-08 [s] from 5.340917e-08 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_1_0
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_2_1
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_3_2
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_4_3
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/providers/fake_provider/generic_backend_v2.py:500: RuntimeWarning: Aer not found using BasicSimulator and no noise
+    warnings.warn("Aer not found using BasicSimulator and no noise", RuntimeWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+330 passed, 1 skipped, 9 warnings in 25.46s

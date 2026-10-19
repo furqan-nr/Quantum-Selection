@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792368817.4704072, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_left", "idx": 0, "raw": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_left"}
+{"ev": "collected", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_not_reached", "idx": 1, "raw": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_not_reached"}
+{"ev": "collected", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_reached", "idx": 2, "raw": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_reached"}
+{"ev": "collected", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_setting_to_none", "idx": 3, "raw": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_setting_to_none"}
+{"ev": "start", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_left", "t": 1792368817.8338568}
+{"call": 0.002900692001276184, "duration": 0.004816614000446862, "ev": "done", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_left", "outcome": "passed", "setup": 0.001776622997567756, "teardown": 0.00013929900160292163}
+{"ev": "start", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_not_reached", "t": 1792368817.8412127}
+{"call": 0.0012517549985204823, "duration": 0.001530572997580748, "ev": "done", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_not_reached", "outcome": "passed", "setup": 0.00017860799925983883, "teardown": 0.00010020999980042689}
+{"ev": "start", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_reached", "t": 1792368817.8451355}
+{"call": 0.001050590999511769, "duration": 0.0013321119986358099, "ev": "done", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_reached", "outcome": "passed", "setup": 0.00017009799921652302, "teardown": 0.0001114229999075178}
+{"ev": "start", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_setting_to_none", "t": 1792368817.848885}
+{"call": 0.0009715140004118439, "duration": 0.0012602259994309861, "ev": "done", "id": "test/python/transpiler/test_fixed_point_pass.py::TestFixedPointPass::test_fixed_point_setting_to_none", "outcome": "passed", "setup": 0.00016486700042150915, "teardown": 0.0001238449985976331}

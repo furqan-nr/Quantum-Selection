@@ -1,0 +1,12 @@
+...............                                                          [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_unroll_custom_definitions.py:27
+  /tmp/phase_e/tests/1.2.1/test/python/transpiler/test_unroll_custom_definitions.py:27: PytestCollectionWarning: cannot collect test class 'TestGate' because it has a __init__ constructor (from: test/python/transpiler/test_unroll_custom_definitions.py)
+    class TestGate(Gate):
+
+test/python/transpiler/test_unroll_custom_definitions.py:34
+  /tmp/phase_e/tests/1.2.1/test/python/transpiler/test_unroll_custom_definitions.py:34: PytestCollectionWarning: cannot collect test class 'TestCompositeGate' because it has a __init__ constructor (from: test/python/transpiler/test_unroll_custom_definitions.py)
+    class TestCompositeGate(Gate):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+15 passed, 2 warnings in 0.74s

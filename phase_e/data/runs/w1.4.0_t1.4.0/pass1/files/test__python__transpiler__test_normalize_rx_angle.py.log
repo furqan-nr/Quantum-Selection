@@ -1,0 +1,31 @@
+.........                                                                [100%]
+=============================== warnings summary ===============================
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_angle_wrapping_works_2_1_7pi
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_angle_wrapping_works_3_2_2pi
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_not_convert_to_x_if_no_calib_in_target
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_1_angles_are_within_resolution
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_2_angles_are_not_within_resolution
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_3_same_angle_three_times
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_rz_added_for_negative_rotation_angles
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_sx_conversion_works
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_angle_wrapping_works_2_1_7pi
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_angle_wrapping_works_3_2_2pi
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_not_convert_to_x_if_no_calib_in_target
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_1_angles_are_within_resolution
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_2_angles_are_not_within_resolution
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_quantize_angles_3_same_angle_three_times
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_rz_added_for_negative_rotation_angles
+test/python/transpiler/test_normalize_rx_angle.py::TestNormalizeRXAngle::test_sx_conversion_works
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+9 passed, 18 warnings in 0.77s

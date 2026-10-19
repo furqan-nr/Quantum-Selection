@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792361725.0195718, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_nested_control_flow", "idx": 0, "raw": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_nested_control_flow"}
+{"ev": "collected", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers", "idx": 1, "raw": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers"}
+{"ev": "collected", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers_other_gates", "idx": 2, "raw": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers_other_gates"}
+{"ev": "collected", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_simple_if_else", "idx": 3, "raw": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_simple_if_else"}
+{"ev": "start", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_nested_control_flow", "t": 1792361725.4099374}
+{"call": 0.006139758999779588, "duration": 0.007811700001184363, "ev": "done", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_nested_control_flow", "outcome": "passed", "setup": 0.0015193270010058768, "teardown": 0.0001526140003988985}
+{"ev": "start", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers", "t": 1792361725.4208338}
+{"call": 0.0016636920008750167, "duration": 0.0020036349997099023, "ev": "done", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers", "outcome": "passed", "setup": 0.00022399799854611047, "teardown": 0.00011594500028877519}
+{"ev": "start", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers_other_gates", "t": 1792361725.424993}
+{"call": 0.001443593999283621, "duration": 0.001743946999340551, "ev": "done", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_remove_barriers_other_gates", "outcome": "passed", "setup": 0.0001792110015230719, "teardown": 0.00012114199853385799}
+{"ev": "start", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_simple_if_else", "t": 1792361725.4289775}
+{"call": 0.0028380610019667074, "duration": 0.0031961680033418816, "ev": "done", "id": "test/python/transpiler/test_remove_barriers.py::TestMergeAdjacentBarriers::test_simple_if_else", "outcome": "passed", "setup": 0.00021737000133725815, "teardown": 0.000140737000037916}

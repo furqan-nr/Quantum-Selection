@@ -1,0 +1,21 @@
+.......................                                                  [100%]
+=============================== warnings summary ===============================
+../../venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/calibration/base_builder.py:66: DeprecationWarning: The method ``qiskit.dagcircuit.dagcircuit.DAGCircuit.has_calibration_for`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0. The entire Qiskit Pulse package is being deprecated and this is a dependency on the package.
+    if self.supported(node.op, qubits) and not dag.has_calibration_for(node):
+
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+test/python/transpiler/test_pulse_gate_pass.py::TestPulseGate::test_transpile_with_custom_basis_gate_in_target
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/calibration/base_builder.py:77: DeprecationWarning: The method ``qiskit.dagcircuit.dagcircuit.DAGCircuit.add_calibration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0. The entire Qiskit Pulse package is being deprecated and this is a dependency on the package.
+    dag.add_calibration(gate=node.op, qubits=qubits, schedule=schedule)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+23 passed, 8 warnings in 3.37s

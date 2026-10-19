@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792362817.4809413, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_empty_dag", "idx": 0, "raw": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_empty_dag"}
+{"ev": "collected", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_just_qubits", "idx": 1, "raw": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_just_qubits"}
+{"ev": "start", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_empty_dag", "t": 1792362817.8635006}
+{"call": 0.0035932270002376754, "duration": 0.005800711998745101, "ev": "done", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_empty_dag", "outcome": "passed", "setup": 0.0020840839970333036, "teardown": 0.00012340100147412159}
+{"ev": "start", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_just_qubits", "t": 1792362817.872627}
+{"call": 0.0017776630011212546, "duration": 0.0021172960005060304, "ev": "done", "id": "test/python/transpiler/test_resource_estimation_pass.py::TestResourceEstimationPass::test_just_qubits", "outcome": "passed", "setup": 0.00019630600218079053, "teardown": 0.00014332699720398523}

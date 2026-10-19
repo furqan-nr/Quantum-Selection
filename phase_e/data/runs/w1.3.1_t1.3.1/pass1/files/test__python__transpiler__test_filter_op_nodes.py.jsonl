@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792362197.0389626, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_empty_circuit", "idx": 0, "raw": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_empty_circuit"}
+{"ev": "collected", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_filter_exception", "idx": 1, "raw": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_filter_exception"}
+{"ev": "collected", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_no_matches", "idx": 2, "raw": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_no_matches"}
+{"ev": "collected", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_remove_x_gate", "idx": 3, "raw": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_remove_x_gate"}
+{"ev": "start", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_empty_circuit", "t": 1792362197.4105759}
+{"call": 0.0038861409993842244, "duration": 0.006179450996569358, "ev": "done", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_empty_circuit", "outcome": "passed", "setup": 0.002156397997168824, "teardown": 0.00013691200001630932}
+{"ev": "start", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_filter_exception", "t": 1792362197.419639}
+{"call": 0.002321039999515051, "duration": 0.0026797559985425323, "ev": "done", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_filter_exception", "outcome": "passed", "setup": 0.00023092500123311765, "teardown": 0.00012779099779436365}
+{"ev": "start", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_no_matches", "t": 1792362197.424857}
+{"call": 0.0017465599994466174, "duration": 0.0020708080010081176, "ev": "done", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_no_matches", "outcome": "passed", "setup": 0.00019866900038323365, "teardown": 0.00012557900117826648}
+{"ev": "start", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_remove_x_gate", "t": 1792362197.4295044}
+{"call": 0.001797356002498418, "duration": 0.002171104002627544, "ev": "done", "id": "test/python/transpiler/test_filter_op_nodes.py::TestFilterOpNodes::test_remove_x_gate", "outcome": "passed", "setup": 0.00023079599850461818, "teardown": 0.00014295200162450783}

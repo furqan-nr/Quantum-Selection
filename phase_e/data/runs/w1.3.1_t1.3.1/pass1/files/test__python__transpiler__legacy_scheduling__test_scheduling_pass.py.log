@@ -1,0 +1,102 @@
+......................                                                   [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 62 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:274: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    duration = node.op.duration
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 16 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:107: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 17 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:75: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 21 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 21 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:1563: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    reverse_circ.duration = self.duration
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:1564: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    reverse_circ.unit = self.unit
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:287: UserWarning: Qiskit scheduler assumes mid-circuit measurement works as a standard instruction. Actual backend may apply custom scheduling. Your backend may provide a plugin scheduler pass.
+    warnings.warn(
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 16 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/asap.py:107: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py: 16 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/asap.py:78: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_classically_controlled_gate_after_measure_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_measure_after_c_if_1_ALAPSchedule
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:77: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    t0c = max(idle_before[c] for c in node.op.condition_bits)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_classically_controlled_gate_after_measure_1_ALAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_measure_after_c_if_1_ALAPSchedule
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:101: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    for clbit in node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_classically_controlled_gate_after_measure_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dag_introduces_extra_dependency_between_conditionals
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dag_introduces_extra_dependency_between_conditionals
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_measure_after_c_if_2_ASAPSchedule
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/asap.py:80: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    t0c = max(idle_after[bit] for bit in node.op.condition_bits)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_c_if_on_different_qubits_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_classically_controlled_gate_after_measure_2_ASAPSchedule
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dag_introduces_extra_dependency_between_conditionals
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dag_introduces_extra_dependency_between_conditionals
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_measure_after_c_if_2_ASAPSchedule
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/asap.py:98: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    for bit in node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/passmanager/base_tasks.py:98: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    ret = self.run(passmanager_ir)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_dd_respect_target_instruction_constraints
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/dynamical_decoupling.py:217: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dd_sequence_duration += gate.duration
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_random_complicated_circuit
+  /tmp/phase_e/tests/1.3.1/test/python/transpiler/legacy_scheduling/test_scheduling_pass.py:692: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(actual_asap.duration, 3100)
+
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_random_complicated_circuit
+  /tmp/phase_e/tests/1.3.1/test/python/transpiler/legacy_scheduling/test_scheduling_pass.py:721: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(actual_alap.duration, 3100)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+22 passed, 206 warnings in 0.95s

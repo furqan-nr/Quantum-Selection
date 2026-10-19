@@ -1,0 +1,103 @@
+{"ev": "launch", "n": 0, "t": 1792366694.242905, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_edge", "idx": 0, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_edge"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits", "idx": 1, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits_not_int", "idx": 2, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits_not_int"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_bad_reduced_map", "idx": 3, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_bad_reduced_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_component_mapping", "idx": 4, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_component_mapping"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_connected_graph", "idx": 5, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_connected_graph"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_disconnected_graph", "idx": 6, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_disconnected_graph"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_distance", "idx": 7, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_distance"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_str", "idx": 8, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_str"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disconnected_reduced_map_allowed", "idx": 9, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_disconnected_reduced_map_allowed"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map", "idx": 10, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map_distance_no_path_qubits", "idx": 11, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map_distance_no_path_qubits"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_error", "idx": 12, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_error"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_self_loop", "idx": 13, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_self_loop"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_empty_coupling_class", "idx": 14, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_empty_coupling_class"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_equality", "idx": 15, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_equality"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_full_factory", "idx": 16, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_full_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory", "idx": 17, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory_unidirectional", "idx": 18, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory_unidirectional"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory", "idx": 19, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory_bidirectional", "idx": 20, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory_bidirectional"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory", "idx": 21, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory_bidirectional", "idx": 22, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory_bidirectional"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory", "idx": 23, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory_bidirectional", "idx": 24, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory_bidirectional"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_implements_iter", "idx": 25, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_implements_iter"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_init_with_couplinglist", "idx": 26, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_init_with_couplinglist"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_line_factory", "idx": 27, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_line_factory"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_make_symmetric", "idx": 28, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_make_symmetric"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_neighbors", "idx": 29, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_neighbors"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_successful_reduced_map", "idx": 30, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_successful_reduced_map"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_big_false", "idx": 31, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_big_false"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_small_true", "idx": 32, "raw": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_small_true"}
+{"ev": "collected", "id": "test/python/transpiler/test_coupling.py::CouplingVisualizationTest::test_coupling_draw", "idx": 33, "raw": "test/python/transpiler/test_coupling.py::CouplingVisualizationTest::test_coupling_draw"}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_edge", "t": 1792366694.6481867}
+{"call": 0.003179146999173099, "duration": 0.005375270997319603, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_edge", "outcome": "passed", "setup": 0.0019918779980798718, "teardown": 0.0002042460000666324}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits", "t": 1792366694.65613}
+{"call": 0.001440314001229126, "duration": 0.0017614859971217811, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits", "outcome": "passed", "setup": 0.00020555799710564315, "teardown": 0.00011561399878701195}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits_not_int", "t": 1792366694.660136}
+{"call": 0.001106718998926226, "duration": 0.0014230769993446302, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_add_physical_qubits_not_int", "outcome": "passed", "setup": 0.0001952759994310327, "teardown": 0.00012108200098737143}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_bad_reduced_map", "t": 1792366694.6706717}
+{"call": 0.0014597720000892878, "duration": 0.0018134870006178971, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_bad_reduced_map", "outcome": "passed", "setup": 0.00023002600210020319, "teardown": 0.0001236889984284062}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_component_mapping", "t": 1792366694.6747997}
+{"call": 0.001401269000780303, "duration": 0.0016817850009829272, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_component_mapping", "outcome": "passed", "setup": 0.000178754999069497, "teardown": 0.00010176100113312714}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_connected_graph", "t": 1792366694.678727}
+{"call": 0.0010064520029118285, "duration": 0.0012782530029653572, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_connected_graph", "outcome": "passed", "setup": 0.00017009300063364208, "teardown": 0.00010170799941988662}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_disconnected_graph", "t": 1792366694.682094}
+{"call": 0.0010166649990424048, "duration": 0.0013097470000502653, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_components_disconnected_graph", "outcome": "passed", "setup": 0.00018267000268679112, "teardown": 0.0001104119983210694}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_distance", "t": 1792366694.6857255}
+{"call": 0.0010974489996442571, "duration": 0.0013682049975614063, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_distance", "outcome": "passed", "setup": 0.00016589299775660038, "teardown": 0.00010486300016054884}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_str", "t": 1792366694.6893945}
+{"call": 0.0009715989981486928, "duration": 0.0012513009969552513, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_coupling_str", "outcome": "passed", "setup": 0.00017544000002089888, "teardown": 0.00010426199878565967}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disconnected_reduced_map_allowed", "t": 1792366694.6928403}
+{"call": 0.0009628890002204571, "duration": 0.0012400519990478642, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disconnected_reduced_map_allowed", "outcome": "passed", "setup": 0.00017124599980888888, "teardown": 0.00010591699901851825}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map", "t": 1792366694.6961675}
+{"call": 0.003993722999439342, "duration": 0.004308506002416834, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map", "outcome": "passed", "setup": 0.0001892160034913104, "teardown": 0.00012556699948618189}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map_distance_no_path_qubits", "t": 1792366694.7026846}
+{"call": 0.0009897449999698438, "duration": 0.0012735170021187514, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_disjoint_coupling_map_distance_no_path_qubits", "outcome": "passed", "setup": 0.00017612000010558404, "teardown": 0.00010765200204332359}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_error", "t": 1792366694.706117}
+{"call": 0.0010259740010951646, "duration": 0.0013061540012131445, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_error", "outcome": "passed", "setup": 0.00015891099974396639, "teardown": 0.00012126900037401356}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_self_loop", "t": 1792366694.70977}
+{"call": 0.0009505330017418601, "duration": 0.0012290430022403598, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_distance_self_loop", "outcome": "passed", "setup": 0.00017168499834951945, "teardown": 0.00010682500214898027}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_empty_coupling_class", "t": 1792366694.713261}
+{"call": 0.0009342029989056755, "duration": 0.001232060996699147, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_empty_coupling_class", "outcome": "passed", "setup": 0.00017750400002114475, "teardown": 0.00012035399777232669}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_equality", "t": 1792366694.716613}
+{"call": 0.0011092220011050813, "duration": 0.0014222099998733029, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_equality", "outcome": "passed", "setup": 0.0001891329993668478, "teardown": 0.0001238549994013738}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_full_factory", "t": 1792366694.720119}
+{"call": 0.0009860569989541546, "duration": 0.0012713389987766277, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_full_factory", "outcome": "passed", "setup": 0.00017976299932342954, "teardown": 0.00010551900049904361}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory", "t": 1792366694.7233799}
+{"call": 0.0009514690027572215, "duration": 0.0012254009998287074, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory", "outcome": "passed", "setup": 0.00016682099885656498, "teardown": 0.00010711099821492098}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory_unidirectional", "t": 1792366694.7266781}
+{"call": 0.000911074999748962, "duration": 0.0012113619995943736, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_grid_factory_unidirectional", "outcome": "passed", "setup": 0.00017838300118455663, "teardown": 0.000121903998660855}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory", "t": 1792366694.7300792}
+{"call": 0.0009259470025426708, "duration": 0.0012242049997439608, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory", "outcome": "passed", "setup": 0.0001943259994732216, "teardown": 0.00010393199772806838}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory_bidirectional", "t": 1792366694.7334807}
+{"call": 0.0009499340012553148, "duration": 0.0012724840016744565, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_hex_factory_bidirectional", "outcome": "passed", "setup": 0.00017595200188225135, "teardown": 0.00014659799853689037}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory", "t": 1792366694.7370327}
+{"call": 0.0009839759986789431, "duration": 0.0012626980023924261, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory", "outcome": "passed", "setup": 0.0001781330029189121, "teardown": 0.00010058900079457089}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory_bidirectional", "t": 1792366694.740546}
+{"call": 0.0009727030010253657, "duration": 0.001245816001755884, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_heavy_square_factory_bidirectional", "outcome": "passed", "setup": 0.00016840700118336827, "teardown": 0.00010470599954714999}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory", "t": 1792366694.743801}
+{"call": 0.0009607970023353118, "duration": 0.001245201001438545, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory", "outcome": "passed", "setup": 0.00018158099919673987, "teardown": 0.00010282299990649335}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory_bidirectional", "t": 1792366694.747446}
+{"call": 0.0009265779990528245, "duration": 0.001217950997670414, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_hexagonal_lattice_2_2_factory_bidirectional", "outcome": "passed", "setup": 0.00016349900033674203, "teardown": 0.00012787399828084745}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_implements_iter", "t": 1792366694.7506566}
+{"call": 0.0010806550017150585, "duration": 0.0014645320006820839, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_implements_iter", "outcome": "passed", "setup": 0.00026026699924841523, "teardown": 0.0001236099997186102}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_init_with_couplinglist", "t": 1792366694.7543585}
+{"call": 0.0010006090014940128, "duration": 0.0012931120036228094, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_init_with_couplinglist", "outcome": "passed", "setup": 0.00018044800162897445, "teardown": 0.0001120550004998222}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_line_factory", "t": 1792366694.7578096}
+{"call": 0.0009216079997713678, "duration": 0.0012107490001653787, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_line_factory", "outcome": "passed", "setup": 0.00017839700012700632, "teardown": 0.0001107440002670046}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_make_symmetric", "t": 1792366694.761206}
+{"call": 0.000937766999413725, "duration": 0.0012774859969795216, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_make_symmetric", "outcome": "passed", "setup": 0.00019282699940958992, "teardown": 0.00014689199815620668}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_neighbors", "t": 1792366694.7646239}
+{"call": 0.0008930639996833634, "duration": 0.001161931999376975, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_neighbors", "outcome": "passed", "setup": 0.00016425500143668614, "teardown": 0.0001046129982569255}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_successful_reduced_map", "t": 1792366694.767794}
+{"call": 0.0009085439996852074, "duration": 0.0012069749973306898, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_successful_reduced_map", "outcome": "passed", "setup": 0.00019628399968496524, "teardown": 0.00010214699796051718}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_big_false", "t": 1792366694.7709274}
+{"call": 0.0009135040018009022, "duration": 0.0011673230037558824, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_big_false", "outcome": "passed", "setup": 0.0001512890012236312, "teardown": 0.00010253000073134899}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_small_true", "t": 1792366694.774083}
+{"call": 0.0008577499975217506, "duration": 0.0011626750019786414, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingTest::test_symmetric_small_true", "outcome": "passed", "setup": 0.0001705210015643388, "teardown": 0.00013440400289255194}
+{"ev": "start", "id": "test/python/transpiler/test_coupling.py::CouplingVisualizationTest::test_coupling_draw", "t": 1792366694.7773407}
+{"call": 0.00013341899830265902, "duration": 0.0005437999971036334, "ev": "done", "id": "test/python/transpiler/test_coupling.py::CouplingVisualizationTest::test_coupling_draw", "outcome": "skipped", "setup": 0.0002822639980877284, "teardown": 0.00012811700071324594}

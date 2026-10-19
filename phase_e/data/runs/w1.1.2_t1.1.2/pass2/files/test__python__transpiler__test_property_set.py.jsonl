@@ -1,0 +1,13 @@
+{"ev": "launch", "n": 0, "t": 1792365780.061499, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_non_existent", "idx": 0, "raw": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_non_existent"}
+{"ev": "collected", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_set_and_retrive", "idx": 1, "raw": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_set_and_retrive"}
+{"ev": "collected", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_repr", "idx": 2, "raw": "test/python/transpiler/test_property_set.py::TestPropertySet::test_repr"}
+{"ev": "collected", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_str", "idx": 3, "raw": "test/python/transpiler/test_property_set.py::TestPropertySet::test_str"}
+{"ev": "start", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_non_existent", "t": 1792365780.4298003}
+{"call": 0.0028363870005705394, "duration": 0.00497657600135426, "ev": "done", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_non_existent", "outcome": "passed", "setup": 0.0020186140027362853, "teardown": 0.00012157499804743566}
+{"ev": "start", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_set_and_retrive", "t": 1792365780.437148}
+{"call": 0.0011751830024877563, "duration": 0.0014714280077896547, "ev": "done", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_get_set_and_retrive", "outcome": "passed", "setup": 0.00018775600256049074, "teardown": 0.0001084890027414076}
+{"ev": "start", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_repr", "t": 1792365780.4411697}
+{"call": 0.0010098429993377067, "duration": 0.0013166089993319474, "ev": "done", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_repr", "outcome": "passed", "setup": 0.00019687199892359786, "teardown": 0.00010989400107064284}
+{"ev": "start", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_str", "t": 1792365780.4449582}
+{"call": 0.0008720940022612922, "duration": 0.0011856930032081436, "ev": "done", "id": "test/python/transpiler/test_property_set.py::TestPropertySet::test_str", "outcome": "passed", "setup": 0.00018007899780059233, "teardown": 0.00013352000314625911}

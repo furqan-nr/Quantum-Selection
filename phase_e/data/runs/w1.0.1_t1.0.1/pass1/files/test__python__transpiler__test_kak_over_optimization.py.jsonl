@@ -1,0 +1,7 @@
+{"ev": "launch", "n": 0, "t": 1792364530.8654785, "skip": 0}
+{"ev": "collected", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cu1_optimization", "idx": 0, "raw": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cu1_optimization"}
+{"ev": "collected", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization", "idx": 1, "raw": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization"}
+{"ev": "start", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cu1_optimization", "t": 1792364531.2360706}
+{"call": 0.022758664999855682, "duration": 0.02481495299798553, "ev": "done", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cu1_optimization", "outcome": "passed", "setup": 0.0018769979978969786, "teardown": 0.0001792900002328679}
+{"ev": "start", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization", "t": 1792364531.2671666}
+{"call": 0.00678895199962426, "duration": 0.007230761999380775, "ev": "done", "id": "test/python/transpiler/test_kak_over_optimization.py::TestKAKOverOptim::test_cz_optimization", "outcome": "passed", "setup": 0.00024794400087557733, "teardown": 0.0001938659988809377}

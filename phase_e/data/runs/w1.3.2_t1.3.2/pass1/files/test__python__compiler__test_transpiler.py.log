@@ -1,0 +1,155 @@
+........................................................................ [ 19%]
+...................................................................... [ 39%]
+........................................................................ [ 59%]
+........................................................................ [ 79%]
+..............................ss........................................ [ 99%]
+...                                                                      [100%]
+=============================== warnings summary ===============================
+../../venvs/1.3.2/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.3.2/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/compiler/test_transpiler.py: 732 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/compiler/test_transpiler.py: 732 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_circuit_with_delay_1_0
+test/python/compiler/test_transpiler.py::TestTranspile::test_circuit_with_delay_2_1
+test/python/compiler/test_transpiler.py::TestTranspile::test_circuit_with_delay_3_2
+test/python/compiler/test_transpiler.py::TestTranspile::test_circuit_with_delay_4_3
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1538: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(out.duration, 1200)
+
+test/python/compiler/test_transpiler.py: 40 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/visualization/circuit/text.py:1117: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if getattr(op, "condition", None) is not None:
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_inst_durations_from_calibrations
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:378: UserWarning: When scheduling circuits without backend, 'instruction_durations' should be usually provided.
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py: 63 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/scheduling/alap.py:61: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/compiler/test_transpiler.py: 121 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/padding/base_padding.py:115: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    t1 = t0 + node.op.duration
+
+test/python/compiler/test_transpiler.py: 37 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/padding/base_padding.py:155: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self._pad(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_backend_v2
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/scheduling/alap.py:93: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/compiler/test_transpiler.py: 16 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/padding/base_padding.py:130: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self._pad(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1708: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(scheduled.duration, original_duration * 2)
+
+test/python/compiler/test_transpiler.py: 52 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/scheduling/asap.py:57: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/scheduling/asap.py:86: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/pulse_gate_validation.py:87: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.calibrations`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0. The entire Qiskit Pulse package is being deprecated and this is a dependency on the package.
+    for gate, insts in dag.calibrations.items():
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_dt_constraints
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1712: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(scheduled.duration, original_duration * 2)
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 4505 [dt] = 1.000110e-06 [s] from 1.000000e-06 [s]
+    warnings.warn(
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1685: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(scheduled.duration, 9010)
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints_backend
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1643: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(scheduled.duration, 1500)
+
+test/python/compiler/test_transpiler.py::TestTranspile::test_scheduling_instruction_constraints_backend
+  /tmp/phase_e/tests/1.3.2/test/python/compiler/test_transpiler.py:1656: DeprecationWarning: The property ``qiskit.circuit.quantumcircuit.QuantumCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(scheduled.duration, 1500)
+
+test/python/compiler/test_transpiler.py: 1907 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/compiler/test_transpiler.py: 1907 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/compiler/test_transpiler.py: 157 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/compiler/test_transpiler.py: 157 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/compiler/test_transpiler.py: 62 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:480: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out = run_default_main_loop(
+
+test/python/compiler/test_transpiler.py: 62 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:480: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out = run_default_main_loop(
+
+test/python/compiler/test_transpiler.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:538: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+test/python/compiler/test_transpiler.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:538: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_1_0
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_2_1
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_3_2
+test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_dispatch_4_3
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/providers/fake_provider/generic_backend_v2.py:975: RuntimeWarning: Aer not found using BasicSimulator and no noise
+    warnings.warn("Aer not found using BasicSimulator and no noise", RuntimeWarning)
+
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow_shared_classical
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/gate_direction.py:86: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return fix_gate_direction_target(dag, self.target)
+
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow_shared_classical
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/gate_direction.py:86: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return fix_gate_direction_target(dag, self.target)
+
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow_shared_classical
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/routing/sabre_swap.py:438: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    mapped_blocks.append(dag_to_circuit(mapped_block_dag))
+
+test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_disjoint_control_flow_shared_classical
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/routing/sabre_swap.py:438: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    mapped_blocks.append(dag_to_circuit(mapped_block_dag))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+359 passed, 2 skipped, 6100 warnings, 2 subtests passed in 26.20s

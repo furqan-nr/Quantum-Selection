@@ -1,0 +1,20 @@
+............                                                             [100%]
+=============================== warnings summary ===============================
+test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits
+  /tmp/phase_e/tests/1.0.1/test/python/compiler/test_compiler.py:176: UserWarning: Option coupling_map is not used by this backend
+    result = backend.run(
+
+test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits
+  /tmp/phase_e/tests/1.0.1/test/python/compiler/test_compiler.py:181: UserWarning: Option coupling_map is not used by this backend
+    result = backend.run(
+
+test/python/compiler/test_compiler.py::TestCompiler::test_grovers_circuit
+  /tmp/phase_e/tests/1.0.1/test/python/compiler/test_compiler.py:378: UserWarning: Option coupling_map is not used by this backend
+    result = self.backend.run(
+
+test/python/compiler/test_compiler.py::TestCompiler::test_math_domain_error
+  /tmp/phase_e/tests/1.0.1/test/python/compiler/test_compiler.py:432: UserWarning: Option coupling_map is not used by this backend
+    job = self.backend.run(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+12 passed, 4 warnings in 1.18s

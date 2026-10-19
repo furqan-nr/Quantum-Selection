@@ -1,0 +1,27 @@
+....................                                                     [100%]
+=============================== warnings summary ===============================
+../../venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_2_circuit_3516_level1_valid
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_3_circuit_3516_level2_valid
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_4_circuit_3516_level3_valid
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_2_emptycircuit_level1_valid_v2
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_3_emptycircuit_level2_valid_v2
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_4_emptycircuit_level3_valid_v2
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_2_circuit_3516_level1_valid
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_3_circuit_3516_level2_valid
+test/python/transpiler/test_1q.py::TestBasicSimulatorWorking::test_simulator_4_circuit_3516_level3_valid
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_2_emptycircuit_level1_valid_v2
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_3_emptycircuit_level2_valid_v2
+test/python/transpiler/test_1q.py::Test1QV2Working::test_device_4_emptycircuit_level3_valid_v2
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+20 passed, 14 warnings in 0.88s

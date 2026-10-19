@@ -1,0 +1,16 @@
+.........................                                                [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_scheduling_padding_pass.py::TestSchedulingAndPaddingPass::test_alap_agree_with_reverse_asap_with_target
+  /tmp/phase_e/venvs/1.2.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 56 [dt] = 1.991111e+02 [s] from 2.000000e+02 [s]
+    warnings.warn(
+
+test/python/transpiler/test_scheduling_padding_pass.py::TestSchedulingAndPaddingPass::test_alap_agree_with_reverse_asap_with_target
+  /tmp/phase_e/venvs/1.2.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 197 [dt] = 7.004444e+02 [s] from 7.000000e+02 [s]
+    warnings.warn(
+
+test/python/transpiler/test_scheduling_padding_pass.py::TestSchedulingAndPaddingPass::test_alap_agree_with_reverse_asap_with_target
+  /tmp/phase_e/venvs/1.2.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 281 [dt] = 9.991111e+02 [s] from 1.000000e+03 [s]
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+25 passed, 3 warnings in 1.13s

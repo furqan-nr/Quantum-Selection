@@ -1,0 +1,22 @@
+...........                                                              [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_alignment_is_not_processed
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_hanh_echo_experiment_type
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_t1_experiment_type
+  /tmp/phase_e/venvs/1.0.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:51: PendingDeprecationWarning: The class ``qiskit.transpiler.passes.scheduling.alap.ALAPSchedule`` is pending deprecation as of qiskit 0.21.0. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Instead, use :class:`~.ALAPScheduleAnalysis`, which is an analysis pass that requires a padding pass to later modify the circuit.
+    pass_instance = type.__call__(cls, *args, **kwargs)
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_alignment_is_not_processed
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_hanh_echo_experiment_type
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_t1_experiment_type
+  /tmp/phase_e/venvs/1.0.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:51: PendingDeprecationWarning: The class ``qiskit.transpiler.passes.scheduling.alignments.align_measures.AlignMeasures`` is pending deprecation as of qiskit 0.21.0. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Instead, use :class:`~.ConstrainedReschedule`, which performs the same function but also supports aligning to additional timing constraints.
+    pass_instance = type.__call__(cls, *args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+11 passed, 12 warnings in 1.08s

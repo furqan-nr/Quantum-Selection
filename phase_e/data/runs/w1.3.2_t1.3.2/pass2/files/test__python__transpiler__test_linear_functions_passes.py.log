@@ -1,0 +1,66 @@
+.........................................                                [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_linear_functions_passes.py: 58 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py: 58 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py: 14 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py: 14 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_2
+  /tmp/phase_e/tests/1.3.2/test/python/transpiler/test_linear_functions_passes.py:241: PendingDeprecationWarning: The class ``qiskit.circuit.library.n_local.real_amplitudes.RealAmplitudes`` is pending deprecation as of qiskit 1.3. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Use the function qiskit.circuit.library.real_amplitudes instead.
+    ansatz = RealAmplitudes(4, reps=2)
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_2
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_2
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/circuit/library/n_local/real_amplitudes.py:290: PendingDeprecationWarning: The class ``qiskit.circuit.library.n_local.two_local.TwoLocal`` is pending deprecation as of qiskit 1.3. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Use the function qiskit.circuit.library.n_local instead.
+    super().__init__(
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_2
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_2
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/circuit/library/n_local/two_local.py:216: PendingDeprecationWarning: The class ``qiskit.circuit.library.n_local.n_local.NLocal`` is pending deprecation as of qiskit 1.3. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Use the function qiskit.circuit.library.n_local instead.
+    super().__init__(
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_2
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_2
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3274: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_4q_2
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_2
+  /tmp/phase_e/venvs/1.3.2/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3274: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_1
+test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_real_amplitudes_circuit_5q_2
+  /tmp/phase_e/tests/1.3.2/test/python/transpiler/test_linear_functions_passes.py:260: PendingDeprecationWarning: The class ``qiskit.circuit.library.n_local.real_amplitudes.RealAmplitudes`` is pending deprecation as of qiskit 1.3. It will be marked deprecated in a future release, and then removed no earlier than 3 months after the release date. Use the function qiskit.circuit.library.real_amplitudes instead.
+    ansatz = RealAmplitudes(5, reps=2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+41 passed, 188 warnings in 0.99s

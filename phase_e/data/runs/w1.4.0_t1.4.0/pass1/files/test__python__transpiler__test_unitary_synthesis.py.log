@@ -1,0 +1,119 @@
+........................................................................ [100%]
+=============================== warnings summary ===============================
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_unitary_synthesis.py: 17 warnings
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py: 17 warnings
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py: 63 warnings
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py: 63 warnings
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_approximation_controlled
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:917: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(dag_to_circuit(dag_100)), Operator(circ))
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_approximation_controlled
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:917: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(dag_to_circuit(dag_100)), Operator(circ))
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_if_simple
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:549: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_if_simple
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:549: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_if_simple
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:937: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    cqc = dag_to_circuit(cdag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_if_simple
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:937: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    cqc = dag_to_circuit(cdag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_iswap_no_cx_synthesis_succeeds
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1098: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_iswap_no_cx_synthesis_succeeds
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1098: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_mapping_control_flow
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:491: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out = run_default_main_loop(
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_mapping_control_flow
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:491: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out = run_default_main_loop(
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:956: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    cqc = dag_to_circuit(cdag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_nested_control_flow
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:956: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    cqc = dag_to_circuit(cdag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_qv_natural
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_qv_natural
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3278: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_qv_natural
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_qv_natural
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/circuit/quantumcircuit.py:3278: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return dag_to_circuit(dag, copy_operations=False)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_single_qubit_identity_with_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1012: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_single_qubit_identity_with_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1012: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_single_qubit_with_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1001: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_single_qubit_with_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1001: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_unitary_synthesis_custom_gate_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1047: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_unitary_synthesis_custom_gate_target
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1047: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_unitary_synthesis_with_ideal_and_variable_width_ops
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1026: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_unitary_synthesis_with_ideal_and_variable_width_ops
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_unitary_synthesis.py:1026: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_qc = dag_to_circuit(result_dag)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+72 passed, 190 warnings in 2.08s

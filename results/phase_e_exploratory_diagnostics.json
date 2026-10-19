@@ -1,0 +1,4150 @@
+{
+ "schema": "phase_e_exploratory_diagnostics/1",
+ "label": "POST HOC / EXPLORATORY. Written after the confirmatory run. No confirmatory claim.",
+ "summary": {
+  "pairs_with_brand_new_files": [
+   "E2",
+   "E5"
+  ],
+  "n_pairs_with_brand_new_files": 2,
+  "new_file_tests_total": 54,
+  "new_files_total": 4,
+  "spend_ratio_seen_part_vs_unseen_part": {
+   "E1": {
+    "cheapest_first@0.05": {
+     "seen": 1.0094,
+     "in_file": 0.0581,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 1.0098,
+     "in_file": 0.0581,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 1.0135,
+     "in_file": 0.0116,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 1.0135,
+     "in_file": 0.0116,
+     "new_file": 0.0
+    }
+   },
+   "E2": {
+    "cheapest_first@0.05": {
+     "seen": 2.7018,
+     "in_file": 0.0928,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 2.4752,
+     "in_file": 0.0816,
+     "new_file": 0.0025
+    },
+    "cheapest_first@0.25": {
+     "seen": 1.3324,
+     "in_file": 0.0701,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 1.3066,
+     "in_file": 0.0701,
+     "new_file": 0.0005
+    }
+   },
+   "E3": {
+    "cheapest_first@0.05": {
+     "seen": 1.0652,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 1.0654,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 1.0474,
+     "in_file": 0.0139,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 1.0474,
+     "in_file": 0.0139,
+     "new_file": 0.0
+    }
+   },
+   "E4": {
+    "cheapest_first@0.05": {
+     "seen": 0.9378,
+     "in_file": 0.0001,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 0.9376,
+     "in_file": 0.0001,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.9592,
+     "in_file": 0.0005,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.9592,
+     "in_file": 0.0005,
+     "new_file": 0.0
+    }
+   },
+   "E5": {
+    "cheapest_first@0.05": {
+     "seen": 1.0365,
+     "in_file": 0.0133,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 0.9551,
+     "in_file": 0.0133,
+     "new_file": 0.0013
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.9563,
+     "in_file": 0.2183,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.9435,
+     "in_file": 0.2183,
+     "new_file": 0.0003
+    }
+   },
+   "E6": {
+    "cheapest_first@0.05": {
+     "seen": 0.9897,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 0.9898,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.9672,
+     "in_file": 0.0056,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.9672,
+     "in_file": 0.0056,
+     "new_file": 0.0
+    }
+   },
+   "E7": {
+    "cheapest_first@0.05": {
+     "seen": 1.0123,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 1.0124,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 1.0,
+     "in_file": 0.0009,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 1.0,
+     "in_file": 0.0009,
+     "new_file": 0.0
+    }
+   },
+   "E8": {
+    "cheapest_first@0.05": {
+     "seen": 0.9315,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 0.9301,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.9277,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.9277,
+     "in_file": 0.0,
+     "new_file": 0.0
+    }
+   },
+   "E9": {
+    "cheapest_first@0.05": {
+     "seen": 0.8492,
+     "in_file": 0.0002,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 0.8493,
+     "in_file": 0.0002,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.8885,
+     "in_file": 0.0142,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.8885,
+     "in_file": 0.0142,
+     "new_file": 0.0
+    }
+   },
+   "E10": {
+    "cheapest_first@0.05": {
+     "seen": 1.0038,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.05": {
+     "seen": 1.0039,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "cheapest_first@0.25": {
+     "seen": 0.9798,
+     "in_file": 0.0,
+     "new_file": 0.0
+    },
+    "coast_d@0.25": {
+     "seen": 0.9798,
+     "in_file": 0.0,
+     "new_file": 0.0
+    }
+   }
+  },
+  "primary_vs_phase_d_rule": {
+   "E1": {
+    "cheapest_first@0.05": {
+     "primary": 1.0675,
+     "phase_d_rule": 1.0698,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0581
+    },
+    "coast_d@0.05": {
+     "primary": 1.0679,
+     "phase_d_rule": 1.0679,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0581
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0251,
+     "phase_d_rule": 1.0252,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0116
+    },
+    "coast_d@0.25": {
+     "primary": 1.0251,
+     "phase_d_rule": 1.0252,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0116
+    }
+   },
+   "E2": {
+    "cheapest_first@0.05": {
+     "primary": 2.7946,
+     "phase_d_rule": 3.5509,
+     "phase_d_rule_new_file_real_over_budget": 0.3114,
+     "phase_d_rule_in_file_real_over_budget": 0.4035
+    },
+    "coast_d@0.05": {
+     "primary": 2.5593,
+     "phase_d_rule": 3.5484,
+     "phase_d_rule_new_file_real_over_budget": 0.3114,
+     "phase_d_rule_in_file_real_over_budget": 0.4035
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.4025,
+     "phase_d_rule": 1.6047,
+     "phase_d_rule_new_file_real_over_budget": 0.0623,
+     "phase_d_rule_in_file_real_over_budget": 0.0813
+    },
+    "coast_d@0.25": {
+     "primary": 1.3773,
+     "phase_d_rule": 1.6047,
+     "phase_d_rule_new_file_real_over_budget": 0.0623,
+     "phase_d_rule_in_file_real_over_budget": 0.0813
+    }
+   },
+   "E3": {
+    "cheapest_first@0.05": {
+     "primary": 1.0652,
+     "phase_d_rule": 1.1375,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0747
+    },
+    "coast_d@0.05": {
+     "primary": 1.0654,
+     "phase_d_rule": 1.1363,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0747
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0612,
+     "phase_d_rule": 1.0602,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0149
+    },
+    "coast_d@0.25": {
+     "primary": 1.0612,
+     "phase_d_rule": 1.0602,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0149
+    }
+   },
+   "E4": {
+    "cheapest_first@0.05": {
+     "primary": 0.9378,
+     "phase_d_rule": 0.9377,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0018
+    },
+    "coast_d@0.05": {
+     "primary": 0.9377,
+     "phase_d_rule": 0.9372,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0018
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9597,
+     "phase_d_rule": 0.963,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0005
+    },
+    "coast_d@0.25": {
+     "primary": 0.9597,
+     "phase_d_rule": 0.963,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0005
+    }
+   },
+   "E5": {
+    "cheapest_first@0.05": {
+     "primary": 1.0497,
+     "phase_d_rule": 1.5279,
+     "phase_d_rule_new_file_real_over_budget": 0.0053,
+     "phase_d_rule_in_file_real_over_budget": 0.5471
+    },
+    "coast_d@0.05": {
+     "primary": 0.9697,
+     "phase_d_rule": 1.526,
+     "phase_d_rule_new_file_real_over_budget": 0.0053,
+     "phase_d_rule_in_file_real_over_budget": 0.5471
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.1746,
+     "phase_d_rule": 1.2329,
+     "phase_d_rule_new_file_real_over_budget": 0.0011,
+     "phase_d_rule_in_file_real_over_budget": 0.2271
+    },
+    "coast_d@0.25": {
+     "primary": 1.1621,
+     "phase_d_rule": 1.2329,
+     "phase_d_rule_new_file_real_over_budget": 0.0011,
+     "phase_d_rule_in_file_real_over_budget": 0.2271
+    }
+   },
+   "E6": {
+    "cheapest_first@0.05": {
+     "primary": 0.9897,
+     "phase_d_rule": 0.9884,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0023
+    },
+    "coast_d@0.05": {
+     "primary": 0.9898,
+     "phase_d_rule": 0.9872,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0023
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9729,
+     "phase_d_rule": 0.9787,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0056
+    },
+    "coast_d@0.25": {
+     "primary": 0.9729,
+     "phase_d_rule": 0.9787,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0056
+    }
+   },
+   "E7": {
+    "cheapest_first@0.05": {
+     "primary": 1.0123,
+     "phase_d_rule": 1.0143,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0046
+    },
+    "coast_d@0.05": {
+     "primary": 1.0124,
+     "phase_d_rule": 1.0144,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0046
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0009,
+     "phase_d_rule": 1.0044,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0009
+    },
+    "coast_d@0.25": {
+     "primary": 1.0009,
+     "phase_d_rule": 1.0044,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0009
+    }
+   },
+   "E8": {
+    "cheapest_first@0.05": {
+     "primary": 0.9315,
+     "phase_d_rule": 0.9315,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.05": {
+     "primary": 0.9301,
+     "phase_d_rule": 0.9301,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9277,
+     "phase_d_rule": 0.9277,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.25": {
+     "primary": 0.9277,
+     "phase_d_rule": 0.9277,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    }
+   },
+   "E9": {
+    "cheapest_first@0.05": {
+     "primary": 0.8494,
+     "phase_d_rule": 0.8846,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0372
+    },
+    "coast_d@0.05": {
+     "primary": 0.8495,
+     "phase_d_rule": 0.8847,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0372
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9027,
+     "phase_d_rule": 0.9032,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0142
+    },
+    "coast_d@0.25": {
+     "primary": 0.9027,
+     "phase_d_rule": 0.9032,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0142
+    }
+   },
+   "E10": {
+    "cheapest_first@0.05": {
+     "primary": 1.0038,
+     "phase_d_rule": 1.0036,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0002
+    },
+    "coast_d@0.05": {
+     "primary": 1.0039,
+     "phase_d_rule": 1.0041,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0002
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9798,
+     "phase_d_rule": 0.9799,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.25": {
+     "primary": 0.9798,
+     "phase_d_rule": 0.9799,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    }
+   }
+  },
+  "skipped_on_P_run_on_B": {
+   "E1": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0675
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0679
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0251
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0251
+    }
+   },
+   "E2": {
+    "n": 2,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 1.148,
+     "spend_ratio_without_them": 1.6466
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 1.148,
+     "spend_ratio_without_them": 1.4112
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 0.2296,
+     "spend_ratio_without_them": 1.1729
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 0.2296,
+     "spend_ratio_without_them": 1.1477
+    }
+   },
+   "E3": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0652
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0654
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0612
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0612
+    }
+   },
+   "E4": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9378
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9377
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9597
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9597
+    }
+   },
+   "E5": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0497
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9697
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.1746
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.1621
+    }
+   },
+   "E6": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9897
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9898
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9729
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9729
+    }
+   },
+   "E7": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0123
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0124
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0009
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0009
+    }
+   },
+   "E8": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9315
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9301
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9277
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9277
+    }
+   },
+   "E9": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.8494
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.8495
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9027
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9027
+    }
+   },
+   "E10": {
+    "n": 0,
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0038
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0039
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9798
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9798
+    }
+   }
+  },
+  "all_consistent_with_confirmatory": true
+ },
+ "E2_detail": {
+  "0.05": {
+   "budget_s": 5.4017,
+   "real_spend_s": 15.0958,
+   "excess_s": 9.7015,
+   "top_files_by_excess": [
+    {
+     "file": "test/python/compiler/test_transpiler.py",
+     "n_selected": 209,
+     "est_s": 1.1942,
+     "real_s": 7.986,
+     "excess_s": 6.7917,
+     "excess_over_budget": 1.2573,
+     "sources": {
+      "seen": 209
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_preset_passmanagers.py",
+     "n_selected": 158,
+     "est_s": 0.896,
+     "real_s": 1.377,
+     "excess_s": 0.481,
+     "excess_over_budget": 0.089,
+     "sources": {
+      "seen": 154,
+      "in_file": 4
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_optimize_annotated.py",
+     "n_selected": 13,
+     "est_s": 0.0272,
+     "real_s": 0.355,
+     "excess_s": 0.3279,
+     "excess_over_budget": 0.0607,
+     "sources": {
+      "seen": 5,
+      "in_file": 8
+     }
+    },
+    {
+     "file": "test/python/compiler/test_assembler.py",
+     "n_selected": 87,
+     "est_s": 0.169,
+     "real_s": 0.3112,
+     "excess_s": 0.1422,
+     "excess_over_budget": 0.0263,
+     "sources": {
+      "seen": 87
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_swap_strategy_router.py",
+     "n_selected": 16,
+     "est_s": 0.0609,
+     "real_s": 0.1902,
+     "excess_s": 0.1293,
+     "excess_over_budget": 0.0239,
+     "sources": {
+      "seen": 15,
+      "in_file": 1
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_optimize_1q_decomposition.py",
+     "n_selected": 99,
+     "est_s": 0.1675,
+     "real_s": 0.2958,
+     "excess_s": 0.1283,
+     "excess_over_budget": 0.0238,
+     "sources": {
+      "seen": 99
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_target.py",
+     "n_selected": 78,
+     "est_s": 0.094,
+     "real_s": 0.2023,
+     "excess_s": 0.1083,
+     "excess_over_budget": 0.02,
+     "sources": {
+      "seen": 78
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_high_level_synthesis.py",
+     "n_selected": 63,
+     "est_s": 0.146,
+     "real_s": 0.2481,
+     "excess_s": 0.1021,
+     "excess_over_budget": 0.0189,
+     "sources": {
+      "seen": 63
+     }
+    }
+   ]
+  },
+  "0.25": {
+   "budget_s": 27.0087,
+   "real_spend_s": 37.8802,
+   "excess_s": 10.9026,
+   "top_files_by_excess": [
+    {
+     "file": "test/python/compiler/test_transpiler.py",
+     "n_selected": 312,
+     "est_s": 6.482,
+     "real_s": 13.3283,
+     "excess_s": 6.8463,
+     "excess_over_budget": 0.2535,
+     "sources": {
+      "seen": 296,
+      "in_file": 16
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_stochastic_swap.py",
+     "n_selected": 130,
+     "est_s": 6.2066,
+     "real_s": 7.094,
+     "excess_s": 0.8874,
+     "excess_over_budget": 0.0329,
+     "sources": {
+      "seen": 129,
+      "in_file": 1
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_sabre_swap.py",
+     "n_selected": 140,
+     "est_s": 4.8231,
+     "real_s": 5.6631,
+     "excess_s": 0.8399,
+     "excess_over_budget": 0.0311,
+     "sources": {
+      "seen": 140
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_preset_passmanagers.py",
+     "n_selected": 181,
+     "est_s": 1.4199,
+     "real_s": 1.9185,
+     "excess_s": 0.4986,
+     "excess_over_budget": 0.0185,
+     "sources": {
+      "seen": 177,
+      "in_file": 4
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_optimize_annotated.py",
+     "n_selected": 13,
+     "est_s": 0.0272,
+     "real_s": 0.355,
+     "excess_s": 0.3279,
+     "excess_over_budget": 0.0121,
+     "sources": {
+      "seen": 5,
+      "in_file": 8
+     }
+    },
+    {
+     "file": "test/python/compiler/test_assembler.py",
+     "n_selected": 89,
+     "est_s": 0.2323,
+     "real_s": 0.3655,
+     "excess_s": 0.1333,
+     "excess_over_budget": 0.0049,
+     "sources": {
+      "seen": 89
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_swap_strategy_router.py",
+     "n_selected": 17,
+     "est_s": 0.0823,
+     "real_s": 0.2133,
+     "excess_s": 0.131,
+     "excess_over_budget": 0.0049,
+     "sources": {
+      "seen": 16,
+      "in_file": 1
+     }
+    },
+    {
+     "file": "test/python/transpiler/test_optimize_1q_decomposition.py",
+     "n_selected": 101,
+     "est_s": 0.213,
+     "real_s": 0.3318,
+     "excess_s": 0.1187,
+     "excess_over_budget": 0.0044,
+     "sources": {
+      "seen": 101
+     }
+    }
+   ]
+  },
+  "seen_in_5pct_plan_phase_split_s": {
+   "setup": {
+    "P": 0.5104,
+    "B_pass1": 0.546
+   },
+   "call": {
+    "P": 4.5508,
+    "B_pass1": 13.871
+   },
+   "teardown": {
+    "P": 0.2348,
+    "B_pass1": 0.2657
+   }
+  },
+  "worst_test_family": {
+   "prefix": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling",
+   "members": [
+    {
+     "test": "test_transpile_does_not_affect_backend_coupling_1_0",
+     "in_5pct_plan": false,
+     "est_s": 0.5487,
+     "real_s": 0.6693
+    },
+    {
+     "test": "test_transpile_does_not_affect_backend_coupling_2_1",
+     "in_5pct_plan": false,
+     "est_s": 0.5907,
+     "real_s": 0.6413
+    },
+    {
+     "test": "test_transpile_does_not_affect_backend_coupling_3_2",
+     "in_5pct_plan": false,
+     "est_s": 1.2246,
+     "real_s": 0.7808
+    },
+    {
+     "test": "test_transpile_does_not_affect_backend_coupling_4_3",
+     "in_5pct_plan": true,
+     "est_s": 0.0018,
+     "real_s": 6.1993
+    }
+   ]
+  }
+ },
+ "pairs": [
+  {
+   "event_id": "E1",
+   "P": "1.0.0",
+   "B": "1.0.1",
+   "kind": "patch",
+   "suite_size": 2500,
+   "source_counts": {
+    "seen": 2497,
+    "in_file": 3,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 98.2861,
+    "total_real_s": 96.819,
+    "rel_error": 0.0152,
+    "seen_est_s": 98.2778,
+    "seen_real_s": 96.5337,
+    "in_file_est_s": 0.0083,
+    "in_file_real_s": 0.2853,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3602,
+   "new_file_price_phase_d_median_s": 0.0027,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 1.0675,
+     "by_source": {
+      "seen": {
+       "n_selected": 1883,
+       "est_over_budget": 0.9972,
+       "real_over_budget": 1.0094,
+       "real_over_est": 1.0123
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0017,
+       "real_over_budget": 0.0581,
+       "real_over_est": 34.2535
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 1.0679,
+     "by_source": {
+      "seen": {
+       "n_selected": 1881,
+       "est_over_budget": 0.9978,
+       "real_over_budget": 1.0098,
+       "real_over_est": 1.012
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0017,
+       "real_over_budget": 0.0581,
+       "real_over_est": 34.2535
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 1.0251,
+     "by_source": {
+      "seen": {
+       "n_selected": 2385,
+       "est_over_budget": 0.9982,
+       "real_over_budget": 1.0135,
+       "real_over_est": 1.0153
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0003,
+       "real_over_budget": 0.0116,
+       "real_over_est": 34.2535
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 1.0251,
+     "by_source": {
+      "seen": {
+       "n_selected": 2385,
+       "est_over_budget": 0.9982,
+       "real_over_budget": 1.0135,
+       "real_over_est": 1.0153
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0003,
+       "real_over_budget": 0.0116,
+       "real_over_est": 34.2535
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 1.0675,
+     "phase_d_rule": 1.0698,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0581
+    },
+    "coast_d@0.05": {
+     "primary": 1.0679,
+     "phase_d_rule": 1.0679,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0581
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0251,
+     "phase_d_rule": 1.0252,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0116
+    },
+    "coast_d@0.25": {
+     "primary": 1.0251,
+     "phase_d_rule": 1.0252,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0116
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/compiler/test_assembler.py::TestCircuitAssembler::test_custom_pulse_gates_single_circ",
+     "src": "in_file",
+     "est_s": 0.0063,
+     "real_s": 0.2835,
+     "per_pass_s": [
+      0.2777,
+      0.2894
+     ],
+     "real_over_budget": 0.0577,
+     "spend_ratio": 1.0675,
+     "spend_ratio_without_worst_test": 1.0098,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_assembler.py::TestCircuitAssembler::test_custom_pulse_gates_single_circ",
+       "src": "in_file",
+       "est_s": 0.0063,
+       "real_s": 0.2835
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_translation_method_synthesis_02",
+       "src": "seen",
+       "est_s": 0.0066,
+       "real_s": 0.0519
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_4_3",
+       "src": "seen",
+       "est_s": 0.0083,
+       "real_s": 0.018
+      },
+      {
+       "test": "test/python/transpiler/test_vf2_post_layout.py::TestVF2PostLayoutUndirected::test_best_mapping_ghz_state_full_device_multiple_qregs",
+       "src": "seen",
+       "est_s": 0.0078,
+       "real_s": 0.0103
+      },
+      {
+       "test": "test/python/transpiler/test_vf2_post_layout.py::TestVF2PostLayout::test_2q_circuit_5q_backend_max_trials",
+       "src": "seen",
+       "est_s": 0.0075,
+       "real_s": 0.0096
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/compiler/test_assembler.py::TestCircuitAssembler::test_custom_pulse_gates_single_circ",
+     "src": "in_file",
+     "est_s": 0.0063,
+     "real_s": 0.2835,
+     "per_pass_s": [
+      0.2777,
+      0.2894
+     ],
+     "real_over_budget": 0.0115,
+     "spend_ratio": 1.0251,
+     "spend_ratio_without_worst_test": 1.0136,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_assembler.py::TestCircuitAssembler::test_custom_pulse_gates_single_circ",
+       "src": "in_file",
+       "est_s": 0.0063,
+       "real_s": 0.2835
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_2_1",
+       "src": "seen",
+       "est_s": 0.0428,
+       "real_s": 0.0927
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_control_flow_expr_backendv2_1_0",
+       "src": "seen",
+       "est_s": 0.0459,
+       "real_s": 0.0954
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_translation_method_synthesis_02",
+       "src": "seen",
+       "est_s": 0.0066,
+       "real_s": 0.0519
+      },
+      {
+       "test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwapRandomCircuitValidOutput::test_random_circuit_no_control_flow_26_26",
+       "src": "seen",
+       "est_s": 0.0653,
+       "real_s": 0.0988
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0675
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0679
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0251
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0251
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 1.0123,
+    "seen_not_selected_real_over_est": 0.9807,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.9974,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.0028,
+    "seen_selected_5pct_median_est_ms": 1.7005,
+    "seen_not_selected_median_real_minus_est_ms": 0.1888,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 0.9913
+   }
+  },
+  {
+   "event_id": "E2",
+   "P": "1.0.2",
+   "B": "1.1.0",
+   "kind": "minor",
+   "suite_size": 2607,
+   "source_counts": {
+    "seen": 2504,
+    "in_file": 57,
+    "new_file": 46
+   },
+   "suite_cost": {
+    "total_est_s": 108.0349,
+    "total_real_s": 101.8658,
+    "rel_error": 0.0606,
+    "seen_est_s": 92.8547,
+    "seen_real_s": 98.5197,
+    "in_file_est_s": 1.3709,
+    "in_file_real_s": 1.8946,
+    "new_file_est_s": 13.8094,
+    "new_file_real_s": 1.4514
+   },
+   "new_file_price_primary_P99_s": 0.3002,
+   "new_file_price_phase_d_median_s": 0.0024,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 2.7946,
+     "by_source": {
+      "seen": {
+       "n_selected": 1969,
+       "est_over_budget": 0.9804,
+       "real_over_budget": 2.7018,
+       "real_over_est": 2.7558
+      },
+      "in_file": {
+       "n_selected": 31,
+       "est_over_budget": 0.0182,
+       "real_over_budget": 0.0928,
+       "real_over_est": 5.0929
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 2.5593,
+     "by_source": {
+      "seen": {
+       "n_selected": 1885,
+       "est_over_budget": 0.8249,
+       "real_over_budget": 2.4752,
+       "real_over_est": 3.0004
+      },
+      "in_file": {
+       "n_selected": 25,
+       "est_over_budget": 0.0078,
+       "real_over_budget": 0.0816,
+       "real_over_est": 10.4923
+      },
+      "new_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.1667,
+       "real_over_budget": 0.0025,
+       "real_over_est": 0.0151
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 1.4025,
+     "by_source": {
+      "seen": {
+       "n_selected": 2411,
+       "est_over_budget": 0.9481,
+       "real_over_budget": 1.3324,
+       "real_over_est": 1.4053
+      },
+      "in_file": {
+       "n_selected": 57,
+       "est_over_budget": 0.0508,
+       "real_over_budget": 0.0701,
+       "real_over_est": 1.3821
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 1.3773,
+     "by_source": {
+      "seen": {
+       "n_selected": 2403,
+       "est_over_budget": 0.9127,
+       "real_over_budget": 1.3066,
+       "real_over_est": 1.4316
+      },
+      "in_file": {
+       "n_selected": 57,
+       "est_over_budget": 0.0508,
+       "real_over_budget": 0.0701,
+       "real_over_est": 1.3821
+      },
+      "new_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0333,
+       "real_over_budget": 0.0005,
+       "real_over_est": 0.0151
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 46,
+     "selected_primary": 0,
+     "share_primary": 0.0,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 46,
+     "share_phase_d_rule": 1.0
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 46,
+     "selected_primary": 3,
+     "share_primary": 0.0652,
+     "new_files_touched_primary": 3,
+     "selected_phase_d_rule": 46,
+     "share_phase_d_rule": 1.0
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 46,
+     "selected_primary": 0,
+     "share_primary": 0.0,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 46,
+     "share_phase_d_rule": 1.0
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 46,
+     "selected_primary": 3,
+     "share_primary": 0.0652,
+     "new_files_touched_primary": 3,
+     "selected_phase_d_rule": 46,
+     "share_phase_d_rule": 1.0
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 2.7946,
+     "phase_d_rule": 3.5509,
+     "phase_d_rule_new_file_real_over_budget": 0.3114,
+     "phase_d_rule_in_file_real_over_budget": 0.4035
+    },
+    "coast_d@0.05": {
+     "primary": 2.5593,
+     "phase_d_rule": 3.5484,
+     "phase_d_rule_new_file_real_over_budget": 0.3114,
+     "phase_d_rule_in_file_real_over_budget": 0.4035
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.4025,
+     "phase_d_rule": 1.6047,
+     "phase_d_rule_new_file_real_over_budget": 0.0623,
+     "phase_d_rule_in_file_real_over_budget": 0.0813
+    },
+    "coast_d@0.25": {
+     "primary": 1.3773,
+     "phase_d_rule": 1.6047,
+     "phase_d_rule_new_file_real_over_budget": 0.0623,
+     "phase_d_rule_in_file_real_over_budget": 0.0813
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [
+    {
+     "file": "test/python/transpiler/test_elide_permutations.py",
+     "n_tests": 18,
+     "est_each_s": 0.3002,
+     "est_s": 5.4037,
+     "real_s": 0.188,
+     "real_median_s": 0.0024,
+     "real_max_s": 0.1051,
+     "share_tests_real_above_price": 0.0
+    },
+    {
+     "file": "test/python/transpiler/test_remove_final_reset.py",
+     "n_tests": 4,
+     "est_each_s": 0.3002,
+     "est_s": 1.2008,
+     "real_s": 0.0123,
+     "real_median_s": 0.0024,
+     "real_max_s": 0.0057,
+     "share_tests_real_above_price": 0.0
+    },
+    {
+     "file": "test/python/transpiler/test_star_prerouting.py",
+     "n_tests": 24,
+     "est_each_s": 0.3002,
+     "est_s": 7.2049,
+     "real_s": 1.2511,
+     "real_median_s": 0.0053,
+     "real_max_s": 0.3718,
+     "share_tests_real_above_price": 0.125
+    }
+   ],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling_4_3",
+     "src": "seen",
+     "est_s": 0.0018,
+     "real_s": 6.1993,
+     "per_pass_s": [
+      6.2502,
+      6.1484
+     ],
+     "real_over_budget": 1.1476,
+     "spend_ratio": 2.7946,
+     "spend_ratio_without_worst_test": 1.647,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling_4_3",
+       "src": "seen",
+       "est_s": 0.0018,
+       "real_s": 6.1993
+      },
+      {
+       "test": "test/python/transpiler/test_swap_strategy_router.py::TestPauliEvolutionSwapStrategies::test_permutation_tracking",
+       "src": "in_file",
+       "est_s": 0.0048,
+       "real_s": 0.0716
+      },
+      {
+       "test": "test/python/transpiler/test_optimize_annotated.py::TestOptimizeSwapBeforeMeasure::test_conjugate_reduction",
+       "src": "in_file",
+       "est_s": 0.0021,
+       "real_s": 0.062
+      },
+      {
+       "test": "test/python/transpiler/test_optimize_annotated.py::TestOptimizeSwapBeforeMeasure::test_conjugate_reduction_collection",
+       "src": "in_file",
+       "est_s": 0.0021,
+       "real_s": 0.0572
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_triple_circuit_1_0",
+       "src": "seen",
+       "est_s": 0.0096,
+       "real_s": 0.0636
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling_4_3",
+     "src": "seen",
+     "est_s": 0.0018,
+     "real_s": 6.1993,
+     "per_pass_s": [
+      6.2502,
+      6.1484
+     ],
+     "real_over_budget": 0.2295,
+     "spend_ratio": 1.4025,
+     "spend_ratio_without_worst_test": 1.173,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling_4_3",
+       "src": "seen",
+       "est_s": 0.0018,
+       "real_s": 6.1993
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_standalone_var_4_3",
+       "src": "in_file",
+       "est_s": 0.0665,
+       "real_s": 0.5146
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_num_processes_kwarg_4_3",
+       "src": "seen",
+       "est_s": 0.0312,
+       "real_s": 0.474
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_num_processes_kwarg_3_2",
+       "src": "seen",
+       "est_s": 0.0301,
+       "real_s": 0.3931
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qpy_roundtrip_standalone_var_target_4_3",
+       "src": "in_file",
+       "est_s": 0.0665,
+       "real_s": 0.2138
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 2,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [
+     {
+      "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_transpile_does_not_affect_backend_coupling_4_3",
+      "est_s": 0.0018,
+      "real_s": 6.1993,
+      "B_outcome": "passed"
+     },
+     {
+      "test": "test/python/transpiler/test_layout_transformation.py::TestLayoutTransformation::test_full_connected_coupling_map",
+      "est_s": 0.0004,
+      "real_s": 0.0022,
+      "B_outcome": "failed"
+     }
+    ],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 1.148,
+     "spend_ratio_without_them": 1.6466
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 1.148,
+     "spend_ratio_without_them": 1.4112
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 0.2296,
+     "spend_ratio_without_them": 1.1729
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 2,
+     "their_real_over_budget": 0.2296,
+     "spend_ratio_without_them": 1.1477
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 2.7558,
+    "seen_not_selected_real_over_est": 0.9585,
+    "seen_selected_5pct_median_per_test_real_over_est": 1.7309,
+    "seen_selected_5pct_median_real_minus_est_ms": 1.175,
+    "seen_selected_5pct_median_est_ms": 1.6128,
+    "seen_not_selected_median_real_minus_est_ms": 3.419,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.0052
+   }
+  },
+  {
+   "event_id": "E3",
+   "P": "1.1.1",
+   "B": "1.1.2",
+   "kind": "patch",
+   "suite_size": 2613,
+   "source_counts": {
+    "seen": 2609,
+    "in_file": 4,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 100.8558,
+    "total_real_s": 102.2691,
+    "rel_error": -0.0138,
+    "seen_est_s": 100.0015,
+    "seen_real_s": 101.8956,
+    "in_file_est_s": 0.8543,
+    "in_file_real_s": 0.3735,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3045,
+   "new_file_price_phase_d_median_s": 0.0038,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 1.0652,
+     "by_source": {
+      "seen": {
+       "n_selected": 1749,
+       "est_over_budget": 0.9991,
+       "real_over_budget": 1.0652,
+       "real_over_est": 1.0661
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 1.0654,
+     "by_source": {
+      "seen": {
+       "n_selected": 1746,
+       "est_over_budget": 0.9993,
+       "real_over_budget": 1.0654,
+       "real_over_est": 1.0661
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 1.0612,
+     "by_source": {
+      "seen": {
+       "n_selected": 2482,
+       "est_over_budget": 0.9986,
+       "real_over_budget": 1.0474,
+       "real_over_est": 1.0488
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0013,
+       "real_over_budget": 0.0139,
+       "real_over_est": 10.6437
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 1.0612,
+     "by_source": {
+      "seen": {
+       "n_selected": 2482,
+       "est_over_budget": 0.9986,
+       "real_over_budget": 1.0474,
+       "real_over_est": 1.0488
+      },
+      "in_file": {
+       "n_selected": 3,
+       "est_over_budget": 0.0013,
+       "real_over_budget": 0.0139,
+       "real_over_est": 10.6437
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 1.0652,
+     "phase_d_rule": 1.1375,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0747
+    },
+    "coast_d@0.05": {
+     "primary": 1.0654,
+     "phase_d_rule": 1.1363,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0747
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0612,
+     "phase_d_rule": 1.0602,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0149
+    },
+    "coast_d@0.25": {
+     "primary": 1.0612,
+     "phase_d_rule": 1.0602,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0149
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_treats_store_as_builtin",
+     "src": "seen",
+     "est_s": 0.0032,
+     "real_s": 0.006,
+     "per_pass_s": [
+      0.0072,
+      0.0048
+     ],
+     "real_over_budget": 0.0012,
+     "spend_ratio": 1.0652,
+     "spend_ratio_without_worst_test": 1.064,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_treats_store_as_builtin",
+       "src": "seen",
+       "est_s": 0.0032,
+       "real_s": 0.006
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestTranspileLevels::test_05_emptycircuit_fake_20q_v1_level1",
+       "src": "seen",
+       "est_s": 0.0064,
+       "real_s": 0.0089
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_translation_method_synthesis_04",
+       "src": "seen",
+       "est_s": 0.0054,
+       "real_s": 0.0074
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_with_custom_stages",
+       "src": "seen",
+       "est_s": 0.0054,
+       "real_s": 0.0075
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestTranspileLevels::test_13_circuit_2532_fake_5q_v1_level0",
+       "src": "seen",
+       "est_s": 0.004,
+       "real_s": 0.006
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2",
+     "src": "in_file",
+     "est_s": 0.0109,
+     "real_s": 0.2652,
+     "per_pass_s": [
+      0.2872,
+      0.2432
+     ],
+     "real_over_budget": 0.0105,
+     "spend_ratio": 1.0612,
+     "spend_ratio_without_worst_test": 1.0507,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2",
+       "src": "in_file",
+       "est_s": 0.0109,
+       "real_s": 0.2652
+      },
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target",
+       "src": "in_file",
+       "est_s": 0.0109,
+       "real_s": 0.0679
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_triple_circuit_dense_layout_2_stochastic",
+       "src": "seen",
+       "est_s": 0.0635,
+       "real_s": 0.1182
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_six_component_circuit_level_1",
+       "src": "seen",
+       "est_s": 0.085,
+       "real_s": 0.1361
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_shared_classical_between_components_condition_large_to_small_1_0",
+       "src": "seen",
+       "est_s": 0.0559,
+       "real_s": 0.1064
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0652
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0654
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0612
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0612
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 1.0661,
+    "seen_not_selected_real_over_est": 1.0164,
+    "seen_selected_5pct_median_per_test_real_over_est": 1.0922,
+    "seen_selected_5pct_median_real_minus_est_ms": 0.2012,
+    "seen_selected_5pct_median_est_ms": 2.4079,
+    "seen_not_selected_median_real_minus_est_ms": 1.1231,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 0.9948
+   }
+  },
+  {
+   "event_id": "E4",
+   "P": "1.2.0",
+   "B": "1.2.1",
+   "kind": "patch",
+   "suite_size": 2675,
+   "source_counts": {
+    "seen": 2669,
+    "in_file": 6,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 97.6368,
+    "total_real_s": 93.3916,
+    "rel_error": 0.0455,
+    "seen_est_s": 97.5626,
+    "seen_real_s": 93.3787,
+    "in_file_est_s": 0.0742,
+    "in_file_real_s": 0.0129,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3161,
+   "new_file_price_phase_d_median_s": 0.0046,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 0.9378,
+     "by_source": {
+      "seen": {
+       "n_selected": 1612,
+       "est_over_budget": 0.999,
+       "real_over_budget": 0.9378,
+       "real_over_est": 0.9387
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0001,
+       "real_over_budget": 0.0001,
+       "real_over_est": 0.7387
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 0.9377,
+     "by_source": {
+      "seen": {
+       "n_selected": 1607,
+       "est_over_budget": 0.9991,
+       "real_over_budget": 0.9376,
+       "real_over_est": 0.9385
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0001,
+       "real_over_budget": 0.0001,
+       "real_over_est": 0.7387
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 0.9597,
+     "by_source": {
+      "seen": {
+       "n_selected": 2512,
+       "est_over_budget": 0.9946,
+       "real_over_budget": 0.9592,
+       "real_over_est": 0.9644
+      },
+      "in_file": {
+       "n_selected": 6,
+       "est_over_budget": 0.003,
+       "real_over_budget": 0.0005,
+       "real_over_est": 0.1739
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 0.9597,
+     "by_source": {
+      "seen": {
+       "n_selected": 2512,
+       "est_over_budget": 0.9946,
+       "real_over_budget": 0.9592,
+       "real_over_est": 0.9644
+      },
+      "in_file": {
+       "n_selected": 6,
+       "est_over_budget": 0.003,
+       "real_over_budget": 0.0005,
+       "real_over_est": 0.1739
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 0.9378,
+     "phase_d_rule": 0.9377,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0018
+    },
+    "coast_d@0.05": {
+     "primary": 0.9377,
+     "phase_d_rule": 0.9372,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0018
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9597,
+     "phase_d_rule": 0.963,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0005
+    },
+    "coast_d@0.25": {
+     "primary": 0.9597,
+     "phase_d_rule": 0.963,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0005
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestTranspile::test_initial_layout_with_overlapping_qubits_2_1",
+     "src": "seen",
+     "est_s": 0.0045,
+     "real_s": 0.0207,
+     "per_pass_s": [
+      0.0207,
+      0.0207
+     ],
+     "real_over_budget": 0.0042,
+     "spend_ratio": 0.9378,
+     "spend_ratio_without_worst_test": 0.9336,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_initial_layout_with_overlapping_qubits_2_1",
+       "src": "seen",
+       "est_s": 0.0045,
+       "real_s": 0.0207
+      },
+      {
+       "test": "test/python/compiler/test_disassembler.py::TestQuantumCircuitDisassembler::test_multiple_conditionals_multiple_registers",
+       "src": "seen",
+       "est_s": 0.0051,
+       "real_s": 0.007
+      },
+      {
+       "test": "test/python/compiler/test_disassembler.py::TestQuantumCircuitDisassembler::test_single_circuit_delay_calibrations",
+       "src": "seen",
+       "est_s": 0.005,
+       "real_s": 0.0067
+      },
+      {
+       "test": "test/python/transpiler/test_calibrationbuilder.py::TestRZXCalibrationBuilderNoEcho::test_pass_alive_with_dcx_ish",
+       "src": "seen",
+       "est_s": 0.0049,
+       "real_s": 0.0061
+      },
+      {
+       "test": "test/python/compiler/test_assembler.py::TestPulseAssemblerMissingKwargs::test_unsupported_meas_level",
+       "src": "seen",
+       "est_s": 0.0062,
+       "real_s": 0.0074
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_barrier_no_leak_disjoint_connectivity_4_3",
+     "src": "seen",
+     "est_s": 0.0141,
+     "real_s": 0.0609,
+     "per_pass_s": [
+      0.0629,
+      0.0589
+     ],
+     "real_over_budget": 0.0025,
+     "spend_ratio": 0.9597,
+     "spend_ratio_without_worst_test": 0.9573,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_barrier_no_leak_disjoint_connectivity_4_3",
+       "src": "seen",
+       "est_s": 0.0141,
+       "real_s": 0.0609
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_standalone_var_3_2",
+       "src": "seen",
+       "est_s": 0.0433,
+       "real_s": 0.0895
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileParallel::test_parallel_num_processes_kwarg_2_1",
+       "src": "seen",
+       "est_s": 0.0295,
+       "real_s": 0.0756
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_2_1",
+       "src": "seen",
+       "est_s": 0.0519,
+       "real_s": 0.0977
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_transpile_annotated_ops_with_backend_v1_4",
+       "src": "seen",
+       "est_s": 0.0187,
+       "real_s": 0.063
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 2,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9378
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9377
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9597
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9597
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 0.9387,
+    "seen_not_selected_real_over_est": 0.9581,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.9567,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.1109,
+    "seen_selected_5pct_median_est_ms": 2.6043,
+    "seen_not_selected_median_real_minus_est_ms": -0.8086,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.0076
+   }
+  },
+  {
+   "event_id": "E5",
+   "P": "1.2.4",
+   "B": "1.3.0",
+   "kind": "minor",
+   "suite_size": 2762,
+   "source_counts": {
+    "seen": 2663,
+    "in_file": 91,
+    "new_file": 8
+   },
+   "suite_cost": {
+    "total_est_s": 98.636,
+    "total_real_s": 103.5564,
+    "rel_error": -0.0475,
+    "seen_est_s": 94.2801,
+    "seen_real_s": 98.1473,
+    "in_file_est_s": 1.8038,
+    "in_file_real_s": 5.3842,
+    "new_file_est_s": 2.5521,
+    "new_file_real_s": 0.025
+   },
+   "new_file_price_primary_P99_s": 0.319,
+   "new_file_price_phase_d_median_s": 0.0045,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 1.0497,
+     "by_source": {
+      "seen": {
+       "n_selected": 1620,
+       "est_over_budget": 0.9899,
+       "real_over_budget": 1.0365,
+       "real_over_est": 1.047
+      },
+      "in_file": {
+       "n_selected": 16,
+       "est_over_budget": 0.0098,
+       "real_over_budget": 0.0133,
+       "real_over_est": 1.3576
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 0.9697,
+     "by_source": {
+      "seen": {
+       "n_selected": 1561,
+       "est_over_budget": 0.9248,
+       "real_over_budget": 0.9551,
+       "real_over_est": 1.0328
+      },
+      "in_file": {
+       "n_selected": 16,
+       "est_over_budget": 0.0098,
+       "real_over_budget": 0.0133,
+       "real_over_est": 1.3576
+      },
+      "new_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0647,
+       "real_over_budget": 0.0013,
+       "real_over_est": 0.0201
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 1.1746,
+     "by_source": {
+      "seen": {
+       "n_selected": 2498,
+       "est_over_budget": 0.9256,
+       "real_over_budget": 0.9563,
+       "real_over_est": 1.0331
+      },
+      "in_file": {
+       "n_selected": 91,
+       "est_over_budget": 0.0731,
+       "real_over_budget": 0.2183,
+       "real_over_est": 2.985
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 1.1621,
+     "by_source": {
+      "seen": {
+       "n_selected": 2493,
+       "est_over_budget": 0.9125,
+       "real_over_budget": 0.9435,
+       "real_over_est": 1.034
+      },
+      "in_file": {
+       "n_selected": 91,
+       "est_over_budget": 0.0731,
+       "real_over_budget": 0.2183,
+       "real_over_est": 2.985
+      },
+      "new_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0129,
+       "real_over_budget": 0.0003,
+       "real_over_est": 0.0201
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 8,
+     "selected_primary": 0,
+     "share_primary": 0.0,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 8,
+     "share_phase_d_rule": 1.0
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 8,
+     "selected_primary": 1,
+     "share_primary": 0.125,
+     "new_files_touched_primary": 1,
+     "selected_phase_d_rule": 8,
+     "share_phase_d_rule": 1.0
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 8,
+     "selected_primary": 0,
+     "share_primary": 0.0,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 8,
+     "share_phase_d_rule": 1.0
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 8,
+     "selected_primary": 1,
+     "share_primary": 0.125,
+     "new_files_touched_primary": 1,
+     "selected_phase_d_rule": 8,
+     "share_phase_d_rule": 1.0
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 1.0497,
+     "phase_d_rule": 1.5279,
+     "phase_d_rule_new_file_real_over_budget": 0.0053,
+     "phase_d_rule_in_file_real_over_budget": 0.5471
+    },
+    "coast_d@0.05": {
+     "primary": 0.9697,
+     "phase_d_rule": 1.526,
+     "phase_d_rule_new_file_real_over_budget": 0.0053,
+     "phase_d_rule_in_file_real_over_budget": 0.5471
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.1746,
+     "phase_d_rule": 1.2329,
+     "phase_d_rule_new_file_real_over_budget": 0.0011,
+     "phase_d_rule_in_file_real_over_budget": 0.2271
+    },
+    "coast_d@0.25": {
+     "primary": 1.1621,
+     "phase_d_rule": 1.2329,
+     "phase_d_rule_new_file_real_over_budget": 0.0011,
+     "phase_d_rule_in_file_real_over_budget": 0.2271
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [
+    {
+     "file": "test/python/transpiler/test_remove_identity_equivalent.py",
+     "n_tests": 8,
+     "est_each_s": 0.319,
+     "est_s": 2.5521,
+     "real_s": 0.025,
+     "real_median_s": 0.002,
+     "real_max_s": 0.007,
+     "share_tests_real_above_price": 0.0
+    }
+   ],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwap::test_classical_condition_cargs",
+     "src": "seen",
+     "est_s": 0.004,
+     "real_s": 0.0237,
+     "per_pass_s": [
+      0.0225,
+      0.0248
+     ],
+     "real_over_budget": 0.0048,
+     "spend_ratio": 1.0497,
+     "spend_ratio_without_worst_test": 1.0449,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwap::test_classical_condition_cargs",
+       "src": "seen",
+       "est_s": 0.004,
+       "real_s": 0.0237
+      },
+      {
+       "test": "test/python/transpiler/test_consolidate_blocks.py::TestConsolidateBlocks::test_no_kak_gates_in_preset_pm_1_2",
+       "src": "in_file",
+       "est_s": 0.0033,
+       "real_s": 0.0223
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_plugin_selection_all_with_metrix",
+       "src": "seen",
+       "est_s": 0.0057,
+       "real_s": 0.023
+      },
+      {
+       "test": "test/python/transpiler/test_target.py::TestTarget::test_coupling_map",
+       "src": "seen",
+       "est_s": 0.0051,
+       "real_s": 0.0202
+      },
+      {
+       "test": "test/python/transpiler/test_unroll_3q_or_more.py::TestUnroll3qOrMore::test_decompose_conditional",
+       "src": "seen",
+       "est_s": 0.0028,
+       "real_s": 0.0138
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_basic_connected_circuit_dense_layout_3_lookahead",
+     "src": "in_file",
+     "est_s": 0.0624,
+     "real_s": 1.9235,
+     "per_pass_s": [
+      1.9105,
+      1.9366
+     ],
+     "real_over_budget": 0.078,
+     "spend_ratio": 1.1746,
+     "spend_ratio_without_worst_test": 1.0966,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_basic_connected_circuit_dense_layout_3_lookahead",
+       "src": "in_file",
+       "est_s": 0.0624,
+       "real_s": 1.9235
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_rec",
+       "src": "in_file",
+       "est_s": 0.0187,
+       "real_s": 1.2537
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_annotated_gate",
+       "src": "in_file",
+       "est_s": 0.0187,
+       "real_s": 0.606
+      },
+      {
+       "test": "test/python/transpiler/test_vf2_layout.py::TestVF2LayoutLattice::test_hexagonal_lattice_graph_9_in_25",
+       "src": "seen",
+       "est_s": 0.0543,
+       "real_s": 0.2212
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_reordered_modifiers",
+       "src": "seen",
+       "est_s": 0.0395,
+       "real_s": 0.1586
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0497
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9697
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.1746
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.1621
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 1.047,
+    "seen_not_selected_real_over_est": 1.0407,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.9675,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.0616,
+    "seen_selected_5pct_median_est_ms": 2.6349,
+    "seen_not_selected_median_real_minus_est_ms": 0.134,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.0188
+   }
+  },
+  {
+   "event_id": "E6",
+   "P": "1.3.1",
+   "B": "1.3.2",
+   "kind": "patch",
+   "suite_size": 2776,
+   "source_counts": {
+    "seen": 2767,
+    "in_file": 9,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 106.8204,
+    "total_real_s": 104.8867,
+    "rel_error": 0.0184,
+    "seen_est_s": 106.6074,
+    "seen_real_s": 104.7366,
+    "in_file_est_s": 0.213,
+    "in_file_real_s": 0.1501,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3375,
+   "new_file_price_phase_d_median_s": 0.0049,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 0.9897,
+     "by_source": {
+      "seen": {
+       "n_selected": 1692,
+       "est_over_budget": 0.9999,
+       "real_over_budget": 0.9897,
+       "real_over_est": 0.9898
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 0.9898,
+     "by_source": {
+      "seen": {
+       "n_selected": 1687,
+       "est_over_budget": 0.9999,
+       "real_over_budget": 0.9898,
+       "real_over_est": 0.9899
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 0.9729,
+     "by_source": {
+      "seen": {
+       "n_selected": 2633,
+       "est_over_budget": 0.9903,
+       "real_over_budget": 0.9672,
+       "real_over_est": 0.9767
+      },
+      "in_file": {
+       "n_selected": 9,
+       "est_over_budget": 0.008,
+       "real_over_budget": 0.0056,
+       "real_over_est": 0.7049
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 0.9729,
+     "by_source": {
+      "seen": {
+       "n_selected": 2633,
+       "est_over_budget": 0.9903,
+       "real_over_budget": 0.9672,
+       "real_over_est": 0.9767
+      },
+      "in_file": {
+       "n_selected": 9,
+       "est_over_budget": 0.008,
+       "real_over_budget": 0.0056,
+       "real_over_est": 0.7049
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 0.9897,
+     "phase_d_rule": 0.9884,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0023
+    },
+    "coast_d@0.05": {
+     "primary": 0.9898,
+     "phase_d_rule": 0.9872,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0023
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9729,
+     "phase_d_rule": 0.9787,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0056
+    },
+    "coast_d@0.25": {
+     "primary": 0.9729,
+     "phase_d_rule": 0.9787,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0056
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_powers_permutation",
+     "src": "seen",
+     "est_s": 0.005,
+     "real_s": 0.0475,
+     "per_pass_s": [
+      0.0477,
+      0.0473
+     ],
+     "real_over_budget": 0.0089,
+     "spend_ratio": 0.9897,
+     "spend_ratio_without_worst_test": 0.9808,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_powers_permutation",
+       "src": "seen",
+       "est_s": 0.005,
+       "real_s": 0.0475
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_invert_and_transpose",
+       "src": "seen",
+       "est_s": 0.0069,
+       "real_s": 0.0227
+      },
+      {
+       "test": "test/python/transpiler/test_optimize_1q_gates.py::TestOptimize1qGatesBasis::test_optimize_u3_basis_u2_with_target",
+       "src": "seen",
+       "est_s": 0.002,
+       "real_s": 0.0037
+      },
+      {
+       "test": "test/python/transpiler/test_optimize_1q_gates.py::TestOptimize1qGatesBasis::test_optimize_u3_basis_u1",
+       "src": "seen",
+       "est_s": 0.0019,
+       "real_s": 0.0036
+      },
+      {
+       "test": "test/python/transpiler/test_remove_identity_equivalent.py::TestDropNegligible::test_drops_negligible_gates",
+       "src": "seen",
+       "est_s": 0.0071,
+       "real_s": 0.0088
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_3q_measure_all",
+     "src": "in_file",
+     "est_s": 0.0148,
+     "real_s": 0.0986,
+     "per_pass_s": [
+      0.0985,
+      0.0987
+     ],
+     "real_over_budget": 0.0037,
+     "spend_ratio": 0.9729,
+     "spend_ratio_without_worst_test": 0.9692,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_3q_measure_all",
+       "src": "in_file",
+       "est_s": 0.0148,
+       "real_s": 0.0986
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_nested_powers_permutation",
+       "src": "seen",
+       "est_s": 0.005,
+       "real_s": 0.0475
+      },
+      {
+       "test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_controlled_basis_3_opt_level_2",
+       "src": "seen",
+       "est_s": 0.0277,
+       "real_s": 0.0527
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestPMHSynthesisLinearFunctionPlugin::test_invert_and_transpose",
+       "src": "seen",
+       "est_s": 0.0069,
+       "real_s": 0.0227
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestOptimizationWithCondition::test_optimization_condition_2_1",
+       "src": "seen",
+       "est_s": 0.0147,
+       "real_s": 0.0287
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9897
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9898
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9729
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9729
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 0.9898,
+    "seen_not_selected_real_over_est": 0.9821,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.9918,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.0209,
+    "seen_selected_5pct_median_est_ms": 2.5987,
+    "seen_not_selected_median_real_minus_est_ms": -0.3786,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.0008
+   }
+  },
+  {
+   "event_id": "E7",
+   "P": "1.3.3",
+   "B": "1.4.0",
+   "kind": "minor",
+   "suite_size": 2794,
+   "source_counts": {
+    "seen": 2789,
+    "in_file": 5,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 106.5371,
+    "total_real_s": 105.5278,
+    "rel_error": 0.0096,
+    "seen_est_s": 106.5,
+    "seen_real_s": 105.5036,
+    "in_file_est_s": 0.0371,
+    "in_file_real_s": 0.0242,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3356,
+   "new_file_price_phase_d_median_s": 0.005,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 1.0123,
+     "by_source": {
+      "seen": {
+       "n_selected": 1693,
+       "est_over_budget": 0.9991,
+       "real_over_budget": 1.0123,
+       "real_over_est": 1.0132
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 1.0124,
+     "by_source": {
+      "seen": {
+       "n_selected": 1688,
+       "est_over_budget": 0.9994,
+       "real_over_budget": 1.0124,
+       "real_over_est": 1.013
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 1.0009,
+     "by_source": {
+      "seen": {
+       "n_selected": 2650,
+       "est_over_budget": 0.9957,
+       "real_over_budget": 1.0,
+       "real_over_est": 1.0043
+      },
+      "in_file": {
+       "n_selected": 5,
+       "est_over_budget": 0.0014,
+       "real_over_budget": 0.0009,
+       "real_over_est": 0.6538
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 1.0009,
+     "by_source": {
+      "seen": {
+       "n_selected": 2650,
+       "est_over_budget": 0.9957,
+       "real_over_budget": 1.0,
+       "real_over_est": 1.0043
+      },
+      "in_file": {
+       "n_selected": 5,
+       "est_over_budget": 0.0014,
+       "real_over_budget": 0.0009,
+       "real_over_est": 0.6538
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 1.0123,
+     "phase_d_rule": 1.0143,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0046
+    },
+    "coast_d@0.05": {
+     "primary": 1.0124,
+     "phase_d_rule": 1.0144,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0046
+    },
+    "cheapest_first@0.25": {
+     "primary": 1.0009,
+     "phase_d_rule": 1.0044,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0009
+    },
+    "coast_d@0.25": {
+     "primary": 1.0009,
+     "phase_d_rule": 1.0044,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0009
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwap::test_classical_condition",
+     "src": "seen",
+     "est_s": 0.0068,
+     "real_s": 0.0217,
+     "per_pass_s": [
+      0.0221,
+      0.0213
+     ],
+     "real_over_budget": 0.0041,
+     "spend_ratio": 1.0123,
+     "spend_ratio_without_worst_test": 1.0082,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwap::test_classical_condition",
+       "src": "seen",
+       "est_s": 0.0068,
+       "real_s": 0.0217
+      },
+      {
+       "test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_two_qubit_synthesis_not_pulse_optimal",
+       "src": "seen",
+       "est_s": 0.0065,
+       "real_s": 0.0101
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_barrier_not_output_1_0",
+       "src": "seen",
+       "est_s": 0.0064,
+       "real_s": 0.0097
+      },
+      {
+       "test": "test/python/transpiler/test_calibrationbuilder.py::TestRZXCalibrationBuilderNoEcho::test_pass_alive_with_dcx_ish",
+       "src": "seen",
+       "est_s": 0.007,
+       "real_s": 0.0097
+      },
+      {
+       "test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_two_qubit_pulse_optimal_none_optimal",
+       "src": "seen",
+       "est_s": 0.0058,
+       "real_s": 0.0081
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_2_1",
+     "src": "seen",
+     "est_s": 0.0428,
+     "real_s": 0.0894,
+     "per_pass_s": [
+      0.0893,
+      0.0896
+     ],
+     "real_over_budget": 0.0034,
+     "spend_ratio": 1.0009,
+     "spend_ratio_without_worst_test": 0.9975,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_control_flow_expr_2_1",
+       "src": "seen",
+       "est_s": 0.0428,
+       "real_s": 0.0894
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_v1_2_1",
+       "src": "seen",
+       "est_s": 0.0254,
+       "real_s": 0.0719
+      },
+      {
+       "test": "test/python/compiler/test_assembler.py::TestPulseAssembler::test_assemble_with_unequal_kernels",
+       "src": "seen",
+       "est_s": 0.0082,
+       "real_s": 0.0459
+      },
+      {
+       "test": "test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapRandomCircuitValidOutput::test_random_circuit_if_else_15_20",
+       "src": "seen",
+       "est_s": 0.037,
+       "real_s": 0.0629
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_num_processes_kwarg_concurrent_default_2_1",
+       "src": "seen",
+       "est_s": 0.0768,
+       "real_s": 0.0919
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0123
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0124
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0009
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0009
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 1.0132,
+    "seen_not_selected_real_over_est": 0.9895,
+    "seen_selected_5pct_median_per_test_real_over_est": 1.0142,
+    "seen_selected_5pct_median_real_minus_est_ms": 0.0354,
+    "seen_selected_5pct_median_est_ms": 2.6246,
+    "seen_not_selected_median_real_minus_est_ms": 0.1065,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.076
+   }
+  },
+  {
+   "event_id": "E8",
+   "P": "1.4.1",
+   "B": "1.4.2",
+   "kind": "patch",
+   "suite_size": 2798,
+   "source_counts": {
+    "seen": 2798,
+    "in_file": 0,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 107.4912,
+    "total_real_s": 102.4651,
+    "rel_error": 0.0491,
+    "seen_est_s": 107.4912,
+    "seen_real_s": 102.4651,
+    "in_file_est_s": 0.0,
+    "in_file_real_s": 0.0,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3486,
+   "new_file_price_phase_d_median_s": 0.0051,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 0.9315,
+     "by_source": {
+      "seen": {
+       "n_selected": 1682,
+       "est_over_budget": 0.9994,
+       "real_over_budget": 0.9315,
+       "real_over_est": 0.932
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 0.9301,
+     "by_source": {
+      "seen": {
+       "n_selected": 1676,
+       "est_over_budget": 0.9988,
+       "real_over_budget": 0.9301,
+       "real_over_est": 0.9312
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 0.9277,
+     "by_source": {
+      "seen": {
+       "n_selected": 2656,
+       "est_over_budget": 0.9972,
+       "real_over_budget": 0.9277,
+       "real_over_est": 0.9303
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 0.9277,
+     "by_source": {
+      "seen": {
+       "n_selected": 2656,
+       "est_over_budget": 0.9972,
+       "real_over_budget": 0.9277,
+       "real_over_est": 0.9303
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 0.9315,
+     "phase_d_rule": 0.9315,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.05": {
+     "primary": 0.9301,
+     "phase_d_rule": 0.9301,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9277,
+     "phase_d_rule": 0.9277,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.25": {
+     "primary": 0.9277,
+     "phase_d_rule": 0.9277,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_transpile_level_0",
+     "src": "seen",
+     "est_s": 0.0056,
+     "real_s": 0.009,
+     "per_pass_s": [
+      0.013,
+      0.005
+     ],
+     "real_over_budget": 0.0017,
+     "spend_ratio": 0.9315,
+     "spend_ratio_without_worst_test": 0.9298,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_transpile_level_0",
+       "src": "seen",
+       "est_s": 0.0056,
+       "real_s": 0.009
+      },
+      {
+       "test": "test/python/transpiler/test_unitary_synthesis.py::TestUnitarySynthesis::test_two_qubit_pulse_optimal_none_optimal",
+       "src": "seen",
+       "est_s": 0.007,
+       "real_s": 0.0099
+      },
+      {
+       "test": "test/python/compiler/test_assembler.py::TestCircuitAssembler::test_shots_greater_than_max_shots",
+       "src": "seen",
+       "est_s": 0.0058,
+       "real_s": 0.0086
+      },
+      {
+       "test": "test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_topological_ordering",
+       "src": "seen",
+       "est_s": 0.0024,
+       "real_s": 0.0049
+      },
+      {
+       "test": "test/python/transpiler/test_clifford_passes.py::TestCliffordPasses::test_plugin_unfortunate_name",
+       "src": "seen",
+       "est_s": 0.003,
+       "real_s": 0.0054
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/transpiler/test_preset_passmanagers.py::TestFinalLayouts::test_layout_tokyo_fully_connected_cx_2_1",
+     "src": "seen",
+     "est_s": 0.0147,
+     "real_s": 0.0474,
+     "per_pass_s": [
+      0.0567,
+      0.038
+     ],
+     "real_over_budget": 0.0018,
+     "spend_ratio": 0.9277,
+     "spend_ratio_without_worst_test": 0.9259,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestFinalLayouts::test_layout_tokyo_fully_connected_cx_2_1",
+       "src": "seen",
+       "est_s": 0.0147,
+       "real_s": 0.0474
+      },
+      {
+       "test": "test/python/transpiler/test_solovay_kitaev.py::TestSolovayKitaevUtils::test_generate_basis_approximation_gates",
+       "src": "seen",
+       "est_s": 0.0318,
+       "real_s": 0.0624
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestTranspileLevels::test_v1_03_emptycircuit_fake_5q_v1_level1",
+       "src": "seen",
+       "est_s": 0.0083,
+       "real_s": 0.0312
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestPostTranspileIntegration::test_qasm3_output_v1_4_3",
+       "src": "seen",
+       "est_s": 0.0283,
+       "real_s": 0.0414
+      },
+      {
+       "test": "test/python/transpiler/test_sabre_swap.py::TestSabreSwapRandomCircuitValidOutput::test_random_circuit_no_control_flow_target_05_5",
+       "src": "seen",
+       "est_s": 0.0238,
+       "real_s": 0.0302
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9315
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9301
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9277
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9277
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 0.932,
+    "seen_not_selected_real_over_est": 0.9544,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.9428,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.1535,
+    "seen_selected_5pct_median_est_ms": 2.6659,
+    "seen_not_selected_median_real_minus_est_ms": -1.3322,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 0.8572
+   }
+  },
+  {
+   "event_id": "E9",
+   "P": "1.4.4",
+   "B": "1.4.5",
+   "kind": "patch",
+   "suite_size": 2856,
+   "source_counts": {
+    "seen": 2851,
+    "in_file": 5,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 159.0003,
+    "total_real_s": 150.5032,
+    "rel_error": 0.0565,
+    "seen_est_s": 158.8783,
+    "seen_real_s": 149.939,
+    "in_file_est_s": 0.1219,
+    "in_file_real_s": 0.5643,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.3747,
+   "new_file_price_phase_d_median_s": 0.0053,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 0.8494,
+     "by_source": {
+      "seen": {
+       "n_selected": 1977,
+       "est_over_budget": 0.9995,
+       "real_over_budget": 0.8492,
+       "real_over_est": 0.8496
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0005,
+       "real_over_budget": 0.0002,
+       "real_over_est": 0.3808
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 0.8495,
+     "by_source": {
+      "seen": {
+       "n_selected": 1974,
+       "est_over_budget": 0.9994,
+       "real_over_budget": 0.8493,
+       "real_over_est": 0.8498
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0005,
+       "real_over_budget": 0.0002,
+       "real_over_est": 0.3808
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 0.9027,
+     "by_source": {
+      "seen": {
+       "n_selected": 2793,
+       "est_over_budget": 0.9966,
+       "real_over_budget": 0.8885,
+       "real_over_est": 0.8915
+      },
+      "in_file": {
+       "n_selected": 5,
+       "est_over_budget": 0.0031,
+       "real_over_budget": 0.0142,
+       "real_over_est": 4.6273
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 0.9027,
+     "by_source": {
+      "seen": {
+       "n_selected": 2793,
+       "est_over_budget": 0.9966,
+       "real_over_budget": 0.8885,
+       "real_over_est": 0.8915
+      },
+      "in_file": {
+       "n_selected": 5,
+       "est_over_budget": 0.0031,
+       "real_over_budget": 0.0142,
+       "real_over_est": 4.6273
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 0.8494,
+     "phase_d_rule": 0.8846,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0372
+    },
+    "coast_d@0.05": {
+     "primary": 0.8495,
+     "phase_d_rule": 0.8847,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0372
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9027,
+     "phase_d_rule": 0.9032,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0142
+    },
+    "coast_d@0.25": {
+     "primary": 0.9027,
+     "phase_d_rule": 0.9032,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0142
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_preset_passmanagers.py::TestTranspileLevels::test_v1_03_emptycircuit_fake_5q_v1_level1",
+     "src": "seen",
+     "est_s": 0.0091,
+     "real_s": 0.0308,
+     "per_pass_s": [
+      0.0312,
+      0.0305
+     ],
+     "real_over_budget": 0.0039,
+     "spend_ratio": 0.8494,
+     "spend_ratio_without_worst_test": 0.8455,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestTranspileLevels::test_v1_03_emptycircuit_fake_5q_v1_level1",
+       "src": "seen",
+       "est_s": 0.0091,
+       "real_s": 0.0308
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_ccx_routing_method_none_1_0",
+       "src": "seen",
+       "est_s": 0.0057,
+       "real_s": 0.008
+      },
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_diamond_path",
+       "src": "seen",
+       "est_s": 0.0024,
+       "real_s": 0.004
+      },
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits",
+       "src": "seen",
+       "est_s": 0.0038,
+       "real_s": 0.0051
+      },
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_single_substitution",
+       "src": "seen",
+       "est_s": 0.0021,
+       "real_s": 0.0032
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_loop_custom_calibration",
+     "src": "in_file",
+     "est_s": 0.0169,
+     "real_s": 0.2846,
+     "per_pass_s": [
+      0.2887,
+      0.2805
+     ],
+     "real_over_budget": 0.0072,
+     "spend_ratio": 0.9027,
+     "spend_ratio_without_worst_test": 0.8955,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_loop_custom_calibration",
+       "src": "in_file",
+       "est_s": 0.0169,
+       "real_s": 0.2846
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_calibration_inside_opaque_block",
+       "src": "in_file",
+       "est_s": 0.0674,
+       "real_s": 0.2689
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_transpile_annotated_ops_with_backend_4",
+       "src": "seen",
+       "est_s": 0.0154,
+       "real_s": 0.0516
+      },
+      {
+       "test": "test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_unsupported_basis_gates_raise_2_1",
+       "src": "seen",
+       "est_s": 0.0217,
+       "real_s": 0.0502
+      },
+      {
+       "test": "test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapRandomCircuitValidOutput::test_random_circuit_if_else_18_23",
+       "src": "seen",
+       "est_s": 0.0393,
+       "real_s": 0.0644
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.8494
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.8495
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9027
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9027
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 0.8496,
+    "seen_not_selected_real_over_est": 0.9487,
+    "seen_selected_5pct_median_per_test_real_over_est": 0.856,
+    "seen_selected_5pct_median_real_minus_est_ms": -0.4909,
+    "seen_selected_5pct_median_est_ms": 3.1242,
+    "seen_not_selected_median_real_minus_est_ms": -2.6278,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 1.0527
+   }
+  },
+  {
+   "event_id": "E10",
+   "P": "2.4.0",
+   "B": "2.4.1",
+   "kind": "patch",
+   "suite_size": 7143,
+   "source_counts": {
+    "seen": 7142,
+    "in_file": 1,
+    "new_file": 0
+   },
+   "suite_cost": {
+    "total_est_s": 72.4453,
+    "total_real_s": 71.2401,
+    "rel_error": 0.0169,
+    "seen_est_s": 72.4432,
+    "seen_real_s": 71.2394,
+    "in_file_est_s": 0.0022,
+    "in_file_real_s": 0.0007,
+    "new_file_est_s": 0.0,
+    "new_file_real_s": 0.0
+   },
+   "new_file_price_primary_P99_s": 0.1282,
+   "new_file_price_phase_d_median_s": 0.0012,
+   "spend_split_primary": {
+    "cheapest_first@0.05": {
+     "spend_ratio": 1.0038,
+     "by_source": {
+      "seen": {
+       "n_selected": 3968,
+       "est_over_budget": 0.9998,
+       "real_over_budget": 1.0038,
+       "real_over_est": 1.004
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.05": {
+     "spend_ratio": 1.0039,
+     "by_source": {
+      "seen": {
+       "n_selected": 3954,
+       "est_over_budget": 0.9997,
+       "real_over_budget": 1.0039,
+       "real_over_est": 1.0043
+      },
+      "in_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "cheapest_first@0.25": {
+     "spend_ratio": 0.9798,
+     "by_source": {
+      "seen": {
+       "n_selected": 6988,
+       "est_over_budget": 0.9994,
+       "real_over_budget": 0.9798,
+       "real_over_est": 0.9804
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0001,
+       "real_over_budget": 0.0,
+       "real_over_est": 0.3236
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    },
+    "coast_d@0.25": {
+     "spend_ratio": 0.9798,
+     "by_source": {
+      "seen": {
+       "n_selected": 6988,
+       "est_over_budget": 0.9994,
+       "real_over_budget": 0.9798,
+       "real_over_est": 0.9804
+      },
+      "in_file": {
+       "n_selected": 1,
+       "est_over_budget": 0.0001,
+       "real_over_budget": 0.0,
+       "real_over_est": 0.3236
+      },
+      "new_file": {
+       "n_selected": 0,
+       "est_over_budget": 0.0,
+       "real_over_budget": 0.0,
+       "real_over_est": null
+      }
+     }
+    }
+   },
+   "new_file_coverage": {
+    "cheapest_first@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.05": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "cheapest_first@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    },
+    "coast_d@0.25": {
+     "n_new_file_tests": 0,
+     "selected_primary": 0,
+     "share_primary": null,
+     "new_files_touched_primary": 0,
+     "selected_phase_d_rule": 0,
+     "share_phase_d_rule": null
+    }
+   },
+   "primary_vs_phase_d_rule": {
+    "cheapest_first@0.05": {
+     "primary": 1.0038,
+     "phase_d_rule": 1.0036,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0002
+    },
+    "coast_d@0.05": {
+     "primary": 1.0039,
+     "phase_d_rule": 1.0041,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0002
+    },
+    "cheapest_first@0.25": {
+     "primary": 0.9798,
+     "phase_d_rule": 0.9799,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    },
+    "coast_d@0.25": {
+     "primary": 0.9798,
+     "phase_d_rule": 0.9799,
+     "phase_d_rule_new_file_real_over_budget": 0.0,
+     "phase_d_rule_in_file_real_over_budget": 0.0
+    }
+   },
+   "consistency": {
+    "cheapest_first@0.05": true,
+    "coast_d@0.05": true,
+    "cheapest_first@0.25": true,
+    "coast_d@0.25": true
+   },
+   "new_files": [],
+   "worst_test_cheapest_first": {
+    "0.05": {
+     "worst_test": "test/python/transpiler/test_target.py::TestTargetFromConfiguration::test_missing_custom_basis_with_coupling",
+     "src": "seen",
+     "est_s": 0.0007,
+     "real_s": 0.0023,
+     "per_pass_s": [
+      0.0006,
+      0.0039
+     ],
+     "real_over_budget": 0.0006,
+     "spend_ratio": 1.0038,
+     "spend_ratio_without_worst_test": 1.0032,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_target.py::TestTargetFromConfiguration::test_missing_custom_basis_with_coupling",
+       "src": "seen",
+       "est_s": 0.0007,
+       "real_s": 0.0023
+      },
+      {
+       "test": "test/python/transpiler/test_substitute_pi4_rotations.py::TestSubstitutePi4Rotations::test_rotation_gates_transpiled_1325",
+       "src": "seen",
+       "est_s": 0.001,
+       "real_s": 0.0026
+      },
+      {
+       "test": "test/python/transpiler/test_target.py::TestTarget::test_num_qubits_inference_with_globals",
+       "src": "seen",
+       "est_s": 0.0011,
+       "real_s": 0.0026
+      },
+      {
+       "test": "test/python/transpiler/test_substitute_pi4_rotations.py::TestSubstitutePi4Rotations::test_rotation_gates_do_not_change_735",
+       "src": "seen",
+       "est_s": 0.0007,
+       "real_s": 0.0022
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileParallel::test_transpile_with_multiple_coupling_maps",
+       "src": "seen",
+       "est_s": 0.0012,
+       "real_s": 0.0021
+      }
+     ]
+    },
+    "0.25": {
+     "worst_test": "test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_hidden_identity_block_1",
+     "src": "seen",
+     "est_s": 0.0122,
+     "real_s": 0.0198,
+     "per_pass_s": [
+      0.0281,
+      0.0114
+     ],
+     "real_over_budget": 0.0011,
+     "spend_ratio": 0.9798,
+     "spend_ratio_without_worst_test": 0.9788,
+     "top5_excess_tests": [
+      {
+       "test": "test/python/transpiler/test_linear_functions_passes.py::TestLinearFunctionsPasses::test_hidden_identity_block_1",
+       "src": "seen",
+       "est_s": 0.0122,
+       "real_s": 0.0198
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspileMultiChipTarget::test_triple_circuit_invalid_layout_1_sabre",
+       "src": "seen",
+       "est_s": 0.0436,
+       "real_s": 0.0511
+      },
+      {
+       "test": "test/python/compiler/test_transpiler.py::TestTranspile::test_transpile_with_custom_control_flow_target_2_1",
+       "src": "seen",
+       "est_s": 0.0351,
+       "real_s": 0.0416
+      },
+      {
+       "test": "test/python/transpiler/test_high_level_synthesis.py::TestHighLevelSynthesisModifiers::test_circuit_with_mcx_def_rec",
+       "src": "seen",
+       "est_s": 0.033,
+       "real_s": 0.0376
+      },
+      {
+       "test": "test/python/compiler/test_compiler.py::TestCompiler::test_example_swap_bits",
+       "src": "seen",
+       "est_s": 0.022,
+       "real_s": 0.0264
+      }
+     ]
+    }
+   },
+   "outcome_change_seen": {
+    "n_seen_skipped_on_P_run_on_B": 0,
+    "n_seen_run_on_P_skipped_on_B": 0,
+    "skipped_to_run_tests": [],
+    "cheapest_first@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0038
+    },
+    "coast_d@0.05": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 1.0039
+    },
+    "cheapest_first@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9798
+    },
+    "coast_d@0.25": {
+     "selected_skipped_to_run": 0,
+     "their_real_over_budget": 0.0,
+     "spend_ratio_without_them": 0.9798
+    }
+   },
+   "seen_drift": {
+    "seen_selected_5pct_real_over_est": 1.004,
+    "seen_not_selected_real_over_est": 0.9823,
+    "seen_selected_5pct_median_per_test_real_over_est": 1.0069,
+    "seen_selected_5pct_median_real_minus_est_ms": 0.0056,
+    "seen_selected_5pct_median_est_ms": 0.9847,
+    "seen_not_selected_median_real_minus_est_ms": -0.0396,
+    "within_B_self_selection_pass1_to_pass2_spend_5pct": 0.9942
+   }
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+........................................................................ [ 51%]
+...................................................................      [100%]
+=============================== warnings summary ===============================
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.4.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwap::test_permute_wires_2
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:156: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(expected, dag_to_circuit(after))
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwap::test_permute_wires_2
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:156: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(expected, dag_to_circuit(after))
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_1_1
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_2_2
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_3_3
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1044: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_1_1
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_2_2
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_for_loop_3_3
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1044: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_intra_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:783: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_intra_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:783: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_nested_inner_cnot
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1358: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_nested_inner_cnot
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1358: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_nested_outer_cnot
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1414: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_nested_outer_cnot
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1414: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_no_layout_change
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1006: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_no_layout_change
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1006: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_post_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:700: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_post_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:700: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else2
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:740: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else2
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:740: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:615: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else_route
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:615: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else_route_post_x
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:657: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_if_else_route_post_x
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:657: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_intra_if_else
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:828: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_intra_if_else
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:828: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_intra_post_if_else
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:882: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_pre_intra_post_if_else
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:882: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_while_loop
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1082: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_stochastic_swap.py::TestStochasticSwapControlFlow::test_while_loop
+  /tmp/phase_e/tests/1.4.0/test/python/transpiler/test_stochastic_swap.py:1082: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+139 passed, 32 warnings in 5.17s

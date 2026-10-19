@@ -1,0 +1,13 @@
+........................................................................ [ 39%]
+........................................................................ [ 79%]
+......................................                                   [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_4_3
+  /tmp/phase_e/venvs/1.1.1/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:332: UserWarning: When scheduling circuits without backend, 'instruction_durations' should be usually provided.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+182 passed, 4 warnings in 3.31s

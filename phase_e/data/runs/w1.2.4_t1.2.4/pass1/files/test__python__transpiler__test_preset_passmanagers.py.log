@@ -1,0 +1,37 @@
+........................................................................ [ 36%]
+........................................................................ [ 72%]
+.......................................................                  [100%]
+=============================== warnings summary ===============================
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/models/backendconfiguration.py:425: 11 warnings
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/models/backendconfiguration.py:425: DeprecationWarning: The class ``qiskit.providers.models.backendconfiguration.GateConfig`` is deprecated as of qiskit 1.2. It will be removed in the 2.0 release. The models in ``qiskit.providers.models`` are part of the deprecated `BackendV1` workflow  and no longer necessary for `BackendV2`. If a user workflow requires these representations it likely relies on deprecated functionality and should be updated to use `BackendV2`.
+    gates = [GateConfig.from_dict(x) for x in in_data.pop("gates")]
+
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:77
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:77
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:77: DeprecationWarning: The class ``qiskit.providers.models.backendconfiguration.QasmBackendConfiguration`` is deprecated as of qiskit 1.2. It will be removed in the 2.0 release. The models in ``qiskit.providers.models`` are part of the deprecated `BackendV1` workflow and no longer necessary for `BackendV2`. If a user workflow requires these representations it likely relies on deprecated functionality and should be updated to use `BackendV2`.
+    return QasmBackendConfiguration.from_dict(conf)
+
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:44
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:44
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_qasm_backend.py:44: DeprecationWarning: The class ``qiskit.providers.fake_provider.fake_backend.FakeBackend`` is deprecated as of qiskit 1.2. It will be removed in the 2.0 release. Fake backends using BackendV1 are deprecated in favor of :class:`.GenericBackendV2`. You can convert BackendV1 to :class:`.BackendV2` with :class:`.BackendV2Converter`.
+    super().__init__(configuration)
+
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:56
+../../venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:56
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:56: DeprecationWarning: The class ``qiskit.providers.backend.BackendV1`` is deprecated as of qiskit 1.2. It will be removed in the 2.0 release. If the backend only encapsulates a hardware description, consider constructing a Target directly. If it is part of a provider that gives access to execution, consider using Primitives instead. Alternatively, consider moving to BackendV2 (see https://qisk.it/backendV1-to-V2).
+    super().__init__(configuration)
+
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_4_3
+  /tmp/phase_e/venvs/1.2.4/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:347: UserWarning: When scheduling circuits without backend, 'instruction_durations' should be usually provided.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+199 passed, 23 warnings in 3.73s

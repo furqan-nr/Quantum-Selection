@@ -1,0 +1,9 @@
+................................                                         [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_gate_direction.py::TestGateDirection::test_target_cannot_flip_message_calibrated
+test/python/transpiler/test_gate_direction.py::TestGateDirection::test_target_unknown_gate_message
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/gate_direction.py:86: DeprecationWarning: The method ``qiskit.dagcircuit.dagcircuit.DAGCircuit.has_calibration_for`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0. The entire Qiskit Pulse package is being deprecated and this is a dependency on the package.
+    return fix_gate_direction_target(dag, self.target)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+32 passed, 2 warnings in 0.83s

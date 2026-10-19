@@ -1,0 +1,8 @@
+......................                                                   [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/legacy_scheduling/test_scheduling_pass.py::TestSchedulingPass::test_alap_agree_with_reverse_asap_reverse
+  /tmp/phase_e/venvs/1.1.1/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:285: UserWarning: Qiskit scheduler assumes mid-circuit measurement works as a standard instruction. Actual backend may apply custom scheduling. Your backend may provide a plugin scheduler pass.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+22 passed, 1 warning in 0.81s

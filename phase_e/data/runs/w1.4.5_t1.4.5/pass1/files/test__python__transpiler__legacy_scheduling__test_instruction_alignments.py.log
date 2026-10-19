@@ -1,0 +1,68 @@
+...........                                                              [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py: 20 warnings
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:274: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    duration = node.op.duration
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_hanh_echo_experiment_type
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_t1_experiment_type
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:107: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py: 19 warnings
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:75: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:77: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    t0c = max(idle_before[c] for c in node.op.condition_bits)
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alap.py:101: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    for clbit in node.op.condition_bits:
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py: 34 warnings
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/align_measures.py:172: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    for c in node.cargs + tuple(node.op.condition_bits)
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py: 20 warnings
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/align_measures.py:185: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    stop_time = start_time + node.op.duration
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py: 34 warnings
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/align_measures.py:193: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition_bits`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    for c in node.op.condition_bits:  # conditional op
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_circuit_using_clbit
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_hanh_echo_experiment_type
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_t1_experiment_type
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/align_measures.py:166: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    delta = node.op.duration if isinstance(node.op, Measure) else 0
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_measure
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestAlignMeasures::test_mid_circuit_multiq_gates
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/base_scheduler.py:287: UserWarning: Qiskit scheduler assumes mid-circuit measurement works as a standard instruction. Actual backend may apply custom scheduling. Your backend may provide a plugin scheduler pass.
+    warnings.warn(
+
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestPulseGateValidation::test_no_calibration
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestPulseGateValidation::test_short_pulse_duration
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestPulseGateValidation::test_short_pulse_duration_multiple_pulse
+test/python/transpiler/legacy_scheduling/test_instruction_alignments.py::TestPulseGateValidation::test_valid_pulse_duration
+  /tmp/phase_e/venvs/1.4.5/lib/python3.10/site-packages/qiskit/transpiler/passes/scheduling/alignments/pulse_gate_validation.py:87: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.calibrations`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0. The entire Qiskit Pulse package is being deprecated and this is a dependency on the package.
+    for gate, insts in dag.calibrations.items():
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+11 passed, 153 warnings in 1.03s

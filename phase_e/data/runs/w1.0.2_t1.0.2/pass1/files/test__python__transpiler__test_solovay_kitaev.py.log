@@ -1,0 +1,8 @@
+.................................                                [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_solovay_kitaev.py: 10 warnings
+  /tmp/phase_e/venvs/1.0.2/lib/python3.10/site-packages/qiskit/synthesis/discrete_basis/generate_basis_approximations.py:61: RuntimeWarning: The SolovayKitaev algorithm relies on scikit-learn's KDTree for a fast search over the basis approximations. Without this, we fallback onto a greedy search with is significantly slower. We highly suggest to install scikit-learn to use this feature.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+33 passed, 10 warnings, 8 subtests passed in 27.58s

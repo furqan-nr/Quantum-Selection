@@ -1,0 +1,42 @@
+........................................................................ [ 71%]
+.............................                                            [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_optimize_1q_decomposition.py: 101 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_optimize_1q_decomposition.py: 101 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_optimize_1q_decomposition.py: 54 warnings
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/visualization/circuit/text.py:1117: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if getattr(op, "condition", None) is not None:
+
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_if_else
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_nested_control_flow
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_if_else
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_nested_control_flow
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_nested_control_flow
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_no_warning_on_hadamard
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_no_warning_on_hadamard
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/visualization/circuit/text.py:1090: DeprecationWarning: The property ``qiskit.circuit.instruction.Instruction.condition`` is deprecated as of qiskit 1.3.0. It will be removed in 2.0.0.
+    if getattr(op, "condition", None) is not None:
+
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_prefer_no_substitution_if_all_ideal
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_optimize_1q_decomposition.py::TestOptimize1qGatesDecomposition::test_prefer_no_substitution_if_all_ideal
+  /tmp/phase_e/venvs/1.3.1/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+101 passed, 266 warnings in 1.34s

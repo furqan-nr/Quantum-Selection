@@ -1,0 +1,158 @@
+.................................................................... [ 48%]
+........................................................................ [100%]
+=============================== warnings summary ===============================
+../../venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_sabre_swap.py: 278 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 278 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 12 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 143 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/routing/sabre_swap.py:438: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    mapped_blocks.append(dag_to_circuit(mapped_block_dag))
+
+test/python/transpiler/test_sabre_swap.py: 143 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/routing/sabre_swap.py:438: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    mapped_blocks.append(dag_to_circuit(mapped_block_dag))
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_1_1
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_2_2
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_3_3
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:878: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_1_1
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_2_2
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_for_loop_3_3
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:878: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_intra_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:668: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_intra_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:668: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_nested_inner_cnot
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:1180: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_nested_inner_cnot
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:1180: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_nested_outer_cnot
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:1235: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_nested_outer_cnot
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:1235: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_no_layout_change
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:844: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_no_layout_change
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:844: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_post_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:586: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_post_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:586: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else2
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:625: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else2
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:625: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:503: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else_route
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:503: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else_route_post_x
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:544: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_if_else_route_post_x
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:544: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_intra_if_else
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:715: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_intra_if_else
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:715: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_intra_post_if_else
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:766: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_pre_intra_post_if_else
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:766: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_while_loop
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:915: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py::TestSabreSwapControlFlow::test_while_loop
+  /tmp/phase_e/tests/1.3.0/test/python/transpiler/test_sabre_swap.py:915: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(dag_to_circuit(cdag), expected)
+
+test/python/transpiler/test_sabre_swap.py: 854 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 854 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/utils/control_flow.py:29: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(dag_mapping(circuit_to_dag(block)), copy_operations=False)
+
+test/python/transpiler/test_sabre_swap.py: 129 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/transpiler/test_sabre_swap.py: 129 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/transpiler/test_sabre_swap.py: 172 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:538: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+test/python/transpiler/test_sabre_swap.py: 172 warnings
+  /tmp/phase_e/venvs/1.3.0/lib/python3.10/site-packages/qiskit/transpiler/passes/synthesis/unitary_synthesis.py:538: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    dag_to_circuit(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+140 passed, 3206 warnings, 4 subtests passed in 9.99s

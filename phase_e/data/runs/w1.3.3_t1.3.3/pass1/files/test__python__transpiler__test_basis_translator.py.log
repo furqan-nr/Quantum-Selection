@@ -1,0 +1,123 @@
+........................................                                 [100%]
+=============================== warnings summary ===============================
+../../venvs/1.3.3/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+../../venvs/1.3.3/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/providers/fake_provider/fake_backend.py:22: DeprecationWarning: qiskit.providers.models is deprecated since Qiskit 1.2 and will be removed in Qiskit 2.0. With the removal of Qobj, there is no need for these schema-conformant objects. If you still need to use them, it could be because you are using a BackendV1, which is also deprecated in favor of BackendV2.
+    from qiskit.providers.models import BackendProperties
+
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_correct_parameter_assignment
+test/python/transpiler/test_basis_translator.py::TestUnrollerCompatability::test_treats_store_as_builtin
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_treats_store_as_builtin
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_correct_parameter_assignment
+test/python/transpiler/test_basis_translator.py::TestUnrollerCompatability::test_treats_store_as_builtin
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_treats_store_as_builtin
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/basepasses.py:153: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    result_circuit = dag_to_circuit(result, copy_operations=False)
+
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_if_else
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_nested_loop
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_nested_loop
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_different_bits
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_if_else
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_nested_loop
+test/python/transpiler/test_basis_translator.py::TestBasisTranslator::test_nested_loop
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/passes/basis/basis_translator.py:129: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    return base_run(
+
+test/python/transpiler/test_basis_translator.py::TestUnrollerCompatability::test_unroll_all_instructions
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:796: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertTrue(Operator(dag_to_circuit(unrolled_dag)).equiv(ref_circuit))
+
+test/python/transpiler/test_basis_translator.py::TestUnrollerCompatability::test_unroll_all_instructions
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:796: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertTrue(Operator(dag_to_circuit(unrolled_dag)).equiv(ref_circuit))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_cp
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1027: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_cp
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1027: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_crz
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1049: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_crz
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1049: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_cz
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:980: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_cz
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:980: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_ecr
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1014: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    Operator.from_circuit(bell), Operator.from_circuit(dag_to_circuit(out_dag))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_ecr
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1014: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    Operator.from_circuit(bell), Operator.from_circuit(dag_to_circuit(out_dag))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_iswap
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:992: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_cx_bell_to_iswap
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:992: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(bell), Operator(dag_to_circuit(out_dag)))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_global_phase
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1081: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(dag_to_circuit(out_dag)), Operator(expected))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_global_phase
+  /tmp/phase_e/tests/1.3.3/test/python/transpiler/test_basis_translator.py:1081: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    self.assertEqual(Operator(dag_to_circuit(out_dag)), Operator(expected))
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_skip_target_basis_equivalences_1
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_string
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.duration`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+test/python/transpiler/test_basis_translator.py::TestBasisExamples::test_skip_target_basis_equivalences_1
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_backendv2
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_custom_target
+test/python/transpiler/test_basis_translator.py::TestBasisTranslatorWithTarget::test_fractional_gate_in_basis_from_string
+  /tmp/phase_e/venvs/1.3.3/lib/python3.10/site-packages/qiskit/transpiler/passmanager.py:70: DeprecationWarning: The property ``qiskit.dagcircuit.dagcircuit.DAGCircuit.unit`` is deprecated as of qiskit 1.3.0. It will be removed in Qiskit 2.0.0.
+    out_program = dag_to_circuit(passmanager_ir, copy_operations=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+40 passed, 56 warnings in 1.64s

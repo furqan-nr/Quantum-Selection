@@ -1,0 +1,29 @@
+........................................................................ [ 40%]
+........................................................................ [ 80%]
+..................................                                       [100%]
+=============================== warnings summary ===============================
+test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_with_custom_stages
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 3545 [dt] = 7.869900e-07 [s] from 7.868872e-07 [s]
+    warnings.warn(
+
+test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_with_custom_stages
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 165 [dt] = 3.663000e-08 [s] from 3.654703e-08 [s]
+    warnings.warn(
+
+test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_with_custom_stages
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 265 [dt] = 5.883000e-08 [s] from 5.873735e-08 [s]
+    warnings.warn(
+
+test/python/transpiler/test_preset_passmanagers.py::TestPassesInspection::test_backend_with_custom_stages
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/circuit/duration.py:37: UserWarning: Duration is rounded to 186 [dt] = 4.129200e-08 [s] from 4.137919e-08 [s]
+    warnings.warn(
+
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_1_0
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_2_1
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_3_2
+test/python/transpiler/test_preset_passmanagers.py::TestIntegrationControlFlow::test_invalid_methods_raise_on_control_flow_4_3
+  /tmp/phase_e/venvs/1.0.1/lib/python3.10/site-packages/qiskit/compiler/transpiler.py:302: UserWarning: When scheduling circuits without backend, 'instruction_durations' should be usually provided.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+178 passed, 8 warnings in 3.24s

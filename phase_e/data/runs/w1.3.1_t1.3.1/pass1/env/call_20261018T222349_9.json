@@ -1,0 +1,42 @@
+{
+ "utc": "2026-10-18T22:23:49Z",
+ "host": "claude",
+ "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+ "runner_python": "3.10.12",
+ "cpu_model": "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz",
+ "nproc": 2,
+ "loadavg": [
+  1.0908203125,
+  1.0595703125,
+  0.89208984375
+ ],
+ "pinned_env": {
+  "RAYON_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "NUMEXPR_NUM_THREADS": "1",
+  "QISKIT_PARALLEL": "FALSE",
+  "QISKIT_NUM_PROCS": "1",
+  "PYTHONHASHSEED": "0",
+  "PYTHONDONTWRITEBYTECODE": "1"
+ },
+ "runner_sha256": {
+  "run_phase_e.py": "272379873c9302bda0302d59af4af2dd5fed86a8f1c385b2dd4f44a333a5fc5a",
+  "phasee_plugin.py": "65835b93816b51e51b1e5f2673cda0fff8c46472b82d031ebd6f4d232997c0b0",
+  "calibrate.py": "95fbe2a64e04745bacadba509f498725fc8419e0fcf896821ca7fa0a14fe5894"
+ },
+ "calibration_median_s": 0.2629835589978029,
+ "calibration_runs_s": [
+  0.2706491820026713,
+  0.2629835589978029,
+  0.2669701089980663,
+  0.26242369299870916,
+  0.2446363470007782
+ ],
+ "wheel": "1.3.1",
+ "tests": "1.3.1",
+ "pass": 1,
+ "mode": "run",
+ "venv_freeze_sha256": "994649ae51dbb2eea2ba8f67d11c4632c07ab625d8158b66ccb0b79af44c6ebe"
+}
