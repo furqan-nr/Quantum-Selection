@@ -1,0 +1,4168 @@
+{
+ "schema": "forward_units/v1",
+ "event_id": "fwd-applylayout-registers-14904",
+ "baseline_python": "D:\\CUSIT PhD\\Post BASR\\environment\\_builds\\fwd-tlayout-14904-base\\venv\\Scripts\\python.exe",
+ "candidate_python": "D:\\CUSIT PhD\\Post BASR\\environment\\_builds\\fwd-tlayout-14904-cand\\venv\\Scripts\\python.exe",
+ "repeats": 2,
+ "records": {
+  "ghz-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 17
+   }
+  },
+  "ghz-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 17
+   }
+  },
+  "ghz-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   }
+  },
+  "ghz-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.03125
+    ],
+    "registers": [],
+    "depth": 35,
+    "n2q": 32
+   }
+  },
+  "ghz-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.0,
+     1.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.953125,
+     1.015625
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.21875,
+     1.21875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.1875,
+     1.234375
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     34.265625,
+     34.078125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     33.53125,
+     34.21875
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "qaoa_linear-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 59,
+    "n2q": 34
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 59,
+    "n2q": 34
+   }
+  },
+  "qaoa_linear-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 59,
+    "n2q": 34
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 59,
+    "n2q": 34
+   }
+  },
+  "qaoa_linear-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 95,
+    "n2q": 55
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 95,
+    "n2q": 55
+   }
+  },
+  "qaoa_linear-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 79,
+    "n2q": 49
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 79,
+    "n2q": 49
+   }
+  },
+  "qaoa_linear-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.21875,
+     1.25
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.265625,
+     1.234375
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.390625,
+     1.40625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.421875,
+     1.4375
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.03125
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     52.609375,
+     59.4375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     60.9375,
+     58.578125
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qft-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 57,
+    "n2q": 50
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 57,
+    "n2q": 50
+   }
+  },
+  "qft-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 48,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 48,
+    "n2q": 28
+   }
+  },
+  "qft-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 58,
+    "n2q": 44
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 58,
+    "n2q": 44
+   }
+  },
+  "qft-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 50,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [],
+    "depth": 50,
+    "n2q": 28
+   }
+  },
+  "qft-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 137,
+    "n2q": 167
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.046875,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 137,
+    "n2q": 167
+   }
+  },
+  "qft-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.21875
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 108,
+    "n2q": 103
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 108,
+    "n2q": 103
+   }
+  },
+  "qft-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 135,
+    "n2q": 149
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.0
+    ],
+    "registers": [],
+    "depth": 135,
+    "n2q": 149
+   }
+  },
+  "qft-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 121,
+    "n2q": 90
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 121,
+    "n2q": 90
+   }
+  },
+  "qft-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 212,
+    "n2q": 405
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 212,
+    "n2q": 405
+   }
+  },
+  "qft-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 185,
+    "n2q": 258
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.265625,
+     0.125
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 185,
+    "n2q": 271
+   }
+  },
+  "qft-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 260,
+    "n2q": 366
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 260,
+    "n2q": 366
+   }
+  },
+  "qft-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.265625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 246,
+    "n2q": 277
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.265625,
+     0.265625
+    ],
+    "registers": [],
+    "depth": 214,
+    "n2q": 275
+   }
+  },
+  "qft-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 434,
+    "n2q": 1041
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.09375,
+     0.25
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 434,
+    "n2q": 1041
+   }
+  },
+  "qft-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.28125,
+     0.53125
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 307,
+    "n2q": 602
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.375,
+     0.265625
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 292,
+    "n2q": 587
+   }
+  },
+  "qft-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 428,
+    "n2q": 897
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.046875,
+     0.25
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 428,
+    "n2q": 897
+   }
+  },
+  "qft-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.515625,
+     0.234375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 407,
+    "n2q": 709
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.5,
+     0.296875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 418,
+    "n2q": 655
+   }
+  },
+  "qft-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 533,
+    "n2q": 2253
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.15625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 533,
+    "n2q": 2253
+   }
+  },
+  "qft-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.84375,
+     0.6875
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 407,
+    "n2q": 1288
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.828125,
+     0.953125
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 425,
+    "n2q": 1280
+   }
+  },
+  "qft-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.234375,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 701,
+    "n2q": 2109
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.03125
+    ],
+    "registers": [],
+    "depth": 701,
+    "n2q": 2109
+   }
+  },
+  "qft-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.140625,
+     1.046875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 824,
+    "n2q": 1686
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.9375,
+     0.984375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 828,
+    "n2q": 1566
+   }
+  },
+  "qft-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.328125,
+     0.375
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 977,
+    "n2q": 5142
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.3125,
+     0.359375
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 977,
+    "n2q": 5142
+   }
+  },
+  "qft-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.671875,
+     1.40625
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 668,
+    "n2q": 2910
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.78125,
+     1.546875
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 680,
+    "n2q": 2877
+   }
+  },
+  "qft-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.140625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1541,
+    "n2q": 4827
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.296875,
+     0.359375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1541,
+    "n2q": 4827
+   }
+  },
+  "qft-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.90625,
+     1.765625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1258,
+    "n2q": 3077
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.171875,
+     2.15625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1035,
+    "n2q": 2983
+   }
+  },
+  "qft-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.71875,
+     0.765625
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3153,
+    "n2q": 14216
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.78125,
+     0.953125
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3153,
+    "n2q": 14216
+   }
+  },
+  "qft-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.3125,
+     3.421875
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1519,
+    "n2q": 6837
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.5,
+     3.421875
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1106,
+    "n2q": 7060
+   }
+  },
+  "qft-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.859375,
+     0.8125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3039,
+    "n2q": 12149
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.78125,
+     0.71875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3039,
+    "n2q": 12149
+   }
+  },
+  "qft-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.265625,
+     3.953125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1829,
+    "n2q": 5623
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.1875,
+     4.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2310,
+    "n2q": 6109
+   }
+  },
+  "qft-n100-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.390625,
+     2.375
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5055,
+    "n2q": 33267
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.140625,
+     2.421875
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5055,
+    "n2q": 33267
+   }
+  },
+  "qft-n100-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     6.28125,
+     6.0
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2354,
+    "n2q": 11991
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     5.984375,
+     6.09375
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2138,
+    "n2q": 13221
+   }
+  },
+  "qft-n100-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.09375,
+     2.109375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5396,
+    "n2q": 28122
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.984375,
+     2.109375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5396,
+    "n2q": 28122
+   }
+  },
+  "qft-n100-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     7.109375,
+     7.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3476,
+    "n2q": 10277
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     7.265625,
+     7.1875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3638,
+    "n2q": 10603
+   }
+  },
+  "qft-n127-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.65625,
+     4.53125
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7725,
+    "n2q": 47886
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.5625,
+     4.578125
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7725,
+    "n2q": 47886
+   }
+  },
+  "qft-n127-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     9.0,
+     10.875
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4444,
+    "n2q": 17390
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     9.984375,
+     10.859375
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4848,
+    "n2q": 18425
+   }
+  },
+  "qft-n127-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.71875,
+     3.625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 8091,
+    "n2q": 46380
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.78125,
+     3.703125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 8091,
+    "n2q": 46380
+   }
+  },
+  "qft-n127-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     9.78125,
+     10.921875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4942,
+    "n2q": 14140
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     12.34375,
+     9.75
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4570,
+    "n2q": 13952
+   }
+  },
+  "random_clifford-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 28
+   }
+  },
+  "random_clifford-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 39,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.1875
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 39,
+    "n2q": 17
+   }
+  },
+  "random_clifford-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 38,
+    "n2q": 25
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 38,
+    "n2q": 25
+   }
+  },
+  "random_clifford-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 31,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 31,
+    "n2q": 17
+   }
+  },
+  "random_clifford-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 159,
+    "n2q": 130
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 159,
+    "n2q": 130
+   }
+  },
+  "random_clifford-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 122,
+    "n2q": 108
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 122,
+    "n2q": 108
+   }
+  },
+  "random_clifford-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 107,
+    "n2q": 100
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.25
+    ],
+    "registers": [],
+    "depth": 107,
+    "n2q": 100
+   }
+  },
+  "random_clifford-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 111,
+    "n2q": 83
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.25
+    ],
+    "registers": [],
+    "depth": 111,
+    "n2q": 83
+   }
+  },
+  "random_clifford-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 340,
+    "n2q": 409
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 340,
+    "n2q": 409
+   }
+  },
+  "random_clifford-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.265625,
+     0.203125
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 302,
+    "n2q": 328
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.265625
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 335,
+    "n2q": 349
+   }
+  },
+  "random_clifford-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 285,
+    "n2q": 316
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [],
+    "depth": 285,
+    "n2q": 316
+   }
+  },
+  "random_clifford-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.25
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 299,
+    "n2q": 229
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.171875,
+     0.015625
+    ],
+    "registers": [],
+    "depth": 299,
+    "n2q": 229
+   }
+  },
+  "random_clifford-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 800,
+    "n2q": 1332
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 800,
+    "n2q": 1332
+   }
+  },
+  "random_clifford-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.578125,
+     0.796875
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 917,
+    "n2q": 1213
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.40625,
+     0.53125
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 882,
+    "n2q": 1213
+   }
+  },
+  "random_clifford-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 626,
+    "n2q": 854
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.015625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 626,
+    "n2q": 854
+   }
+  },
+  "random_clifford-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.453125,
+     0.515625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 683,
+    "n2q": 720
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.515625,
+     0.515625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 651,
+    "n2q": 758
+   }
+  },
+  "random_clifford-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.03125
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2091,
+    "n2q": 4491
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.15625,
+     0.21875
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2091,
+    "n2q": 4491
+   }
+  },
+  "random_clifford-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.875,
+     1.765625
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2119,
+    "n2q": 4104
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.75,
+     1.46875
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2290,
+    "n2q": 4263
+   }
+  },
+  "random_clifford-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.265625,
+     0.21875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1426,
+    "n2q": 2564
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.265625,
+     0.25
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1426,
+    "n2q": 2564
+   }
+  },
+  "random_clifford-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.203125,
+     1.15625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1537,
+    "n2q": 2316
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.3125,
+     1.28125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1553,
+    "n2q": 2375
+   }
+  },
+  "random_clifford-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.421875,
+     0.421875
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5458,
+    "n2q": 14470
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.46875,
+     0.34375
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5458,
+    "n2q": 14470
+   }
+  },
+  "random_clifford-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.828125,
+     4.625
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5617,
+    "n2q": 13735
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.578125,
+     4.84375
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5817,
+    "n2q": 13539
+   }
+  },
+  "random_clifford-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.28125,
+     0.375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3211,
+    "n2q": 6795
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.359375,
+     0.34375
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3211,
+    "n2q": 6795
+   }
+  },
+  "random_clifford-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.65625,
+     3.640625
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3414,
+    "n2q": 6439
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.640625,
+     3.671875
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3385,
+    "n2q": 6498
+   }
+  }
+ }
+}

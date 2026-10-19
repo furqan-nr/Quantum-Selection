@@ -1,0 +1,543 @@
+{
+ "schema": "costcurve/sandbox-illustrative/v1",
+ "note": "Transpile-only CPU seconds measured in the Cowork Linux sandbox (shared CPU, no turbo). ILLUSTRATIVE ONLY: final cost calibration must be re-measured and frozen on the parent machine before held-out evaluation. Qiskit 2.4.2, basis cx/rz/sx/x, seed 1234, median of 3 (main grid) / single (heavy tail).",
+ "measured_2026-08-04": true,
+ "rows": [
+  {
+   "family": "ghz",
+   "n": 5,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 5,
+   "cpu_s": 0.004393013000000001
+  },
+  {
+   "family": "ghz",
+   "n": 5,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 5,
+   "cpu_s": 0.005061509999999991
+  },
+  {
+   "family": "ghz",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004189229000000072
+  },
+  {
+   "family": "ghz",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.005785081000000081
+  },
+  {
+   "family": "ghz",
+   "n": 8,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 8,
+   "cpu_s": 0.0038406979999999757
+  },
+  {
+   "family": "ghz",
+   "n": 8,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 8,
+   "cpu_s": 0.005309310999999983
+  },
+  {
+   "family": "ghz",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004314778999999991
+  },
+  {
+   "family": "ghz",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.005736760999999979
+  },
+  {
+   "family": "ghz",
+   "n": 12,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 12,
+   "cpu_s": 0.0039035880000000134
+  },
+  {
+   "family": "ghz",
+   "n": 12,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 12,
+   "cpu_s": 0.0055613279999999765
+  },
+  {
+   "family": "ghz",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004408086000000089
+  },
+  {
+   "family": "ghz",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.00582759300000002
+  },
+  {
+   "family": "ghz",
+   "n": 18,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 18,
+   "cpu_s": 0.004124588999999901
+  },
+  {
+   "family": "ghz",
+   "n": 18,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 18,
+   "cpu_s": 0.005961061999999906
+  },
+  {
+   "family": "ghz",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.005688351999999952
+  },
+  {
+   "family": "ghz",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.01069277600000007
+  },
+  {
+   "family": "ghz",
+   "n": 27,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 27,
+   "cpu_s": 0.004427976999999972
+  },
+  {
+   "family": "ghz",
+   "n": 27,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 27,
+   "cpu_s": 0.006264147999999969
+  },
+  {
+   "family": "ghz",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 57,
+   "cpu_s": 0.005957898000000017
+  },
+  {
+   "family": "ghz",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 57,
+   "cpu_s": 0.0286560990000001
+  },
+  {
+   "family": "qft",
+   "n": 5,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 5,
+   "cpu_s": 0.004836448000000049
+  },
+  {
+   "family": "qft",
+   "n": 5,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 5,
+   "cpu_s": 0.007841893000000044
+  },
+  {
+   "family": "qft",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.005139080999999934
+  },
+  {
+   "family": "qft",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.008431673000000028
+  },
+  {
+   "family": "qft",
+   "n": 8,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 8,
+   "cpu_s": 0.006888258000000036
+  },
+  {
+   "family": "qft",
+   "n": 8,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 8,
+   "cpu_s": 0.020079588999999842
+  },
+  {
+   "family": "qft",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.009369041000000022
+  },
+  {
+   "family": "qft",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.034741785000000025
+  },
+  {
+   "family": "qft",
+   "n": 12,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 12,
+   "cpu_s": 0.012296737999999863
+  },
+  {
+   "family": "qft",
+   "n": 12,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 12,
+   "cpu_s": 0.05675946499999984
+  },
+  {
+   "family": "qft",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.013012785999999998
+  },
+  {
+   "family": "qft",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.06466447900000016
+  },
+  {
+   "family": "qft",
+   "n": 18,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 18,
+   "cpu_s": 0.026222391999999983
+  },
+  {
+   "family": "qft",
+   "n": 18,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 18,
+   "cpu_s": 0.14584243200000002
+  },
+  {
+   "family": "qft",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.026018302000000215
+  },
+  {
+   "family": "qft",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.16540482999999995
+  },
+  {
+   "family": "qft",
+   "n": 27,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 27,
+   "cpu_s": 0.0554200279999999
+  },
+  {
+   "family": "qft",
+   "n": 27,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 27,
+   "cpu_s": 0.33849604200000005
+  },
+  {
+   "family": "qft",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 57,
+   "cpu_s": 0.06119131599999994
+  },
+  {
+   "family": "qft",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 57,
+   "cpu_s": 0.41294759400000025
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 5,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 5,
+   "cpu_s": 0.004012811000000838
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 5,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 5,
+   "cpu_s": 0.005310430999999838
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004414764999999932
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 5,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.005958771000000418
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 8,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 8,
+   "cpu_s": 0.0038956060000003845
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 8,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 8,
+   "cpu_s": 0.005575577000000109
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004519904000000352
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 8,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.006063188999999802
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 12,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 12,
+   "cpu_s": 0.004153356999999858
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 12,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 12,
+   "cpu_s": 0.005814068000000283
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.004646849999999425
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 12,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.006396787999999987
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 18,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 18,
+   "cpu_s": 0.004490242000000144
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 18,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 18,
+   "cpu_s": 0.006355053000000055
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 19,
+   "cpu_s": 0.00613434799999979
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 18,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 19,
+   "cpu_s": 0.011806065000000032
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 27,
+   "backend": "line",
+   "opt": 1,
+   "map_qubits": 27,
+   "cpu_s": 0.004863466000000649
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 27,
+   "backend": "line",
+   "opt": 3,
+   "map_qubits": 27,
+   "cpu_s": 0.006991793000000079
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 1,
+   "map_qubits": 57,
+   "cpu_s": 0.006499019999999689
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 27,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "map_qubits": 57,
+   "cpu_s": 0.03054197500000022
+  },
+  {
+   "family": "qft",
+   "n": 40,
+   "backend": "line",
+   "opt": 3,
+   "cpu_s": 0.633
+  },
+  {
+   "family": "qft",
+   "n": 40,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 0.796
+  },
+  {
+   "family": "qft",
+   "n": 65,
+   "backend": "line",
+   "opt": 3,
+   "cpu_s": 1.562
+  },
+  {
+   "family": "qft",
+   "n": 65,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 1.553
+  },
+  {
+   "family": "qft",
+   "n": 100,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 2.607
+  },
+  {
+   "family": "random_clifford",
+   "n": 20,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 0.277
+  },
+  {
+   "family": "random_clifford",
+   "n": 30,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 0.725
+  },
+  {
+   "family": "qaoa_linear",
+   "n": 65,
+   "backend": "heavy_hex",
+   "opt": 3,
+   "cpu_s": 0.057
+  }
+ ]
+}

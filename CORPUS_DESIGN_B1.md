@@ -1,6 +1,6 @@
 # B1 — Cost-Heterogeneous Corpus Design (the fix for the null)
 
-Written 2026-08-04. Implements task **B1** of `PAPER2_PLAN.md`. This is the crux of the Q1 push: the
+Written 2026-08-04 (design step B1 of the study plan). This note gives the design rationale for the corpus: the
 selection null is not a selector weakness, it is a **corpus** artefact, and this note shows why — with
 measured data — and specifies the corpus that removes it. Pre-declared **before** any held-out detection
 outcome, per the leakage-safety rule.
@@ -118,7 +118,7 @@ detectable (e.g. mutate an optimization pass that only fires at opt3, or a routi
 above a width threshold). The goal is a corpus where the detection matrix is sparse and structured, not
 saturated.
 
-The payoff is a coherent Q1 story that ties Paper 2 to Paper 1: **cost-aware selection matters precisely
+The expected payoff, which links this study to the authors' companion paper: **cost-aware selection matters precisely
 because the output-invisible and performance faults concentrate in the expensive, high-width tests** — so a
 transparent, severity-and-cost-aware `risk_score` has room to beat cheapest-first and random, or, if it
 does not, the powered negative result is itself informative.

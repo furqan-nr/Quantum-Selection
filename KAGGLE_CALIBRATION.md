@@ -112,7 +112,7 @@ print(json.dumps(run_all_gates(), indent=2))"` to confirm all six implementation
 that claim goes into the manuscript (RQ1, §6.2). As of 2026-08-07, 5/6 passed here and
 `label_reproducibility` failed only because `data/raw/` was missing — not because any label mismatched.
 
-**RESOLVED 2026-08-08.** The user re-ran this notebook on Kaggle and returned `data_raw_costhet.zip`
+**RESOLVED 2026-08-08.** The authors re-ran this notebook on Kaggle and obtained `data_raw_costhet.zip`
 (1,044 files). Two things were found while wiring it in:
 
 1. Its SHA-256 hashes don't match the `raw_sha256` already recorded in `data/derived/labels.json` — this

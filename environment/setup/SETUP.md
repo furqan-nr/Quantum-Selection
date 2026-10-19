@@ -1,7 +1,7 @@
 # Environment Setup (E1–E4), run on your laptop
 
-I cannot install software on your machine from here (my shell is an isolated Linux sandbox, not
-your laptop). These are the exact steps to do it yourself. **Recommended: WSL2 (Ubuntu) on
+These are the steps for setting up the build environment on a local machine (laptop or
+workstation). **Recommended: WSL2 (Ubuntu) on
 Windows**, building Qiskit from source needs a Rust + C toolchain, which is far smoother on
 Linux/WSL than native Windows. Everything below assumes WSL2/Ubuntu; native-Windows notes are at
 the end.

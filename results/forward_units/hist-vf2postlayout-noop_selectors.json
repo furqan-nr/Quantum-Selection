@@ -1,0 +1,121 @@
+{
+ "event_id": "hist-vf2postlayout-noop",
+ "fault_type": "performance",
+ "n_units": 116,
+ "n_skipped_units": 0,
+ "skipped": [],
+ "n_detecting_units": 8,
+ "fraction_detecting": 0.06896551724137931,
+ "full_suite_cost_s": 82.90125,
+ "rule": {
+  "ratio": 1.5,
+  "abs_diff_s": 0.01
+ },
+ "selectors": {
+  "random": {
+   "auc": 0.8583551966948626,
+   "normalized_ttfr": 0.1416448033051372,
+   "tests_to_first_detection": 14.75,
+   "pr": {
+    "detected": 0.75,
+    "real_cost_fraction": 0.044955971713333605,
+    "tests": 18.1
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4420326894950316,
+    "tests": 64.05
+   }
+  },
+  "cheapest_first": {
+   "auc": 0.9759276850469685,
+   "normalized_ttfr": 0.024072314953031478,
+   "tests_to_first_detection": 34.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.052374059498499666,
+    "tests": 68.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4118755748556262,
+    "tests": 106.0
+   }
+  },
+  "diversity_only": {
+   "auc": 0.9961927594577886,
+   "normalized_ttfr": 0.0038072405422113664,
+   "tests_to_first_detection": 6.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.052374059498499666,
+    "tests": 68.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4118755748556262,
+    "tests": 106.0
+   }
+  },
+  "history_only": {
+   "auc": 0.9759276850469685,
+   "normalized_ttfr": 0.024072314953031478,
+   "tests_to_first_detection": 34.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.052374059498499666,
+    "tests": 68.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4118755748556262,
+    "tests": 106.0
+   }
+  },
+  "change_stage": {
+   "auc": 0.9759276850469685,
+   "normalized_ttfr": 0.024072314953031478,
+   "tests_to_first_detection": 34.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.052374059498499666,
+    "tests": 68.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4118755748556262,
+    "tests": 106.0
+   }
+  },
+  "proposed": {
+   "auc": 0.4365962515643613,
+   "normalized_ttfr": 0.5634037484356387,
+   "tests_to_first_detection": 16.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.04857435804647091,
+    "tests": 15.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.4781140211999212,
+    "tests": 33.0
+   }
+  },
+  "decomposed": {
+   "auc": 0.9963133849007102,
+   "normalized_ttfr": 0.003686615099289818,
+   "tests_to_first_detection": 13.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.050941632363806326,
+    "tests": 71.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.41187557485562626,
+    "tests": 106.0
+   }
+  }
+ }
+}

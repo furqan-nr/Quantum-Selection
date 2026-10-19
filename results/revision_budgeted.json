@@ -1,0 +1,5826 @@
+{
+ "primary_9": {
+  "n_events": 9,
+  "n_detectable": 8,
+  "budgets_s": {
+   "pr": 3.46,
+   "nightly": 34.59
+  },
+  "regimes": {
+   "frozen": {
+    "pr": {
+     "summary": {
+      "random": {
+       "detect_all": 0.7944444444444445,
+       "detect_detectable": 0.8937499999999999,
+       "mean_tests": 19.25,
+       "mean_cost_fraction": 0.19169388602721885,
+       "mean_spent_s": 256.60288133936666
+      },
+      "cheapest_first": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 61.0,
+       "mean_cost_fraction": 0.1321234570224147,
+       "mean_spent_s": 174.7054701725553
+      },
+      "diversity_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 61.0,
+       "mean_cost_fraction": 0.1321234570224147,
+       "mean_spent_s": 174.7054701725553
+      },
+      "history_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 61.0,
+       "mean_cost_fraction": 0.1321234570224147,
+       "mean_spent_s": 174.7054701725553
+      },
+      "change_stage": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 61.0,
+       "mean_cost_fraction": 0.1321234570224147,
+       "mean_spent_s": 174.7054701725553
+      },
+      "proposed": {
+       "detect_all": 0.5555555555555556,
+       "detect_detectable": 0.625,
+       "mean_tests": 13.0,
+       "mean_cost_fraction": 0.20655753663614293,
+       "mean_spent_s": 277.9785590896663
+      },
+      "decomposed": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 69.0,
+       "mean_cost_fraction": 0.5464826204727902,
+       "mean_spent_s": 729.7429528441114
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 6,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 3,
+       "losses": 0,
+       "ties": 6,
+       "sign_test_p": 0.25
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 6,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut-disable-opt-loop-01": {
+        "det": 0.95,
+        "n": 19.25,
+        "frac": 0.19144274474680334,
+        "spent": 249.47795642395005
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 19.25,
+        "frac": 0.19159115786456316,
+        "spent": 251.93651532220073
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 19.25,
+        "frac": 0.18844561769797238,
+        "spent": 338.94102408400084
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 0.9,
+        "n": 19.25,
+        "frac": 0.1908232402182128,
+        "spent": 232.17187309975034
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 0.95,
+        "n": 19.25,
+        "frac": 0.19066375883825157,
+        "spent": 227.51720941740012
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 0.95,
+        "n": 19.25,
+        "frac": 0.19177586356931914,
+        "spent": 239.95506228514887
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 19.25,
+        "frac": 0.19579167026256575,
+        "spent": 278.0485139117496
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 19.25,
+        "frac": 0.19346050046014868,
+        "spent": 254.26060956044847
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.4,
+        "n": 19.25,
+        "frac": 0.19125042058713287,
+        "spent": 237.11716794965113
+       }
+      },
+      "cheapest_first": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.1349779598527192,
+        "spent": 175.89606558799943
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 61.0,
+        "frac": 0.13344327229071518,
+        "spent": 175.4738234730018
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.0974432535579267,
+        "spent": 175.2628506540006
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13967334129295775,
+        "spent": 169.93853176900228
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13916087848655698,
+        "spent": 166.05932310500174
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13302566801170485,
+        "spent": 166.44525467999955
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.12741902660181195,
+        "spent": 180.9508593659986
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13770240425707675,
+        "spent": 180.97904823499556
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.14626530885026334,
+        "spent": 181.3434746829982
+       }
+      },
+      "diversity_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13497795985271924,
+        "spent": 175.89606558799946
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 61.0,
+        "frac": 0.13344327229071515,
+        "spent": 175.47382347300177
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.09744325355792667,
+        "spent": 175.26285065400057
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13967334129295772,
+        "spent": 169.93853176900225
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13916087848655695,
+        "spent": 166.0593231050017
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13302566801170485,
+        "spent": 166.44525467999952
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.12741902660181195,
+        "spent": 180.95085936599858
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13770240425707675,
+        "spent": 180.97904823499553
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.14626530885026331,
+        "spent": 181.34347468299816
+       }
+      },
+      "history_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.1349779598527192,
+        "spent": 175.89606558799943
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 61.0,
+        "frac": 0.13344327229071518,
+        "spent": 175.4738234730018
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.0974432535579267,
+        "spent": 175.2628506540006
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13967334129295775,
+        "spent": 169.93853176900228
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13916087848655698,
+        "spent": 166.05932310500174
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13302566801170485,
+        "spent": 166.44525467999955
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.12741902660181195,
+        "spent": 180.9508593659986
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13770240425707675,
+        "spent": 180.97904823499556
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.14626530885026334,
+        "spent": 181.3434746829982
+       }
+      },
+      "change_stage": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.1349779598527192,
+        "spent": 175.89606558799943
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 61.0,
+        "frac": 0.13344327229071518,
+        "spent": 175.4738234730018
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.0974432535579267,
+        "spent": 175.2628506540006
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13967334129295775,
+        "spent": 169.93853176900228
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13916087848655698,
+        "spent": 166.05932310500174
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13302566801170485,
+        "spent": 166.44525467999955
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.12741902660181195,
+        "spent": 180.9508593659986
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.13770240425707675,
+        "spent": 180.97904823499556
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 61.0,
+        "frac": 0.14626530885026334,
+        "spent": 181.3434746829982
+       }
+      },
+      "proposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 13.0,
+        "frac": 0.21012867889393894,
+        "spent": 273.82846744000005
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 13.0,
+        "frac": 0.20754227039278958,
+        "spent": 272.91174064400025
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 13.0,
+        "frac": 0.23506972150434338,
+        "spent": 422.7998141379983
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 0.0,
+        "n": 13.0,
+        "frac": 0.20499186121374213,
+        "spent": 249.4106290920015
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 13.0,
+        "frac": 0.20788697133067088,
+        "spent": 248.0695014069986
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 0.0,
+        "n": 13.0,
+        "frac": 0.1984519131935299,
+        "spent": 248.30831317700154
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 13.0,
+        "frac": 0.18593486608617124,
+        "spent": 264.0506265169986
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 13.0,
+        "frac": 0.20583942770541033,
+        "spent": 270.5299440219967
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.0,
+        "n": 13.0,
+        "frac": 0.20317211940469002,
+        "spent": 251.89799537000158
+       }
+      },
+      "decomposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5594511685033036,
+        "spent": 729.0468720649994
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 69.0,
+        "frac": 0.5458204383393503,
+        "spent": 717.7371897510018
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5132592572508021,
+        "spent": 923.1555522400047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5475636037878494,
+        "spent": 666.2127075680007
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5590103494871458,
+        "spent": 667.0616142560009
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5382925786450945,
+        "spent": 673.5259945250034
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5382797777924307,
+        "spent": 764.4242070319976
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5648121867479968,
+        "spent": 742.3194427189953
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 69.0,
+        "frac": 0.5518542237011385,
+        "spent": 684.2029954409988
+       }
+      }
+     }
+    },
+    "nightly": {
+     "summary": {
+      "random": {
+       "detect_all": 0.8555555555555556,
+       "detect_detectable": 0.9625,
+       "mean_tests": 65.85,
+       "mean_cost_fraction": 0.5616762794606506,
+       "mean_spent_s": 752.0847789378779
+      },
+      "cheapest_first": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9652507330937882,
+       "mean_spent_s": 1293.1147558652224
+      },
+      "diversity_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9652507330937882,
+       "mean_spent_s": 1293.1147558652224
+      },
+      "history_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9652507330937882,
+       "mean_spent_s": 1293.1147558652224
+      },
+      "change_stage": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9652507330937882,
+       "mean_spent_s": 1293.1147558652224
+      },
+      "proposed": {
+       "detect_all": 0.6666666666666666,
+       "detect_detectable": 0.75,
+       "mean_tests": 14.0,
+       "mean_cost_fraction": 0.028216747262050954,
+       "mean_spent_s": 37.4326010080009
+      },
+      "decomposed": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9652507330937882,
+       "mean_spent_s": 1293.1147558652224
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 2,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 2,
+       "losses": 0,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 2,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.5616211383856261,
+        "spent": 731.8746608770505
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 65.85,
+        "frac": 0.5618906632991136,
+        "spent": 738.8690442788013
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.5600264588885006,
+        "spent": 1007.2717201311032
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.561502568552379,
+        "spent": 683.1720441496011
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.5612521680590683,
+        "spent": 669.7367545585511
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.5612371734201604,
+        "spent": 702.2348818994999
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.562467258626376,
+        "spent": 798.7734369666955
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 65.85,
+        "frac": 0.5630040275267223,
+        "spent": 739.9430213580969
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.7,
+        "n": 65.85,
+        "frac": 0.5620850583879083,
+        "spent": 696.8874462215017
+       }
+      },
+      "cheapest_first": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9650767418515761,
+        "spent": 1257.6364472200003
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9655009825186123,
+        "spent": 1269.604274994003
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9725762040250436,
+        "spent": 1749.2896816540047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9627143436186033,
+        "spent": 1171.3206010040008
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9618632336504682,
+        "spent": 1147.7820436079996
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9634365133779276,
+        "spent": 1205.4773957089997
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9672880582809017,
+        "spent": 1373.6693025239942
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9654240647704239,
+        "spent": 1268.8342613039945
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9633764557505368,
+        "spent": 1194.4187947700043
+       }
+      },
+      "diversity_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9650767418515761,
+        "spent": 1257.6364472200003
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9655009825186123,
+        "spent": 1269.604274994003
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9725762040250436,
+        "spent": 1749.2896816540047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9627143436186033,
+        "spent": 1171.3206010040008
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9618632336504682,
+        "spent": 1147.7820436079996
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9634365133779276,
+        "spent": 1205.4773957089997
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9672880582809017,
+        "spent": 1373.6693025239942
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9654240647704239,
+        "spent": 1268.8342613039945
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9633764557505368,
+        "spent": 1194.4187947700043
+       }
+      },
+      "history_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9650767418515761,
+        "spent": 1257.6364472200003
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9655009825186123,
+        "spent": 1269.604274994003
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9725762040250436,
+        "spent": 1749.2896816540047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9627143436186033,
+        "spent": 1171.3206010040008
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9618632336504682,
+        "spent": 1147.7820436079996
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9634365133779276,
+        "spent": 1205.4773957089997
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9672880582809017,
+        "spent": 1373.6693025239942
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9654240647704239,
+        "spent": 1268.8342613039945
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9633764557505368,
+        "spent": 1194.4187947700043
+       }
+      },
+      "change_stage": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9650767418515761,
+        "spent": 1257.6364472200003
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9655009825186123,
+        "spent": 1269.604274994003
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9725762040250436,
+        "spent": 1749.2896816540047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9627143436186033,
+        "spent": 1171.3206010040008
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9618632336504682,
+        "spent": 1147.7820436079996
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9634365133779276,
+        "spent": 1205.4773957089997
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9672880582809017,
+        "spent": 1373.6693025239942
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9654240647704239,
+        "spent": 1268.8342613039945
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9633764557505368,
+        "spent": 1194.4187947700043
+       }
+      },
+      "proposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.02826416589212918,
+        "spent": 36.832350874000085
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 14.0,
+        "frac": 0.02783319793955201,
+        "spent": 36.599804381999476
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.023435121285552286,
+        "spent": 42.15074940500101
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 0.0,
+        "n": 14.0,
+        "frac": 0.030083996522090577,
+        "spent": 36.60276292800056
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.030869324993449052,
+        "spent": 36.83606534300263
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.02949182343353066,
+        "spent": 36.900954047001434
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.02651781113672303,
+        "spent": 37.6585886869979
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 14.0,
+        "frac": 0.027905616655801067,
+        "spent": 36.675699092000215
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.0,
+        "n": 14.0,
+        "frac": 0.029549667499630724,
+        "spent": 36.6364343140048
+       }
+      },
+      "decomposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9650767418515761,
+        "spent": 1257.6364472200003
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9655009825186123,
+        "spent": 1269.604274994003
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9725762040250436,
+        "spent": 1749.2896816540047
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9627143436186033,
+        "spent": 1171.3206010040008
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9618632336504682,
+        "spent": 1147.7820436079996
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9634365133779276,
+        "spent": 1205.4773957089997
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9672880582809017,
+        "spent": 1373.6693025239942
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9654240647704239,
+        "spent": 1268.8342613039945
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9633764557505368,
+        "spent": 1194.4187947700043
+       }
+      }
+     }
+    }
+   },
+   "measured": {
+    "pr": {
+     "summary": {
+      "random": {
+       "detect_all": 0.8555555555555556,
+       "detect_detectable": 0.9625,
+       "mean_tests": 62.09444444444445,
+       "mean_cost_fraction": 0.048413218937064205,
+       "mean_spent_s": 64.85572013267814
+      },
+      "cheapest_first": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.11111111111111,
+       "mean_cost_fraction": 0.04465272569422062,
+       "mean_spent_s": 59.861971284888504
+      },
+      "diversity_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.11111111111111,
+       "mean_cost_fraction": 0.04465272569422062,
+       "mean_spent_s": 59.861971284888504
+      },
+      "history_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.11111111111111,
+       "mean_cost_fraction": 0.04465272569422062,
+       "mean_spent_s": 59.861971284888504
+      },
+      "change_stage": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.11111111111111,
+       "mean_cost_fraction": 0.04465272569422062,
+       "mean_spent_s": 59.861971284888504
+      },
+      "proposed": {
+       "detect_all": 0.6666666666666666,
+       "detect_detectable": 0.75,
+       "mean_tests": 56.44444444444444,
+       "mean_cost_fraction": 0.048972103403370326,
+       "mean_spent_s": 65.3494098984451
+      },
+      "decomposed": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.11111111111111,
+       "mean_cost_fraction": 0.04465272569422062,
+       "mean_spent_s": 59.861971284888504
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 2,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 2,
+       "losses": 0,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 2,
+       "ties": 7,
+       "sign_test_p": 0.5
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 57.75,
+        "frac": 0.0485101150477192,
+        "spent": 63.21579009955023
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 61.0,
+        "frac": 0.0483571163054632,
+        "spent": 63.58812958185132
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 73.4,
+        "frac": 0.04867243099754466,
+        "spent": 87.54294108025393
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 62.35,
+        "frac": 0.048166735390076945,
+        "spent": 58.60376945610035
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 62.35,
+        "frac": 0.0482131951675654,
+        "spent": 57.53233697090135
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 60.7,
+        "frac": 0.048363467790795554,
+        "spent": 60.51365750659953
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 56.55,
+        "frac": 0.04872627794232463,
+        "spent": 69.19737265709705
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 60.55,
+        "frac": 0.04841313426029016,
+        "spent": 63.62824968649802
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.7,
+        "n": 64.2,
+        "frac": 0.04829649753179806,
+        "spent": 59.87923415525155
+       }
+      },
+      "cheapest_first": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04432135420176649,
+        "spent": 57.75722076500047
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 106.0,
+        "frac": 0.04363283282235788,
+        "spent": 57.37584123100187
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014377,
+        "spent": 80.9036762980058
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.042236236158144466,
+        "spent": 51.38821691899916
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043238747282565194,
+        "spent": 51.596376680998176
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04615965280213653,
+        "spent": 57.756185564998944
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04702765921951752,
+        "spent": 66.78512288699285
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.043887124407249165,
+        "spent": 57.67982082699628
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04638981504410455,
+        "spent": 57.515280391002946
+       }
+      },
+      "diversity_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04432135420176649,
+        "spent": 57.75722076500047
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 106.0,
+        "frac": 0.04363283282235788,
+        "spent": 57.37584123100187
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014377,
+        "spent": 80.9036762980058
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.042236236158144466,
+        "spent": 51.38821691899916
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043238747282565194,
+        "spent": 51.596376680998176
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04615965280213653,
+        "spent": 57.756185564998944
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04702765921951752,
+        "spent": 66.78512288699285
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.043887124407249165,
+        "spent": 57.67982082699628
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04638981504410455,
+        "spent": 57.515280391002946
+       }
+      },
+      "history_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04432135420176649,
+        "spent": 57.75722076500047
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 106.0,
+        "frac": 0.04363283282235788,
+        "spent": 57.37584123100187
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014377,
+        "spent": 80.9036762980058
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.042236236158144466,
+        "spent": 51.38821691899916
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043238747282565194,
+        "spent": 51.596376680998176
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04615965280213653,
+        "spent": 57.756185564998944
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04702765921951752,
+        "spent": 66.78512288699285
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.043887124407249165,
+        "spent": 57.67982082699628
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04638981504410455,
+        "spent": 57.515280391002946
+       }
+      },
+      "change_stage": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04432135420176649,
+        "spent": 57.75722076500047
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 106.0,
+        "frac": 0.04363283282235788,
+        "spent": 57.37584123100187
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014377,
+        "spent": 80.9036762980058
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.042236236158144466,
+        "spent": 51.38821691899916
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043238747282565194,
+        "spent": 51.596376680998176
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04615965280213653,
+        "spent": 57.756185564998944
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04702765921951752,
+        "spent": 66.78512288699285
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.043887124407249165,
+        "spent": 57.67982082699628
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04638981504410455,
+        "spent": 57.515280391002946
+       }
+      },
+      "proposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 48.0,
+        "frac": 0.049594174064965295,
+        "spent": 64.62847789100034
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 55.0,
+        "frac": 0.04939036669130565,
+        "spent": 64.94682225100092
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014378,
+        "spent": 80.90367629800582
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 0.0,
+        "n": 51.0,
+        "frac": 0.0494111721529128,
+        "spent": 60.11785764499913
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 42.0,
+        "frac": 0.04968960880844862,
+        "spent": 59.29412701199929
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 51.0,
+        "frac": 0.049364743576918245,
+        "spent": 61.766480406999804
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 55.0,
+        "frac": 0.04944875260921404,
+        "spent": 70.22337650699573
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 49.0,
+        "frac": 0.04947615566173045,
+        "spent": 65.02535384400375
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.0,
+        "n": 49.0,
+        "frac": 0.049392847754694075,
+        "spent": 61.2385172310011
+       }
+      },
+      "decomposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04432135420176649,
+        "spent": 57.75722076500047
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 106.0,
+        "frac": 0.04363283282235788,
+        "spent": 57.37584123100187
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04498110931014377,
+        "spent": 80.9036762980058
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.042236236158144466,
+        "spent": 51.38821691899916
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043238747282565194,
+        "spent": 51.596376680998176
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04615965280213653,
+        "spent": 57.756185564998944
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04702765921951752,
+        "spent": 66.78512288699285
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.043887124407249165,
+        "spent": 57.67982082699628
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04638981504410455,
+        "spent": 57.515280391002946
+       }
+      }
+     }
+    },
+    "nightly": {
+     "summary": {
+      "random": {
+       "detect_all": 0.8777777777777778,
+       "detect_detectable": 0.9875,
+       "mean_tests": 97.6888888888889,
+       "mean_cost_fraction": 0.46269707902532153,
+       "mean_spent_s": 618.904841306889
+      },
+      "cheapest_first": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3660414236892915,
+       "mean_spent_s": 487.30668670477763
+      },
+      "diversity_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3660414236892915,
+       "mean_spent_s": 487.30668670477763
+      },
+      "history_only": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3660414236892915,
+       "mean_spent_s": 487.30668670477763
+      },
+      "change_stage": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3660414236892915,
+       "mean_spent_s": 487.30668670477763
+      },
+      "proposed": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3959151327809719,
+       "mean_spent_s": 526.0175909504446
+      },
+      "decomposed": {
+       "detect_all": 0.8888888888888888,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3660414236892915,
+       "mean_spent_s": 487.30668670477763
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 9,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 97.35,
+        "frac": 0.46220816557587235,
+        "spent": 602.3249862137006
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 94.45,
+        "frac": 0.4613139713137441,
+        "spent": 606.6137691197015
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 101.3,
+        "frac": 0.4511026803942178,
+        "spent": 811.3598306377545
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 95.3,
+        "frac": 0.46427874394960006,
+        "spent": 564.881224634451
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 98.25,
+        "frac": 0.4647123963768237,
+        "spent": 554.5367837577517
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 94.65,
+        "frac": 0.4575321887451301,
+        "spent": 572.476446224499
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 100.2,
+        "frac": 0.45840732229843306,
+        "spent": 650.9953899489936
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 100.95,
+        "frac": 0.47909734126745007,
+        "spent": 629.6664266850953
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 0.9,
+        "n": 96.75,
+        "frac": 0.46562090130662276,
+        "spent": 577.2887145400529
+       }
+      },
+      "cheapest_first": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36663347774470073,
+        "spent": 477.7771594600008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.3742688616447526,
+        "spent": 492.15211102300134
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38067306215305363,
+        "spent": 463.15940227000044
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3736014500324321,
+        "spent": 445.8149774430025
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3867680646881192,
+        "spent": 483.93449167599863
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36296742413915706,
+        "spent": 515.4588688319911
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3418760873290746,
+        "spent": 449.31974305699475
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3839162093809219,
+        "spent": 475.9891456390036
+       }
+      },
+      "diversity_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36663347774470073,
+        "spent": 477.7771594600008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.3742688616447526,
+        "spent": 492.15211102300134
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38067306215305363,
+        "spent": 463.15940227000044
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3736014500324321,
+        "spent": 445.8149774430025
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3867680646881192,
+        "spent": 483.93449167599863
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36296742413915706,
+        "spent": 515.4588688319911
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3418760873290746,
+        "spent": 449.31974305699475
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3839162093809219,
+        "spent": 475.9891456390036
+       }
+      },
+      "history_only": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36663347774470073,
+        "spent": 477.7771594600008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.3742688616447526,
+        "spent": 492.15211102300134
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38067306215305363,
+        "spent": 463.15940227000044
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3736014500324321,
+        "spent": 445.8149774430025
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3867680646881192,
+        "spent": 483.93449167599863
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36296742413915706,
+        "spent": 515.4588688319911
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3418760873290746,
+        "spent": 449.31974305699475
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3839162093809219,
+        "spent": 475.9891456390036
+       }
+      },
+      "change_stage": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36663347774470073,
+        "spent": 477.7771594600008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.3742688616447526,
+        "spent": 492.15211102300134
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38067306215305363,
+        "spent": 463.15940227000044
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3736014500324321,
+        "spent": 445.8149774430025
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3867680646881192,
+        "spent": 483.93449167599863
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36296742413915706,
+        "spent": 515.4588688319911
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3418760873290746,
+        "spent": 449.31974305699475
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3839162093809219,
+        "spent": 475.9891456390036
+       }
+      },
+      "proposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.40091537253892895,
+        "spent": 522.4514931200008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39515992482921397,
+        "spent": 519.623220435001
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4041330245399144,
+        "spent": 491.7027987870003
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4080108759466472,
+        "spent": 486.87541079100146
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.40003798898879755,
+        "spent": 500.5381739789988
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4061396421244674,
+        "spent": 576.768785831993
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.41605601296526784,
+        "spent": 546.8126838099959
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4091151770040988,
+        "spent": 507.23147085700447
+       }
+      },
+      "decomposed": {
+       "mut-disable-opt-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36663347774470073,
+        "spent": 477.7771594600008
+       },
+       "mut-drop-vf2postlayout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.3742688616447526,
+        "spent": 492.15211102300134
+       },
+       "mut-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32366817609141124,
+        "spent": 582.1542809430055
+       },
+       "mut-insert-redundant-cx-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38067306215305363,
+        "spent": 463.15940227000044
+       },
+       "mut-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3736014500324321,
+        "spent": 445.8149774430025
+       },
+       "mut-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3867680646881192,
+        "spent": 483.93449167599863
+       },
+       "mut-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36296742413915706,
+        "spent": 515.4588688319911
+       },
+       "mut-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3418760873290746,
+        "spent": 449.31974305699475
+       },
+       "mut-insert-redundant-x-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3839162093809219,
+        "spent": 475.9891456390036
+       }
+      }
+     }
+    }
+   }
+  },
+  "proposed_sensitivity_frozen_budgets": {
+   "pr|eps=0.01|reserve=0.1": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028771302944484204
+   },
+   "pr|eps=0.01|reserve=0.15": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0,
+    "mean_cost_fraction": 0.20655753663614293
+   },
+   "pr|eps=0.01|reserve=0.2": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 8.0,
+    "mean_cost_fraction": 0.002912279775363978
+   },
+   "pr|eps=0.05|reserve=0.1": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028771302944484204
+   },
+   "pr|eps=0.05|reserve=0.15": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0,
+    "mean_cost_fraction": 0.20655753663614293
+   },
+   "pr|eps=0.05|reserve=0.2": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 8.0,
+    "mean_cost_fraction": 0.002912279775363978
+   },
+   "pr|eps=0.1|reserve=0.1": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028771302944484204
+   },
+   "pr|eps=0.1|reserve=0.15": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0,
+    "mean_cost_fraction": 0.20655753663614293
+   },
+   "pr|eps=0.1|reserve=0.2": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 8.0,
+    "mean_cost_fraction": 0.002912279775363978
+   },
+   "nightly|eps=0.01|reserve=0.1": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 30.0,
+    "mean_cost_fraction": 0.23730313331131084
+   },
+   "nightly|eps=0.01|reserve=0.15": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0,
+    "mean_cost_fraction": 0.028216747262050954
+   },
+   "nightly|eps=0.01|reserve=0.2": {
+    "detect_all": 0.7777777777777778,
+    "mean_tests": 19.0,
+    "mean_cost_fraction": 0.02827278282553632
+   },
+   "nightly|eps=0.05|reserve=0.1": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 30.0,
+    "mean_cost_fraction": 0.23730313331131084
+   },
+   "nightly|eps=0.05|reserve=0.15": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0,
+    "mean_cost_fraction": 0.028216747262050954
+   },
+   "nightly|eps=0.05|reserve=0.2": {
+    "detect_all": 0.7777777777777778,
+    "mean_tests": 19.0,
+    "mean_cost_fraction": 0.02827278282553632
+   },
+   "nightly|eps=0.1|reserve=0.1": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 30.0,
+    "mean_cost_fraction": 0.23730313331131084
+   },
+   "nightly|eps=0.1|reserve=0.15": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0,
+    "mean_cost_fraction": 0.028216747262050954
+   },
+   "nightly|eps=0.1|reserve=0.2": {
+    "detect_all": 0.7777777777777778,
+    "mean_tests": 19.0,
+    "mean_cost_fraction": 0.02827278282553632
+   }
+  },
+  "proposed_ablation_frozen_budgets": {
+   "pr|full": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0
+   },
+   "pr|novelty": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 12.0
+   },
+   "pr|change_stage": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0
+   },
+   "pr|oracle_confidence": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0
+   },
+   "pr|impact_prior": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 13.0
+   },
+   "pr|cost": {
+    "detect_all": 0.5555555555555556,
+    "mean_tests": 10.0
+   },
+   "nightly|full": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0
+   },
+   "nightly|novelty": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 12.0
+   },
+   "nightly|change_stage": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0
+   },
+   "nightly|oracle_confidence": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0
+   },
+   "nightly|impact_prior": {
+    "detect_all": 0.7777777777777778,
+    "mean_tests": 73.0
+   },
+   "nightly|cost": {
+    "detect_all": 0.6666666666666666,
+    "mean_tests": 14.0
+   }
+  }
+ },
+ "scaleup_19": {
+  "n_events": 19,
+  "n_detectable": 17,
+  "budgets_s": {
+   "pr": 3.16,
+   "nightly": 31.58
+  },
+  "regimes": {
+   "frozen": {
+    "pr": {
+     "summary": {
+      "random": {
+       "detect_all": 0.8184210526315789,
+       "detect_detectable": 0.9147058823529413,
+       "mean_tests": 18.8,
+       "mean_cost_fraction": 0.18549014674367795,
+       "mean_spent_s": 237.9448397743574
+      },
+      "cheapest_first": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 56.0,
+       "mean_cost_fraction": 0.128775488253111,
+       "mean_spent_s": 161.29371938463052
+      },
+      "diversity_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 56.0,
+       "mean_cost_fraction": 0.128775488253111,
+       "mean_spent_s": 161.29371938463052
+      },
+      "history_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 56.0,
+       "mean_cost_fraction": 0.128775488253111,
+       "mean_spent_s": 161.29371938463052
+      },
+      "change_stage": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 56.0,
+       "mean_cost_fraction": 0.128775488253111,
+       "mean_spent_s": 161.29371938463052
+      },
+      "proposed": {
+       "detect_all": 0.5789473684210527,
+       "detect_detectable": 0.6470588235294118,
+       "mean_tests": 10.0,
+       "mean_cost_fraction": 0.0028193251259411665,
+       "mean_spent_s": 3.5478851103694584
+      },
+      "decomposed": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 67.0,
+       "mean_cost_fraction": 0.5404761699354698,
+       "mean_spent_s": 690.6155044543672
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 6,
+       "ties": 13,
+       "sign_test_p": 0.03125
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 6,
+       "losses": 0,
+       "ties": 13,
+       "sign_test_p": 0.03125
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 6,
+       "ties": 13,
+       "sign_test_p": 0.03125
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.1799539349181206,
+        "spent": 312.59173561505
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.18301920393565857,
+        "spent": 213.4598704414506
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.18903192864944712,
+        "spent": 328.01233244830144
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 0.95,
+        "n": 18.8,
+        "frac": 0.1844643407717707,
+        "spent": 193.89194885565007
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.1849510186559356,
+        "spent": 207.75953652190032
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.1849624457045333,
+        "spent": 204.51159554520024
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.1826355450787331,
+        "spent": 276.0158318105497
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.1878109982399545,
+        "spent": 307.62175815675016
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 0.95,
+        "n": 18.8,
+        "frac": 0.1848326042841763,
+        "spent": 198.54889861059897
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 18.8,
+        "frac": 0.18472816515314536,
+        "spent": 198.49126251370075
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.189907431505328,
+        "spent": 252.3908123277967
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 0.95,
+        "n": 18.8,
+        "frac": 0.18574389259982896,
+        "spent": 233.79432903620227
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.18569071314299096,
+        "spent": 221.4420589387487
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 0.7,
+        "n": 18.8,
+        "frac": 0.1861796295555332,
+        "spent": 236.93503093064436
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.5,
+        "n": 18.8,
+        "frac": 0.1859357831212109,
+        "spent": 231.79657089359745
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 18.8,
+        "frac": 0.18622208251862266,
+        "spent": 256.85851742950274
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 18.8,
+        "frac": 0.1851577888138874,
+        "spent": 206.4671620815991
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 0.85,
+        "n": 18.8,
+        "frac": 0.18779929354024408,
+        "spent": 229.8591916064469
+       },
+       "mut2-seed-drift-01": {
+        "det": 0.65,
+        "n": 18.8,
+        "frac": 0.18528598794075982,
+        "spent": 210.50351194910044
+       }
+      },
+      "cheapest_first": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09315780075030321,
+        "spent": 161.8211829370006
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12173442479406274,
+        "spent": 141.98190127600193
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09140935571428649,
+        "spent": 158.61551109200556
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13467765066470136,
+        "spent": 141.5607593610068
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12743279927356752,
+        "spent": 143.14805891400303
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12474599669233911,
+        "spent": 137.930717364002
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09102272299402082,
+        "spent": 137.56200957499934
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09151830029366502,
+        "spent": 149.90080827899803
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.14275062488945375,
+        "spent": 153.3440458599991
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14324333647832427,
+        "spent": 153.91562342800282
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.11521737961360545,
+        "spent": 153.12622473198027
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13679108181068114,
+        "spent": 172.1778236820148
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16016332810437,
+        "spent": 190.99984345799132
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.15377383501216413,
+        "spent": 195.69492345596993
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16331475347996502,
+        "spent": 203.59609752099752
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12287639549928657,
+        "spent": 169.4849952710185
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14298997410071773,
+        "spent": 159.4463530150035
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12407890918028462,
+        "spent": 151.8678650059894
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.1658356074633095,
+        "spent": 188.40592408099585
+       }
+      },
+      "diversity_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09315780075030321,
+        "spent": 161.8211829370006
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12173442479406274,
+        "spent": 141.98190127600193
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09140935571428649,
+        "spent": 158.61551109200556
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13467765066470136,
+        "spent": 141.5607593610068
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12743279927356752,
+        "spent": 143.14805891400303
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12474599669233911,
+        "spent": 137.930717364002
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09102272299402082,
+        "spent": 137.56200957499934
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09151830029366502,
+        "spent": 149.90080827899803
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.14275062488945375,
+        "spent": 153.3440458599991
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14324333647832427,
+        "spent": 153.91562342800282
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.11521737961360545,
+        "spent": 153.12622473198027
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13679108181068114,
+        "spent": 172.1778236820148
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16016332810437,
+        "spent": 190.99984345799132
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.15377383501216413,
+        "spent": 195.69492345596993
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16331475347996502,
+        "spent": 203.59609752099752
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12287639549928657,
+        "spent": 169.4849952710185
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14298997410071773,
+        "spent": 159.4463530150035
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12407890918028462,
+        "spent": 151.8678650059894
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.1658356074633095,
+        "spent": 188.40592408099585
+       }
+      },
+      "history_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09315780075030321,
+        "spent": 161.8211829370006
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12173442479406274,
+        "spent": 141.98190127600193
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09140935571428649,
+        "spent": 158.61551109200556
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13467765066470136,
+        "spent": 141.5607593610068
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12743279927356752,
+        "spent": 143.14805891400303
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12474599669233911,
+        "spent": 137.930717364002
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09102272299402082,
+        "spent": 137.56200957499934
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09151830029366502,
+        "spent": 149.90080827899803
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.14275062488945375,
+        "spent": 153.3440458599991
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14324333647832427,
+        "spent": 153.91562342800282
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.11521737961360545,
+        "spent": 153.12622473198027
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13679108181068114,
+        "spent": 172.1778236820148
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16016332810437,
+        "spent": 190.99984345799132
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.15377383501216413,
+        "spent": 195.69492345596993
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16331475347996502,
+        "spent": 203.59609752099752
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12287639549928657,
+        "spent": 169.4849952710185
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14298997410071773,
+        "spent": 159.4463530150035
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12407890918028462,
+        "spent": 151.8678650059894
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.1658356074633095,
+        "spent": 188.40592408099585
+       }
+      },
+      "change_stage": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09315780075030321,
+        "spent": 161.8211829370006
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12173442479406274,
+        "spent": 141.98190127600193
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09140935571428649,
+        "spent": 158.61551109200556
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13467765066470136,
+        "spent": 141.5607593610068
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12743279927356752,
+        "spent": 143.14805891400303
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12474599669233911,
+        "spent": 137.930717364002
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09102272299402082,
+        "spent": 137.56200957499934
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.09151830029366502,
+        "spent": 149.90080827899803
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.14275062488945375,
+        "spent": 153.3440458599991
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14324333647832427,
+        "spent": 153.91562342800282
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.11521737961360545,
+        "spent": 153.12622473198027
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.13679108181068114,
+        "spent": 172.1778236820148
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16016332810437,
+        "spent": 190.99984345799132
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.15377383501216413,
+        "spent": 195.69492345596993
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.16331475347996502,
+        "spent": 203.59609752099752
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12287639549928657,
+        "spent": 169.4849952710185
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 56.0,
+        "frac": 0.14298997410071773,
+        "spent": 159.4463530150035
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.12407890918028462,
+        "spent": 151.8678650059894
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 56.0,
+        "frac": 0.1658356074633095,
+        "spent": 188.40592408099585
+       }
+      },
+      "proposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0022717984650100433,
+        "spent": 3.946262278000276
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.002960615991149725,
+        "spent": 3.4530404039997933
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0021735522496199172,
+        "spent": 3.7715953500015615
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0032941026294591256,
+        "spent": 3.462457707999974
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.003070917766721725,
+        "spent": 3.449629294001724
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0031240769774595984,
+        "spent": 3.4542685939983215
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0025405711666999305,
+        "spent": 3.83954757299999
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.002309778587681856,
+        "spent": 3.783261666005828
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0032428607466255463,
+        "spent": 3.483511105000261
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.003187661401316169,
+        "spent": 3.425156826999782
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.002710646418239805,
+        "spent": 3.6025038410030987
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.0027748717136907336,
+        "spent": 3.4927084890028794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.002923437547477047,
+        "spent": 3.486291902997081
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.002734668514848675,
+        "spent": 3.4801807839963743
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.002757231191031169,
+        "spent": 3.437298214003576
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.0024993961984035524,
+        "spent": 3.4474493750045525
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.0031551781709737853,
+        "spent": 3.518300185997404
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 0.0,
+        "n": 10.0,
+        "frac": 0.002803104166770648,
+        "spent": 3.4308928730048223
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 10.0,
+        "frac": 0.0030327074897031217,
+        "spent": 3.445460633002412
+       }
+      },
+      "decomposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5201023388687964,
+        "spent": 903.4517243450001
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5592242723642449,
+        "spent": 652.2372415550012
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5250135679256737,
+        "spent": 911.0150132450053
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.553829558775192,
+        "spent": 582.1346935430029
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5557373403689251,
+        "spent": 624.271945632001
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5565062633386452,
+        "spent": 615.324821278
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5096471553900608,
+        "spent": 770.2262090559962
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5517793669703964,
+        "spent": 903.7774175779978
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5610271289665973,
+        "spent": 602.6605477880003
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 67.0,
+        "frac": 0.5468060097351561,
+        "spent": 587.5455707170058
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5294524325038965,
+        "spent": 703.6529769759818
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5324119138030221,
+        "spent": 670.1425517480111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5621268371650169,
+        "spent": 670.3540640220035
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5555924137856686,
+        "spent": 707.0553640019662
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5560761830011134,
+        "spent": 693.2315566779926
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.4585318268926211,
+        "spent": 632.4588558830128
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 67.0,
+        "frac": 0.5491399339890713,
+        "spent": 612.3391539870045
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5231100545866562,
+        "spent": 640.2668082599903
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 67.0,
+        "frac": 0.5629326303431705,
+        "spent": 639.5480683400037
+       }
+      }
+     }
+    },
+    "nightly": {
+     "summary": {
+      "random": {
+       "detect_all": 0.8789473684210526,
+       "detect_detectable": 0.9823529411764705,
+       "mean_tests": 66.05,
+       "mean_cost_fraction": 0.5640630062128299,
+       "mean_spent_s": 723.4162510425409
+      },
+      "cheapest_first": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9661850739960759,
+       "mean_spent_s": 1240.2185013376827
+      },
+      "diversity_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9661850739960759,
+       "mean_spent_s": 1240.2185013376827
+      },
+      "history_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9661850739960759,
+       "mean_spent_s": 1240.2185013376827
+      },
+      "change_stage": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9661850739960759,
+       "mean_spent_s": 1240.2185013376827
+      },
+      "proposed": {
+       "detect_all": 0.7368421052631579,
+       "detect_detectable": 0.8235294117647058,
+       "mean_tests": 26.0,
+       "mean_cost_fraction": 0.2358362022552113,
+       "mean_spent_s": 302.1210685936335
+      },
+      "decomposed": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 108.0,
+       "mean_cost_fraction": 0.9661850739960757,
+       "mean_spent_s": 1240.2185013376827
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 3,
+       "losses": 0,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.561875338538255,
+        "spent": 976.0141524712002
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5631120107934491,
+        "spent": 656.7716080234507
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.564193897378818,
+        "spent": 979.0015769003527
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5628919884498136,
+        "spent": 591.6602860972498
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5639097581682512,
+        "spent": 633.4522018241008
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5637871259779355,
+        "spent": 623.3752167495505
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5610905717293562,
+        "spent": 847.9722871589516
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5632338824631644,
+        "spent": 922.5391420123518
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5637171605458724,
+        "spent": 605.5502046716506
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 66.05,
+        "frac": 0.5643109761085526,
+        "spent": 606.3547375424047
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5637516905601302,
+        "spent": 749.2373837284404
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5645299350523756,
+        "spent": 710.5692442376567
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5662086790310703,
+        "spent": 675.2217897783542
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.564999633618679,
+        "spent": 719.0271351749283
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.7,
+        "n": 66.05,
+        "frac": 0.5651487451324991,
+        "spent": 704.5418529317446
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.566687160807005,
+        "spent": 781.6389012654574
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 66.05,
+        "frac": 0.563749000642032,
+        "spent": 628.6295436693396
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.564051755125877,
+        "spent": 690.3778923409421
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 66.05,
+        "frac": 0.5659478079206325,
+        "spent": 642.9736132301487
+       }
+      },
+      "cheapest_first": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9739876080820598,
+        "spent": 1691.8800748450005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9642139058211101,
+        "spent": 1124.5867700680017
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.975050645557559,
+        "spent": 1691.9291824910047
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9602174890929476,
+        "spent": 1009.2923082400008
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9628406432883834,
+        "spent": 1081.5800164160007
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9622091932864435,
+        "spent": 1063.9075225120012
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9700317539768861,
+        "spent": 1466.0022578910025
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9736543057098621,
+        "spent": 1594.7801362339974
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9610333532956288,
+        "spent": 1032.3509456780043
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9611593020079281,
+        "spent": 1032.7700877350085
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9677742060456972,
+        "spent": 1286.1914674829839
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9663585351441495,
+        "spent": 1216.3476395920095
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.964940990088791,
+        "spent": 1150.7227043450127
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9667145152585248,
+        "spent": 1230.2556091699678
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9665234963798635,
+        "spent": 1204.9150969659984
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9692857916796269,
+        "spent": 1336.948379317009
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9625249129161628,
+        "spent": 1073.2996352769858
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9658227958024841,
+        "spent": 1182.1303631829885
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.963172962491332,
+        "spent": 1094.2613279729974
+       }
+      },
+      "diversity_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9739876080820598,
+        "spent": 1691.8800748450005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9642139058211101,
+        "spent": 1124.5867700680017
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.975050645557559,
+        "spent": 1691.9291824910047
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9602174890929476,
+        "spent": 1009.2923082400008
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9628406432883834,
+        "spent": 1081.5800164160007
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9622091932864435,
+        "spent": 1063.9075225120012
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9700317539768861,
+        "spent": 1466.0022578910025
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9736543057098621,
+        "spent": 1594.7801362339974
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9610333532956288,
+        "spent": 1032.3509456780043
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9611593020079281,
+        "spent": 1032.7700877350085
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9677742060456972,
+        "spent": 1286.1914674829839
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9663585351441495,
+        "spent": 1216.3476395920095
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.964940990088791,
+        "spent": 1150.7227043450127
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9667145152585248,
+        "spent": 1230.2556091699678
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9665234963798635,
+        "spent": 1204.9150969659984
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9692857916796269,
+        "spent": 1336.948379317009
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9625249129161628,
+        "spent": 1073.2996352769858
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9658227958024841,
+        "spent": 1182.1303631829885
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.963172962491332,
+        "spent": 1094.2613279729974
+       }
+      },
+      "history_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9739876080820598,
+        "spent": 1691.8800748450005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9642139058211101,
+        "spent": 1124.5867700680017
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.975050645557559,
+        "spent": 1691.9291824910047
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9602174890929476,
+        "spent": 1009.2923082400008
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9628406432883834,
+        "spent": 1081.5800164160007
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9622091932864435,
+        "spent": 1063.9075225120012
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9700317539768861,
+        "spent": 1466.0022578910025
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9736543057098621,
+        "spent": 1594.7801362339974
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9610333532956288,
+        "spent": 1032.3509456780043
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9611593020079281,
+        "spent": 1032.7700877350085
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9677742060456972,
+        "spent": 1286.1914674829839
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9663585351441495,
+        "spent": 1216.3476395920095
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.964940990088791,
+        "spent": 1150.7227043450127
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9667145152585248,
+        "spent": 1230.2556091699678
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9665234963798635,
+        "spent": 1204.9150969659984
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9692857916796269,
+        "spent": 1336.948379317009
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9625249129161628,
+        "spent": 1073.2996352769858
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9658227958024841,
+        "spent": 1182.1303631829885
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.963172962491332,
+        "spent": 1094.2613279729974
+       }
+      },
+      "change_stage": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9739876080820598,
+        "spent": 1691.8800748450005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9642139058211101,
+        "spent": 1124.5867700680017
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.975050645557559,
+        "spent": 1691.9291824910047
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9602174890929476,
+        "spent": 1009.2923082400008
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9628406432883834,
+        "spent": 1081.5800164160007
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9622091932864435,
+        "spent": 1063.9075225120012
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9700317539768861,
+        "spent": 1466.0022578910025
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9736543057098621,
+        "spent": 1594.7801362339974
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9610333532956288,
+        "spent": 1032.3509456780043
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9611593020079281,
+        "spent": 1032.7700877350085
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9677742060456972,
+        "spent": 1286.1914674829839
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9663585351441495,
+        "spent": 1216.3476395920095
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.964940990088791,
+        "spent": 1150.7227043450127
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9667145152585248,
+        "spent": 1230.2556091699678
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9665234963798635,
+        "spent": 1204.9150969659984
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9692857916796269,
+        "spent": 1336.948379317009
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9625249129161628,
+        "spent": 1073.2996352769858
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9658227958024841,
+        "spent": 1182.1303631829885
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.963172962491332,
+        "spent": 1094.2613279729974
+       }
+      },
+      "proposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.19798630742074602,
+        "spent": 343.91514413299956
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.24171842394196083,
+        "spent": 281.92223738500064
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.2594540513180488,
+        "spent": 450.21033824300133
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.24570868218273864,
+        "spent": 258.26636758000126
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.25052696173200056,
+        "spent": 281.4224319170025
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.25499195040101086,
+        "spent": 281.94269614599483
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.2207473798836267,
+        "spent": 333.6139832600065
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.2729311481801763,
+        "spent": 447.0428273410079
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.2454173125955789,
+        "spent": 263.62955445300116
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 26.0,
+        "frac": 0.23342174623409218,
+        "spent": 250.81273919300196
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.2655060712414645,
+        "spent": 352.8629315210082
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.22524285339939168,
+        "spent": 283.5113501910045
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 0.0,
+        "n": 26.0,
+        "frac": 0.22583139131011515,
+        "spent": 269.31108949000094
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 0.0,
+        "n": 26.0,
+        "frac": 0.23012690405072334,
+        "spent": 292.8630014969921
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.0,
+        "n": 26.0,
+        "frac": 0.22004334183411778,
+        "spent": 274.31670885999387
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.18791394896898528,
+        "spent": 259.1921306200083
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 26.0,
+        "frac": 0.2354492474098972,
+        "spent": 262.54654604799265
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.24323220715222496,
+        "spent": 297.70696925801434
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 26.0,
+        "frac": 0.22463791359211424,
+        "spent": 255.21125614300303
+       }
+      },
+      "decomposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9739876080820599,
+        "spent": 1691.8800748450008
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9642139058211099,
+        "spent": 1124.5867700680014
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.975050645557559,
+        "spent": 1691.9291824910047
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9602174890929476,
+        "spent": 1009.2923082400008
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9628406432883831,
+        "spent": 1081.5800164160005
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9622091932864433,
+        "spent": 1063.907522512001
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9700317539768861,
+        "spent": 1466.0022578910025
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9736543057098621,
+        "spent": 1594.7801362339974
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9610333532956288,
+        "spent": 1032.3509456780043
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9611593020079281,
+        "spent": 1032.7700877350085
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9677742060456971,
+        "spent": 1286.1914674829836
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9663585351441493,
+        "spent": 1216.3476395920093
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9649409900887909,
+        "spent": 1150.7227043450125
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9667145152585246,
+        "spent": 1230.2556091699676
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9665234963798632,
+        "spent": 1204.9150969659981
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9692857916796268,
+        "spent": 1336.9483793170089
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 108.0,
+        "frac": 0.9625249129161626,
+        "spent": 1073.2996352769856
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9658227958024839,
+        "spent": 1182.1303631829883
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.9631729624913318,
+        "spent": 1094.2613279729972
+       }
+      }
+     }
+    }
+   },
+   "measured": {
+    "pr": {
+     "summary": {
+      "random": {
+       "detect_all": 0.881578947368421,
+       "detect_detectable": 0.9852941176470589,
+       "mean_tests": 65.47894736842105,
+       "mean_cost_fraction": 0.04825965586194557,
+       "mean_spent_s": 61.93338160708791
+      },
+      "cheapest_first": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.21052631578948,
+       "mean_cost_fraction": 0.04357124196335961,
+       "mean_spent_s": 55.77367585384017
+      },
+      "diversity_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.21052631578948,
+       "mean_cost_fraction": 0.04357124196335961,
+       "mean_spent_s": 55.77367585384017
+      },
+      "history_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.21052631578948,
+       "mean_cost_fraction": 0.04357124196335961,
+       "mean_spent_s": 55.77367585384017
+      },
+      "change_stage": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.21052631578948,
+       "mean_cost_fraction": 0.04357124196335961,
+       "mean_spent_s": 55.77367585384017
+      },
+      "proposed": {
+       "detect_all": 0.7368421052631579,
+       "detect_detectable": 0.8235294117647058,
+       "mean_tests": 59.1578947368421,
+       "mean_cost_fraction": 0.048295300735257056,
+       "mean_spent_s": 61.445971466684966
+      },
+      "decomposed": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 106.21052631578948,
+       "mean_cost_fraction": 0.04357124196335961,
+       "mean_spent_s": 55.77367585384017
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 3,
+       "losses": 0,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 3,
+       "ties": 16,
+       "sign_test_p": 0.25
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 74.35,
+        "frac": 0.04858991374142169,
+        "spent": 84.40385300120008
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 55.45,
+        "frac": 0.04844123034325931,
+        "spent": 56.498217294900755
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 79.65,
+        "frac": 0.048484463694575916,
+        "spent": 84.1313006622035
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 53.35,
+        "frac": 0.04833690060305233,
+        "spent": 50.807304112849536
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 54.2,
+        "frac": 0.04832520122043923,
+        "spent": 54.284758639602195
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 51.9,
+        "frac": 0.04841289912497074,
+        "spent": 53.529781179650186
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 70.15,
+        "frac": 0.04849381009739256,
+        "spent": 73.28835865945163
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 76.1,
+        "frac": 0.04845085518359015,
+        "spent": 79.35923559030067
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 68.85,
+        "frac": 0.04784961988036784,
+        "spent": 51.40050567905244
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 69.0,
+        "frac": 0.047874265818804225,
+        "spent": 51.44111866435198
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 59.8,
+        "frac": 0.048509199807309104,
+        "spent": 64.46970636004127
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 64.2,
+        "frac": 0.048261347663403384,
+        "spent": 60.74616633375471
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 70.9,
+        "frac": 0.048021762132930766,
+        "spent": 57.267472888610726
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 74.8,
+        "frac": 0.04786780478925495,
+        "spent": 60.917297103876955
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.75,
+        "n": 71.95,
+        "frac": 0.04795469241968316,
+        "spent": 59.782646860897344
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 60.1,
+        "frac": 0.04858570339601519,
+        "spent": 67.01488660090578
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 63.8,
+        "frac": 0.04799384887197222,
+        "spent": 53.51734775753623
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 54.2,
+        "frac": 0.048523890948744805,
+        "spent": 59.39139672369275
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 71.35,
+        "frac": 0.04795605163977832,
+        "spent": 54.48289642179166
+       }
+      },
+      "cheapest_first": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543246,
+        "spent": 73.95735952500023
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04481535107531279,
+        "spent": 52.269263709001095
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04110539985418041,
+        "spent": 71.3269878730046
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.044565796385678966,
+        "spent": 46.8434662079997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.046513550424159146,
+        "spent": 52.24969155800436
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.04234359575827292,
+        "spent": 46.818997752002176
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04355321926995565,
+        "spent": 65.8216780290043
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792979,
+        "spent": 71.01450682399927
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043729394994982636,
+        "spent": 46.97452187500748
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.04342775233340148,
+        "spent": 46.663319487003534
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.046051686652438105,
+        "spent": 61.20362173898347
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04223352388595708,
+        "spent": 53.158993502006794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04413072723638719,
+        "spent": 52.627290489022286
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04193451225998295,
+        "spent": 53.36649870396768
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.042131585118615186,
+        "spent": 52.52327869800256
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04418802699733342,
+        "spent": 60.94911489100586
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.042168303200670734,
+        "spent": 47.02135377297127
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04284085892158761,
+        "spent": 52.435581698989424
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04618809057155397,
+        "spent": 52.47431488798729
+       }
+      },
+      "diversity_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543246,
+        "spent": 73.95735952500023
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04481535107531279,
+        "spent": 52.269263709001095
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04110539985418041,
+        "spent": 71.3269878730046
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.044565796385678966,
+        "spent": 46.8434662079997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.046513550424159146,
+        "spent": 52.24969155800436
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.04234359575827292,
+        "spent": 46.818997752002176
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04355321926995565,
+        "spent": 65.8216780290043
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792979,
+        "spent": 71.01450682399927
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043729394994982636,
+        "spent": 46.97452187500748
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.04342775233340148,
+        "spent": 46.663319487003534
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.046051686652438105,
+        "spent": 61.20362173898347
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04223352388595708,
+        "spent": 53.158993502006794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04413072723638719,
+        "spent": 52.627290489022286
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04193451225998295,
+        "spent": 53.36649870396768
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.042131585118615186,
+        "spent": 52.52327869800256
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04418802699733342,
+        "spent": 60.94911489100586
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.042168303200670734,
+        "spent": 47.02135377297127
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04284085892158761,
+        "spent": 52.435581698989424
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04618809057155397,
+        "spent": 52.47431488798729
+       }
+      },
+      "history_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543246,
+        "spent": 73.95735952500023
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04481535107531279,
+        "spent": 52.269263709001095
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04110539985418041,
+        "spent": 71.3269878730046
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.044565796385678966,
+        "spent": 46.8434662079997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.046513550424159146,
+        "spent": 52.24969155800436
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.04234359575827292,
+        "spent": 46.818997752002176
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04355321926995565,
+        "spent": 65.8216780290043
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792979,
+        "spent": 71.01450682399927
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043729394994982636,
+        "spent": 46.97452187500748
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.04342775233340148,
+        "spent": 46.663319487003534
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.046051686652438105,
+        "spent": 61.20362173898347
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04223352388595708,
+        "spent": 53.158993502006794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04413072723638719,
+        "spent": 52.627290489022286
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04193451225998295,
+        "spent": 53.36649870396768
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.042131585118615186,
+        "spent": 52.52327869800256
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04418802699733342,
+        "spent": 60.94911489100586
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.042168303200670734,
+        "spent": 47.02135377297127
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04284085892158761,
+        "spent": 52.435581698989424
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04618809057155397,
+        "spent": 52.47431488798729
+       }
+      },
+      "change_stage": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543246,
+        "spent": 73.95735952500023
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04481535107531279,
+        "spent": 52.269263709001095
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04110539985418041,
+        "spent": 71.3269878730046
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.044565796385678966,
+        "spent": 46.8434662079997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.046513550424159146,
+        "spent": 52.24969155800436
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.04234359575827292,
+        "spent": 46.818997752002176
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04355321926995565,
+        "spent": 65.8216780290043
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792979,
+        "spent": 71.01450682399927
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043729394994982636,
+        "spent": 46.97452187500748
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.04342775233340148,
+        "spent": 46.663319487003534
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.046051686652438105,
+        "spent": 61.20362173898347
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04223352388595708,
+        "spent": 53.158993502006794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04413072723638719,
+        "spent": 52.627290489022286
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04193451225998295,
+        "spent": 53.36649870396768
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.042131585118615186,
+        "spent": 52.52327869800256
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04418802699733342,
+        "spent": 60.94911489100586
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.042168303200670734,
+        "spent": 47.02135377297127
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04284085892158761,
+        "spent": 52.435581698989424
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04618809057155397,
+        "spent": 52.47431488798729
+       }
+      },
+      "proposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543247,
+        "spent": 73.95735952500026
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 39.0,
+        "frac": 0.04967846210507583,
+        "spent": 57.94123161200078
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.041105399854180415,
+        "spent": 71.32698787300461
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 42.0,
+        "frac": 0.04949771013021675,
+        "spent": 52.02744032199679
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 40.0,
+        "frac": 0.049553238622713235,
+        "spent": 55.664239993001146
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 45.0,
+        "frac": 0.04952842018879137,
+        "spent": 54.76320449300035
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 96.0,
+        "frac": 0.04835968079329233,
+        "spent": 73.0856499730049
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792981,
+        "spent": 71.01450682399928
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 39.0,
+        "frac": 0.049665131677573325,
+        "spent": 53.350745298007794
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 39.0,
+        "frac": 0.049665803596657856,
+        "spent": 53.36613424100945
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 57.0,
+        "frac": 0.04934487785205506,
+        "spent": 65.58033936100426
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 45.0,
+        "frac": 0.049575372595101176,
+        "spent": 62.40011884300351
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 0.0,
+        "n": 48.0,
+        "frac": 0.04941061588829972,
+        "spent": 58.92372499701253
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 0.0,
+        "n": 53.0,
+        "frac": 0.04938239598626164,
+        "spent": 62.844788918995334
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.0,
+        "n": 45.0,
+        "frac": 0.04968984975173328,
+        "spent": 61.94577820000008
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 75.0,
+        "frac": 0.04897479739556709,
+        "spent": 67.55156896700288
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 44.0,
+        "frac": 0.04938174391670018,
+        "spent": 55.06497236996951
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 50.0,
+        "frac": 0.04944258571630456,
+        "spent": 60.51584417300707
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 43.0,
+        "frac": 0.04942240553599792,
+        "spent": 56.14882188299363
+       }
+      },
+      "decomposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04257603879543246,
+        "spent": 73.95735952500023
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04481535107531279,
+        "spent": 52.269263709001095
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04110539985418041,
+        "spent": 71.3269878730046
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.044565796385678966,
+        "spent": 46.8434662079997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.046513550424159146,
+        "spent": 52.24969155800436
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.04234359575827292,
+        "spent": 46.818997752002176
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04355321926995565,
+        "spent": 65.8216780290043
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 108.0,
+        "frac": 0.04335618356792979,
+        "spent": 71.01450682399927
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 105.0,
+        "frac": 0.043729394994982636,
+        "spent": 46.97452187500748
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.04342775233340148,
+        "spent": 46.663319487003534
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.046051686652438105,
+        "spent": 61.20362173898347
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04223352388595708,
+        "spent": 53.158993502006794
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04413072723638719,
+        "spent": 52.627290489022286
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04193451225998295,
+        "spent": 53.36649870396768
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.042131585118615186,
+        "spent": 52.52327869800256
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 107.0,
+        "frac": 0.04418802699733342,
+        "spent": 60.94911489100586
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 105.0,
+        "frac": 0.042168303200670734,
+        "spent": 47.02135377297127
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04284085892158761,
+        "spent": 52.435581698989424
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 106.0,
+        "frac": 0.04618809057155397,
+        "spent": 52.47431488798729
+       }
+      }
+     }
+    },
+    "nightly": {
+     "summary": {
+      "random": {
+       "detect_all": 0.886842105263158,
+       "detect_detectable": 0.9911764705882353,
+       "mean_tests": 96.84210526315788,
+       "mean_cost_fraction": 0.46471439975148493,
+       "mean_spent_s": 595.1096200306853
+      },
+      "cheapest_first": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3601557017891042,
+       "mean_spent_s": 457.40596557394565
+      },
+      "diversity_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3601557017891042,
+       "mean_spent_s": 457.40596557394565
+      },
+      "history_only": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3601557017891042,
+       "mean_spent_s": 457.40596557394565
+      },
+      "change_stage": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3601557017891042,
+       "mean_spent_s": 457.40596557394565
+      },
+      "proposed": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.4044886296692028,
+       "mean_spent_s": 518.2707796566297
+      },
+      "decomposed": {
+       "detect_all": 0.8947368421052632,
+       "detect_detectable": 1.0,
+       "mean_tests": 113.0,
+       "mean_cost_fraction": 0.3601557017891042,
+       "mean_spent_s": 457.40596557394565
+      }
+     },
+     "paired": {
+      "proposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_diversity_only": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_proposed": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "proposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      },
+      "decomposed_vs_cheapest_first": {
+       "wins": 0,
+       "losses": 0,
+       "ties": 19,
+       "sign_test_p": 1.0
+      }
+     },
+     "per_event": {
+      "random": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 105.5,
+        "frac": 0.4693229931498256,
+        "spent": 815.2446850329002
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 97.55,
+        "frac": 0.46786961669878985,
+        "spent": 545.6880240782008
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 101.5,
+        "frac": 0.4390086673909176,
+        "spent": 761.7774308538042
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 95.5,
+        "frac": 0.4645304300768249,
+        "spent": 488.2716627696991
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 96.95,
+        "frac": 0.4770341742494206,
+        "spent": 535.8629526206528
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 98.6,
+        "frac": 0.47800372090306575,
+        "spent": 528.525146096901
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 97.65,
+        "frac": 0.4547084466362456,
+        "spent": 687.1977197838518
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 99.9,
+        "frac": 0.4600533221631979,
+        "spent": 753.5363377861519
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 97.6,
+        "frac": 0.4658648282385592,
+        "spent": 500.43632132115425
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 91.7,
+        "frac": 0.4654878520594954,
+        "spent": 500.1688365360067
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 94.8,
+        "frac": 0.4650880336196727,
+        "spent": 618.1113907904837
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 98.45,
+        "frac": 0.45225402098690387,
+        "spent": 569.2484630886598
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 94.8,
+        "frac": 0.46737798728576524,
+        "spent": 557.3630584719133
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 96.2,
+        "frac": 0.46585786022176057,
+        "spent": 592.8578050371689
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 0.85,
+        "n": 94.15,
+        "frac": 0.46782479992963716,
+        "spent": 583.2130996107477
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 97.5,
+        "frac": 0.4754595966139978,
+        "spent": 655.8075467322093
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 93.2,
+        "frac": 0.4651094672357132,
+        "spent": 518.6378189791806
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 92.6,
+        "frac": 0.4554639463306741,
+        "spent": 557.4705449411925
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 95.85,
+        "frac": 0.4732538314877476,
+        "spent": 537.6639360521422
+       }
+      },
+      "cheapest_first": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.31085602512783406,
+        "spent": 539.9772139760005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3455689175487737,
+        "spent": 403.04566287200157
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32211796034734946,
+        "spent": 558.946122234005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3701373682064234,
+        "spent": 389.0543579619997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.34195572931724455,
+        "spent": 384.1263722160046
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3361641641388703,
+        "spent": 371.6942069580017
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3085712166556175,
+        "spent": 505.4188576480009
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3787505147189146,
+        "spent": 406.8573173920048
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.38557368297845357,
+        "spent": 414.3006945530068
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3399877785970075,
+        "spent": 451.85062501998175
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3864560186817938,
+        "spent": 486.4290519870111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3960411999439634,
+        "spent": 472.29167929701714
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39281901875253783,
+        "spent": 499.9074634559655
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33581482167874654,
+        "spent": 463.1937096860132
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39039852912248313,
+        "spent": 435.32857518497246
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36054756549072464,
+        "spent": 441.29650531199076
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3994736944517416,
+        "spent": 453.84228212798905
+       }
+      },
+      "diversity_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.31085602512783406,
+        "spent": 539.9772139760005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3455689175487737,
+        "spent": 403.04566287200157
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32211796034734946,
+        "spent": 558.946122234005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3701373682064234,
+        "spent": 389.0543579619997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.34195572931724455,
+        "spent": 384.1263722160046
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3361641641388703,
+        "spent": 371.6942069580017
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3085712166556175,
+        "spent": 505.4188576480009
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3787505147189146,
+        "spent": 406.8573173920048
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.38557368297845357,
+        "spent": 414.3006945530068
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3399877785970075,
+        "spent": 451.85062501998175
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3864560186817938,
+        "spent": 486.4290519870111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3960411999439634,
+        "spent": 472.29167929701714
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39281901875253783,
+        "spent": 499.9074634559655
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33581482167874654,
+        "spent": 463.1937096860132
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39039852912248313,
+        "spent": 435.32857518497246
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36054756549072464,
+        "spent": 441.29650531199076
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3994736944517416,
+        "spent": 453.84228212798905
+       }
+      },
+      "history_only": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.31085602512783406,
+        "spent": 539.9772139760005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3455689175487737,
+        "spent": 403.04566287200157
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32211796034734946,
+        "spent": 558.946122234005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3701373682064234,
+        "spent": 389.0543579619997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.34195572931724455,
+        "spent": 384.1263722160046
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3361641641388703,
+        "spent": 371.6942069580017
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3085712166556175,
+        "spent": 505.4188576480009
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3787505147189146,
+        "spent": 406.8573173920048
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.38557368297845357,
+        "spent": 414.3006945530068
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3399877785970075,
+        "spent": 451.85062501998175
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3864560186817938,
+        "spent": 486.4290519870111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3960411999439634,
+        "spent": 472.29167929701714
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39281901875253783,
+        "spent": 499.9074634559655
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33581482167874654,
+        "spent": 463.1937096860132
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39039852912248313,
+        "spent": 435.32857518497246
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36054756549072464,
+        "spent": 441.29650531199076
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3994736944517416,
+        "spent": 453.84228212798905
+       }
+      },
+      "change_stage": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.31085602512783406,
+        "spent": 539.9772139760005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3455689175487737,
+        "spent": 403.04566287200157
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32211796034734946,
+        "spent": 558.946122234005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3701373682064234,
+        "spent": 389.0543579619997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.34195572931724455,
+        "spent": 384.1263722160046
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3361641641388703,
+        "spent": 371.6942069580017
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3085712166556175,
+        "spent": 505.4188576480009
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3787505147189146,
+        "spent": 406.8573173920048
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.38557368297845357,
+        "spent": 414.3006945530068
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3399877785970075,
+        "spent": 451.85062501998175
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3864560186817938,
+        "spent": 486.4290519870111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3960411999439634,
+        "spent": 472.29167929701714
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39281901875253783,
+        "spent": 499.9074634559655
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33581482167874654,
+        "spent": 463.1937096860132
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39039852912248313,
+        "spent": 435.32857518497246
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36054756549072464,
+        "spent": 441.29650531199076
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3994736944517416,
+        "spent": 453.84228212798905
+       }
+      },
+      "proposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.48251264296509955,
+        "spent": 838.1559680220005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3921342904385491,
+        "spent": 457.3560207490017
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3710036575866969,
+        "spent": 643.773652109005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4103342787439284,
+        "spent": 431.3056531959986
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4077496477428838,
+        "spent": 458.03412410300314
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4100520257895745,
+        "spent": 453.3914640420011
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36662295726268,
+        "spent": 600.5036965390021
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4094304298451666,
+        "spent": 439.81396690400595
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.4077661215517694,
+        "spent": 438.14657180200845
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38778053454584577,
+        "spent": 515.3681630209788
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.38905668466427845,
+        "spent": 489.70248913701323
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4142034804625248,
+        "spent": 493.9507742780155
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.41036306374331816,
+        "spent": 522.2342821979659
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.46181790983682053,
+        "spent": 636.9913924210092
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.4078815525674076,
+        "spent": 454.8236785689727
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39480476219627253,
+        "spent": 483.226010971994
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4200457955375367,
+        "spent": 477.2142573909881
+       }
+      },
+      "decomposed": {
+       "mut2-combo-dense-layout-basic-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.31085602512783406,
+        "spent": 539.9772139760005
+       },
+       "mut2-combo-no-consolidate-dense-layout-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3455689175487737,
+        "spent": 403.04566287200157
+       },
+       "mut2-combo-no-elide-synthesis-translate-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.32211796034734946,
+        "spent": 558.946122234005
+       },
+       "mut2-disable-optimization-loop-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3701373682064234,
+        "spent": 389.0543579619997
+       },
+       "mut2-downgrade-layout-dense-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.34195572931724455,
+        "spent": 384.1263722160046
+       },
+       "mut2-downgrade-layout-trivial-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3361641641388703,
+        "spent": 371.6942069580017
+       },
+       "mut2-downgrade-routing-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33434793997699996,
+        "spent": 505.29772135600285
+       },
+       "mut2-downgrade-translation-synthesis-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3085712166556175,
+        "spent": 505.4188576480009
+       },
+       "mut2-drop-optimization-stage-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3787505147189146,
+        "spent": 406.8573173920048
+       },
+       "mut2-drop-vf2-post-layout-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.38557368297845357,
+        "spent": 414.3006945530068
+       },
+       "mut2-force-opt-level-0-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3399877785970075,
+        "spent": 451.85062501998175
+       },
+       "mut2-force-opt-level-1-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3864560186817938,
+        "spent": 486.4290519870111
+       },
+       "mut2-insert-redundant-cx-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3960411999439634,
+        "spent": 472.29167929701714
+       },
+       "mut2-insert-redundant-sx-quad-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.39281901875253783,
+        "spent": 499.9074634559655
+       },
+       "mut2-insert-redundant-x-pair-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.4073761882575008,
+        "spent": 507.85492666699736
+       },
+       "mut2-remove-basis-translator-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.33581482167874654,
+        "spent": 463.1937096860132
+       },
+       "mut2-remove-consolidate-blocks-01": {
+        "det": 0.0,
+        "n": 113.0,
+        "frac": 0.39039852912248313,
+        "spent": 435.32857518497246
+       },
+       "mut2-remove-elide-permutations-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.36054756549072464,
+        "spent": 441.29650531199076
+       },
+       "mut2-seed-drift-01": {
+        "det": 1.0,
+        "n": 113.0,
+        "frac": 0.3994736944517416,
+        "spent": 453.84228212798905
+       }
+      }
+     }
+    }
+   }
+  },
+  "proposed_sensitivity_frozen_budgets": {
+   "pr|eps=0.01|reserve=0.1": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0027887516271662693
+   },
+   "pr|eps=0.01|reserve=0.15": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028193251259411665
+   },
+   "pr|eps=0.01|reserve=0.2": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 9.0,
+    "mean_cost_fraction": 0.00282449645074368
+   },
+   "pr|eps=0.05|reserve=0.1": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0027887516271662693
+   },
+   "pr|eps=0.05|reserve=0.15": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028193251259411665
+   },
+   "pr|eps=0.05|reserve=0.2": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 9.0,
+    "mean_cost_fraction": 0.00282449645074368
+   },
+   "pr|eps=0.1|reserve=0.1": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0027887516271662693
+   },
+   "pr|eps=0.1|reserve=0.15": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0,
+    "mean_cost_fraction": 0.0028193251259411665
+   },
+   "pr|eps=0.1|reserve=0.2": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 9.0,
+    "mean_cost_fraction": 0.00282449645074368
+   },
+   "nightly|eps=0.01|reserve=0.1": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   },
+   "nightly|eps=0.01|reserve=0.15": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.2358362022552113
+   },
+   "nightly|eps=0.01|reserve=0.2": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   },
+   "nightly|eps=0.05|reserve=0.1": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   },
+   "nightly|eps=0.05|reserve=0.15": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.2358362022552113
+   },
+   "nightly|eps=0.05|reserve=0.2": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   },
+   "nightly|eps=0.1|reserve=0.1": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   },
+   "nightly|eps=0.1|reserve=0.15": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.2358362022552113
+   },
+   "nightly|eps=0.1|reserve=0.2": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0,
+    "mean_cost_fraction": 0.23583334095725253
+   }
+  },
+  "proposed_ablation_frozen_budgets": {
+   "pr|full": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0
+   },
+   "pr|novelty": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 12.0
+   },
+   "pr|change_stage": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0
+   },
+   "pr|oracle_confidence": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0
+   },
+   "pr|impact_prior": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0
+   },
+   "pr|cost": {
+    "detect_all": 0.5789473684210527,
+    "mean_tests": 10.0
+   },
+   "nightly|full": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0
+   },
+   "nightly|novelty": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 22.0
+   },
+   "nightly|change_stage": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 26.0
+   },
+   "nightly|oracle_confidence": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 27.0
+   },
+   "nightly|impact_prior": {
+    "detect_all": 0.8421052631578947,
+    "mean_tests": 67.0
+   },
+   "nightly|cost": {
+    "detect_all": 0.7368421052631579,
+    "mean_tests": 12.0
+   }
+  }
+ }
+}

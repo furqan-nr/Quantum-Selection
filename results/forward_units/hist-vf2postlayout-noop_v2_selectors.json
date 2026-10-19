@@ -1,0 +1,121 @@
+{
+ "event_id": "hist-vf2postlayout-noop",
+ "fault_type": "performance",
+ "n_units": 116,
+ "n_skipped_units": 0,
+ "skipped": [],
+ "n_detecting_units": 0,
+ "fraction_detecting": 0.0,
+ "full_suite_cost_s": 22.176146701797858,
+ "rule": {
+  "ratio": 1.5,
+  "abs_diff_s": 0.01
+ },
+ "selectors": {
+  "random": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.0440345296753406,
+    "tests": 11.1
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.3809376197940076,
+    "tests": 49.65
+   }
+  },
+  "cheapest_first": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.04994763133119363,
+    "tests": 24.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4880677354460137,
+    "tests": 100.0
+   }
+  },
+  "diversity_only": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.04957049187104372,
+    "tests": 23.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4880677354460137,
+    "tests": 100.0
+   }
+  },
+  "history_only": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.04994763133119363,
+    "tests": 24.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4880677354460137,
+    "tests": 100.0
+   }
+  },
+  "change_stage": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.04994763133119363,
+    "tests": 24.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4880677354460137,
+    "tests": 100.0
+   }
+  },
+  "proposed": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.05123463579791628,
+    "tests": 7.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4334146833040504,
+    "tests": 22.0
+   }
+  },
+  "decomposed": {
+   "auc": 0.0,
+   "normalized_ttfr": 1.0,
+   "tests_to_first_detection": 117.0,
+   "pr": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.04885081772975332,
+    "tests": 34.0
+   },
+   "nightly": {
+    "detected": 0.0,
+    "real_cost_fraction": 0.4880677354460139,
+    "tests": 100.0
+   }
+  }
+ }
+}

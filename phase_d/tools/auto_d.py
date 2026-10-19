@@ -1,3 +1,6 @@
+# Step driver used in the Phase D collection sandbox: it calls the runner once per plan step and keeps
+# its position in a state file. R and ST below are sandbox-absolute paths (the original collection
+# environment); adjust them to your own checkout before reuse.
 """Executes the next step of a plan (one runner invocation per call). State in auto_d_state.json."""
 import json, subprocess, sys, time
 from pathlib import Path

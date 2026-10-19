@@ -1,0 +1,5096 @@
+{
+ "schema": "forward_units/v1",
+ "event_id": "fwd-applylayout-registers-14904",
+ "baseline_python": "D:\\CUSIT PhD\\Post BASR\\environment\\_builds\\fwd-tlayout-14904-base\\venv\\Scripts\\python.exe",
+ "candidate_python": "D:\\CUSIT PhD\\Post BASR\\environment\\_builds\\fwd-tlayout-14904-cand\\venv\\Scripts\\python.exe",
+ "repeats": 2,
+ "records": {
+  "ghz-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.012064699549227953,
+     0.00063699996098876
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.013522100169211626,
+     0.0005898000672459602
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.0
+    ],
+    "wall_times_s": [
+     0.017794900108128786,
+     0.001437199767678976
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.02130659995600581,
+     0.0015402999706566334
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0036030998453497887,
+     0.0010017999447882175
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0024075000546872616,
+     0.0009039002470672131
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004533899948000908,
+     0.0030372003093361855
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7,
+    "n2q": 4
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004992700181901455,
+     0.0031436001881957054
+    ],
+    "registers": [],
+    "depth": 7,
+    "n2q": 4
+   }
+  },
+  "ghz-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.001805600244551897,
+     0.0006534997373819351
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0017375997267663479,
+     0.0007075001485645771
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.003255699761211872,
+     0.0017046998254954815
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0032329997047781944,
+     0.002979499753564596
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002160799689590931,
+     0.0009455000981688499
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002034700009971857,
+     0.001044000033289194
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.009662999771535397,
+     0.00944929989054799
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 10,
+    "n2q": 7
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.01057229982689023,
+     0.007680300157517195
+    ],
+    "registers": [],
+    "depth": 10,
+    "n2q": 7
+   }
+  },
+  "ghz-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0018385001458227634,
+     0.0007770000956952572
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0016851001419126987,
+     0.0006766999140381813
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004493700340390205,
+     0.002473600208759308
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003625299781560898,
+     0.0020619998686015606
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.001993099693208933,
+     0.0009726998396217823
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.001937300432473421,
+     0.0009200000204145908
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.00690290005877614,
+     0.0053443000651896
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 14,
+    "n2q": 11
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.006783499848097563,
+     0.005537899676710367
+    ],
+    "registers": [],
+    "depth": 14,
+    "n2q": 11
+   }
+  },
+  "ghz-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0017365003004670143,
+     0.000798800028860569
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0027481000870466232,
+     0.0011018002405762672
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 17
+   }
+  },
+  "ghz-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.00449120020493865,
+     0.0030861003324389458
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.004559199791401625,
+     0.0031290999613702297
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 17
+   }
+  },
+  "ghz-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.022587299812585115,
+     0.002482000272721052
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.023034799844026566,
+     0.0035196002572774887
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   }
+  },
+  "ghz-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.009392399806529284,
+     0.008329000324010849
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 35,
+    "n2q": 32
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.011870400048792362,
+     0.006277400068938732
+    ],
+    "registers": [],
+    "depth": 35,
+    "n2q": 32
+   }
+  },
+  "ghz-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.001851900015026331,
+     0.000879999715834856
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0018050000071525574,
+     0.0008687996305525303
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.014348200056701899,
+     0.0038255001418292522
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.007249100133776665,
+     0.004022199660539627
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.003742100205272436,
+     0.002476900350302458
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0028522000648081303,
+     0.0015992000699043274
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.171875,
+     1.171875
+    ],
+    "wall_times_s": [
+     1.1749804997816682,
+     1.1792878000997007
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 26
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.109375,
+     1.140625
+    ],
+    "wall_times_s": [
+     1.1063226996921003,
+     1.1403671000152826
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 26
+   }
+  },
+  "ghz-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002319199964404106,
+     0.0025948998518288136
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0020210999064147472,
+     0.0011220998130738735
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.007964200340211391,
+     0.007215399760752916
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.007071999832987785,
+     0.005381000228226185
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003617599606513977,
+     0.0031968997791409492
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003386000171303749,
+     0.001768799964338541
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.296875,
+     1.3125
+    ],
+    "wall_times_s": [
+     1.322307299822569,
+     1.355637799948454
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 42,
+    "n2q": 39
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.390625,
+     1.34375
+    ],
+    "wall_times_s": [
+     1.3882850999943912,
+     1.3370976001024246
+    ],
+    "registers": [],
+    "depth": 42,
+    "n2q": 39
+   }
+  },
+  "ghz-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0023902002722024918,
+     0.0014269002713263035
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0023244000039994717,
+     0.0013174000196158886
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.012281500268727541,
+     0.009834100026637316
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.011339100077748299,
+     0.010057399980723858
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004071400035172701,
+     0.002716799732297659
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005006100051105022,
+     0.0030420003458857536
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "ghz-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     37.875,
+     35.65625
+    ],
+    "wall_times_s": [
+     37.99078550003469,
+     35.679695300292224
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 67,
+    "n2q": 64
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     34.296875,
+     34.03125
+    ],
+    "wall_times_s": [
+     34.359463199973106,
+     34.0642884997651
+    ],
+    "registers": [],
+    "depth": 67,
+    "n2q": 64
+   }
+  },
+  "qaoa_linear-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.00444830022752285,
+     0.0008900999091565609
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004160100128501654,
+     0.0009435000829398632
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0047681997530162334,
+     0.0025058002211153507
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004612999968230724,
+     0.0023475000634789467
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0026778997853398323,
+     0.0011932998895645142
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0026066997088491917,
+     0.001150299794971943
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0058916001580655575,
+     0.0041739000007510185
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 20,
+    "n2q": 8
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.006123699713498354,
+     0.004499200265854597
+    ],
+    "registers": [],
+    "depth": 20,
+    "n2q": 8
+   }
+  },
+  "qaoa_linear-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004987500142306089,
+     0.0019171996973454952
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002002300228923559,
+     0.0009543998166918755
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005100900307297707,
+     0.0032504000701010227
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005053999833762646,
+     0.0032537998631596565
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0022724997252225876,
+     0.0011877999641001225
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0023853001184761524,
+     0.0011392999440431595
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.008135299663990736,
+     0.007077699992805719
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 29,
+    "n2q": 14
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.00781850004568696,
+     0.0061413999646902084
+    ],
+    "registers": [],
+    "depth": 29,
+    "n2q": 14
+   }
+  },
+  "qaoa_linear-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0023993998765945435,
+     0.0012529999949038029
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002123699989169836,
+     0.001070499885827303
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.010187400039285421,
+     0.00526780029758811
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.007530000060796738,
+     0.00535030011087656
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002476300112903118,
+     0.0013117999769747257
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0024330997839570045,
+     0.0014297999441623688
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.015890299808233976,
+     0.009163900278508663
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 22
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.009773400146514177,
+     0.00811400031670928
+    ],
+    "registers": [],
+    "depth": 41,
+    "n2q": 22
+   }
+  },
+  "qaoa_linear-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002328199800103903,
+     0.001209300011396408
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 59,
+    "n2q": 34
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0023115999065339565,
+     0.0011557000689208508
+    ],
+    "registers": [],
+    "depth": 59,
+    "n2q": 34
+   }
+  },
+  "qaoa_linear-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.008044700138270855,
+     0.006246100179851055
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 59,
+    "n2q": 34
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.007689900230616331,
+     0.006789900362491608
+    ],
+    "registers": [],
+    "depth": 59,
+    "n2q": 34
+   }
+  },
+  "qaoa_linear-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.023284499999135733,
+     0.0038215001113712788
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 95,
+    "n2q": 55
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.017426500096917152,
+     0.0047935000620782375
+    ],
+    "registers": [],
+    "depth": 95,
+    "n2q": 55
+   }
+  },
+  "qaoa_linear-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.01355980010703206,
+     0.010054099839180708
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 79,
+    "n2q": 49
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.012202699668705463,
+     0.008814600296318531
+    ],
+    "registers": [],
+    "depth": 79,
+    "n2q": 49
+   }
+  },
+  "qaoa_linear-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0026769996620714664,
+     0.001612500287592411
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0028881998732686043,
+     0.0017805998213589191
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.010407799854874611,
+     0.00939500005915761
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.010190799832344055,
+     0.008468700107187033
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0035403999499976635,
+     0.0021730000153183937
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003248299937695265,
+     0.0020944997668266296
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.578125,
+     1.53125
+    ],
+    "wall_times_s": [
+     1.597423900384456,
+     1.528761100023985
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 86,
+    "n2q": 52
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.4375,
+     1.375
+    ],
+    "wall_times_s": [
+     1.434510299935937,
+     1.3780504004098475
+    ],
+    "registers": [],
+    "depth": 86,
+    "n2q": 52
+   }
+  },
+  "qaoa_linear-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003146700095385313,
+     0.0021923999302089214
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.002840300090610981,
+     0.0018156999722123146
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.022765399888157845,
+     0.01437859982252121
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.016465499997138977,
+     0.014195799827575684
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004024500027298927,
+     0.002669199835509062
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0038307001814246178,
+     0.0024386998265981674
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.578125,
+     1.546875
+    ],
+    "wall_times_s": [
+     1.5786476000212133,
+     1.6195462998002768
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 125,
+    "n2q": 78
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.765625,
+     1.53125
+    ],
+    "wall_times_s": [
+     1.798251399770379,
+     1.540899199899286
+    ],
+    "registers": [],
+    "depth": 125,
+    "n2q": 78
+   }
+  },
+  "qaoa_linear-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0062338002026081085,
+     0.003465899731963873
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0034917998127639294,
+     0.002468100283294916
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.023461999837309122,
+     0.02168289991095662
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.02359879994764924,
+     0.022323000244796276
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005462400149554014,
+     0.004258700180798769
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005712300073355436,
+     0.00438679987564683
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qaoa_linear-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     50.640625,
+     48.0625
+    ],
+    "wall_times_s": [
+     50.832570099737495,
+     48.129237100016326
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 200,
+    "n2q": 128
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     57.0625,
+     51.421875
+    ],
+    "wall_times_s": [
+     57.67815200006589,
+     51.60090450011194
+    ],
+    "registers": [],
+    "depth": 200,
+    "n2q": 128
+   }
+  },
+  "qft-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.013489999808371067,
+     0.0016063000075519085
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 57,
+    "n2q": 50
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.021545100025832653,
+     0.0017234999686479568
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 57,
+    "n2q": 50
+   }
+  },
+  "qft-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.01296130008995533,
+     0.005335300229489803
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 48,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.012172999791800976,
+     0.004877100232988596
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 48,
+    "n2q": 28
+   }
+  },
+  "qft-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.004542100243270397,
+     0.00244820024818182
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 58,
+    "n2q": 44
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.005427900236099958,
+     0.0025887000374495983
+    ],
+    "registers": [],
+    "depth": 58,
+    "n2q": 44
+   }
+  },
+  "qft-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.009430699981749058,
+     0.006150500383228064
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 50,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.009392799809575081,
+     0.005976499989628792
+    ],
+    "registers": [],
+    "depth": 50,
+    "n2q": 28
+   }
+  },
+  "qft-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.004593399818986654,
+     0.0028133997693657875
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 137,
+    "n2q": 167
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004524600226432085,
+     0.0026320000179111958
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 137,
+    "n2q": 167
+   }
+  },
+  "qft-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.171875,
+     0.0
+    ],
+    "wall_times_s": [
+     0.015747299883514643,
+     0.013184799812734127
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 108,
+    "n2q": 103
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.15625
+    ],
+    "wall_times_s": [
+     0.019165100064128637,
+     0.014131099916994572
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 108,
+    "n2q": 103
+   }
+  },
+  "qft-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.00568739976733923,
+     0.0037450003437697887
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 135,
+    "n2q": 149
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.006421600002795458,
+     0.0038466998375952244
+    ],
+    "registers": [],
+    "depth": 135,
+    "n2q": 149
+   }
+  },
+  "qft-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.234375
+    ],
+    "wall_times_s": [
+     0.017423999961465597,
+     0.01327509991824627
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 121,
+    "n2q": 90
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.01656610006466508,
+     0.019922399893403053
+    ],
+    "registers": [],
+    "depth": 121,
+    "n2q": 90
+   }
+  },
+  "qft-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.109375,
+     0.0
+    ],
+    "wall_times_s": [
+     0.006454600021243095,
+     0.004624900408089161
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 212,
+    "n2q": 405
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.009510500356554985,
+     0.0071970997378230095
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 212,
+    "n2q": 405
+   }
+  },
+  "qft-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.1875
+    ],
+    "wall_times_s": [
+     0.04650769988074899,
+     0.0396763002499938
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 190,
+    "n2q": 251
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.234375,
+     0.203125
+    ],
+    "wall_times_s": [
+     0.03850399982184172,
+     0.03723839996382594
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 185,
+    "n2q": 271
+   }
+  },
+  "qft-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.125
+    ],
+    "wall_times_s": [
+     0.009063099976629019,
+     0.006129299756139517
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 260,
+    "n2q": 366
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0071900999173521996,
+     0.0051692998968064785
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 260,
+    "n2q": 366
+   }
+  },
+  "qft-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.25
+    ],
+    "wall_times_s": [
+     0.03185069980099797,
+     0.0287455003708601
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 249,
+    "n2q": 270
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.03125,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.030871700029820204,
+     0.027131800074130297
+    ],
+    "registers": [],
+    "depth": 244,
+    "n2q": 275
+   }
+  },
+  "qft-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.010958400089293718,
+     0.009011500049382448
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 434,
+    "n2q": 1041
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.01155199995264411,
+     0.008980500046163797
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 434,
+    "n2q": 1041
+   }
+  },
+  "qft-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.421875,
+     0.515625
+    ],
+    "wall_times_s": [
+     0.0702575002796948,
+     0.06389820016920567
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 292,
+    "n2q": 574
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.453125,
+     0.296875
+    ],
+    "wall_times_s": [
+     0.10966810025274754,
+     0.06971800001338124
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 292,
+    "n2q": 587
+   }
+  },
+  "qft-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.012388299684971571,
+     0.010834500193595886
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 428,
+    "n2q": 897
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.125
+    ],
+    "wall_times_s": [
+     0.014112399891018867,
+     0.011004500091075897
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 428,
+    "n2q": 897
+   }
+  },
+  "qft-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.484375,
+     0.484375
+    ],
+    "wall_times_s": [
+     0.08498520031571388,
+     0.07251420011743903
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 361,
+    "n2q": 654
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.53125,
+     0.484375
+    ],
+    "wall_times_s": [
+     0.07472039991989732,
+     0.0719687002710998
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 462,
+    "n2q": 713
+   }
+  },
+  "qft-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.21875
+    ],
+    "wall_times_s": [
+     0.025167100131511688,
+     0.020439700223505497
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 533,
+    "n2q": 2253
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.020537899807095528,
+     0.01984680024906993
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 533,
+    "n2q": 2253
+   }
+  },
+  "qft-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.109375,
+     0.828125
+    ],
+    "wall_times_s": [
+     0.15653409995138645,
+     0.19290440017357469
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 410,
+    "n2q": 1311
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.96875,
+     1.03125
+    ],
+    "wall_times_s": [
+     0.1561638996936381,
+     0.16474110027775168
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 484,
+    "n2q": 1434
+   }
+  },
+  "qft-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.078125,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.02698859991505742,
+     0.023517099674791098
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 701,
+    "n2q": 2109
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.046875
+    ],
+    "wall_times_s": [
+     0.030026900116354227,
+     0.034296799916774035
+    ],
+    "registers": [],
+    "depth": 701,
+    "n2q": 2109
+   }
+  },
+  "qft-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.21875,
+     1.078125
+    ],
+    "wall_times_s": [
+     0.2692222003825009,
+     0.24295009998604655
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 629,
+    "n2q": 1598
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.140625,
+     1.0
+    ],
+    "wall_times_s": [
+     0.19464140012860298,
+     0.18841540021821856
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 717,
+    "n2q": 1605
+   }
+  },
+  "qft-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.328125,
+     0.375
+    ],
+    "wall_times_s": [
+     0.05605100002139807,
+     0.05149210011586547
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 977,
+    "n2q": 5142
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.359375,
+     0.375
+    ],
+    "wall_times_s": [
+     0.050855900160968304,
+     0.048194400034844875
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 977,
+    "n2q": 5142
+   }
+  },
+  "qft-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.9375,
+     1.71875
+    ],
+    "wall_times_s": [
+     0.32519020000472665,
+     0.37393599981442094
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 659,
+    "n2q": 2872
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.671875,
+     1.765625
+    ],
+    "wall_times_s": [
+     0.2767285997979343,
+     0.33241379959508777
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 667,
+    "n2q": 2946
+   }
+  },
+  "qft-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.3125,
+     0.359375
+    ],
+    "wall_times_s": [
+     0.054221299942582846,
+     0.05500860000029206
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1541,
+    "n2q": 4827
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.328125,
+     0.34375
+    ],
+    "wall_times_s": [
+     0.07863309979438782,
+     0.05733479978516698
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1541,
+    "n2q": 4827
+   }
+  },
+  "qft-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.40625,
+     1.984375
+    ],
+    "wall_times_s": [
+     0.4307818999513984,
+     0.301019299775362
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1099,
+    "n2q": 3017
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.984375,
+     2.109375
+    ],
+    "wall_times_s": [
+     0.41936130030080676,
+     0.38170789973810315
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1240,
+    "n2q": 3228
+   }
+  },
+  "qft-n65-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.96875,
+     0.875
+    ],
+    "wall_times_s": [
+     0.16772590018808842,
+     0.16203180002048612
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3153,
+    "n2q": 14216
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.9375,
+     0.890625
+    ],
+    "wall_times_s": [
+     0.15854519978165627,
+     0.15748870000243187
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3153,
+    "n2q": 14216
+   }
+  },
+  "qft-n65-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.640625,
+     3.765625
+    ],
+    "wall_times_s": [
+     0.7679980001412332,
+     0.7357951998710632
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1482,
+    "n2q": 6692
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.765625,
+     3.8125
+    ],
+    "wall_times_s": [
+     0.8447809997014701,
+     0.8373118997551501
+    ],
+    "registers": [
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1481,
+    "n2q": 6679
+   }
+  },
+  "qft-n65-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.0,
+     1.015625
+    ],
+    "wall_times_s": [
+     0.21856220019981265,
+     0.234092699829489
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3039,
+    "n2q": 12149
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.0,
+     0.953125
+    ],
+    "wall_times_s": [
+     0.1903924997895956,
+     0.17658119974657893
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3039,
+    "n2q": 12149
+   }
+  },
+  "qft-n65-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.65625,
+     4.9375
+    ],
+    "wall_times_s": [
+     1.1654176996089518,
+     1.3034496000036597
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2588,
+    "n2q": 6187
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.515625,
+     4.640625
+    ],
+    "wall_times_s": [
+     1.0155096002854407,
+     0.9209473999217153
+    ],
+    "registers": [
+     [
+      "ancilla",
+      50,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      65,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2159,
+    "n2q": 6091
+   }
+  },
+  "qft-n100-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.625,
+     2.5625
+    ],
+    "wall_times_s": [
+     0.4421759000979364,
+     0.5123331001959741
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5055,
+    "n2q": 33267
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.546875,
+     2.390625
+    ],
+    "wall_times_s": [
+     0.45057399990037084,
+     0.42965100007131696
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5055,
+    "n2q": 33267
+   }
+  },
+  "qft-n100-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     6.640625,
+     6.65625
+    ],
+    "wall_times_s": [
+     1.3268237002193928,
+     1.4208367997780442
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2176,
+    "n2q": 12956
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     6.5,
+     6.328125
+    ],
+    "wall_times_s": [
+     1.2850093999877572,
+     1.3487613000907004
+    ],
+    "registers": [
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2675,
+    "n2q": 12419
+   }
+  },
+  "qft-n100-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.203125,
+     2.3125
+    ],
+    "wall_times_s": [
+     0.3998356000520289,
+     0.45923459995537996
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5396,
+    "n2q": 28122
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     2.578125,
+     2.4375
+    ],
+    "wall_times_s": [
+     0.5412409002892673,
+     0.4600219000130892
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5396,
+    "n2q": 28122
+   }
+  },
+  "qft-n100-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     7.21875,
+     7.359375
+    ],
+    "wall_times_s": [
+     1.3407934000715613,
+     1.3425320000387728
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3519,
+    "n2q": 10359
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     7.6875,
+     7.46875
+    ],
+    "wall_times_s": [
+     1.5626338999718428,
+     1.4811960998922586
+    ],
+    "registers": [
+     [
+      "ancilla",
+      15,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      100,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3633,
+    "n2q": 10504
+   }
+  },
+  "qft-n127-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     5.09375,
+     4.875
+    ],
+    "wall_times_s": [
+     0.8644123999401927,
+     0.7590807001106441
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7725,
+    "n2q": 47886
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.96875,
+     4.984375
+    ],
+    "wall_times_s": [
+     0.7622478003613651,
+     0.7811567997559905
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 7725,
+    "n2q": 47886
+   }
+  },
+  "qft-n127-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     10.03125,
+     10.546875
+    ],
+    "wall_times_s": [
+     2.194797799922526,
+     2.7061892999336123
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5727,
+    "n2q": 17775
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     10.0,
+     9.671875
+    ],
+    "wall_times_s": [
+     1.8192226998507977,
+     1.9672312997281551
+    ],
+    "registers": [
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3057,
+    "n2q": 18305
+   }
+  },
+  "qft-n127-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.078125,
+     4.15625
+    ],
+    "wall_times_s": [
+     0.9071916001848876,
+     0.9187741000205278
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 8091,
+    "n2q": 46380
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.359375,
+     4.125
+    ],
+    "wall_times_s": [
+     0.9714150996878743,
+     0.794618799816817
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 8091,
+    "n2q": 46380
+   }
+  },
+  "qft-n127-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     10.21875,
+     10.53125
+    ],
+    "wall_times_s": [
+     2.083926399704069,
+     2.3457593000493944
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4763,
+    "n2q": 14581
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     11.125,
+     10.03125
+    ],
+    "wall_times_s": [
+     2.8402450997382402,
+     1.9105279999785125
+    ],
+    "registers": [
+     [
+      "ancilla",
+      66,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      127,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 4858,
+    "n2q": 14408
+   }
+  },
+  "random_clifford-n5-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.003700499888509512,
+     0.0019202004186809063
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 28
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0030411002226173878,
+     0.0015111998654901981
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 41,
+    "n2q": 28
+   }
+  },
+  "random_clifford-n5-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.008160299621522427,
+     0.006564099807292223
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 39,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0070559000596404076,
+     0.006433000322431326
+    ],
+    "registers": [
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 39,
+    "n2q": 17
+   }
+  },
+  "random_clifford-n5-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.004171700216829777,
+     0.002529500052332878
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 38,
+    "n2q": 25
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.05004219990223646,
+     0.0036760997027158737
+    ],
+    "registers": [],
+    "depth": 38,
+    "n2q": 25
+   }
+  },
+  "random_clifford-n5-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.008423299994319677,
+     0.004587899893522263
+    ],
+    "registers": [
+     [
+      "ancilla",
+      14,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      5,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 31,
+    "n2q": 17
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.007905100006610155,
+     0.004403400234878063
+    ],
+    "registers": [],
+    "depth": 31,
+    "n2q": 17
+   }
+  },
+  "random_clifford-n8-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0043864003382623196,
+     0.0025530001148581505
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 159,
+    "n2q": 130
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.004136299714446068,
+     0.002499400172382593
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 159,
+    "n2q": 130
+   }
+  },
+  "random_clifford-n8-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.140625,
+     0.0
+    ],
+    "wall_times_s": [
+     0.01412620022892952,
+     0.011242200154811144
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 122,
+    "n2q": 108
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.234375,
+     0.234375
+    ],
+    "wall_times_s": [
+     0.013634699862450361,
+     0.010678200051188469
+    ],
+    "registers": [
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 122,
+    "n2q": 108
+   }
+  },
+  "random_clifford-n8-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.006168399937450886,
+     0.0048131998628377914
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 107,
+    "n2q": 100
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.009409500285983086,
+     0.004020999651402235
+    ],
+    "registers": [],
+    "depth": 107,
+    "n2q": 100
+   }
+  },
+  "random_clifford-n8-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.015889599919319153,
+     0.014039299916476011
+    ],
+    "registers": [
+     [
+      "ancilla",
+      11,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      8,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 111,
+    "n2q": 83
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.203125
+    ],
+    "wall_times_s": [
+     0.01690120017156005,
+     0.017321799881756306
+    ],
+    "registers": [],
+    "depth": 111,
+    "n2q": 83
+   }
+  },
+  "random_clifford-n12-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.05496919993311167,
+     0.006872599944472313
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 340,
+    "n2q": 409
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.203125
+    ],
+    "wall_times_s": [
+     0.00687299994751811,
+     0.004817800130695105
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 340,
+    "n2q": 409
+   }
+  },
+  "random_clifford-n12-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.03255439968779683,
+     0.028169400058686733
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 302,
+    "n2q": 328
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.03240459971129894,
+     0.028277399949729443
+    ],
+    "registers": [
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 302,
+    "n2q": 328
+   }
+  },
+  "random_clifford-n12-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.00835080025717616,
+     0.006019100081175566
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 285,
+    "n2q": 316
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.0,
+     0.0
+    ],
+    "wall_times_s": [
+     0.0069161998108029366,
+     0.00497830007225275
+    ],
+    "registers": [],
+    "depth": 285,
+    "n2q": 316
+   }
+  },
+  "random_clifford-n12-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.029916499741375446,
+     0.02768309973180294
+    ],
+    "registers": [
+     [
+      "ancilla",
+      7,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      12,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 285,
+    "n2q": 247
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.030448699835687876,
+     0.028385399840772152
+    ],
+    "registers": [],
+    "depth": 272,
+    "n2q": 234
+   }
+  },
+  "random_clifford-n18-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.125
+    ],
+    "wall_times_s": [
+     0.013912799768149853,
+     0.012329299934208393
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 800,
+    "n2q": 1332
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.015625,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.017018199898302555,
+     0.013429899699985981
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 800,
+    "n2q": 1332
+   }
+  },
+  "random_clifford-n18-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.734375,
+     0.65625
+    ],
+    "wall_times_s": [
+     0.11816149996593595,
+     0.100394899956882
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 937,
+    "n2q": 1213
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.6875,
+     0.53125
+    ],
+    "wall_times_s": [
+     0.10652140015736222,
+     0.10259609995409846
+    ],
+    "registers": [
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 878,
+    "n2q": 1199
+   }
+  },
+  "random_clifford-n18-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.109375,
+     0.171875
+    ],
+    "wall_times_s": [
+     0.012337399646639824,
+     0.010198000352829695
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 626,
+    "n2q": 854
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.125,
+     0.171875
+    ],
+    "wall_times_s": [
+     0.01208089990541339,
+     0.009402399882674217
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 626,
+    "n2q": 854
+   }
+  },
+  "random_clifford-n18-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.484375,
+     0.5
+    ],
+    "wall_times_s": [
+     0.07703729998320341,
+     0.06912179989740252
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 706,
+    "n2q": 774
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.375,
+     0.5
+    ],
+    "wall_times_s": [
+     0.0731079000979662,
+     0.06917360005900264
+    ],
+    "registers": [
+     [
+      "ancilla",
+      1,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      18,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 650,
+    "n2q": 746
+   }
+  },
+  "random_clifford-n27-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.030001699924468994,
+     0.027504300232976675
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2091,
+    "n2q": 4491
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.109375,
+     0.03125
+    ],
+    "wall_times_s": [
+     0.02967349998652935,
+     0.02737529994919896
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2091,
+    "n2q": 4491
+   }
+  },
+  "random_clifford-n27-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.875,
+     1.828125
+    ],
+    "wall_times_s": [
+     0.32061769999563694,
+     0.3612672998569906
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2332,
+    "n2q": 4173
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.859375,
+     1.65625
+    ],
+    "wall_times_s": [
+     0.3407045998610556,
+     0.33338019996881485
+    ],
+    "registers": [
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 2315,
+    "n2q": 4231
+   }
+  },
+  "random_clifford-n27-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.25,
+     0.25
+    ],
+    "wall_times_s": [
+     0.030118700116872787,
+     0.02686569979414344
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1426,
+    "n2q": 2564
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.046875,
+     0.015625
+    ],
+    "wall_times_s": [
+     0.030253599863499403,
+     0.026476700324565172
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1426,
+    "n2q": 2564
+   }
+  },
+  "random_clifford-n27-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.359375,
+     1.328125
+    ],
+    "wall_times_s": [
+     0.2315620998851955,
+     0.19217650033533573
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1592,
+    "n2q": 2316
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     1.328125,
+     1.453125
+    ],
+    "wall_times_s": [
+     0.22342910012230277,
+     0.21215559961274266
+    ],
+    "registers": [
+     [
+      "ancilla",
+      30,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      27,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 1527,
+    "n2q": 2332
+   }
+  },
+  "random_clifford-n40-line-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.515625,
+     0.40625
+    ],
+    "wall_times_s": [
+     0.08124529989436269,
+     0.07700620032846928
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5458,
+    "n2q": 14470
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.421875,
+     0.609375
+    ],
+    "wall_times_s": [
+     0.09764489997178316,
+     0.10534039977937937
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5458,
+    "n2q": 14470
+   }
+  },
+  "random_clifford-n40-line-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.75,
+     4.953125
+    ],
+    "wall_times_s": [
+     0.9931501997634768,
+     0.9462791997939348
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5948,
+    "n2q": 13565
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     4.890625,
+     4.53125
+    ],
+    "wall_times_s": [
+     0.8898918000049889,
+     0.7316503999754786
+    ],
+    "registers": [
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 5673,
+    "n2q": 13652
+   }
+  },
+  "random_clifford-n40-heavy_hex-opt1": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.359375,
+     0.375
+    ],
+    "wall_times_s": [
+     0.06113390019163489,
+     0.06205089995637536
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3211,
+    "n2q": 6795
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     0.375,
+     0.34375
+    ],
+    "wall_times_s": [
+     0.05527549982070923,
+     0.0551387001760304
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3211,
+    "n2q": 6795
+   }
+  },
+  "random_clifford-n40-heavy_hex-opt3": {
+   "baseline": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.546875,
+     3.578125
+    ],
+    "wall_times_s": [
+     0.5397442001849413,
+     0.6019377997145057
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3244,
+    "n2q": 6376
+   },
+   "candidate": {
+    "status": "ok",
+    "qiskit_version": "2.2.0",
+    "cpu_times_s": [
+     3.765625,
+     3.734375
+    ],
+    "wall_times_s": [
+     0.6548076998442411,
+     0.6297416002489626
+    ],
+    "registers": [
+     [
+      "ancilla",
+      17,
+      "QuantumRegister"
+     ],
+     [
+      "q",
+      40,
+      "QuantumRegister"
+     ]
+    ],
+    "depth": 3350,
+    "n2q": 6359
+   }
+  }
+ }
+}

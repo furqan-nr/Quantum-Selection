@@ -1,0 +1,4122 @@
+{
+ "description": "POST-HOC analyses (not pre-registered) of event dependence (A, B) and of the forward regressions under the study's own oracles (C, D); produced by scripts/revision_dependence.py. Inputs are only read. A/B use the 19 scale-up mutation events (data_scaleup/); C/D use results/forward_units/*_v2(.corrected).json.",
+ "conventions": {
+  "rounding": "r4 (4 decimals) before differencing/testing",
+  "wilcoxon": "two-sided, zero_method='wilcox', method='auto'",
+  "holm": "within the 3 comparisons of one analysis variant",
+  "rank_biserial": "matched-pairs, positive = a better",
+  "bootstrap": "percentile, 5000 resamples, numpy default_rng(0) fresh per quantity"
+ },
+ "A_event_dependence": {
+  "definitions": {
+   "detection_set": "units u with detects[u] True in _build_payloads(data_scaleup)",
+   "jaccard": "|S\u2229T|/|S\u222aT|; two empty sets are identical, Jaccard := 1",
+   "near_identical": "Jaccard >= 0.8",
+   "clusters": "connected components (single linkage) of the Jaccard >= 0.8 graph"
+  },
+  "detection_set_size": {
+   "mut2-combo-dense-layout-basic-routing-01": 80,
+   "mut2-combo-no-consolidate-dense-layout-01": 56,
+   "mut2-combo-no-elide-synthesis-translate-01": 96,
+   "mut2-disable-optimization-loop-01": 30,
+   "mut2-downgrade-layout-dense-01": 56,
+   "mut2-downgrade-layout-trivial-01": 66,
+   "mut2-downgrade-routing-01": 62,
+   "mut2-downgrade-translation-synthesis-01": 96,
+   "mut2-drop-optimization-stage-01": 30,
+   "mut2-drop-vf2-post-layout-01": 0,
+   "mut2-force-opt-level-0-01": 82,
+   "mut2-force-opt-level-1-01": 27,
+   "mut2-insert-redundant-cx-pair-01": 24,
+   "mut2-insert-redundant-sx-quad-01": 6,
+   "mut2-insert-redundant-x-pair-01": 2,
+   "mut2-remove-basis-translator-01": 58,
+   "mut2-remove-consolidate-blocks-01": 0,
+   "mut2-remove-elide-permutations-01": 19,
+   "mut2-seed-drift-01": 9
+  },
+  "detection_fraction": {
+   "mut2-combo-dense-layout-basic-routing-01": 0.6896551724137931,
+   "mut2-combo-no-consolidate-dense-layout-01": 0.4827586206896552,
+   "mut2-combo-no-elide-synthesis-translate-01": 0.8275862068965517,
+   "mut2-disable-optimization-loop-01": 0.25862068965517243,
+   "mut2-downgrade-layout-dense-01": 0.4827586206896552,
+   "mut2-downgrade-layout-trivial-01": 0.5689655172413793,
+   "mut2-downgrade-routing-01": 0.5344827586206896,
+   "mut2-downgrade-translation-synthesis-01": 0.8275862068965517,
+   "mut2-drop-optimization-stage-01": 0.25862068965517243,
+   "mut2-drop-vf2-post-layout-01": 0.0,
+   "mut2-force-opt-level-0-01": 0.7068965517241379,
+   "mut2-force-opt-level-1-01": 0.23275862068965517,
+   "mut2-insert-redundant-cx-pair-01": 0.20689655172413793,
+   "mut2-insert-redundant-sx-quad-01": 0.05172413793103448,
+   "mut2-insert-redundant-x-pair-01": 0.017241379310344827,
+   "mut2-remove-basis-translator-01": 0.5,
+   "mut2-remove-consolidate-blocks-01": 0.0,
+   "mut2-remove-elide-permutations-01": 0.16379310344827586,
+   "mut2-seed-drift-01": 0.07758620689655173
+  },
+  "detection_sets": {
+   "mut2-combo-dense-layout-basic-routing-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n18-heavy_hex-opt1",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt1",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt1",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt1",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt1",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt1",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt1",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt1",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt1",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-combo-no-consolidate-dense-layout-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n18-heavy_hex-opt1",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-combo-no-elide-synthesis-translate-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n12-line-opt1",
+    "ghz-n12-line-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n18-line-opt1",
+    "ghz-n18-line-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n27-line-opt1",
+    "ghz-n27-line-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n40-line-opt1",
+    "ghz-n40-line-opt3",
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n5-line-opt1",
+    "ghz-n5-line-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "ghz-n65-line-opt1",
+    "ghz-n65-line-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3",
+    "ghz-n8-line-opt1",
+    "ghz-n8-line-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n12-line-opt1",
+    "qaoa_linear-n12-line-opt3",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n18-line-opt1",
+    "qaoa_linear-n18-line-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n27-line-opt1",
+    "qaoa_linear-n27-line-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n40-line-opt1",
+    "qaoa_linear-n40-line-opt3",
+    "qaoa_linear-n5-heavy_hex-opt1",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n5-line-opt1",
+    "qaoa_linear-n5-line-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qaoa_linear-n65-line-opt1",
+    "qaoa_linear-n65-line-opt3",
+    "qaoa_linear-n8-heavy_hex-opt1",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qaoa_linear-n8-line-opt1",
+    "qaoa_linear-n8-line-opt3",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt1",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt1",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-disable-optimization-loop-01": [
+    "ghz-n18-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt1",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt1",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt1",
+    "random_clifford-n5-line-opt3"
+   ],
+   "mut2-downgrade-layout-dense-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n18-heavy_hex-opt1",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-downgrade-layout-trivial-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n18-heavy_hex-opt1",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n5-heavy_hex-opt1",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qaoa_linear-n8-heavy_hex-opt1",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-downgrade-routing-01": [
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt1",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt1",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt1",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt1",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt1",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt1",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt1",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt1",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-downgrade-translation-synthesis-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n12-line-opt1",
+    "ghz-n12-line-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n18-line-opt1",
+    "ghz-n18-line-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n27-line-opt1",
+    "ghz-n27-line-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n40-line-opt1",
+    "ghz-n40-line-opt3",
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n5-line-opt1",
+    "ghz-n5-line-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "ghz-n65-line-opt1",
+    "ghz-n65-line-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3",
+    "ghz-n8-line-opt1",
+    "ghz-n8-line-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n12-line-opt1",
+    "qaoa_linear-n12-line-opt3",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n18-line-opt1",
+    "qaoa_linear-n18-line-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n27-line-opt1",
+    "qaoa_linear-n27-line-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n40-line-opt1",
+    "qaoa_linear-n40-line-opt3",
+    "qaoa_linear-n5-heavy_hex-opt1",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n5-line-opt1",
+    "qaoa_linear-n5-line-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qaoa_linear-n65-line-opt1",
+    "qaoa_linear-n65-line-opt3",
+    "qaoa_linear-n8-heavy_hex-opt1",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qaoa_linear-n8-line-opt1",
+    "qaoa_linear-n8-line-opt3",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt1",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt1",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-drop-optimization-stage-01": [
+    "ghz-n18-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt1",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt1",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt1",
+    "random_clifford-n5-line-opt3"
+   ],
+   "mut2-drop-vf2-post-layout-01": [],
+   "mut2-force-opt-level-0-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n18-heavy_hex-opt1",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n27-heavy_hex-opt1",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n40-heavy_hex-opt1",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n65-heavy_hex-opt1",
+    "ghz-n65-heavy_hex-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3",
+    "qaoa_linear-n12-heavy_hex-opt1",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n18-heavy_hex-opt1",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n27-heavy_hex-opt1",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n40-heavy_hex-opt1",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n5-heavy_hex-opt1",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n65-heavy_hex-opt1",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qaoa_linear-n8-heavy_hex-opt1",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt1",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n12-heavy_hex-opt1",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt1",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt1",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n18-heavy_hex-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt1",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt1",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt1",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt1",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt1",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt1",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt1",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt1",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt1",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt1",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt1",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt1",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt1",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt1",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt1",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt1",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt1",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt1",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-force-opt-level-1-01": [
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-insert-redundant-cx-pair-01": [
+    "ghz-n12-heavy_hex-opt1",
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n12-line-opt1",
+    "ghz-n12-line-opt3",
+    "ghz-n18-line-opt1",
+    "ghz-n18-line-opt3",
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n5-line-opt1",
+    "ghz-n5-line-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3",
+    "ghz-n8-line-opt1",
+    "ghz-n8-line-opt3",
+    "qaoa_linear-n5-heavy_hex-opt1",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n5-line-opt1",
+    "qaoa_linear-n5-line-opt3",
+    "qaoa_linear-n8-heavy_hex-opt1",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qaoa_linear-n8-line-opt1",
+    "qaoa_linear-n8-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3"
+   ],
+   "mut2-insert-redundant-sx-quad-01": [
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n5-line-opt1",
+    "ghz-n5-line-opt3",
+    "ghz-n8-heavy_hex-opt1",
+    "ghz-n8-heavy_hex-opt3"
+   ],
+   "mut2-insert-redundant-x-pair-01": [
+    "ghz-n5-heavy_hex-opt1",
+    "ghz-n5-heavy_hex-opt3"
+   ],
+   "mut2-remove-basis-translator-01": [
+    "ghz-n12-heavy_hex-opt3",
+    "ghz-n12-line-opt3",
+    "ghz-n18-heavy_hex-opt3",
+    "ghz-n18-line-opt3",
+    "ghz-n27-heavy_hex-opt3",
+    "ghz-n27-line-opt3",
+    "ghz-n40-heavy_hex-opt3",
+    "ghz-n40-line-opt3",
+    "ghz-n5-heavy_hex-opt3",
+    "ghz-n5-line-opt3",
+    "ghz-n65-heavy_hex-opt3",
+    "ghz-n65-line-opt3",
+    "ghz-n8-heavy_hex-opt3",
+    "ghz-n8-line-opt3",
+    "qaoa_linear-n12-heavy_hex-opt3",
+    "qaoa_linear-n12-line-opt3",
+    "qaoa_linear-n18-heavy_hex-opt3",
+    "qaoa_linear-n18-line-opt3",
+    "qaoa_linear-n27-heavy_hex-opt3",
+    "qaoa_linear-n27-line-opt3",
+    "qaoa_linear-n40-heavy_hex-opt3",
+    "qaoa_linear-n40-line-opt3",
+    "qaoa_linear-n5-heavy_hex-opt3",
+    "qaoa_linear-n5-line-opt3",
+    "qaoa_linear-n65-heavy_hex-opt3",
+    "qaoa_linear-n65-line-opt3",
+    "qaoa_linear-n8-heavy_hex-opt3",
+    "qaoa_linear-n8-line-opt3",
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n127-line-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-heavy_hex-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-heavy_hex-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-heavy_hex-opt3",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n18-heavy_hex-opt3",
+    "random_clifford-n18-line-opt3",
+    "random_clifford-n27-heavy_hex-opt3",
+    "random_clifford-n27-line-opt3",
+    "random_clifford-n40-heavy_hex-opt3",
+    "random_clifford-n40-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-remove-consolidate-blocks-01": [],
+   "mut2-remove-elide-permutations-01": [
+    "qft-n100-heavy_hex-opt3",
+    "qft-n100-line-opt3",
+    "qft-n12-heavy_hex-opt3",
+    "qft-n12-line-opt3",
+    "qft-n127-heavy_hex-opt3",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n18-line-opt3",
+    "qft-n27-line-opt3",
+    "qft-n40-line-opt3",
+    "qft-n5-heavy_hex-opt3",
+    "qft-n5-line-opt3",
+    "qft-n65-line-opt3",
+    "qft-n8-heavy_hex-opt3",
+    "qft-n8-line-opt3",
+    "random_clifford-n12-line-opt3",
+    "random_clifford-n5-heavy_hex-opt3",
+    "random_clifford-n5-line-opt3",
+    "random_clifford-n8-heavy_hex-opt3",
+    "random_clifford-n8-line-opt3"
+   ],
+   "mut2-seed-drift-01": [
+    "qft-n100-line-opt1",
+    "qft-n127-line-opt1",
+    "qft-n18-heavy_hex-opt3",
+    "qft-n27-heavy_hex-opt1",
+    "qft-n27-heavy_hex-opt3",
+    "qft-n27-line-opt1",
+    "qft-n40-line-opt1",
+    "qft-n5-heavy_hex-opt1",
+    "random_clifford-n5-heavy_hex-opt1"
+   ]
+  },
+  "jaccard_matrix": {
+   "events": [
+    "mut2-combo-dense-layout-basic-routing-01",
+    "mut2-combo-no-consolidate-dense-layout-01",
+    "mut2-combo-no-elide-synthesis-translate-01",
+    "mut2-disable-optimization-loop-01",
+    "mut2-downgrade-layout-dense-01",
+    "mut2-downgrade-layout-trivial-01",
+    "mut2-downgrade-routing-01",
+    "mut2-downgrade-translation-synthesis-01",
+    "mut2-drop-optimization-stage-01",
+    "mut2-drop-vf2-post-layout-01",
+    "mut2-force-opt-level-0-01",
+    "mut2-force-opt-level-1-01",
+    "mut2-insert-redundant-cx-pair-01",
+    "mut2-insert-redundant-sx-quad-01",
+    "mut2-insert-redundant-x-pair-01",
+    "mut2-remove-basis-translator-01",
+    "mut2-remove-consolidate-blocks-01",
+    "mut2-remove-elide-permutations-01",
+    "mut2-seed-drift-01"
+   ],
+   "values": [
+    [
+     1.0,
+     0.7,
+     0.517241,
+     0.375,
+     0.7,
+     0.659091,
+     0.775,
+     0.517241,
+     0.375,
+     0.0,
+     0.840909,
+     0.3375,
+     0.04,
+     0.0,
+     0.0,
+     0.408163,
+     0.0,
+     0.2375,
+     0.1125
+    ],
+    [
+     0.7,
+     1.0,
+     0.381818,
+     0.246377,
+     1.0,
+     0.768116,
+     0.475,
+     0.381818,
+     0.246377,
+     0.0,
+     0.682927,
+     0.257576,
+     0.038961,
+     0.0,
+     0.0,
+     0.295455,
+     0.0,
+     0.190476,
+     0.101695
+    ],
+    [
+     0.517241,
+     0.381818,
+     1.0,
+     0.223301,
+     0.381818,
+     0.472727,
+     0.373913,
+     1.0,
+     0.223301,
+     0.0,
+     0.575221,
+     0.28125,
+     0.25,
+     0.0625,
+     0.020833,
+     0.604167,
+     0.0,
+     0.197917,
+     0.029412
+    ],
+    [
+     0.375,
+     0.246377,
+     0.223301,
+     1.0,
+     0.246377,
+     0.230769,
+     0.483871,
+     0.223301,
+     1.0,
+     0.0,
+     0.302326,
+     0.628571,
+     0.038462,
+     0.0,
+     0.0,
+     0.333333,
+     0.0,
+     0.53125,
+     0.147059
+    ],
+    [
+     0.7,
+     1.0,
+     0.381818,
+     0.246377,
+     1.0,
+     0.768116,
+     0.475,
+     0.381818,
+     0.246377,
+     0.0,
+     0.682927,
+     0.257576,
+     0.038961,
+     0.0,
+     0.0,
+     0.295455,
+     0.0,
+     0.190476,
+     0.101695
+    ],
+    [
+     0.659091,
+     0.768116,
+     0.472727,
+     0.230769,
+     0.768116,
+     1.0,
+     0.454545,
+     0.472727,
+     0.230769,
+     0.0,
+     0.804878,
+     0.24,
+     0.139241,
+     0.058824,
+     0.030303,
+     0.347826,
+     0.0,
+     0.148649,
+     0.086957
+    ],
+    [
+     0.775,
+     0.475,
+     0.373913,
+     0.483871,
+     0.475,
+     0.454545,
+     1.0,
+     0.373913,
+     0.483871,
+     0.0,
+     0.636364,
+     0.412698,
+     0.02381,
+     0.0,
+     0.0,
+     0.348315,
+     0.0,
+     0.306452,
+     0.145161
+    ],
+    [
+     0.517241,
+     0.381818,
+     1.0,
+     0.223301,
+     0.381818,
+     0.472727,
+     0.373913,
+     1.0,
+     0.223301,
+     0.0,
+     0.575221,
+     0.28125,
+     0.25,
+     0.0625,
+     0.020833,
+     0.604167,
+     0.0,
+     0.197917,
+     0.029412
+    ],
+    [
+     0.375,
+     0.246377,
+     0.223301,
+     1.0,
+     0.246377,
+     0.230769,
+     0.483871,
+     0.223301,
+     1.0,
+     0.0,
+     0.302326,
+     0.628571,
+     0.038462,
+     0.0,
+     0.0,
+     0.333333,
+     0.0,
+     0.53125,
+     0.147059
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.840909,
+     0.682927,
+     0.575221,
+     0.302326,
+     0.682927,
+     0.804878,
+     0.636364,
+     0.575221,
+     0.302326,
+     0.0,
+     1.0,
+     0.297619,
+     0.12766,
+     0.047619,
+     0.02439,
+     0.428571,
+     0.0,
+     0.216867,
+     0.083333
+    ],
+    [
+     0.3375,
+     0.257576,
+     0.28125,
+     0.628571,
+     0.257576,
+     0.24,
+     0.412698,
+     0.28125,
+     0.628571,
+     0.0,
+     0.297619,
+     1.0,
+     0.040816,
+     0.0,
+     0.0,
+     0.465517,
+     0.0,
+     0.703704,
+     0.058824
+    ],
+    [
+     0.04,
+     0.038961,
+     0.25,
+     0.038462,
+     0.038961,
+     0.139241,
+     0.02381,
+     0.25,
+     0.038462,
+     0.0,
+     0.12766,
+     0.040816,
+     1.0,
+     0.25,
+     0.083333,
+     0.188406,
+     0.0,
+     0.04878,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.0625,
+     0.0,
+     0.0,
+     0.058824,
+     0.0,
+     0.0625,
+     0.0,
+     0.0,
+     0.047619,
+     0.0,
+     0.25,
+     1.0,
+     0.333333,
+     0.04918,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.020833,
+     0.0,
+     0.0,
+     0.030303,
+     0.0,
+     0.020833,
+     0.0,
+     0.0,
+     0.02439,
+     0.0,
+     0.083333,
+     0.333333,
+     1.0,
+     0.016949,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.408163,
+     0.295455,
+     0.604167,
+     0.333333,
+     0.295455,
+     0.347826,
+     0.348315,
+     0.604167,
+     0.333333,
+     0.0,
+     0.428571,
+     0.465517,
+     0.188406,
+     0.04918,
+     0.016949,
+     1.0,
+     0.0,
+     0.327586,
+     0.030769
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.2375,
+     0.190476,
+     0.197917,
+     0.53125,
+     0.190476,
+     0.148649,
+     0.306452,
+     0.197917,
+     0.53125,
+     0.0,
+     0.216867,
+     0.703704,
+     0.04878,
+     0.0,
+     0.0,
+     0.327586,
+     0.0,
+     1.0,
+     0.037037
+    ],
+    [
+     0.1125,
+     0.101695,
+     0.029412,
+     0.147059,
+     0.101695,
+     0.086957,
+     0.145161,
+     0.029412,
+     0.147059,
+     0.0,
+     0.083333,
+     0.058824,
+     0.0,
+     0.0,
+     0.0,
+     0.030769,
+     0.0,
+     0.037037,
+     1.0
+    ]
+   ]
+  },
+  "identical_groups": [
+   [
+    "mut2-combo-no-consolidate-dense-layout-01",
+    "mut2-downgrade-layout-dense-01"
+   ],
+   [
+    "mut2-combo-no-elide-synthesis-translate-01",
+    "mut2-downgrade-translation-synthesis-01"
+   ],
+   [
+    "mut2-disable-optimization-loop-01",
+    "mut2-drop-optimization-stage-01"
+   ],
+   [
+    "mut2-drop-vf2-post-layout-01",
+    "mut2-remove-consolidate-blocks-01"
+   ]
+  ],
+  "near_identical_pairs": [
+   {
+    "a": "mut2-combo-no-consolidate-dense-layout-01",
+    "b": "mut2-downgrade-layout-dense-01",
+    "jaccard": 1.0,
+    "n_a": 56,
+    "n_b": 56,
+    "n_intersection": 56,
+    "identical": true
+   },
+   {
+    "a": "mut2-combo-no-elide-synthesis-translate-01",
+    "b": "mut2-downgrade-translation-synthesis-01",
+    "jaccard": 1.0,
+    "n_a": 96,
+    "n_b": 96,
+    "n_intersection": 96,
+    "identical": true
+   },
+   {
+    "a": "mut2-disable-optimization-loop-01",
+    "b": "mut2-drop-optimization-stage-01",
+    "jaccard": 1.0,
+    "n_a": 30,
+    "n_b": 30,
+    "n_intersection": 30,
+    "identical": true
+   },
+   {
+    "a": "mut2-drop-vf2-post-layout-01",
+    "b": "mut2-remove-consolidate-blocks-01",
+    "jaccard": 1.0,
+    "n_a": 0,
+    "n_b": 0,
+    "n_intersection": 0,
+    "identical": true
+   },
+   {
+    "a": "mut2-combo-dense-layout-basic-routing-01",
+    "b": "mut2-force-opt-level-0-01",
+    "jaccard": 0.8409090909090909,
+    "n_a": 80,
+    "n_b": 82,
+    "n_intersection": 74,
+    "identical": false
+   },
+   {
+    "a": "mut2-downgrade-layout-trivial-01",
+    "b": "mut2-force-opt-level-0-01",
+    "jaccard": 0.8048780487804879,
+    "n_a": 66,
+    "n_b": 82,
+    "n_intersection": 66,
+    "identical": false
+   }
+  ],
+  "clusters_jaccard_ge_0_8": [
+   {
+    "events": [
+     "mut2-combo-dense-layout-basic-routing-01",
+     "mut2-downgrade-layout-trivial-01",
+     "mut2-force-opt-level-0-01"
+    ],
+    "size": 3,
+    "min_pairwise_jaccard": 0.6590909090909091,
+    "is_clique_at_threshold": false
+   },
+   {
+    "events": [
+     "mut2-combo-no-consolidate-dense-layout-01",
+     "mut2-downgrade-layout-dense-01"
+    ],
+    "size": 2,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-combo-no-elide-synthesis-translate-01",
+     "mut2-downgrade-translation-synthesis-01"
+    ],
+    "size": 2,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-disable-optimization-loop-01",
+     "mut2-drop-optimization-stage-01"
+    ],
+    "size": 2,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-downgrade-routing-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-drop-vf2-post-layout-01",
+     "mut2-remove-consolidate-blocks-01"
+    ],
+    "size": 2,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-force-opt-level-1-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-insert-redundant-cx-pair-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-insert-redundant-sx-quad-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-insert-redundant-x-pair-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-remove-basis-translator-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-remove-elide-permutations-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   },
+   {
+    "events": [
+     "mut2-seed-drift-01"
+    ],
+    "size": 1,
+    "min_pairwise_jaccard": 1.0,
+    "is_clique_at_threshold": true
+   }
+  ],
+  "effective_number_of_events": {
+   "n_events": 19,
+   "n_units": 116,
+   "n_distinct_detection_sets": 15,
+   "n_distinct_nonempty_detection_sets": 14,
+   "n_clusters_jaccard_ge_0_8": 13,
+   "matrix_rank": 14,
+   "eigen_based": {
+    "note": "phi (Pearson) correlation of the non-constant columns; constant columns (events no unit detects) have no correlation and are excluded, then counted as `n_constant_column_groups` distinct pattern(s)",
+    "n_nonconstant_columns": 17,
+    "n_constant_column_groups": 1,
+    "participation_ratio": 5.653782142784267,
+    "meff_nyholt_2004": 14.99316323645464,
+    "meff_li_ji_2005": 9.999999999999993,
+    "participation_ratio_plus_constant": 6.653782142784267,
+    "meff_li_ji_plus_constant": 10.999999999999993,
+    "eigenvalues_desc": [
+     5.348576651487099,
+     3.4217217209809347,
+     2.3726555093552633,
+     1.7111724652104985,
+     0.804807131483631,
+     0.7219742972687063,
+     0.5577008283043803,
+     0.5399145344979721,
+     0.42565053743723735,
+     0.38485757347862193,
+     0.2573616708371955,
+     0.21766317699422297,
+     0.13950993937466422,
+     0.09643396328956526,
+     1.2546198649335258e-17,
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "B_dependence_robustness": {
+  "comparisons": [
+   "proposed_vs_diversity_only",
+   "decomposed_vs_proposed",
+   "decomposed_vs_cheapest_first"
+  ],
+  "difference": "r4(a) - r4(b) per event; positive = a better (higher AUC)",
+  "sources": {
+   "deterministic": "results/revision_reanalysis.json per_event[event][selector]['auc']",
+   "random": "results/revision_stats_extra.json A_random_100_seeds.scaleup.per_event_mean_auc (supplementary only)"
+  },
+  "tests": {
+   "wilcoxon": "two-sided, zero_method='wilcox', method='auto' (scipy), on r4 values",
+   "sign_test": "exact two-sided binomial on wins vs losses (ties dropped)",
+   "permutation": "paired sign-flip of the nonzero r4 differences, statistic |sum|, exact when <= 20 nonzero",
+   "holm3": "Holm within the 3 comparisons of the same analysis variant",
+   "event_bootstrap": "percentile, events resampled, 5000, default_rng(0) (reference)",
+   "cluster_bootstrap": "percentile, Jaccard>=0.8 clusters (within the analysed subset) resampled with replacement, event-weighted mean of the drawn clusters, 5000, default_rng(0) fresh per quantity"
+  },
+  "all19_reference": {
+   "events": [
+    "mut2-combo-dense-layout-basic-routing-01",
+    "mut2-combo-no-consolidate-dense-layout-01",
+    "mut2-combo-no-elide-synthesis-translate-01",
+    "mut2-disable-optimization-loop-01",
+    "mut2-downgrade-layout-dense-01",
+    "mut2-downgrade-layout-trivial-01",
+    "mut2-downgrade-routing-01",
+    "mut2-downgrade-translation-synthesis-01",
+    "mut2-drop-optimization-stage-01",
+    "mut2-drop-vf2-post-layout-01",
+    "mut2-force-opt-level-0-01",
+    "mut2-force-opt-level-1-01",
+    "mut2-insert-redundant-cx-pair-01",
+    "mut2-insert-redundant-sx-quad-01",
+    "mut2-insert-redundant-x-pair-01",
+    "mut2-remove-basis-translator-01",
+    "mut2-remove-consolidate-blocks-01",
+    "mut2-remove-elide-permutations-01",
+    "mut2-seed-drift-01"
+   ],
+   "clusters": [
+    [
+     "mut2-combo-dense-layout-basic-routing-01",
+     "mut2-downgrade-layout-trivial-01",
+     "mut2-force-opt-level-0-01"
+    ],
+    [
+     "mut2-combo-no-consolidate-dense-layout-01",
+     "mut2-downgrade-layout-dense-01"
+    ],
+    [
+     "mut2-combo-no-elide-synthesis-translate-01",
+     "mut2-downgrade-translation-synthesis-01"
+    ],
+    [
+     "mut2-disable-optimization-loop-01",
+     "mut2-drop-optimization-stage-01"
+    ],
+    [
+     "mut2-downgrade-routing-01"
+    ],
+    [
+     "mut2-drop-vf2-post-layout-01",
+     "mut2-remove-consolidate-blocks-01"
+    ],
+    [
+     "mut2-force-opt-level-1-01"
+    ],
+    [
+     "mut2-insert-redundant-cx-pair-01"
+    ],
+    [
+     "mut2-insert-redundant-sx-quad-01"
+    ],
+    [
+     "mut2-insert-redundant-x-pair-01"
+    ],
+    [
+     "mut2-remove-basis-translator-01"
+    ],
+    [
+     "mut2-remove-elide-permutations-01"
+    ],
+    [
+     "mut2-seed-drift-01"
+    ]
+   ],
+   "results": {
+    "proposed_vs_diversity_only": {
+     "a": "proposed",
+     "b": "diversity_only",
+     "n_events": 19,
+     "mean_diff": -0.11232631578947368,
+     "wins": 3,
+     "ties": 2,
+     "losses": 14,
+     "rank_biserial": -0.5294117647058824,
+     "p_wilcoxon": 0.0551792771247106,
+     "p_sign_exact": 0.012725830078125,
+     "p_permutation": 0.187652587890625,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.26135802631578947,
+      0.006691315789473651
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.28477506250000006,
+      0.0056714772727272265
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.0551792771247106,
+     "p_sign_exact_holm3": 0.02545166015625,
+     "p_permutation_holm3": 0.375030517578125
+    },
+    "decomposed_vs_proposed": {
+     "a": "decomposed",
+     "b": "proposed",
+     "n_events": 19,
+     "mean_diff": 0.1120421052631579,
+     "wins": 15,
+     "ties": 2,
+     "losses": 2,
+     "rank_biserial": 0.6470588235294118,
+     "p_wilcoxon": 0.019100457212993343,
+     "p_sign_exact": 0.002349853515625,
+     "p_permutation": 0.1875152587890625,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.00564671052631578,
+      0.25873276315789473
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.004733461538461527,
+      0.28257549999999937
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.038200914425986686,
+     "p_sign_exact_holm3": 0.007049560546875,
+     "p_permutation_holm3": 0.375030517578125
+    },
+    "decomposed_vs_cheapest_first": {
+     "a": "decomposed",
+     "b": "cheapest_first",
+     "n_events": 19,
+     "mean_diff": 0.030178947368421055,
+     "wins": 10,
+     "ties": 6,
+     "losses": 3,
+     "rank_biserial": 0.8681318681318682,
+     "p_wilcoxon": 0.005712201697429454,
+     "p_sign_exact": 0.09228515625,
+     "p_permutation": 0.001953125,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      0.01426802631578948,
+      0.04733210526315788
+     ],
+     "cluster_bootstrap_ci95": [
+      0.010770441176470597,
+      0.050289391447368395
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.01713660509228836,
+     "p_sign_exact_holm3": 0.09228515625,
+     "p_permutation_holm3": 0.005859375
+    }
+   }
+  },
+  "i_dedup_identical_alphabetical_first": {
+   "rule": "keep the alphabetically first event of each identical-detection-set group",
+   "kept": [
+    "mut2-combo-dense-layout-basic-routing-01",
+    "mut2-combo-no-consolidate-dense-layout-01",
+    "mut2-combo-no-elide-synthesis-translate-01",
+    "mut2-disable-optimization-loop-01",
+    "mut2-downgrade-layout-trivial-01",
+    "mut2-downgrade-routing-01",
+    "mut2-drop-vf2-post-layout-01",
+    "mut2-force-opt-level-0-01",
+    "mut2-force-opt-level-1-01",
+    "mut2-insert-redundant-cx-pair-01",
+    "mut2-insert-redundant-sx-quad-01",
+    "mut2-insert-redundant-x-pair-01",
+    "mut2-remove-basis-translator-01",
+    "mut2-remove-elide-permutations-01",
+    "mut2-seed-drift-01"
+   ],
+   "dropped": [
+    "mut2-downgrade-layout-dense-01",
+    "mut2-downgrade-translation-synthesis-01",
+    "mut2-drop-optimization-stage-01",
+    "mut2-remove-consolidate-blocks-01"
+   ],
+   "clusters": [
+    [
+     "mut2-combo-dense-layout-basic-routing-01",
+     "mut2-downgrade-layout-trivial-01",
+     "mut2-force-opt-level-0-01"
+    ],
+    [
+     "mut2-combo-no-consolidate-dense-layout-01"
+    ],
+    [
+     "mut2-combo-no-elide-synthesis-translate-01"
+    ],
+    [
+     "mut2-disable-optimization-loop-01"
+    ],
+    [
+     "mut2-downgrade-routing-01"
+    ],
+    [
+     "mut2-drop-vf2-post-layout-01"
+    ],
+    [
+     "mut2-force-opt-level-1-01"
+    ],
+    [
+     "mut2-insert-redundant-cx-pair-01"
+    ],
+    [
+     "mut2-insert-redundant-sx-quad-01"
+    ],
+    [
+     "mut2-insert-redundant-x-pair-01"
+    ],
+    [
+     "mut2-remove-basis-translator-01"
+    ],
+    [
+     "mut2-remove-elide-permutations-01"
+    ],
+    [
+     "mut2-seed-drift-01"
+    ]
+   ],
+   "results": {
+    "proposed_vs_diversity_only": {
+     "a": "proposed",
+     "b": "diversity_only",
+     "n_events": 15,
+     "mean_diff": -0.1409466666666667,
+     "wins": 3,
+     "ties": 1,
+     "losses": 11,
+     "rank_biserial": -0.4666666666666667,
+     "p_wilcoxon": 0.12404279309009482,
+     "p_sign_exact": 0.057373046875,
+     "p_permutation": 0.1884765625,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.3200405,
+      0.011186833333333326
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.34472100000000006,
+      0.009178997493734329
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.12404279309009482,
+     "p_sign_exact_holm3": 0.11474609375,
+     "p_permutation_holm3": 0.375244140625
+    },
+    "decomposed_vs_proposed": {
+     "a": "decomposed",
+     "b": "proposed",
+     "n_events": 15,
+     "mean_diff": 0.1405866666666667,
+     "wins": 12,
+     "ties": 1,
+     "losses": 2,
+     "rank_biserial": 0.6,
+     "p_wilcoxon": 0.04798974969495946,
+     "p_sign_exact": 0.012939453125,
+     "p_permutation": 0.1876220703125,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.009322166666666661,
+      0.3176006666666666
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.00747235294117646,
+      0.34157746153846147
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.09597949938991893,
+     "p_sign_exact_holm3": 0.038818359375,
+     "p_permutation_holm3": 0.375244140625
+    },
+    "decomposed_vs_cheapest_first": {
+     "a": "decomposed",
+     "b": "cheapest_first",
+     "n_events": 15,
+     "mean_diff": 0.027846666666666672,
+     "wins": 8,
+     "ties": 4,
+     "losses": 3,
+     "rank_biserial": 0.8181818181818182,
+     "p_wilcoxon": 0.0161569312611813,
+     "p_sign_exact": 0.2265625,
+     "p_permutation": 0.0078125,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      0.01153800000000001,
+      0.04635350000000002
+     ],
+     "cluster_bootstrap_ci95": [
+      0.010807500000000013,
+      0.046647999999999974
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.04847079378354391,
+     "p_sign_exact_holm3": 0.2265625,
+     "p_permutation_holm3": 0.0234375
+    }
+   }
+  },
+  "i_dedup_all_choices": {
+   "n_combinations": 16,
+   "enumerated": true,
+   "summary": {
+    "proposed_vs_diversity_only": {
+     "mean_diff_range": [
+      -0.14099333333333336,
+      -0.1409466666666667
+     ],
+     "p_wilcoxon_range": [
+      0.12404279309009482,
+      0.12404279309009482
+     ],
+     "p_sign_exact_range": [
+      0.057373046875,
+      0.057373046875
+     ],
+     "p_permutation_range": [
+      0.1884765625,
+      0.1884765625
+     ],
+     "wins_ties_losses_set": [
+      [
+       3,
+       1,
+       11
+      ]
+     ],
+     "mean_diff_sign_invariant": true,
+     "p_wilcoxon_lt_0_05_invariant": true,
+     "p_sign_exact_lt_0_05_invariant": true,
+     "p_permutation_lt_0_05_invariant": true,
+     "fully_invariant": false
+    },
+    "decomposed_vs_proposed": {
+     "mean_diff_range": [
+      0.1405866666666667,
+      0.14063333333333336
+     ],
+     "p_wilcoxon_range": [
+      0.04798974969495946,
+      0.04798974969495946
+     ],
+     "p_sign_exact_range": [
+      0.012939453125,
+      0.012939453125
+     ],
+     "p_permutation_range": [
+      0.1876220703125,
+      0.1876220703125
+     ],
+     "wins_ties_losses_set": [
+      [
+       12,
+       1,
+       2
+      ]
+     ],
+     "mean_diff_sign_invariant": true,
+     "p_wilcoxon_lt_0_05_invariant": true,
+     "p_sign_exact_lt_0_05_invariant": true,
+     "p_permutation_lt_0_05_invariant": true,
+     "fully_invariant": false
+    },
+    "decomposed_vs_cheapest_first": {
+     "mean_diff_range": [
+      0.027846666666666672,
+      0.02817333333333334
+     ],
+     "p_wilcoxon_range": [
+      0.0161569312611813,
+      0.0161569312611813
+     ],
+     "p_sign_exact_range": [
+      0.2265625,
+      0.2265625
+     ],
+     "p_permutation_range": [
+      0.0078125,
+      0.0078125
+     ],
+     "wins_ties_losses_set": [
+      [
+       8,
+       4,
+       3
+      ]
+     ],
+     "mean_diff_sign_invariant": true,
+     "p_wilcoxon_lt_0_05_invariant": true,
+     "p_sign_exact_lt_0_05_invariant": true,
+     "p_permutation_lt_0_05_invariant": true,
+     "fully_invariant": false
+    }
+   },
+   "per_choice": [
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.1409466666666667,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.1405866666666667,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.027846666666666672,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.1409466666666667,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.1405866666666667,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.027846666666666672,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.1409466666666667,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.1405866666666667,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02797333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.1409466666666667,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.1405866666666667,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02797333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14098666666666665,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14062666666666665,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.027846666666666672,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14098666666666665,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14062666666666665,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.027846666666666672,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14098666666666665,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14062666666666665,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02797333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-combo-no-consolidate-dense-layout-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14098666666666665,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14062666666666665,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02797333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14095333333333335,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14059333333333335,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02804666666666667,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14095333333333335,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14059333333333335,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02804666666666667,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14095333333333335,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14059333333333335,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02817333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-combo-no-elide-synthesis-translate-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14095333333333335,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14059333333333335,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02817333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14099333333333336,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14063333333333336,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02804666666666667,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-disable-optimization-loop-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14099333333333336,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14063333333333336,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02804666666666667,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-drop-vf2-post-layout-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14099333333333336,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14063333333333336,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02817333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    },
+    {
+     "kept": [
+      "mut2-downgrade-layout-dense-01",
+      "mut2-downgrade-translation-synthesis-01",
+      "mut2-drop-optimization-stage-01",
+      "mut2-remove-consolidate-blocks-01"
+     ],
+     "results": {
+      "proposed_vs_diversity_only": {
+       "mean_diff": -0.14099333333333336,
+       "wins": 3,
+       "ties": 1,
+       "losses": 11,
+       "p_wilcoxon": 0.12404279309009482,
+       "p_sign_exact": 0.057373046875,
+       "p_permutation": 0.1884765625
+      },
+      "decomposed_vs_proposed": {
+       "mean_diff": 0.14063333333333336,
+       "wins": 12,
+       "ties": 1,
+       "losses": 2,
+       "p_wilcoxon": 0.04798974969495946,
+       "p_sign_exact": 0.012939453125,
+       "p_permutation": 0.1876220703125
+      },
+      "decomposed_vs_cheapest_first": {
+       "mean_diff": 0.02817333333333334,
+       "wins": 8,
+       "ties": 4,
+       "losses": 3,
+       "p_wilcoxon": 0.0161569312611813,
+       "p_sign_exact": 0.2265625,
+       "p_permutation": 0.0078125
+      }
+     }
+    }
+   ]
+  },
+  "ii_cluster_level": {
+   "note": "cluster-bootstrap intervals are reported in each variant's results (cluster_bootstrap_ci95). Here, additionally, each Jaccard>=0.8 cluster is collapsed to the mean of its events' r4 AUCs and the tests are run across clusters (cluster means are not re-rounded; ties are exact equality of cluster means).",
+   "clusters": [
+    [
+     "mut2-combo-dense-layout-basic-routing-01",
+     "mut2-downgrade-layout-trivial-01",
+     "mut2-force-opt-level-0-01"
+    ],
+    [
+     "mut2-combo-no-consolidate-dense-layout-01",
+     "mut2-downgrade-layout-dense-01"
+    ],
+    [
+     "mut2-combo-no-elide-synthesis-translate-01",
+     "mut2-downgrade-translation-synthesis-01"
+    ],
+    [
+     "mut2-disable-optimization-loop-01",
+     "mut2-drop-optimization-stage-01"
+    ],
+    [
+     "mut2-downgrade-routing-01"
+    ],
+    [
+     "mut2-drop-vf2-post-layout-01",
+     "mut2-remove-consolidate-blocks-01"
+    ],
+    [
+     "mut2-force-opt-level-1-01"
+    ],
+    [
+     "mut2-insert-redundant-cx-pair-01"
+    ],
+    [
+     "mut2-insert-redundant-sx-quad-01"
+    ],
+    [
+     "mut2-insert-redundant-x-pair-01"
+    ],
+    [
+     "mut2-remove-basis-translator-01"
+    ],
+    [
+     "mut2-remove-elide-permutations-01"
+    ],
+    [
+     "mut2-seed-drift-01"
+    ]
+   ],
+   "results": {
+    "proposed_vs_diversity_only": {
+     "a": "proposed",
+     "b": "diversity_only",
+     "n_events": 13,
+     "mean_diff": -0.1621448717948718,
+     "wins": 3,
+     "ties": 1,
+     "losses": 9,
+     "rank_biserial": -0.4358974358974359,
+     "p_wilcoxon": 0.20361328125,
+     "p_sign_exact": 0.14599609375,
+     "p_permutation": 0.1904296875,
+     "permutation_method": "exact",
+     "p_wilcoxon_holm3": 0.20361328125,
+     "p_sign_exact_holm3": 0.2919921875,
+     "p_permutation_holm3": 0.3759765625
+    },
+    "decomposed_vs_proposed": {
+     "a": "decomposed",
+     "b": "proposed",
+     "n_events": 13,
+     "mean_diff": 0.1617294871794872,
+     "wins": 10,
+     "ties": 1,
+     "losses": 2,
+     "rank_biserial": 0.5641025641025641,
+     "p_wilcoxon": 0.09228515625,
+     "p_sign_exact": 0.03857421875,
+     "p_permutation": 0.18798828125,
+     "permutation_method": "exact",
+     "p_wilcoxon_holm3": 0.1845703125,
+     "p_sign_exact_holm3": 0.11572265625,
+     "p_permutation_holm3": 0.3759765625
+    },
+    "decomposed_vs_cheapest_first": {
+     "a": "decomposed",
+     "b": "cheapest_first",
+     "n_events": 13,
+     "mean_diff": 0.02802692307692308,
+     "wins": 6,
+     "ties": 4,
+     "losses": 3,
+     "rank_biserial": 0.7333333333333333,
+     "p_wilcoxon": 0.0546875,
+     "p_sign_exact": 0.5078125,
+     "p_permutation": 0.03125,
+     "permutation_method": "exact",
+     "p_wilcoxon_holm3": 0.1640625,
+     "p_sign_exact_holm3": 0.5078125,
+     "p_permutation_holm3": 0.09375
+    }
+   }
+  },
+  "iii_informative": {
+   "rule": "0.0 < detection fraction < 0.48",
+   "events": [
+    "mut2-disable-optimization-loop-01",
+    "mut2-drop-optimization-stage-01",
+    "mut2-force-opt-level-1-01",
+    "mut2-insert-redundant-cx-pair-01",
+    "mut2-insert-redundant-sx-quad-01",
+    "mut2-insert-redundant-x-pair-01",
+    "mut2-remove-elide-permutations-01",
+    "mut2-seed-drift-01"
+   ],
+   "excluded": {
+    "mut2-combo-dense-layout-basic-routing-01": 0.6896551724137931,
+    "mut2-combo-no-consolidate-dense-layout-01": 0.4827586206896552,
+    "mut2-combo-no-elide-synthesis-translate-01": 0.8275862068965517,
+    "mut2-downgrade-layout-dense-01": 0.4827586206896552,
+    "mut2-downgrade-layout-trivial-01": 0.5689655172413793,
+    "mut2-downgrade-routing-01": 0.5344827586206896,
+    "mut2-downgrade-translation-synthesis-01": 0.8275862068965517,
+    "mut2-drop-vf2-post-layout-01": 0.0,
+    "mut2-force-opt-level-0-01": 0.7068965517241379,
+    "mut2-remove-basis-translator-01": 0.5,
+    "mut2-remove-consolidate-blocks-01": 0.0
+   },
+   "clusters": [
+    [
+     "mut2-disable-optimization-loop-01",
+     "mut2-drop-optimization-stage-01"
+    ],
+    [
+     "mut2-force-opt-level-1-01"
+    ],
+    [
+     "mut2-insert-redundant-cx-pair-01"
+    ],
+    [
+     "mut2-insert-redundant-sx-quad-01"
+    ],
+    [
+     "mut2-insert-redundant-x-pair-01"
+    ],
+    [
+     "mut2-remove-elide-permutations-01"
+    ],
+    [
+     "mut2-seed-drift-01"
+    ]
+   ],
+   "results": {
+    "proposed_vs_diversity_only": {
+     "a": "proposed",
+     "b": "diversity_only",
+     "n_events": 8,
+     "mean_diff": -0.261775,
+     "wins": 2,
+     "ties": 0,
+     "losses": 6,
+     "rank_biserial": -0.5,
+     "p_wilcoxon": 0.234375,
+     "p_sign_exact": 0.2890625,
+     "p_permutation": 0.1953125,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.5631125,
+      0.001765312499998668
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.6135571428571429,
+      -0.0007375000000000159
+     ],
+     "n_clusters": 7,
+     "p_wilcoxon_holm3": 0.703125,
+     "p_sign_exact_holm3": 0.8671875,
+     "p_permutation_holm3": 0.5859375
+    },
+    "decomposed_vs_proposed": {
+     "a": "decomposed",
+     "b": "proposed",
+     "n_events": 8,
+     "mean_diff": 0.25885,
+     "wins": 6,
+     "ties": 0,
+     "losses": 2,
+     "rank_biserial": 0.5,
+     "p_wilcoxon": 0.234375,
+     "p_sign_exact": 0.2890625,
+     "p_permutation": 0.1953125,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.00177781249999995,
+      0.5572625
+     ],
+     "cluster_bootstrap_ci95": [
+      0.0007250000000000173,
+      0.6066571428571429
+     ],
+     "n_clusters": 7,
+     "p_wilcoxon_holm3": 0.703125,
+     "p_sign_exact_holm3": 0.8671875,
+     "p_permutation_holm3": 0.5859375
+    },
+    "decomposed_vs_cheapest_first": {
+     "a": "decomposed",
+     "b": "cheapest_first",
+     "n_events": 8,
+     "mean_diff": 0.0359,
+     "wins": 3,
+     "ties": 2,
+     "losses": 3,
+     "rank_biserial": 0.42857142857142855,
+     "p_wilcoxon": 0.4375,
+     "p_sign_exact": 1.0,
+     "p_permutation": 0.25,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -3.749999999999587e-05,
+      0.07044281249999991
+     ],
+     "cluster_bootstrap_ci95": [
+      -7.142857142856356e-05,
+      0.06619999999999998
+     ],
+     "n_clusters": 7,
+     "p_wilcoxon_holm3": 0.703125,
+     "p_sign_exact_holm3": 1.0,
+     "p_permutation_holm3": 0.5859375
+    }
+   }
+  },
+  "supplementary_vs_random100": {
+   "all19": {
+    "proposed_vs_random": {
+     "a": "proposed",
+     "b": "random",
+     "n_events": 19,
+     "mean_diff": -0.08243157894736844,
+     "wins": 12,
+     "ties": 2,
+     "losses": 5,
+     "rank_biserial": 0.30718954248366015,
+     "p_wilcoxon": 0.2659466461059248,
+     "p_sign_exact": 0.143463134765625,
+     "p_permutation": 0.249908447265625,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.19302447368421055,
+      0.011237631578947346
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.2184943690476191,
+      0.010300340909090887
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.2659466461059248,
+     "p_sign_exact_holm3": 0.143463134765625,
+     "p_permutation_holm3": 0.286163330078125
+    },
+    "decomposed_vs_random": {
+     "a": "decomposed",
+     "b": "random",
+     "n_events": 19,
+     "mean_diff": 0.029610526315789466,
+     "wins": 15,
+     "ties": 2,
+     "losses": 2,
+     "rank_biserial": 0.6339869281045751,
+     "p_wilcoxon": 0.021663316798207995,
+     "p_sign_exact": 0.002349853515625,
+     "p_permutation": 0.1430816650390625,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.003231710526315801,
+      0.07216881578947368
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.0032773997326203193,
+      0.07663761513157895
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.04332663359641599,
+     "p_sign_exact_holm3": 0.00469970703125,
+     "p_permutation_holm3": 0.286163330078125
+    }
+   },
+   "dedup_alphabetical_first": {
+    "proposed_vs_random": {
+     "a": "proposed",
+     "b": "random",
+     "n_events": 15,
+     "mean_diff": -0.10642666666666667,
+     "wins": 10,
+     "ties": 1,
+     "losses": 4,
+     "rank_biserial": 0.21904761904761905,
+     "p_wilcoxon": 0.4703377962613965,
+     "p_sign_exact": 0.1795654296875,
+     "p_permutation": 0.249755859375,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.2424165,
+      0.011913333333333302
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.26085673076923077,
+      0.011480140350877185
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.4703377962613965,
+     "p_sign_exact_holm3": 0.1795654296875,
+     "p_permutation_holm3": 0.41357421875
+    },
+    "decomposed_vs_random": {
+     "a": "decomposed",
+     "b": "random",
+     "n_events": 15,
+     "mean_diff": 0.034159999999999996,
+     "wins": 12,
+     "ties": 1,
+     "losses": 2,
+     "rank_biserial": 0.580952380952381,
+     "p_wilcoxon": 0.05553298081594267,
+     "p_sign_exact": 0.012939453125,
+     "p_permutation": 0.206787109375,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.008007833333333339,
+      0.08650099999999988
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.006753666666666678,
+      0.09050999999999998
+     ],
+     "n_clusters": 13,
+     "p_wilcoxon_holm3": 0.11106596163188534,
+     "p_sign_exact_holm3": 0.02587890625,
+     "p_permutation_holm3": 0.41357421875
+    }
+   },
+   "informative": {
+    "proposed_vs_random": {
+     "a": "proposed",
+     "b": "random",
+     "n_events": 8,
+     "mean_diff": -0.1994125,
+     "wins": 5,
+     "ties": 0,
+     "losses": 3,
+     "rank_biserial": -0.16666666666666666,
+     "p_wilcoxon": 0.7421875,
+     "p_sign_exact": 0.7265625,
+     "p_permutation": 0.25,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.4250675,
+      -0.00939968750000001
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.4663285714285715,
+      -0.009944062500000213
+     ],
+     "n_clusters": 7,
+     "p_wilcoxon_holm3": 0.7421875,
+     "p_sign_exact_holm3": 0.7265625,
+     "p_permutation_holm3": 0.5
+    },
+    "decomposed_vs_random": {
+     "a": "decomposed",
+     "b": "random",
+     "n_events": 8,
+     "mean_diff": 0.059437500000000004,
+     "wins": 6,
+     "ties": 0,
+     "losses": 2,
+     "rank_biserial": 0.4444444444444444,
+     "p_wilcoxon": 0.3125,
+     "p_sign_exact": 0.2890625,
+     "p_permutation": 0.2734375,
+     "permutation_method": "exact",
+     "event_bootstrap_ci95": [
+      -0.016675312500000008,
+      0.14876375
+     ],
+     "cluster_bootstrap_ci95": [
+      -0.017122222222222212,
+      0.15834285714285715
+     ],
+     "n_clusters": 7,
+     "p_wilcoxon_holm3": 0.625,
+     "p_sign_exact_holm3": 0.578125,
+     "p_permutation_holm3": 0.5
+    }
+   }
+  }
+ },
+ "C_forward_events_own_oracles": {
+  "replication": {
+   "quality": "cart.oracles.quality.evaluate_quality is called unchanged with thresholds QualityThresholds.load(configs/thresholds.yaml) ({'tau_2q': 0.1, 'tau_depth': 0.1, 'tau_depth_improve': 0.1, 'tau_2q_improve': 0.1}) on duck-typed stand-ins: count_2q(stand-in) returns the stored n2q and .depth() the stored depth. A hand re-implementation of rules 1/2 is run alongside and must agree on every unit.",
+   "quality_assumption": "stored n2q = count of {cx, cz, ecr, swap} ops of the transpiled output (scripts/forward_probe_units.py), whereas count_2q counts every 2-qubit op except barrier. With basis_gates [cx, rz, sx, x] the outputs contain no other 2-qubit op, so the two coincide; this cannot be re-checked without the circuits. Stored depth = QuantumCircuit.depth(), as in evaluate_quality.",
+   "performance": "cart.oracles.performance.screen_performance(baseline_times, candidate_times, slowdown_threshold=0.2) (performance.stage1_slowdown_threshold of configs/thresholds.yaml). Primary: one-element lists holding the FIRST wall-clock run of each build (cf. historical_runner.run_historical_event, which screens one cold run per build in a fresh subprocess). Sensitivity: median of all runs (wall), and the first CPU-process-time run (the instrument historical_worker records; 15.6 ms resolution on Windows, and screen_performance returns ratio 0 when the baseline time is 0).",
+   "not_replicable": "the semantic/functional oracles (and their precedence over quality/performance in the label hierarchy) need the circuits, which are not stored; 'flagged' therefore means quality regression OR performance screen, and the label precedence quality > performance is applied only to name the label.",
+   "detection_for_selectors": "pipeline_first = quality OR first-run wall screen (primary); pipeline_median = quality OR median wall screen; also quality-only and screen-only",
+   "selector_eval": "as scripts/forward_selector_eval.py with --clock wall: cost = median candidate wall time + ORACLE_COST_EST[oracle_type] (0.05 default); baseline_costs = median baseline wall time; history = []; ctx units = the 116 usable units; ranking with SELECTORS_SCALEUP at an infinite budget, seed 0 (random: mean over seeds 0..19); tests_to_first_detection = 1-based position of the first detecting unit, len(ranking)+1 if none. The budget-tier (pr/nightly) part of that script is not repeated."
+  },
+  "events": {
+   "fwd-applylayout-registers-14904": {
+    "source": "results/forward_units/fwd-applylayout-registers-14904_v2.json",
+    "fault_type": "contract_metadata",
+    "n_units": 116,
+    "repeats": 2,
+    "fault_matched_rule": "registers differ",
+    "n_fault_matched": 67,
+    "quality_oracle": {
+     "n_flagged": 5,
+     "rule_counts": {
+      "rule1_2q_worse": 0,
+      "rule2_depth_worse": 5
+     },
+     "n_units_n2q_changed": 21,
+     "n_units_depth_changed": 20,
+     "n_units_improved_2q_or_depth": 14,
+     "flagged": {
+      "qft-n18-heavy_hex-opt3": {
+       "rule": "rule2_depth_worse",
+       "rel_2q": 0.09021406727828746,
+       "rel_depth": 0.27977839335180055,
+       "n2q": [
+        654,
+        713
+       ],
+       "depth": [
+        361,
+        462
+       ]
+      },
+      "qft-n27-line-opt3": {
+       "rule": "rule2_depth_worse",
+       "rel_2q": 0.09382151029748284,
+       "rel_depth": 0.18048780487804877,
+       "n2q": [
+        1311,
+        1434
+       ],
+       "depth": [
+        410,
+        484
+       ]
+      },
+      "qft-n27-heavy_hex-opt3": {
+       "rule": "rule2_depth_worse",
+       "rel_2q": 0.004380475594493116,
+       "rel_depth": 0.13990461049284578,
+       "n2q": [
+        1598,
+        1605
+       ],
+       "depth": [
+        629,
+        717
+       ]
+      },
+      "qft-n40-heavy_hex-opt3": {
+       "rule": "rule2_depth_worse",
+       "rel_2q": 0.06993702353331123,
+       "rel_depth": 0.12829845313921748,
+       "n2q": [
+        3017,
+        3228
+       ],
+       "depth": [
+        1099,
+        1240
+       ]
+      },
+      "qft-n100-line-opt3": {
+       "rule": "rule2_depth_worse",
+       "rel_2q": -0.04144797777091695,
+       "rel_depth": 0.22931985294117646,
+       "n2q": [
+        12956,
+        12419
+       ],
+       "depth": [
+        2176,
+        2675
+       ]
+      }
+     }
+    },
+    "perf_screen_counts": {
+     "first_run_wall": 15,
+     "median_wall": 10,
+     "first_run_cpu": 3
+    },
+    "pipeline_label_counts": {
+     "quality_regression": 5,
+     "performance_regression": 15,
+     "pass": 96
+    },
+    "label_matched_detection": {
+     "expected_label": "contract_metadata_fail",
+     "n_units": 0,
+     "note": "number of units whose pipeline label (first-run screen) equals cart.labels.ground_truth.LABEL_FOR_FAULT[fault_type], i.e. the study's own fault_id_detected rule; quality/performance labels cannot match a contract_metadata event"
+    },
+    "overlap_with_fault_matched": {
+     "pipeline_first": {
+      "n_flagged": 20,
+      "n_fault_matched": 67,
+      "n_both": 5,
+      "n_flagged_not_fault_matched": 15,
+      "n_fault_matched_not_flagged": 62,
+      "flagged_units": [
+       "ghz-n18-heavy_hex-opt3",
+       "ghz-n18-line-opt1",
+       "ghz-n65-heavy_hex-opt1",
+       "qft-n100-heavy_hex-opt1",
+       "qft-n100-line-opt3",
+       "qft-n12-line-opt1",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-heavy_hex-opt3",
+       "qft-n18-line-opt3",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n40-heavy_hex-opt1",
+       "qft-n40-heavy_hex-opt3",
+       "qft-n5-line-opt1",
+       "qft-n8-line-opt3",
+       "random_clifford-n18-line-opt1",
+       "random_clifford-n40-heavy_hex-opt3",
+       "random_clifford-n40-line-opt1",
+       "random_clifford-n5-heavy_hex-opt1",
+       "random_clifford-n8-heavy_hex-opt1"
+      ]
+     },
+     "pipeline_median": {
+      "n_flagged": 15,
+      "n_fault_matched": 67,
+      "n_both": 5,
+      "n_flagged_not_fault_matched": 10,
+      "n_fault_matched_not_flagged": 62,
+      "flagged_units": [
+       "ghz-n18-line-opt1",
+       "ghz-n8-line-opt3",
+       "qft-n100-line-opt3",
+       "qft-n12-line-opt1",
+       "qft-n18-heavy_hex-opt3",
+       "qft-n18-line-opt3",
+       "qft-n27-heavy_hex-opt1",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n40-heavy_hex-opt1",
+       "qft-n40-heavy_hex-opt3",
+       "qft-n5-line-opt1",
+       "random_clifford-n40-line-opt1",
+       "random_clifford-n5-heavy_hex-opt1",
+       "random_clifford-n8-heavy_hex-opt1"
+      ]
+     },
+     "pipeline_first_cpu": {
+      "n_flagged": 8,
+      "n_fault_matched": 67,
+      "n_both": 2,
+      "n_flagged_not_fault_matched": 6,
+      "n_fault_matched_not_flagged": 65,
+      "flagged_units": [
+       "ghz-n18-heavy_hex-opt3",
+       "qft-n100-line-opt3",
+       "qft-n18-heavy_hex-opt3",
+       "qft-n27-heavy_hex-opt1",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n40-heavy_hex-opt3",
+       "random_clifford-n8-line-opt3"
+      ]
+     },
+     "quality_only": {
+      "n_flagged": 5,
+      "n_fault_matched": 67,
+      "n_both": 0,
+      "n_flagged_not_fault_matched": 5,
+      "n_fault_matched_not_flagged": 67,
+      "flagged_units": [
+       "qft-n100-line-opt3",
+       "qft-n18-heavy_hex-opt3",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n40-heavy_hex-opt3"
+      ]
+     },
+     "perf_screen_first_only": {
+      "n_flagged": 15,
+      "n_fault_matched": 67,
+      "n_both": 5,
+      "n_flagged_not_fault_matched": 10,
+      "n_fault_matched_not_flagged": 62,
+      "flagged_units": [
+       "ghz-n18-heavy_hex-opt3",
+       "ghz-n18-line-opt1",
+       "ghz-n65-heavy_hex-opt1",
+       "qft-n100-heavy_hex-opt1",
+       "qft-n12-line-opt1",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-line-opt3",
+       "qft-n40-heavy_hex-opt1",
+       "qft-n5-line-opt1",
+       "qft-n8-line-opt3",
+       "random_clifford-n18-line-opt1",
+       "random_clifford-n40-heavy_hex-opt3",
+       "random_clifford-n40-line-opt1",
+       "random_clifford-n5-heavy_hex-opt1",
+       "random_clifford-n8-heavy_hex-opt1"
+      ]
+     },
+     "perf_screen_median_only": {
+      "n_flagged": 10,
+      "n_fault_matched": 67,
+      "n_both": 5,
+      "n_flagged_not_fault_matched": 5,
+      "n_fault_matched_not_flagged": 62,
+      "flagged_units": [
+       "ghz-n18-line-opt1",
+       "ghz-n8-line-opt3",
+       "qft-n12-line-opt1",
+       "qft-n18-line-opt3",
+       "qft-n27-heavy_hex-opt1",
+       "qft-n40-heavy_hex-opt1",
+       "qft-n5-line-opt1",
+       "random_clifford-n40-line-opt1",
+       "random_clifford-n5-heavy_hex-opt1",
+       "random_clifford-n8-heavy_hex-opt1"
+      ]
+     }
+    },
+    "selectors": {
+     "fault_matched": {
+      "random": {
+       "auc": 0.9798156973426222,
+       "normalized_ttfr": 0.02018430265737784,
+       "tests_to_first_detection": 2.0
+      },
+      "cheapest_first": {
+       "auc": 0.9995614166665271,
+       "normalized_ttfr": 0.00043858333347290075,
+       "tests_to_first_detection": 1.0
+      },
+      "diversity_only": {
+       "auc": 0.9995614166665271,
+       "normalized_ttfr": 0.00043858333347290075,
+       "tests_to_first_detection": 1.0
+      },
+      "history_only": {
+       "auc": 0.9995614166665271,
+       "normalized_ttfr": 0.00043858333347290075,
+       "tests_to_first_detection": 1.0
+      },
+      "change_stage": {
+       "auc": 0.9995614166665271,
+       "normalized_ttfr": 0.00043858333347290075,
+       "tests_to_first_detection": 1.0
+      },
+      "proposed": {
+       "auc": 0.9108492816227676,
+       "normalized_ttfr": 0.08915071837723242,
+       "tests_to_first_detection": 15.0
+      },
+      "decomposed": {
+       "auc": 0.9999029299533144,
+       "normalized_ttfr": 9.70700466855221e-05,
+       "tests_to_first_detection": 1.0
+      }
+     },
+     "pipeline_first": {
+      "random": {
+       "auc": 0.9494668269052029,
+       "normalized_ttfr": 0.05053317309479689,
+       "tests_to_first_detection": 5.65
+      },
+      "cheapest_first": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "diversity_only": {
+       "auc": 0.9958448613966134,
+       "normalized_ttfr": 0.004155138603386567,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "change_stage": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "proposed": {
+       "auc": 0.9812883510478495,
+       "normalized_ttfr": 0.018711648952150457,
+       "tests_to_first_detection": 3.0
+      },
+      "decomposed": {
+       "auc": 0.9977678795126331,
+       "normalized_ttfr": 0.0022321204873668493,
+       "tests_to_first_detection": 13.0
+      }
+     },
+     "pipeline_median": {
+      "random": {
+       "auc": 0.9070793117726019,
+       "normalized_ttfr": 0.09292068822739812,
+       "tests_to_first_detection": 7.65
+      },
+      "cheapest_first": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "diversity_only": {
+       "auc": 0.9958448613966134,
+       "normalized_ttfr": 0.004155138603386567,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "change_stage": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "proposed": {
+       "auc": 0.9162359774635176,
+       "normalized_ttfr": 0.08376402253648245,
+       "tests_to_first_detection": 8.0
+      },
+      "decomposed": {
+       "auc": 0.9989646232586495,
+       "normalized_ttfr": 0.0010353767413504955,
+       "tests_to_first_detection": 6.0
+      }
+     },
+     "pipeline_first_cpu": {
+      "random": {
+       "auc": 0.8959781047000849,
+       "normalized_ttfr": 0.10402189529991519,
+       "tests_to_first_detection": 11.85
+      },
+      "cheapest_first": {
+       "auc": 0.9733325821454041,
+       "normalized_ttfr": 0.026667417854595914,
+       "tests_to_first_detection": 53.0
+      },
+      "diversity_only": {
+       "auc": 0.9733325821454041,
+       "normalized_ttfr": 0.026667417854595914,
+       "tests_to_first_detection": 53.0
+      },
+      "history_only": {
+       "auc": 0.9733325821454041,
+       "normalized_ttfr": 0.026667417854595914,
+       "tests_to_first_detection": 53.0
+      },
+      "change_stage": {
+       "auc": 0.9733325821454041,
+       "normalized_ttfr": 0.026667417854595914,
+       "tests_to_first_detection": 53.0
+      },
+      "proposed": {
+       "auc": 0.9162359774635176,
+       "normalized_ttfr": 0.08376402253648245,
+       "tests_to_first_detection": 8.0
+      },
+      "decomposed": {
+       "auc": 0.9989646232586495,
+       "normalized_ttfr": 0.0010353767413504955,
+       "tests_to_first_detection": 6.0
+      }
+     },
+     "quality_only": {
+      "random": {
+       "auc": 0.790614789871641,
+       "normalized_ttfr": 0.20938521012835892,
+       "tests_to_first_detection": 21.95
+      },
+      "cheapest_first": {
+       "auc": 0.9419223061854541,
+       "normalized_ttfr": 0.058077693814545875,
+       "tests_to_first_detection": 88.0
+      },
+      "diversity_only": {
+       "auc": 0.9419223061854541,
+       "normalized_ttfr": 0.058077693814545875,
+       "tests_to_first_detection": 88.0
+      },
+      "history_only": {
+       "auc": 0.9419223061854541,
+       "normalized_ttfr": 0.058077693814545875,
+       "tests_to_first_detection": 88.0
+      },
+      "change_stage": {
+       "auc": 0.9419223061854541,
+       "normalized_ttfr": 0.058077693814545875,
+       "tests_to_first_detection": 88.0
+      },
+      "proposed": {
+       "auc": 0.9162359774635176,
+       "normalized_ttfr": 0.08376402253648245,
+       "tests_to_first_detection": 8.0
+      },
+      "decomposed": {
+       "auc": 0.9666821001098317,
+       "normalized_ttfr": 0.03331789989016834,
+       "tests_to_first_detection": 76.0
+      }
+     },
+     "perf_screen_first_only": {
+      "random": {
+       "auc": 0.9135735914505313,
+       "normalized_ttfr": 0.08642640854946862,
+       "tests_to_first_detection": 8.9
+      },
+      "cheapest_first": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "diversity_only": {
+       "auc": 0.9958448613966134,
+       "normalized_ttfr": 0.004155138603386567,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "change_stage": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "proposed": {
+       "auc": 0.9812883510478495,
+       "normalized_ttfr": 0.018711648952150457,
+       "tests_to_first_detection": 3.0
+      },
+      "decomposed": {
+       "auc": 0.9977678795126331,
+       "normalized_ttfr": 0.0022321204873668493,
+       "tests_to_first_detection": 13.0
+      }
+     },
+     "perf_screen_median_only": {
+      "random": {
+       "auc": 0.870107101791295,
+       "normalized_ttfr": 0.12989289820870492,
+       "tests_to_first_detection": 12.25
+      },
+      "cheapest_first": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "diversity_only": {
+       "auc": 0.9958448613966134,
+       "normalized_ttfr": 0.004155138603386567,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "change_stage": {
+       "auc": 0.9978324727177786,
+       "normalized_ttfr": 0.0021675272822213854,
+       "tests_to_first_detection": 2.0
+      },
+      "proposed": {
+       "auc": 0.9147230194905573,
+       "normalized_ttfr": 0.08527698050944268,
+       "tests_to_first_detection": 10.0
+      },
+      "decomposed": {
+       "auc": 0.9989646232586495,
+       "normalized_ttfr": 0.0010353767413504955,
+       "tests_to_first_detection": 6.0
+      }
+     }
+    },
+    "selectors_note": "per detection definition; an AUC of 0 and tests_to_first_detection = n_units+1 mean no unit is flagged"
+   },
+   "hist-vf2postlayout-noop": {
+    "source": "results/forward_units/hist-vf2postlayout-noop_v2_corrected.json",
+    "fault_type": "performance",
+    "n_units": 116,
+    "repeats": 5,
+    "fault_matched_rule": "median wall ratio >= 1.5 and difference >= 0.01 s",
+    "n_fault_matched": 6,
+    "quality_oracle": {
+     "n_flagged": 0,
+     "rule_counts": {
+      "rule1_2q_worse": 0,
+      "rule2_depth_worse": 0
+     },
+     "n_units_n2q_changed": 0,
+     "n_units_depth_changed": 0,
+     "n_units_improved_2q_or_depth": 0,
+     "flagged": {}
+    },
+    "perf_screen_counts": {
+     "first_run_wall": 29,
+     "median_wall": 28,
+     "first_run_cpu": 13
+    },
+    "pipeline_label_counts": {
+     "quality_regression": 0,
+     "performance_regression": 29,
+     "pass": 87
+    },
+    "label_matched_detection": {
+     "expected_label": "performance_regression",
+     "n_units": 29,
+     "note": "number of units whose pipeline label (first-run screen) equals cart.labels.ground_truth.LABEL_FOR_FAULT[fault_type], i.e. the study's own fault_id_detected rule; quality/performance labels cannot match a contract_metadata event"
+    },
+    "overlap_with_fault_matched": {
+     "pipeline_first": {
+      "n_flagged": 29,
+      "n_fault_matched": 6,
+      "n_both": 6,
+      "n_flagged_not_fault_matched": 23,
+      "n_fault_matched_not_flagged": 0,
+      "flagged_units": [
+       "ghz-n12-heavy_hex-opt3",
+       "ghz-n18-line-opt3",
+       "ghz-n27-heavy_hex-opt3",
+       "ghz-n27-line-opt3",
+       "ghz-n40-heavy_hex-opt3",
+       "ghz-n40-line-opt3",
+       "ghz-n5-heavy_hex-opt1",
+       "ghz-n5-heavy_hex-opt3",
+       "ghz-n65-heavy_hex-opt3",
+       "ghz-n65-line-opt3",
+       "ghz-n8-heavy_hex-opt3",
+       "qaoa_linear-n12-heavy_hex-opt3",
+       "qaoa_linear-n27-heavy_hex-opt3",
+       "qaoa_linear-n40-heavy_hex-opt3",
+       "qaoa_linear-n40-line-opt3",
+       "qaoa_linear-n5-heavy_hex-opt3",
+       "qaoa_linear-n65-heavy_hex-opt3",
+       "qaoa_linear-n8-heavy_hex-opt3",
+       "qaoa_linear-n8-line-opt3",
+       "qft-n100-heavy_hex-opt3",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-line-opt3",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n5-line-opt1",
+       "qft-n5-line-opt3",
+       "qft-n8-line-opt3",
+       "random_clifford-n5-line-opt3",
+       "random_clifford-n8-heavy_hex-opt3"
+      ]
+     },
+     "pipeline_median": {
+      "n_flagged": 28,
+      "n_fault_matched": 6,
+      "n_both": 6,
+      "n_flagged_not_fault_matched": 22,
+      "n_fault_matched_not_flagged": 0,
+      "flagged_units": [
+       "ghz-n12-heavy_hex-opt3",
+       "ghz-n12-line-opt3",
+       "ghz-n18-line-opt3",
+       "ghz-n27-heavy_hex-opt1",
+       "ghz-n27-heavy_hex-opt3",
+       "ghz-n27-line-opt3",
+       "ghz-n40-heavy_hex-opt3",
+       "ghz-n40-line-opt1",
+       "ghz-n40-line-opt3",
+       "ghz-n5-heavy_hex-opt3",
+       "ghz-n65-heavy_hex-opt3",
+       "ghz-n65-line-opt3",
+       "ghz-n8-heavy_hex-opt1",
+       "ghz-n8-heavy_hex-opt3",
+       "qaoa_linear-n27-heavy_hex-opt3",
+       "qaoa_linear-n27-line-opt3",
+       "qaoa_linear-n40-heavy_hex-opt3",
+       "qaoa_linear-n40-line-opt3",
+       "qaoa_linear-n5-heavy_hex-opt3",
+       "qaoa_linear-n65-heavy_hex-opt3",
+       "qaoa_linear-n8-heavy_hex-opt1",
+       "qaoa_linear-n8-heavy_hex-opt3",
+       "qft-n100-heavy_hex-opt3",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-line-opt1",
+       "qft-n18-line-opt3",
+       "random_clifford-n27-line-opt1",
+       "random_clifford-n8-heavy_hex-opt3"
+      ]
+     },
+     "pipeline_first_cpu": {
+      "n_flagged": 13,
+      "n_fault_matched": 6,
+      "n_both": 4,
+      "n_flagged_not_fault_matched": 9,
+      "n_fault_matched_not_flagged": 2,
+      "flagged_units": [
+       "ghz-n40-heavy_hex-opt3",
+       "qaoa_linear-n18-heavy_hex-opt3",
+       "qaoa_linear-n27-heavy_hex-opt3",
+       "qaoa_linear-n40-heavy_hex-opt3",
+       "qaoa_linear-n65-heavy_hex-opt3",
+       "qft-n12-heavy_hex-opt3",
+       "qft-n40-heavy_hex-opt1",
+       "qft-n40-line-opt1",
+       "qft-n5-heavy_hex-opt3",
+       "random_clifford-n18-heavy_hex-opt3",
+       "random_clifford-n27-heavy_hex-opt1",
+       "random_clifford-n5-line-opt1",
+       "random_clifford-n8-heavy_hex-opt3"
+      ]
+     },
+     "quality_only": {
+      "n_flagged": 0,
+      "n_fault_matched": 6,
+      "n_both": 0,
+      "n_flagged_not_fault_matched": 0,
+      "n_fault_matched_not_flagged": 6,
+      "flagged_units": []
+     },
+     "perf_screen_first_only": {
+      "n_flagged": 29,
+      "n_fault_matched": 6,
+      "n_both": 6,
+      "n_flagged_not_fault_matched": 23,
+      "n_fault_matched_not_flagged": 0,
+      "flagged_units": [
+       "ghz-n12-heavy_hex-opt3",
+       "ghz-n18-line-opt3",
+       "ghz-n27-heavy_hex-opt3",
+       "ghz-n27-line-opt3",
+       "ghz-n40-heavy_hex-opt3",
+       "ghz-n40-line-opt3",
+       "ghz-n5-heavy_hex-opt1",
+       "ghz-n5-heavy_hex-opt3",
+       "ghz-n65-heavy_hex-opt3",
+       "ghz-n65-line-opt3",
+       "ghz-n8-heavy_hex-opt3",
+       "qaoa_linear-n12-heavy_hex-opt3",
+       "qaoa_linear-n27-heavy_hex-opt3",
+       "qaoa_linear-n40-heavy_hex-opt3",
+       "qaoa_linear-n40-line-opt3",
+       "qaoa_linear-n5-heavy_hex-opt3",
+       "qaoa_linear-n65-heavy_hex-opt3",
+       "qaoa_linear-n8-heavy_hex-opt3",
+       "qaoa_linear-n8-line-opt3",
+       "qft-n100-heavy_hex-opt3",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-line-opt3",
+       "qft-n27-heavy_hex-opt3",
+       "qft-n27-line-opt3",
+       "qft-n5-line-opt1",
+       "qft-n5-line-opt3",
+       "qft-n8-line-opt3",
+       "random_clifford-n5-line-opt3",
+       "random_clifford-n8-heavy_hex-opt3"
+      ]
+     },
+     "perf_screen_median_only": {
+      "n_flagged": 28,
+      "n_fault_matched": 6,
+      "n_both": 6,
+      "n_flagged_not_fault_matched": 22,
+      "n_fault_matched_not_flagged": 0,
+      "flagged_units": [
+       "ghz-n12-heavy_hex-opt3",
+       "ghz-n12-line-opt3",
+       "ghz-n18-line-opt3",
+       "ghz-n27-heavy_hex-opt1",
+       "ghz-n27-heavy_hex-opt3",
+       "ghz-n27-line-opt3",
+       "ghz-n40-heavy_hex-opt3",
+       "ghz-n40-line-opt1",
+       "ghz-n40-line-opt3",
+       "ghz-n5-heavy_hex-opt3",
+       "ghz-n65-heavy_hex-opt3",
+       "ghz-n65-line-opt3",
+       "ghz-n8-heavy_hex-opt1",
+       "ghz-n8-heavy_hex-opt3",
+       "qaoa_linear-n27-heavy_hex-opt3",
+       "qaoa_linear-n27-line-opt3",
+       "qaoa_linear-n40-heavy_hex-opt3",
+       "qaoa_linear-n40-line-opt3",
+       "qaoa_linear-n5-heavy_hex-opt3",
+       "qaoa_linear-n65-heavy_hex-opt3",
+       "qaoa_linear-n8-heavy_hex-opt1",
+       "qaoa_linear-n8-heavy_hex-opt3",
+       "qft-n100-heavy_hex-opt3",
+       "qft-n127-heavy_hex-opt3",
+       "qft-n18-line-opt1",
+       "qft-n18-line-opt3",
+       "random_clifford-n27-line-opt1",
+       "random_clifford-n8-heavy_hex-opt3"
+      ]
+     }
+    },
+    "selectors": {
+     "fault_matched": {
+      "random": {
+       "auc": 0.7819060766507298,
+       "normalized_ttfr": 0.2180939233492701,
+       "tests_to_first_detection": 16.6
+      },
+      "cheapest_first": {
+       "auc": 0.971782715513613,
+       "normalized_ttfr": 0.028217284486387082,
+       "tests_to_first_detection": 41.0
+      },
+      "diversity_only": {
+       "auc": 0.971782715513613,
+       "normalized_ttfr": 0.028217284486387082,
+       "tests_to_first_detection": 41.0
+      },
+      "history_only": {
+       "auc": 0.971782715513613,
+       "normalized_ttfr": 0.028217284486387082,
+       "tests_to_first_detection": 41.0
+      },
+      "change_stage": {
+       "auc": 0.971782715513613,
+       "normalized_ttfr": 0.028217284486387082,
+       "tests_to_first_detection": 41.0
+      },
+      "proposed": {
+       "auc": 0.6095751199266263,
+       "normalized_ttfr": 0.3904248800733737,
+       "tests_to_first_detection": 19.0
+      },
+      "decomposed": {
+       "auc": 0.9881885524557592,
+       "normalized_ttfr": 0.011811447544240824,
+       "tests_to_first_detection": 16.0
+      }
+     },
+     "pipeline_first": {
+      "random": {
+       "auc": 0.988900508203011,
+       "normalized_ttfr": 0.011099491796989078,
+       "tests_to_first_detection": 3.25
+      },
+      "cheapest_first": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "diversity_only": {
+       "auc": 0.997360471662109,
+       "normalized_ttfr": 0.0026395283378910154,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "change_stage": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "proposed": {
+       "auc": 0.9456696430397799,
+       "normalized_ttfr": 0.05433035696022015,
+       "tests_to_first_detection": 4.0
+      },
+      "decomposed": {
+       "auc": 0.9975898751638651,
+       "normalized_ttfr": 0.0024101248361348797,
+       "tests_to_first_detection": 11.0
+      }
+     },
+     "pipeline_median": {
+      "random": {
+       "auc": 0.9893788969758663,
+       "normalized_ttfr": 0.010621103024133676,
+       "tests_to_first_detection": 4.0
+      },
+      "cheapest_first": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "diversity_only": {
+       "auc": 0.9982501342473562,
+       "normalized_ttfr": 0.0017498657526437858,
+       "tests_to_first_detection": 4.0
+      },
+      "history_only": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "change_stage": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "proposed": {
+       "auc": 0.9456696430397799,
+       "normalized_ttfr": 0.05433035696022015,
+       "tests_to_first_detection": 4.0
+      },
+      "decomposed": {
+       "auc": 0.9997964240302841,
+       "normalized_ttfr": 0.00020357596971591922,
+       "tests_to_first_detection": 2.0
+      }
+     },
+     "pipeline_first_cpu": {
+      "random": {
+       "auc": 0.9667562853079202,
+       "normalized_ttfr": 0.033243714692079686,
+       "tests_to_first_detection": 9.0
+      },
+      "cheapest_first": {
+       "auc": 0.988189641668036,
+       "normalized_ttfr": 0.011810358331963939,
+       "tests_to_first_detection": 24.0
+      },
+      "diversity_only": {
+       "auc": 0.9978062173230697,
+       "normalized_ttfr": 0.0021937826769302827,
+       "tests_to_first_detection": 5.0
+      },
+      "history_only": {
+       "auc": 0.988189641668036,
+       "normalized_ttfr": 0.011810358331963939,
+       "tests_to_first_detection": 24.0
+      },
+      "change_stage": {
+       "auc": 0.988189641668036,
+       "normalized_ttfr": 0.011810358331963939,
+       "tests_to_first_detection": 24.0
+      },
+      "proposed": {
+       "auc": 0.8988223336046649,
+       "normalized_ttfr": 0.1011776663953351,
+       "tests_to_first_detection": 13.0
+      },
+      "decomposed": {
+       "auc": 0.9987771828682495,
+       "normalized_ttfr": 0.0012228171317505473,
+       "tests_to_first_detection": 6.0
+      }
+     },
+     "quality_only": {
+      "random": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "cheapest_first": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "diversity_only": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "history_only": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "change_stage": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "proposed": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      },
+      "decomposed": {
+       "auc": 0.0,
+       "normalized_ttfr": 1.0,
+       "tests_to_first_detection": 117.0
+      }
+     },
+     "perf_screen_first_only": {
+      "random": {
+       "auc": 0.988900508203011,
+       "normalized_ttfr": 0.011099491796989078,
+       "tests_to_first_detection": 3.25
+      },
+      "cheapest_first": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "diversity_only": {
+       "auc": 0.997360471662109,
+       "normalized_ttfr": 0.0026395283378910154,
+       "tests_to_first_detection": 6.0
+      },
+      "history_only": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "change_stage": {
+       "auc": 0.9950465671327791,
+       "normalized_ttfr": 0.004953432867220967,
+       "tests_to_first_detection": 10.0
+      },
+      "proposed": {
+       "auc": 0.9456696430397799,
+       "normalized_ttfr": 0.05433035696022015,
+       "tests_to_first_detection": 4.0
+      },
+      "decomposed": {
+       "auc": 0.9975898751638651,
+       "normalized_ttfr": 0.0024101248361348797,
+       "tests_to_first_detection": 11.0
+      }
+     },
+     "perf_screen_median_only": {
+      "random": {
+       "auc": 0.9893788969758663,
+       "normalized_ttfr": 0.010621103024133676,
+       "tests_to_first_detection": 4.0
+      },
+      "cheapest_first": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "diversity_only": {
+       "auc": 0.9982501342473562,
+       "normalized_ttfr": 0.0017498657526437858,
+       "tests_to_first_detection": 4.0
+      },
+      "history_only": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "change_stage": {
+       "auc": 0.9963599008607248,
+       "normalized_ttfr": 0.003640099139275232,
+       "tests_to_first_detection": 7.0
+      },
+      "proposed": {
+       "auc": 0.9456696430397799,
+       "normalized_ttfr": 0.05433035696022015,
+       "tests_to_first_detection": 4.0
+      },
+      "decomposed": {
+       "auc": 0.9997964240302841,
+       "normalized_ttfr": 0.00020357596971591922,
+       "tests_to_first_detection": 2.0
+      }
+     }
+    },
+    "selectors_note": "per detection definition; an AUC of 0 and tests_to_first_detection = n_units+1 mean no unit is flagged"
+   }
+  }
+ },
+ "D_single_run_screen_false_alarms": {
+  "fwd-applylayout-registers-14904": {
+   "role": "supplementary (contract event; only 2 runs per build)",
+   "n_units": 116,
+   "baseline_last_good": {
+    "wall": {
+     "n_runs": 2,
+     "run1_vs_run2": 2,
+     "run2_vs_run1": 65,
+     "all_ordered_pairs": {
+      "1->2": 2,
+      "2->1": 65
+     },
+     "mean_rate_all_ordered_pairs": 0.28879310344827586,
+     "mean_rate_pairs_excluding_run1": null
+    },
+    "cpu": {
+     "n_runs": 2,
+     "run1_vs_run2": 5,
+     "run2_vs_run1": 6,
+     "all_ordered_pairs": {
+      "1->2": 5,
+      "2->1": 6
+     },
+     "mean_rate_all_ordered_pairs": 0.04741379310344827,
+     "mean_rate_pairs_excluding_run1": null
+    }
+   },
+   "candidate_supplementary": {
+    "wall": {
+     "n_runs": 2,
+     "run1_vs_run2": 2,
+     "run2_vs_run1": 71,
+     "all_ordered_pairs": {
+      "1->2": 2,
+      "2->1": 71
+     },
+     "mean_rate_all_ordered_pairs": 0.3146551724137931,
+     "mean_rate_pairs_excluding_run1": null
+    }
+   }
+  },
+  "hist-vf2postlayout-noop": {
+   "role": "PRIMARY (performance event, last-good build a18e151 after the documented baseline/candidate label correction)",
+   "n_units": 116,
+   "baseline_last_good": {
+    "wall": {
+     "n_runs": 5,
+     "run1_vs_run2": 2,
+     "run2_vs_run1": 69,
+     "all_ordered_pairs": {
+      "1->2": 2,
+      "1->3": 6,
+      "1->4": 2,
+      "1->5": 3,
+      "2->1": 69,
+      "2->3": 10,
+      "2->4": 9,
+      "2->5": 13,
+      "3->1": 67,
+      "3->2": 9,
+      "3->4": 9,
+      "3->5": 10,
+      "4->1": 70,
+      "4->2": 10,
+      "4->3": 9,
+      "4->5": 10,
+      "5->1": 69,
+      "5->2": 14,
+      "5->3": 12,
+      "5->4": 8
+     },
+     "mean_rate_all_ordered_pairs": 0.1771551724137931,
+     "mean_rate_pairs_excluding_run1": 0.08836206896551724
+    },
+    "cpu": {
+     "n_runs": 5,
+     "run1_vs_run2": 10,
+     "run2_vs_run1": 6,
+     "all_ordered_pairs": {
+      "1->2": 10,
+      "1->3": 8,
+      "1->4": 9,
+      "1->5": 11,
+      "2->1": 6,
+      "2->3": 6,
+      "2->4": 7,
+      "2->5": 9,
+      "3->1": 6,
+      "3->2": 8,
+      "3->4": 9,
+      "3->5": 11,
+      "4->1": 10,
+      "4->2": 11,
+      "4->3": 6,
+      "4->5": 9,
+      "5->1": 7,
+      "5->2": 11,
+      "5->3": 6,
+      "5->4": 6
+     },
+     "mean_rate_all_ordered_pairs": 0.07155172413793104,
+     "mean_rate_pairs_excluding_run1": 0.07112068965517242
+    }
+   },
+   "candidate_supplementary": {
+    "wall": {
+     "n_runs": 5,
+     "run1_vs_run2": 4,
+     "run2_vs_run1": 64,
+     "all_ordered_pairs": {
+      "1->2": 4,
+      "1->3": 5,
+      "1->4": 5,
+      "1->5": 3,
+      "2->1": 64,
+      "2->3": 8,
+      "2->4": 12,
+      "2->5": 10,
+      "3->1": 65,
+      "3->2": 7,
+      "3->4": 12,
+      "3->5": 8,
+      "4->1": 63,
+      "4->2": 12,
+      "4->3": 11,
+      "4->5": 4,
+      "5->1": 67,
+      "5->2": 13,
+      "5->3": 8,
+      "5->4": 8
+     },
+     "mean_rate_all_ordered_pairs": 0.16767241379310344,
+     "mean_rate_pairs_excluding_run1": 0.08117816091954022
+    }
+   }
+  },
+  "definition": "'a->b' = number of units flagged by screen_performance([run a], [run b], 0.20), run a in the baseline role and run b in the candidate role, both runs from the SAME build; any flag is a false alarm. Rates are per unit (/n_units). Run 1 of every unit is the first transpile in a fresh process (cold), so pairs with run 1 mix a warm-up effect into the comparison; 'excluding run 1' uses only warm runs. The cold-vs-cold comparison that the primary first-run screen of section C makes cannot be reproduced within one build (one cold run per unit and build)."
+ },
+ "sanity_checks": {
+  "per_event_auc_max_abs_diff_recomputed_vs_reanalysis_json": 0.0,
+  "detection_set_sizes_match_reanalysis_detection_fraction": true,
+  "all19_reference_vs_revision_stats_extra_F": {
+   "proposed_vs_diversity_only": {
+    "mean_diff_abs_diff": 0.0,
+    "p_wilcoxon_abs_diff": 0.0,
+    "wtl_equal": true,
+    "event_bootstrap_ci_abs_diff": 0.0
+   },
+   "decomposed_vs_proposed": {
+    "mean_diff_abs_diff": 0.0,
+    "p_wilcoxon_abs_diff": 0.0,
+    "wtl_equal": true,
+    "event_bootstrap_ci_abs_diff": null
+   },
+   "decomposed_vs_cheapest_first": {
+    "mean_diff_abs_diff": 0.0,
+    "p_wilcoxon_abs_diff": 0.0,
+    "wtl_equal": true,
+    "event_bootstrap_ci_abs_diff": 0.0
+   },
+   "proposed_vs_random": {
+    "mean_diff_abs_diff": 0.0,
+    "p_wilcoxon_abs_diff": 0.0,
+    "wtl_equal": true,
+    "event_bootstrap_ci_abs_diff": 0.0
+   },
+   "decomposed_vs_random": {
+    "mean_diff_abs_diff": 0.0,
+    "p_wilcoxon_abs_diff": 0.0,
+    "wtl_equal": true,
+    "event_bootstrap_ci_abs_diff": 0.0
+   }
+  },
+  "fault_matched_count_fwd-applylayout-registers-14904": {
+   "reproduced": 67,
+   "expected": 67,
+   "n_usable": 116
+  },
+  "quality_hand_reimplementation_mismatches_fwd-applylayout-registers-14904": 0,
+  "fault_matched_selector_auc_max_abs_diff_vs_stored_fwd-applylayout-registers-14904": 0.0,
+  "fault_matched_tests_to_first_max_abs_diff_vs_stored_fwd-applylayout-registers-14904": 0.0,
+  "fault_matched_count_hist-vf2postlayout-noop": {
+   "reproduced": 6,
+   "expected": 6,
+   "n_usable": 116
+  },
+  "quality_hand_reimplementation_mismatches_hist-vf2postlayout-noop": 0,
+  "fault_matched_selector_auc_max_abs_diff_vs_stored_hist-vf2postlayout-noop": 0.0,
+  "fault_matched_tests_to_first_max_abs_diff_vs_stored_hist-vf2postlayout-noop": 0.0
+ }
+}

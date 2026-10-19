@@ -1,0 +1,118 @@
+{
+ "event_id": "fwd-applylayout-registers-14904",
+ "fault_type": "contract_metadata",
+ "n_units": 116,
+ "n_skipped_units": 0,
+ "skipped": [],
+ "n_detecting_units": 67,
+ "fraction_detecting": 0.5775862068965517,
+ "full_suite_cost_s": 184.09656249999995,
+ "rule": "registers differ",
+ "selectors": {
+  "random": {
+   "auc": 0.9783765822623657,
+   "normalized_ttfr": 0.0216234177376343,
+   "tests_to_first_detection": 2.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.05207669548419734,
+    "tests": 28.8
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.5127889745361218,
+    "tests": 87.2
+   }
+  },
+  "cheapest_first": {
+   "auc": 0.9997284034024264,
+   "normalized_ttfr": 0.00027159659757362397,
+   "tests_to_first_detection": 1.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.054429655632489034,
+    "tests": 87.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598906,
+    "tests": 114.0
+   }
+  },
+  "diversity_only": {
+   "auc": 0.9997284034024264,
+   "normalized_ttfr": 0.00027159659757362397,
+   "tests_to_first_detection": 1.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.054429655632489034,
+    "tests": 87.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598906,
+    "tests": 114.0
+   }
+  },
+  "history_only": {
+   "auc": 0.9997284034024264,
+   "normalized_ttfr": 0.00027159659757362397,
+   "tests_to_first_detection": 1.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.054429655632489034,
+    "tests": 87.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598906,
+    "tests": 114.0
+   }
+  },
+  "change_stage": {
+   "auc": 0.9997284034024264,
+   "normalized_ttfr": 0.00027159659757362397,
+   "tests_to_first_detection": 1.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.054429655632489034,
+    "tests": 87.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598906,
+    "tests": 114.0
+   }
+  },
+  "proposed": {
+   "auc": 0.7290127972921818,
+   "normalized_ttfr": 0.2709872027078181,
+   "tests_to_first_detection": 13.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.05147264767640623,
+    "tests": 14.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598895,
+    "tests": 114.0
+   }
+  },
+  "decomposed": {
+   "auc": 0.9999456806804853,
+   "normalized_ttfr": 5.431931951472479e-05,
+   "tests_to_first_detection": 1.0,
+   "pr": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.05386439521378896,
+    "tests": 87.0
+   },
+   "nightly": {
+    "detected": 1.0,
+    "real_cost_fraction": 0.49128429543598906,
+    "tests": 114.0
+   }
+  }
+ }
+}

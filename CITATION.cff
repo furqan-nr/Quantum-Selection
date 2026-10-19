@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the accompanying paper (see preferred-citation)."
+title: "Quantum Selection: reproduction package for 'Oracle Cost, Not the Scoring Function: An Empirical Study of Budgeted Test Prioritization for the Qiskit Transpiler'"
+abstract: >-
+  Code, frozen data, configurations, environment recipes and analysis scripts that reproduce
+  the computational results of an empirical study of cost-aware regression test selection
+  for the Qiskit transpiler, comparing a transparent cost-aware selector with simple
+  baselines (random, cheapest-first, diversity, history and change-stage orderings).
+license: MIT
+type: software
+version: "v1.0.0"  # placeholder: set to the tag of the archived release
+# DOI: to be added (Zenodo). Once minted, add it under "identifiers" (type: doi) and as "doi".
+repository-code: "https://github.com/furqan-nr/Quantum-Selection"
+keywords:
+  - regression test selection
+  - test case prioritization
+  - quantum transpiler
+  - Qiskit
+  - empirical software engineering
+authors:
+  - family-names: Nasir
+    given-names: Furqan
+    orcid: "https://orcid.org/0000-0002-5259-3448"
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+  - family-names: Shah
+    given-names: Muhammad Arif
+    orcid: "https://orcid.org/0000-0003-0090-3333"
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+  - family-names: Alam
+    given-names: Iftikhar
+    orcid: "https://orcid.org/0000-0002-8087-5485"
+    affiliation: "City University of Science and Information Technology (CUSIT), Peshawar, Pakistan"
+preferred-citation:
+  type: article
+  title: "Oracle Cost, Not the Scoring Function: An Empirical Study of Budgeted Test Prioritization for the Qiskit Transpiler"
+  authors:
+    - family-names: Nasir
+      given-names: Furqan
+      orcid: "https://orcid.org/0000-0002-5259-3448"
+    - family-names: Shah
+      given-names: Muhammad Arif
+      orcid: "https://orcid.org/0000-0003-0090-3333"
+    - family-names: Alam
+      given-names: Iftikhar
+      orcid: "https://orcid.org/0000-0002-8087-5485"
+  journal: "Software Quality Journal"
+  status: submitted
+  year: 2026
+  notes: "Submitted to Software Quality Journal. Add volume, article number and DOI on acceptance. An earlier version of the study is available as arXiv:2609.35834."
+references:
+  - type: article
+    title: "A Leakage-Safe, Cost-Aware Regression Testing Methodology for the Quantum Transpiler"
+    authors:
+      - family-names: Nasir
+        given-names: Furqan
+      - family-names: Shah
+        given-names: Muhammad Arif
+      - family-names: Alam
+        given-names: Iftikhar
+    status: preprint
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2609.35834"
+        description: "Earlier preprint version of this study."
+    url: "https://arxiv.org/abs/2609.35834"

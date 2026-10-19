@@ -1,0 +1,10 @@
+# Files whose SHA-256 is frozen (PREREGISTRATION_PHASE_{A,C,D,E}) or recorded inside the data depend on
+# their exact bytes. Store and check them out byte for byte: no end-of-line conversion.
+*.csv -text
+*.lock -text
+*.sha256 -text
+data_phase_c1/events/*.csv -text
+data_phase_c2/events/*.csv -text
+data*/raw/** -text
+phase_d/data/** -text
+phase_e/data/** -text
