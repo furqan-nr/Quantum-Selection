@@ -1,4 +1,4 @@
-# Reproducing "Oracle Cost, Not the Scoring Function: An Empirical Study of Budgeted Test Prioritization for the Qiskit Transpiler"
+# Reproducing "Cost-Aware Regression Test Prioritization for Quantum Compilers: Pre-Registered Evidence from Qiskit"
 
 Software Quality Journal submission (collection "Quantum Software Quality"). Authors: Furqan Nasir, Muhammad Arif Shah, Iftikhar Alam. Repository: https://github.com/furqan-nr/Quantum-Selection (MIT license), release v1.0.0, archived at Zenodo: https://doi.org/10.5281/zenodo.23475857. An earlier version of the study is arXiv:2609.35834.
 
